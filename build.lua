@@ -6,13 +6,13 @@
 bundle = ""
 module = "luatex-def"
 
-sourcefiles =
-  {
-    "luatex.def"
-  }
-typesetfiles =
-  {
-  }
+-- Just the one file to worry about
+installfiles = {"luatex.def"}
+sourcefiles  = {"luatex.def"}
+typesetfiles = {}
+
+-- TDS info (not required at present)
+tdsroot = "luatex"
 
 -- No automated tests for this bundle
 testfildir = ""
