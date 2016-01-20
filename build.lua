@@ -6,10 +6,9 @@
 bundle = ""
 module = "luatex-def"
 
--- Ignore ifpdf stuff
 sourcefiles =
   {
-    "luatex.def",
+    "luatex.def"
   }
 typesetfiles =
   {
@@ -17,6 +16,7 @@ typesetfiles =
 
 -- No automated tests for this bundle
 testfildir = ""
+
 
 -- Find and run the build system
 kpse.set_program_name ("kpsewhich")
