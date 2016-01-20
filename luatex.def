@@ -20,9 +20,9 @@
 %%
 %% This work has the LPPL maintenance status `maintained'.
 %%
-%% The Current Maintainer of this work is David Carlisle
+%% The Current Maintainer of this work is the LaTeX3 Project.
 %%
-%% https://github.com/davidcarlisle/luatex-def/issues
+%% https://github.com/latex3/luatex-def/issues
 %%
 %% This work consists of the file luatex.def.
 %%
@@ -54,7 +54,8 @@
 %
 % History
 %
-% 2015/12/30 Version 0.01 derved from pdftex.def
+% 2015/12/30 Version 0.01a derived from pdftex.def
+% 2016/01/20 Version 0.01b Moved to latex3 github, documentation changes
 %
 % Prefix of internal commands for this file `pdftex.def':
 % \GPT@ (Graphics bundle PdfTex driver, even though this is for luatex)
