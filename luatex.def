@@ -1,4 +1,4 @@
-\ProvidesFile{luatex.def}[2015/12/30 v0.01a Graphics/color for pdfTeX]
+\ProvidesFile{luatex.def}[2016/01/22 v0.01b Graphics/Color for luaTeX]
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%
 %% LaTeX Colour and Graphics support for luatex
