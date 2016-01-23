@@ -1,4 +1,4 @@
-\ProvidesFile{luatex.def}[2016/01/22 v0.01b Graphics/Color for luaTeX]
+\ProvidesFile{luatex.def}[2016/01/23 v0.01b Graphics/Color for luaTeX]
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%
 %% LaTeX Colour and Graphics support for luatex
@@ -55,7 +55,7 @@
 % History
 %
 % 2015/12/30 Version 0.01a derived from pdftex.def
-% 2016/01/20 Version 0.01b Moved to latex3 github, documentation changes
+% 2016/01/23 Version 0.01b Moved to latex3 github, documentation changes
 %
 % Prefix of internal commands for this file `pdftex.def':
 % \GPT@ (Graphics bundle PdfTex driver, even though this is for luatex)
