@@ -1,4 +1,4 @@
-\ProvidesFile{luatex.def}[2016/01/23 v0.01b Graphics/Color for luaTeX]
+\ProvidesFile{luatex.def}[2016/05/21 v0.01c Graphics/Color for luaTeX]
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%
 %% LaTeX Colour and Graphics support for luatex
@@ -1158,7 +1158,8 @@
   % * \InputIfFileExists has problems with parameters (#1).
   % * Implementation of \providecommand is insufficient in miniltx.tex
   \ltx@ifundefined{convertMPtoPDF}{%
-    \newcommand*{\convertMPtoPDF}[3]{%
+% 2016/05/21 v0.01c use \newcommand here not \newcommand*  graphics/4472
+\newcommand{\convertMPtoPDF}[3]{%
       \GPT@error{%
         Cannot convert ##1 from MPS to PDF.\MessageBreak
         The support file `supp-pdf.mkii' (supp-pdf.tex) is missing%
