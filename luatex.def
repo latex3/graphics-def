@@ -1,4 +1,4 @@
-\ProvidesFile{luatex.def}[2016/06/04 v0.01d Graphics/Color for luaTeX]
+\ProvidesFile{luatex.def}[2016/06/17 v0.01e Graphics/Color for luaTeX]
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%
 %% LaTeX Colour and Graphics support for luatex
@@ -60,6 +60,7 @@
 % 2016/01/23 Version 0.01b Moved to latex3 github, documentation changes
 % 2016/05/21 Version 0.01c fix for graphics/4472
 % 2016/06/24 Version 0.01d support the (no)setpagesize option.
+% 2016/06/17 Version 0.01e guards for contributed packages and plain TeX
 %
 % Prefix of internal commands for this file `pdftex.def':
 % \GPT@ (Graphics bundle PdfTex driver, even though this is for luatex)
@@ -107,9 +108,13 @@
   }\@ehc
   \outputmode=1 %
 \fi
-
+\@ifundefined{ifGin@setpagesize}
+  {\expandafter\let\csname ifGin@setpagesize\expandafter\endcsname
+                    \csname iftrue\endcsname}
+  {}
 \ifGin@setpagesize
-  \AtBeginDocument{%
+\ifx\paperwidth\@undefined\else
+\AtBeginDocument{%
 \ltx@IfUndefined{stockwidth}{%
   \ltx@IfUndefined{paperwidth}{%
   }{%
@@ -129,6 +134,7 @@
   \fi
 }%
 }
+\fi
 \fi
 
 % Colour Support. The following models may be used.
