@@ -9,8 +9,9 @@
 %% Copyright (C) 2000-2015 
 %% David Carlisle, Sebastian Rahtz, Hans Hagen,
 %% Heiko Oberdiek and Martin Schr\"oder
-%% 2016 Oberdiek Package Suport Group
-%%      https://github.com/ho-tex/pdftex-def/issues
+%%
+%% 2016 LaTeX3 project and Heiko Oberdiek 
+%%      https://github.com/latex3/graphics-def/issues
 %%
 %% This work may be distributed and/or modified under the
 %% conditions of the LaTeX Project Public License, either version 1.3c
@@ -23,7 +24,7 @@
 %% This work has the LPPL maintenance status `maintained'.
 %%
 %% The Current Maintainers of this work are
-%% LaTeX3 project and Heiko Oberdiek
+%% LaTeX3 project and Heiko Oberdiek 
 %%
 %% This work consists of the file pdftex.def.
 %%
@@ -1565,11 +1566,16 @@ E     \else
     \else
       \ifnum\driver@release>9 %
         \ifnum\pdfminorversion>3 %
-          \def\Gin@extensions{%
-            .png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,%
-            .PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2,%
-	    .eps%
-          }%
+     \@ifpackageloaded{pst-pdf}%          hv 20160630
+       {\def\Gin@extensions{%
+          .png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,%
+          .PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2}%
+       }%
+       {\def\Gin@extensions{%
+          .png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,%
+          .PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2,%
+          .eps}%
+       }%
         \fi
         \@namedef{Gin@rule@.jb2}#1{{jbig2}{.jb2}{#1}}%
         \@namedef{Gin@rule@.jbig2}#1{{jbig2}{.jbig2}{#1}}%
