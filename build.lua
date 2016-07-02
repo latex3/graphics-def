@@ -1,18 +1,18 @@
 #!/usr/bin/env texlua
 
--- Build script for "luatex-def" files
+-- Build script for "graphics-def" files
 
 -- Identify the bundle and module
 bundle = ""
-module = "luatex-def"
+module = "graphics-def"
 
 -- Just the one file to worry about
-installfiles = {"luatex.def"}
-sourcefiles  = {"luatex.def"}
+installfiles = {"*.def"}
+sourcefiles  = {"*.def"}
 typesetfiles = {}
 
 -- TDS info (not required at present)
-tdsroot = "luatex"
+--tdsroot = "luatex"
 
 -- No automated tests for this bundle
 testfildir = ""
