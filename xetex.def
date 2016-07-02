@@ -5,19 +5,26 @@
 %%  Ross Moore <ross@maths.mq.edu.au>
 %%  modified by Jonathan Kew et al.
 %%
+%%  Copyright 2016 LaTeX3 project and above named authors.
+%%
 %% This file is not part of the Standard LaTeX `Graphics Bundle'.
 %% It may be distributed under the terms of the LaTeX Project Public
 %% License, as described in lppl.txt in the base LaTeX distribution.
 %% Either version 1.0 or, at your option, any later version.
 %%
-%% This driver is developed at:
-%%   http://puszcza.gnu.org.ua/projects/latexfmxdef
-%% Please report bugs and patches through the tracker there.
-%% Official releases are made through CTAN:
-%%   http://www.ctan.org/pkg/xetex-def
+%% This work has the LPPL maintenance status `maintained'.
+%%
+%% The Current Maintainer of this work is the LaTeX3 Project.
+%%
+%% https://github.com/latex3/graphics-def/issues
+%%
 %% 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%  Version History
+%%
+%%  2016/07/02  [DPC] [v4.09] support new (no)setpagesize options of
+%%              color and graphics packages.
+%%
 %%  2016/04/06  [AK] [v4.08] Support new suffix .mps (or .MPS) for eps files
 %%              created by MetaPost. In TeX Live 2016, the option --mvorigin
 %%              for [x]dvipdfmx is necessary to include MetaPost-created eps
@@ -670,6 +677,38 @@
   \special{x:gsave}\special{x:scale \Gscale@x\space\Gscale@y}}
 \let\Gscale@end\Grot@end
 %
+
+%
+% (no)setpagesize option
+%
+\@ifundefined{ifGin@setpagesize}
+{\expandafter\let\csname ifGin@setpagesize\expandafter\endcsname
+\csname iftrue\endcsname}
+{}
+\ifGin@setpagesize
+\ifx\paperwidth\@undefined\else
+\AtBeginDocument{%
+\ltx@IfUndefined{stockwidth}{%
+\ltx@IfUndefined{paperwidth}{%
+}{%
+\ifdim\paperwidth>0pt\relax
+\ifdim\paperheight>0pt\relax
+\pdfpagewidth=\paperwidth
+\pdfpageheight=\paperheight
+\fi
+\fi
+}%
+}{%
+\ifdim\stockwidth>0pt\relax
+\ifdim\stockheight>0pt\relax
+\pdfpagewidth=\stockwidth
+\pdfpageheight=\stockheight
+\fi
+\fi
+}%
+}
+\fi
+\fi 
 
 \endinput
 %%
