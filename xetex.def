@@ -24,6 +24,7 @@
 %%
 %%  2016/07/02  [DPC] [v4.09] support new (no)setpagesize options of
 %%              color and graphics packages.
+%%              revert pagecolor code to match dvips
 %%
 %%  2016/04/06  [AK] [v4.08] Support new suffix .mps (or .MPS) for eps files
 %%              created by MetaPost. In TeX Live 2016, the option --mvorigin
@@ -117,7 +118,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % emacs-page
 \ProvidesFile{xetex.def}
-  [2016/04/06 v4.08 LaTeX color/graphics driver for XeTeX (TeX Live/RRM/JK)]
+  [2016/04/06 v4.08 LaTeX color/graphics driver for XeTeX (L3/RRM/JK)]
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % make sure we can use " with correct catcode
@@ -216,6 +217,11 @@
 
 %
 % v0.02t: support for \pagecolor
+% not used by default but may be re-activated 
+% with \oldxetexpagecolorcode
+% see http://tug.org/pipermail/xetex/2016-June/026696.html
+%
+\def\oldxetexpagecolorcode{%
 \def\set@page@color{%
   \global\let\current@page@color\current@color
   \@ifundefined{GXTorg@shipout}{%
@@ -242,7 +248,9 @@
       \special{background \current@page@color}%
     }%
   }{}%
+}%
 }
+\def\set@page@color{\special{background \current@color}}
 
 \def\set@color@stack{%
   \special{color push \current@color}%
