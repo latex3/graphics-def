@@ -118,7 +118,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % emacs-page
 \ProvidesFile{xetex.def}
-  [2016/04/06 v4.08 LaTeX color/graphics driver for XeTeX (L3/RRM/JK)]
+  [2016/07/02 v4.09 LaTeX color/graphics driver for XeTeX (L3/RRM/JK)]
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % make sure we can use " with correct catcode

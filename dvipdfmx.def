@@ -16,7 +16,7 @@
 %% https://github.com/latex3/graphics-def/issues
 %%
 \ProvidesFile{dvipdfmx.def}
-  [2016/06/02 v4.10 LaTeX color/graphics driver for dvipdfmx (L3/ChoF)]
+  [2016/07/02 v4.10 LaTeX color/graphics driver for dvipdfmx (L3/ChoF)]
 %
 \def\c@lor@arg#1{%
   \dimen@#1\p@
