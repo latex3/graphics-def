@@ -22,6 +22,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%  Version History
 %%
+%%  2016/07/09  [v4.10] don't set pagesize when geometry.sty is used,
+%%              because it can set pagesize by itself
+%%
 %%  2016/07/02  [DPC] [v4.09] support new (no)setpagesize options of
 %%              color and graphics packages.
 %%              revert pagecolor code to match dvips
@@ -118,7 +121,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % emacs-page
 \ProvidesFile{xetex.def}
-  [2016/07/02 v4.09 LaTeX color/graphics driver for XeTeX (L3/RRM/JK)]
+  [2016/07/09 v4.10 LaTeX color/graphics driver for XeTeX (L3/RRM/JK)]
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % make sure we can use " with correct catcode
@@ -690,33 +693,35 @@
 % (no)setpagesize option
 %
 \@ifundefined{ifGin@setpagesize}
-{\expandafter\let\csname ifGin@setpagesize\expandafter\endcsname
-\csname iftrue\endcsname}
-{}
+  {\expandafter\let\csname ifGin@setpagesize\expandafter\endcsname
+                    \csname iftrue\endcsname}
+  {}
 \ifGin@setpagesize
 \ifx\paperwidth\@undefined\else
 \AtBeginDocument{%
-\ltx@IfUndefined{stockwidth}{%
-\ltx@IfUndefined{paperwidth}{%
-}{%
-\ifdim\paperwidth>0pt\relax
-\ifdim\paperheight>0pt\relax
-\pdfpagewidth=\paperwidth
-\pdfpageheight=\paperheight
-\fi
-\fi
-}%
-}{%
-\ifdim\stockwidth>0pt\relax
-\ifdim\stockheight>0pt\relax
-\pdfpagewidth=\stockwidth
-\pdfpageheight=\stockheight
-\fi
-\fi
-}%
+\@ifpackageloaded{geometry}{}{%
+  \ltx@IfUndefined{stockwidth}{%
+  \ltx@IfUndefined{paperwidth}{%
+  }{%
+    \ifdim\paperwidth>0pt\relax
+      \ifdim\paperheight>0pt\relax
+        \pdfpagewidth=\paperwidth
+        \pdfpageheight=\paperheight
+      \fi
+    \fi
+  }%
+  }{%
+    \ifdim\stockwidth>0pt\relax
+      \ifdim\stockheight>0pt\relax
+        \pdfpagewidth=\stockwidth
+        \pdfpageheight=\stockheight
+      \fi
+    \fi
+  }%
+  }%
 }
 \fi
-\fi 
+\fi
 
 \endinput
 %%

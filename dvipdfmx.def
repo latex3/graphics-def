@@ -16,7 +16,7 @@
 %% https://github.com/latex3/graphics-def/issues
 %%
 \ProvidesFile{dvipdfmx.def}
-  [2016/07/07 v4.11 LaTeX color/graphics driver for dvipdfmx (L3/ChoF)]
+  [2016/07/09 v4.12 LaTeX color/graphics driver for dvipdfmx (L3/ChoF)]
 %
 \def\c@lor@arg#1{%
   \dimen@#1\p@
@@ -426,6 +426,9 @@
 % v4.11
 % Use \special{pdf:pagesize ...} instead of \special{papersize=...}
 % to support \mag (dvipdfmx only)
+% v4.12
+% Do not set \special when geometry.sty is used, because it can
+% set papersize by itself
 \@ifundefined{ifGin@setpagesize}
 {\expandafter\let\csname ifGin@setpagesize\expandafter\endcsname
 \csname iftrue\endcsname}
@@ -433,6 +436,7 @@
 \ifGin@setpagesize
 \ifx\paperwidth\@undefined\else
 \AtBeginDocument{\AtBeginDvi{%
+\@ifpackageloaded{geometry}{}{%
 \begingroup
 \ifx\stockwidth\@undefined\else
 \paperwidth\stockwidth
@@ -443,7 +447,9 @@
 \special{pdf:pagesize width \the\paperwidth\space height \the\paperheight}%
 \fi
 \fi
-\endgroup}}
+\endgroup
+}%
+}}
 \fi
 \fi 
 
