@@ -1939,7 +1939,7 @@ E     \else
             \else
 	      \@ifpackageloaded{graphics}{
               \ifnum\pdf@shellescape>0 %
-	      % only add .eps to file extension list of epstopdf is loaded
+	      % only add .eps to file extension list if epstopdf is loaded
 	        \edef\Gin@extensions{\Gin@extensions,.eps}%
                 \RequirePackage{epstopdf-base}[2009/07/12]%
               \fi}{}
