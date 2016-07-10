@@ -115,6 +115,9 @@
 \ifGin@setpagesize
 \ifx\paperwidth\@undefined\else
 \AtBeginDocument{%
+% If a package has changed \mag, assume it knows what it is doing
+% and leave page size alone
+\ifnum\mag=\@m
 \ltx@IfUndefined{stockwidth}{%
   \ltx@IfUndefined{paperwidth}{%
   }{%
@@ -133,6 +136,7 @@
     \fi
   \fi
 }%
+\fi
 }
 \fi
 \fi

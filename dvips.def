@@ -155,7 +155,11 @@
   {}
 \ifGin@setpagesize
 \ifx\paperwidth\@undefined\else
-  \AtBeginDocument{\AtBeginDvi{%
+  \AtBeginDocument{%
+% If a package has changed \mag, assume it knows what it is doing
+% and leave page size alone
+\ifnum\mag=\@m
+  \AtBeginDvi{%
     \begingroup
     \ifx\stockwidth\@undefined\else
       \paperwidth\stockwidth
@@ -166,7 +170,9 @@
         \special{papersize=\the\paperwidth,\the\paperheight}%
       \fi
     \fi
-    \endgroup}}
+    \endgroup}%
+    \fi
+    }
 \fi
 \fi
 \def\Gin@extensions{.eps,.ps,.eps.gz,.ps.gz,.eps.Z,.mps}

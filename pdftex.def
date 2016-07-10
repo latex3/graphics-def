@@ -1,4 +1,4 @@
-\ProvidesFile{pdftex.def}[2016/07/01 v0.06i Graphics/color for pdfTeX]
+\ProvidesFile{pdftex.def}[2016/07/10 v0.06j Graphics/color for pdfTeX]
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%
 %% LaTeX Colour and Graphics support for PDFTeX
@@ -268,7 +268,11 @@
 %  * typo
 % 2016/06/17 v0.6h (DPC)
 %  * guards for contributed packages and plain TeX
+% 2016/07/1o v0.6j (DPC)
+%  * don't set page size for non standard \mag
 %
+
+
 % Prefix of internal commands for this file `pdftex.def':
 %   \GPT@ (Graphics bundle PdfTex driver)
 
@@ -452,6 +456,9 @@
 \ifGin@setpagesize
 \ifx\paperwidth\@undefined\else
 \AtBeginDocument{%
+% If a package has changed \mag, assume it knows what it is doing
+% and leave page size alone
+\ifnum\mag=\@m
   \ltx@IfUndefined{stockwidth}{%
   \ltx@IfUndefined{paperwidth}{%
   }{%
@@ -470,6 +477,7 @@
     \fi
   \fi
 }%
+\fi
 }
 \fi
 \fi

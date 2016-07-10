@@ -16,7 +16,7 @@
 %% https://github.com/latex3/graphics-def/issues
 %%
 \ProvidesFile{dvipdfmx.def}
-  [2016/07/07 v4.11 LaTeX color/graphics driver for dvipdfmx (L3/ChoF)]
+  [2016/07/10 v4.12 LaTeX color/graphics driver for dvipdfmx (L3/ChoF)]
 %
 \def\c@lor@arg#1{%
   \dimen@#1\p@
@@ -432,7 +432,11 @@
 {}
 \ifGin@setpagesize
 \ifx\paperwidth\@undefined\else
-\AtBeginDocument{\AtBeginDvi{%
+\AtBeginDocument{%
+% If a package has changed \mag, assume it knows what it is doing
+% and leave page size alone
+\ifnum\mag=\@m
+\AtBeginDvi{%
 \begingroup
 \ifx\stockwidth\@undefined\else
 \paperwidth\stockwidth
@@ -443,7 +447,9 @@
 \special{pdf:pagesize width \the\paperwidth\space height \the\paperheight}%
 \fi
 \fi
-\endgroup}}
+\endgroup}%
+\fi
+}
 \fi
 \fi 
 
