@@ -1566,16 +1566,9 @@ E     \else
     \else
       \ifnum\driver@release>9 %
         \ifnum\pdfminorversion>3 %
-     \@ifpackageloaded{pst-pdf}%          hv 20160630
-       {\def\Gin@extensions{%
+          \def\Gin@extensions{%
           .png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,%
           .PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2}%
-       }%
-       {\def\Gin@extensions{%
-          .png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,%
-          .PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2,%
-          .eps}%
-       }%
         \fi
         \@namedef{Gin@rule@.jb2}#1{{jbig2}{.jb2}{#1}}%
         \@namedef{Gin@rule@.jbig2}#1{{jbig2}{.jbig2}{#1}}%
@@ -1946,6 +1939,8 @@ E     \else
             \else
 	      \@ifpackageloaded{graphics}{
               \ifnum\pdf@shellescape>0 %
+	      % only add .eps to file extension list of epstopdf is loaded
+	        \edef\Gin@extensions{\Gin@extensions,.eps}%
                 \RequirePackage{epstopdf-base}[2009/07/12]%
               \fi}{}
             \fi

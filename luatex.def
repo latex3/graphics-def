@@ -997,16 +997,9 @@
   \@namedef{Gin@rule@.jpeg}#1{{jpg}{.jpeg}{#1}}%
   \@namedef{Gin@rule@.JPG}#1{{jpg}{.JPG}{#1}}%
   \@namedef{Gin@rule@.JPEG}#1{{jpg}{.JPEG}{#1}}%
-     \@ifpackageloaded{pst-pdf}%          hv 20160630
-       {\def\Gin@extensions{%
+       \def\Gin@extensions{%
           .png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,%
           .PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2}%
-       }%
-       {\def\Gin@extensions{%
-          .png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,%
-          .PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2,%
-          .eps}%
-       }%
         \@namedef{Gin@rule@.jb2}#1{{jbig2}{.jb2}{#1}}%
         \@namedef{Gin@rule@.jbig2}#1{{jbig2}{.jbig2}{#1}}%
 
@@ -1263,6 +1256,8 @@
    \ifx\includegraphics\@undefined\else
         \@ifpackageloaded{pst-pdf}{}{%
           \@ifpackageloaded{pdftricks}{}{%
+	   % only add .eps to file extension list if epstopdf is loaded
+	    \edef\Gin@extensions{\Gin@extensions,.eps}%
             \RequirePackage{epstopdf-base}%
 	    }%
 	    }%
