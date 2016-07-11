@@ -22,7 +22,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%  Version History
 %%
-%%  2016/07/10  [DPC] [v4.10] \mag test added to all the files
+%%  2016/07/11  [DPC] [v4.10] \mag test added to all the files
+%%              Remove spurious dependency on external packages.
+%%              Avoid \@ehd help text (not defined by miniltx)
 %%
 %%  2016/07/02  [DPC] [v4.09] support new (no)setpagesize options of
 %%              color and graphics packages.
@@ -120,7 +122,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % emacs-page
 \ProvidesFile{xetex.def}
-  [2016/07/02 v4.09 LaTeX color/graphics driver for XeTeX (L3/RRM/JK)]
+  [2016/07/11 v4.10 LaTeX color/graphics driver for XeTeX (L3/RRM/JK)]
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % make sure we can use " with correct catcode
@@ -129,7 +131,6 @@
 }
 
 % miniltx.tex does not define \PackageWarning
-% or \PackageWarningNoLine.
 \@ifundefined{PackageWarning}{%
   \def\PackageWarning#1#2{%
     \begingroup
@@ -141,11 +142,9 @@
     \endgroup
   }%
 }{}
-\@ifundefined{PackageWarningNoLine}{%
- \def\PackageWarningNoLine#1#2{%
-   \PackageWarning{#1}{#2\@gobble}%
- }%
-}{}
+
+\def\GPT@warn{\PackageWarning{xetex.def}}%
+
 \@ifundefined{on@line}{%
  \def\on@line{ on input line \the\inputlineno}%
 }{}
@@ -169,7 +168,7 @@
   \dimen@#1\p@
   \ifdim\dimen@<\z@\dimen@\maxdimen\fi
   \ifdim\dimen@>\p@
-    \PackageError{color}{Argument `#1' not in range [0,1]}\@ehd
+    \PackageError{color}{Argument `#1' not in range [0,1]}{}%
   \fi}
 \def\color@gray#1#2{%
   \c@lor@arg{#2}%
@@ -211,7 +210,7 @@
 \def\color@named#1#2{\c@lor@@named#2,,\@@#1}
 \def\c@lor@@named#1,#2,#3\@@#4{%
   \@ifundefined{col@#1}%
-    {\PackageError{color}{Undefined color `#1'}\@ehd}%
+    {\PackageError{color}{Undefined color `#1'}{}}%
   {\edef#4{ #1}}%
   }
 
@@ -306,29 +305,17 @@
 %
 % import from pdftex.def to support pagebox=artbox etc. in XeLaTeX
 %
-\begingroup\expandafter\expandafter\expandafter\endgroup
-\expandafter\ifx\csname RequirePackage\endcsname\relax
-  \input infwarerr.sty\relax
-  \input ltxcmds.sty\relax
-\else
-  \RequirePackage{infwarerr}[2007/09/09]%
-  \RequirePackage{ltxcmds}[2010/12/07]%
-\fi
-
-\def\GPT@error{\@PackageError{xetex.def}}%
-\def\GPT@warn{\@PackageWarning{xetex.def}}%
-%
 % \Gin@XeTeX@page: page number of pdf image or \@empty otherwise.
 % This code adapted from  pdftex.def
 \let\Gin@XeTeX@page\@empty
-\let\GPT@pagebox\ltx@empty
+\let\GPT@pagebox\@empty
 \begingroup
   \toks@{\define@key{Gin}{page}{\def\Gin@XeTeX@page{#1}}
 \define@key{Gin}{pagebox}{%
   \expandafter\let\expandafter\GPT@pagebox%
       \csname GPT@pagebox@#1\endcsname
   \ifx\GPT@pagebox\relax
-    \let\GPT@pagebox\ltx@empty
+    \let\GPT@pagebox\@empty
     \GPT@warn{%
       Unknown value `#1' for `pagebox'.\MessageBreak
       Supported values:\MessageBreak
@@ -375,7 +362,7 @@
     }%
   }\type@ext
   \ifx\type@ext\G@pdf@ext
-   \ifx\GPT@pagebox\ltx@empty\else
+   \ifx\GPT@pagebox\@empty\else
      \edef\picpagebox{ \GPT@pagebox}\fi
    \ifx\Gin@XeTeX@page\@empty\else
      \edef\picpage{ page\Gin@XeTeX@page}\fi
@@ -504,7 +491,7 @@
    \ifx\type@ext\G@pdf@ext
     \ifx\Gin@XeTeX@page\@empty \def\picpage{}%
     \else \edef\picpage{ page\Gin@XeTeX@page}\fi
-    \ifx\GPT@pagebox\ltx@empty \def\picpagebox{}%
+    \ifx\GPT@pagebox\@empty \def\picpagebox{}%
     \else \edef\picpagebox{ \GPT@pagebox}\fi
    \fi
    \setbox0=\hbox{%
@@ -701,8 +688,8 @@
 % If a package has changed \mag, assume it knows what it is doing
 % and leave page size alone
 \ifnum\mag=\@m
-\ltx@IfUndefined{stockwidth}{%
-\ltx@IfUndefined{paperwidth}{%
+\@ifundefined{stockwidth}{%
+\@ifundefined{paperwidth}{%
 }{%
 \ifdim\paperwidth>0pt\relax
 \ifdim\paperheight>0pt\relax

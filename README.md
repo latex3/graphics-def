@@ -1,6 +1,6 @@
 # graphics-def
 
-##  2016/07/10 release
+##  2016/07/11 release
 
 `.def` files for latex color and graphics packages,
 contributed by multiple authors, extending the collection
