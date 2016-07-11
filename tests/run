@@ -1,0 +1,10 @@
+latex psf-test
+dvips -o psf-test-pics.ps psf-test
+ps2pdf psf-test-pics.ps  
+pdflatex psf-test
+lualatex psf-test
+
+tex plain-tst1;dvips plain-tst1;ps2pdf plain-tst1.ps
+pdftex plain-tst1
+xetex plain-tst1
+luatex plain-tst1

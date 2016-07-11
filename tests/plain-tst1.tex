@@ -1,0 +1,23 @@
+
+\input graphicx
+\input color
+
+% test warnings work, but not in dvips.def yet?
+\expandafter\ifx\csname GPT@pagebox@cropbox\endcsname\relax\else
+\setkeys{Gin}{pagebox=rubbish}
+\fi
+
+\textcolor{red}{hello}
+
+
+aaa \rotatebox{45}{xxx} bbb
+
+\includegraphics[scale=.5]{example-image}
+
+\scrollmode 
+% test error message, but don't but bad color into MVL
+\setbox0\hbox{{\color[gray]{-8}}}
+
+abc
+
+\bye
