@@ -134,6 +134,8 @@
 \@ifundefined{PackageWarning}{%
   \def\PackageWarning#1#2{%
     \begingroup
+      \def\@spaces{\space\space\space\space}%
+      \ifx\on@line\@undefined\def\on@line{}\fi
       \newlinechar=10 %
       \def\MessageBreak{%
         ^^J(#1)\@spaces\@spaces\@spaces\@spaces
