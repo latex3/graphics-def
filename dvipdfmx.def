@@ -16,13 +16,30 @@
 %% https://github.com/latex3/graphics-def/issues
 %%
 \ProvidesFile{dvipdfmx.def}
-  [2016/07/10 v4.12 LaTeX color/graphics driver for dvipdfmx (L3/ChoF)]
+  [2016/07/11 v4.12 LaTeX color/graphics driver for dvipdfmx (L3/ChoF)]
 %
+% miniltx.tex does not define \PackageWarning
+\@ifundefined{PackageWarning}{%
+  \def\PackageWarning#1#2{%
+    \begingroup
+      \def\@spaces{\space\space\space\space}%
+      \ifx\on@line\@undefined\def\on@line{}\fi
+      \newlinechar=10 %
+      \def\MessageBreak{%
+        ^^J(#1)\@spaces\@spaces\@spaces\@spaces
+      }%
+      \immediate\write16{^^JPackage #1 Warning: #2\on@line.^^J}%
+    \endgroup
+  }%
+}{}
+
+\def\GPT@warn{\PackageWarning{dvipdfmx.def}}%
+
 \def\c@lor@arg#1{%
   \dimen@#1\p@
   \ifdim\dimen@<\z@\dimen@\maxdimen\fi
   \ifdim\dimen@>\p@
-    \PackageError{color}{Argument `#1' not in range [0,1]}\@ehd
+    \PackageError{color}{Argument `#1' not in range [0,1]}{}%
   \fi}
 \def\color@gray#1#2{%
   \c@lor@arg{#2}%
@@ -66,7 +83,7 @@
 \def\color@named#1#2{\c@lor@@named#2,,\@@#1}
 \def\c@lor@@named#1,#2,#3\@@#4{%
   \@ifundefined{col@#1}%
-    {\PackageError{color}{Undefined color `#1'}\@ehd}%
+    {\PackageError{color}{Undefined color `#1'}{}}%
   {\edef#4{ #1}}%
   }
 \def\c@lor@to@ps#1 #2\@@{\csname c@lor@ps@#1\endcsname#2 \@@}
@@ -95,18 +112,7 @@
 %
 % import from pdftex.def
 %
-\begingroup\expandafter\expandafter\expandafter\endgroup
-\expandafter\ifx\csname RequirePackage\endcsname\relax
-  \input infwarerr.sty\relax
-  \input ltxcmds.sty\relax
-\else
-  \RequirePackage{infwarerr}[2007/09/09]%
-  \RequirePackage{ltxcmds}[2010/12/07]%
-\fi
-
-\def\GPT@error{\@PackageError{dvipdfmx.def}}%
-\def\GPT@warn{\@PackageWarning{dvipdfmx.def}}%
-\let\GPT@pagebox@option\ltx@empty
+\let\GPT@pagebox@option\@empty
 \begingroup
 \toks@{%
 \define@key{Gin}{page}{\def\Gin@page{#1}}
@@ -117,7 +123,7 @@
   \expandafter\let\expandafter\GPT@pagebox%
       \csname GPT@pagebox@#1\endcsname
   \ifx\GPT@pagebox\relax
-    \let\GPT@pagebox\ltx@empty
+    \let\GPT@pagebox\@empty
     \GPT@warn{%
       Unknown value `#1' for `pagebox'.\MessageBreak
       Supported values:\MessageBreak
@@ -128,10 +134,10 @@
   \fi%
 }%
 }
-\ltx@IfUndefined{define@key}{
+\@ifundefined{define@key}{
     \edef\x{\endgroup
       \noexpand\AtBeginDocument{%
-        \noexpand\ltx@IfUndefined{define@key}{}{\the\toks@}%
+        \noexpand\@ifundefined{define@key}{}{\the\toks@}%
       }%
     }\x
   }{%
@@ -184,7 +190,7 @@
     \@latex@error
       {Cannot run pipe command. Try --shell-escape^^J%
        (--enable-pipes in MikTeX) option}%
-      \@ehc
+      {}%
   \else
     \loop
       \read\@inputcheck to\@tempa
@@ -211,7 +217,7 @@
       \@latex@error
         {Cannot run pipe command. Try --shell-escape^^J%
          (--enable-pipes in MikTeX) option}%
-        \@ehc
+        {}%
     \else
       \loop
         \read\@inputcheck to\@tempa
@@ -235,7 +241,7 @@
   \else
     \@latex@error
       {Cannot determine size of image (no BoundingBox)}%
-      \@ehc
+      {}%
     \gdef\@gtempa{0 0 72 72 }%
   \fi
   \endgroup
@@ -246,14 +252,14 @@
 \def\Gin@page{!}
 \def\Gin@mask{!}
 \newif\ifGin@interpolate\Gin@interpolatefalse
-\let\GPT@pagebox\ltx@empty
+\let\GPT@pagebox\@empty
 \def\Ginclude@pdf#1{%
  \message{<#1>}%
   \bgroup
   \def\@tempa{!}%
     \special{pdf:epdf\space
       \ifx\Gin@page\@tempa\else page\space\Gin@page\space\fi
-      \ifx\GPT@pagebox\ltx@empty\else pagebox\space\GPT@pagebox\space\fi
+      \ifx\GPT@pagebox\@empty\else pagebox\space\GPT@pagebox\space\fi
       bbox\space\Gin@llx\space\Gin@lly\space\Gin@urx\space\Gin@ury\space
       clip\space\ifGin@clip 1\else 0\fi\space
       \ifx\Gin@scalex\@tempa\else width\space\the\Gin@req@width\space\fi
