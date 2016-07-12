@@ -1,10 +1,36 @@
 latex psf-test
-dvips -o psf-test-pics.ps psf-test
-ps2pdf psf-test-pics.ps  
+  dvips -o psf-test-pics.ps psf-test
+  ps2pdf psf-test-pics.ps  
 pdflatex psf-test
 lualatex psf-test
 
-tex plain-tst1;dvips plain-tst1;ps2pdf plain-tst1.ps
+latex coltest
+  dvips coltest
+  ps2pdf coltest.ps
+pdflatex coltest
+lualatex coltest
+xelatex coltest
+
+	
+# latex grftest
+#   dvips grftest
+#   ps2pdf grftest
+pdflatex grftest
+lualatex grftest
+xeletex grftest
+
+tex plain-tst1
+  dvips plain-tst1
+  ps2pdf plain-tst1.ps
 pdftex plain-tst1
 xetex plain-tst1
 luatex plain-tst1
+
+
+cp ../dvipdfmx.def dvips.def
+latex coltest
+  dvipdfmx coltest
+etex plain-tst1
+  dvipdfmx plain-tst1
+rm dvips.def
+
