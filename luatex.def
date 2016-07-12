@@ -360,6 +360,7 @@
             Supported values:\MessageBreak
             mediabox, cropbox, bleedbox, trimbox, artbox%
           }%
+	\fi
       }%
       \def\GPT@pagebox@mediabox{mediabox}%
       \let\GPT@pagebox@cropbox\ltx@empty
