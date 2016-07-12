@@ -1,4 +1,4 @@
-\ProvidesFile{luatex.def}[2016/07/01 v0.01f Graphics/Color for luaTeX]
+\ProvidesFile{luatex.def}[2016/07/11 v0.01f Graphics/Color for luaTeX]
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%
 %% LaTeX Colour and Graphics support for luatex
@@ -61,6 +61,7 @@
 % 2016/05/21 Version 0.01c fix for graphics/4472
 % 2016/06/24 Version 0.01d support the (no)setpagesize option.
 % 2016/06/17 Version 0.01e guards for contributed packages and plain TeX
+% 2016/07/11 Version 0.01f test for \mag added to all drivers, missing \fi in pagebox 
 %
 % Prefix of internal commands for this file `pdftex.def':
 % \GPT@ (Graphics bundle PdfTex driver, even though this is for luatex)
