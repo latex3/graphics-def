@@ -1,4 +1,4 @@
-\ProvidesFile{luatex.def}[2016/07/11 v0.01f Graphics/Color for luaTeX]
+\ProvidesFile{luatex.def}[2016/08/17 v0.01g Graphics/Color for luaTeX]
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%
 %% LaTeX Colour and Graphics support for luatex
@@ -1252,6 +1252,9 @@
   \@onlypreamble\LoadMetaPostSpecialExtensions
 }
 
+
+% Bail out here if it's not latex or a better emulation than miniltx
+\ifx\@ifpackageloaded\@undefined\expandafter\endinput\fi
 
 \ifx\DoNotLoadEpstopdf\@undefined
 % EPS to PDF conversion
