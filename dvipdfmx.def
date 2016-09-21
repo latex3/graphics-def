@@ -367,7 +367,8 @@
 \special{pdf:btrans rotate \Grot@angle}}
 \def\Grot@end{\special{pdf:etrans}}
 \def\Gscale@start{%
-\special{pdf:btrans xscale \Gscale@x\space yscale \Gscale@y}}
+  \special{pdf:btrans}%
+  \special{pdf:literal \Gscale@x\space 0 0 \Gscale@y\space 0 0 cm}}
 \def\Gscale@end{\special{pdf:etrans}}
 \def\Gin@PS@raw#1{\special{ps: #1}}
 \def\Gin@PS@restored#1{\special{" #1}}
