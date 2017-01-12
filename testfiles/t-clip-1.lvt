@@ -1,6 +1,7 @@
 \documentclass{article}
 \usepackage{graphicx}
 \setlength\parskip{20pt}
+
 \begin{document}
 
 
@@ -9,5 +10,15 @@
 \fbox{\includegraphics[bb=13pt 65pt 63pt 115pt,clip]{clip-1-2.jpg}}
 
 \fbox{\includegraphics[bb=95pt 15pt 135pt 55pt,clip]{clip-1-2.jpg}}
+
+\fbox{\includegraphics[bb=0 0 63pt 115pt,clip]{clip-1-2.jpg}}
+
+\clearpage
+
+\fbox{\includegraphics*[13pt,65pt][63pt,115pt]{clip-1-2.jpg}}
+
+\fbox{\includegraphics*[95pt,15pt][135pt,55pt]{clip-1-2.jpg}}
+
+\fbox{\includegraphics*[0,0][63pt,115pt]{clip-1-2.jpg}}
 
 \end{document}

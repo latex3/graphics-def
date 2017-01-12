@@ -10,4 +10,8 @@
 
 \fbox{\includegraphics*[95pt,15pt][135pt,55pt]{clip-1-2.jpg}}
 
+\fbox{\includegraphics*[0,0][63pt,115pt]{clip-1-2.jpg}}
+
+\fbox{\includegraphics*[63pt,115pt]{clip-1-2.jpg}}
+
 \end{document}
