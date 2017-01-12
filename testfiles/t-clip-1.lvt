@@ -5,6 +5,8 @@
 \begin{document}
 
 
+jpeg kv-syntax
+
 \fbox{\includegraphics{clip-1-2.jpg}}
 
 \fbox{\includegraphics[bb=13pt 65pt 63pt 115pt,clip]{clip-1-2.jpg}}
@@ -15,10 +17,34 @@
 
 \clearpage
 
+jpeg [][]-syntax
+
 \fbox{\includegraphics*[13pt,65pt][63pt,115pt]{clip-1-2.jpg}}
 
 \fbox{\includegraphics*[95pt,15pt][135pt,55pt]{clip-1-2.jpg}}
 
 \fbox{\includegraphics*[0,0][63pt,115pt]{clip-1-2.jpg}}
+
+\clearpage
+
+png kv-syntax
+
+\fbox{\includegraphics{clip-1-2.png}}
+
+\fbox{\includegraphics[bb=13pt 65pt 63pt 115pt,clip]{clip-1-2.png}}
+
+\fbox{\includegraphics[bb=95pt 15pt 135pt 55pt,clip]{clip-1-2.png}}
+
+\fbox{\includegraphics[bb=0 0 63pt 115pt,clip]{clip-1-2.png}}
+
+\clearpage
+
+png [][]-syntax
+
+\fbox{\includegraphics*[13pt,65pt][63pt,115pt]{clip-1-2.png}}
+
+\fbox{\includegraphics*[95pt,15pt][135pt,55pt]{clip-1-2.png}}
+
+\fbox{\includegraphics*[0,0][63pt,115pt]{clip-1-2.png}}
 
 \end{document}
