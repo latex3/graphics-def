@@ -1,4 +1,4 @@
-\ProvidesFile{pdftex.def}[2016/07/10 v0.06j Graphics/color for pdfTeX]
+\ProvidesFile{pdftex.def}[2017/01/12 v0.06k Graphics/color for pdfTeX]
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%
 %% LaTeX Colour and Graphics support for PDFTeX
@@ -10,7 +10,7 @@
 %% David Carlisle, Sebastian Rahtz, Hans Hagen,
 %% Heiko Oberdiek and Martin Schr\"oder
 %%
-%% 2016 LaTeX3 project and Heiko Oberdiek 
+%% 2016-2017 LaTeX3 project and Heiko Oberdiek 
 %%      https://github.com/latex3/graphics-def/issues
 %%
 %% This work may be distributed and/or modified under the
@@ -268,8 +268,10 @@
 %  * typo
 % 2016/06/17 v0.6h (DPC)
 %  * guards for contributed packages and plain TeX
-% 2016/07/1o v0.6j (DPC)
+% 2016/07/10 v0.6j (DPC)
 %  * don't set page size for non standard \mag
+% 2017/01/12 v0.6k (DPC)
+%  * graphics options as viewport for graphics/4499
 %
 
 
@@ -1313,6 +1315,16 @@ E     \else
   }%
 }
 \def\Ginclude@pdftex#1{%
+  % basic faking of viewport settings so graphic-s- interface
+  % does something sensible
+  \ifx\GPT@AttrShort\@undefined
+    \GPT@info{Interpreting graphics options as viewport}%
+    \let\GPT@AttrShort\@empty
+    \let\Gin@vllx\Gin@llx
+    \let\Gin@vlly\Gin@lly
+    \let\Gin@vurx\Gin@urx
+    \let\Gin@vury\Gin@ury
+  \fi
   \def\@tempa{!}%
   \ifx\Gin@scaley\@tempa
     \let\Gin@scaley\Gin@scalex
