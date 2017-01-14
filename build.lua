@@ -14,8 +14,8 @@ typesetfiles = {}
 -- TDS info (not required at present)
 --tdsroot = "luatex"
 
--- No automated tests for this bundle
-testfildir = ""
+-- No automated tests for this bundle (yet)
+testfiledir = ""
 
 
 -- Find and run the build system
