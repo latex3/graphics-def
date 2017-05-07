@@ -673,8 +673,7 @@
 \def\Grot@end{\special{x:grestore}}
 
 \def\Gscale@start{%
-  \special{x:gsave}%
-  \special{pdf:literal \Gscale@x\space 0 0 \Gscale@y\space 0 0 cm}}
+  \special{x:gsave}\special{x:scale \Gscale@x\space\Gscale@y}}
 \let\Gscale@end\Grot@end
 %
 
