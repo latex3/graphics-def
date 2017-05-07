@@ -372,17 +372,16 @@
 \ifx\kanjiskip\@undefined
 \def\Gscale@start{%
   \special{pdf:btrans}%
-  \special{pdf:literal \Gscale@x\space 0 0 \Gscale@y\space 0 0 cm}}
+  \special{x:gscale \Gscale@x\space\Gscale@y}
 \else
 \edef\Gscale@start{%
   \special{pdf:btrans}%
-  \special{pdf:literal
+  \special{x:gscale
   \expandafter\noexpand\csname iftdir\endcsname
-    \noexpand\Gscale@y\noexpand\space 0 0 \noexpand\Gscale@x\noexpand\space
+    \noexpand\Gscale@y\noexpand\space\noexpand\Gsacle@x
   \expandafter\noexpand\csname else\endcsname
-    \noexpand\Gscale@x\noexpand\space 0 0 \noexpand\Gscale@y\noexpand\space
-  \expandafter\noexpand\csname fi\endcsname
-  0 0 cm}}
+    \noexpand\Gscale@x\noexpand\space\noexpand\Gscale@y
+  \expandafter\noexpand\csname fi\endcsname}}
 \fi
 %
 \def\Gscale@end{\special{pdf:etrans}}
