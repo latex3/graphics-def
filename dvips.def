@@ -1,14 +1,6 @@
-%%
-%% This is file `dvips.def',
-%% original generated with the docstrip utility.
-%%
-%% The original source files were:
-%%
-%% drivers.dtx  (with options: `dvips,color1,psrulesZ,dosrules,macrules')
-%% 
-%% drivers.dtx Copyright (C) 1994      David Carlisle Sebastian Rahtz
-%%             Copyright (C) 1995 1996 1997 1998 1999 David Carlisle
-%%             Copyright (C) 2000--2016 David Carlisle, LaTeX3 Project
+%% dvips.def Copyright (C) 1994      David Carlisle Sebastian Rahtz
+%%           Copyright (C) 1995-1999 David Carlisle
+%%           Copyright (C) 2000-2017 David Carlisle, LaTeX3 Project
 %%
 %% This work may be distributed and/or modified under the
 %% conditions of the LaTeX Project Public License, either version 1.3c
@@ -25,7 +17,7 @@
 %% https://github.com/latex3/graphics-def/issues
 %%
 \ProvidesFile{dvips.def}
-        [2016/07/10 v3.1a Driver-dependent file (DPC,SPQR)]
+  [2017/06/01 v3.1b Graphics/color driver for dvips]
 \def\c@lor@arg#1{%
   \dimen@#1\p@
   \ifdim\dimen@<\z@\dimen@\maxdimen\fi
@@ -191,5 +183,3 @@
 \@namedef{Gin@rule@.pict}#1{{pict}{}{#1}}
 \@namedef{Gin@rule@.pntg}#1{{pntg}{}{#1}}
 \endinput
-%%
-%% End of file `dvips.def'.
