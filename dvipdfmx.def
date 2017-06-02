@@ -126,10 +126,8 @@
   \def\@tempa{!}%
     \special{pdf:#2\space
       \ifx\Gin@page\@empty\else page\space\Gin@page\space\fi
-      \ifx\Gin@ollx\@undefined\else
-        bbox\space\Gin@llx\space\Gin@lly\space\Gin@urx\space\Gin@ury\space
-        clip\space\ifGin@clip 1\else 0\fi\space
-      \fi
+      bbox\space\Gin@llx\space\Gin@lly\space\Gin@urx\space\Gin@ury\space
+      clip\space\ifGin@clip 1\else 0\fi\space
       \ifx\Gin@scalex\@tempa\else width\space\the\Gin@req@width\space\fi
       \ifx\Gin@scaley\@tempa\else height\space\the\Gin@req@height\space\fi
       (#1)\space
