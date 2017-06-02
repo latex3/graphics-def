@@ -1,0 +1,26 @@
+\documentclass{article}
+
+\usepackage{graphicx}
+
+\begin{document}
+
+\begin{tabular}{l|l}
+Default&
+\sbox0{\includegraphics{az2}}
+\typeout{Default: \the\wd0, \the\ht0}\usebox{0}
+\\
+Art&
+\sbox0{\includegraphics[pagebox=artbox]{az2}}
+\typeout{Art: \the\wd0, \the\ht0}\usebox{0}
+\\
+Crop&
+\sbox0{\includegraphics[pagebox=cropbox]{az2}}
+\typeout{Crop: \the\wd0, \the\ht0}\usebox{0}
+\\
+Media&
+\sbox0{\includegraphics[pagebox=mediabox]{az2}}
+\typeout{Media: \the\wd0, \the\ht0}\usebox{0}
+\end{tabular}
+
+
+\end{document}
