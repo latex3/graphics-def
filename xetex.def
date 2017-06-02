@@ -129,7 +129,7 @@
 }
 \def\Ginclude@bmp#1{%
   \let\Gin@page\@empty
-  \Ginclude@xetex{#1{image}}%
+  \Ginclude@xetex{#1}{image}%
 }
 \def\Ginclude@xetex#1#2{%
  \message{<#1>}%
