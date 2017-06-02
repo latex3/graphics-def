@@ -132,7 +132,7 @@
   \Ginclude@xetex{#1}{image}%
 }
 \def\Ginclude@xetex#1#2{%
- \message{<#1>}%
+ \Gin@log{<#1>}%
   \bgroup
   \def\@tempa{!}%
     \special{pdf:#2\space
@@ -148,7 +148,7 @@
   \egroup}
 \newif\if@trim@vport
 \def\Ginclude@eps#1{%
- \message{<#1>}%
+ \Gin@log{<#1>}%
   \bgroup
   \ifx\Undefined\Gin@vllx\else\@trim@vporttrue\fi
   \def\@tempa{!}%
@@ -195,7 +195,7 @@
 % the option --mvorigin.
 %
 \def\Ginclude@mps#1{%
- \message{<#1>}%
+ \Gin@log{<#1>}%
   \bgroup
   \def\@tempa{!}%
   \dimen@\Gin@req@width
