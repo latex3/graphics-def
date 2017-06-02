@@ -78,69 +78,62 @@
 \@ifundefined{Gin@page}
   {\let\Gin@page\@empty}
   {}
+\@ifundefined{Gin@pagebox}
+  {\def\Gin@page{cropbox}}
+  {}
 \@ifundefined{Gin@interpolate}
   {\csname newif\endcsname\ifGin@interpolate}
   {}
 \def\Gread@pdf#1{%
-  \Gin@interpolatefalse
-  \Gread@@xetex\XeTeXpdffile
+  \Gread@generic{#1}\Gread@extractbb@aux
 }
-\def\Gread@bmp#1{%
-  \let\Gin@page\@empty
-  \Gread@@xetex\XeTeXpicfile
+\def\Gread@extractbb@aux#1{%
+  \ifeof\@inputcheck
+    \immediate\openin\@inputcheck=%
+      "|extractbb %
+      \ifx\Gin@page\@empty\else -p \Gin@page\space\fi
+      \ifx\Gin@pagebox\@empty\else -B \Gin@pagebox\space\fi
+      -O \Gin@base\Gin@ext"%
+  \fi
+  \Gread@true
+  \let\@tempb\Gread@false
+  \ifeof\@inputcheck
+    \@latex@error
+      {Cannot run pipe command. Try --shell-escape^^J%
+       (--enable-pipes in MikTeX) option}%
+      {}%
+  \else
+    \loop
+      \read\@inputcheck to\@tempa
+      \ifeof\@inputcheck
+        \Gread@false
+      \else
+        \expandafter\Gread@find@bb\@tempa:.\\%
+      \fi
+      \ifGread@
+      \repeat
+    \immediate\closein\@inputcheck
+  \fi
 }
-\def\Gread@@xetex#1{%
-  \IfFileExists{\Gin@base.bb}%
-    {\Gread@eps{\Gin@base.bb}}%
-    {\Gread@@xetex@aux#1}%
-}
-\def\Gread@@xetex@aux#1{%
-  \edef\Gin@attr@hash{%
-    \ifx\Gin@page\@empty
-    \else
-      :P\Gin@page
-    \fi
-  }%
-  \edef\Gin@@name{\Gin@base\Gin@ext}%
-  \@ifundefined{\Gin@@name\space height\Gin@attr@hash}%
-    {%
-      \setbox\@tempboxa=\hbox{%
-        #1"\Gin@@name"
-        \ifx\Gin@page\@empty\else page \Gin@page\fi
-      }%
-      \def\Gin@llx{0}\let\Gin@lly\Gin@llx
-      \Gin@defaultbp\Gin@urx{\wd\@tempboxa}%
-      \Gin@defaultbp\Gin@ury{\ht\@tempboxa}%
-      \expandafter\xdef\csname \Gin@@name\space height\Gin@attr@hash\endcsname
-        {\the\ht\@tempboxa}%
-      \expandafter\xdef\csname \Gin@@name\space width\Gin@attr@hash\endcsname
-        {\the\wd\@tempboxa}%
-    }{%
-      \def\Gin@llx{0}\let\Gin@lly\Gin@llx
-      \Gin@defaultbp\Gin@urx
-        {\csname \Gin@@name\space width\Gin@attr@hash\endcsname}%
-      \Gin@defaultbp\Gin@ury
-        {\csname \Gin@@name\space height\Gin@attr@hash\endcsname}%
-    }%
-}
+\let\Gread@bmp\Gread@pdf
 \def\Ginclude@pdf#1{%
   \Gin@interpolatefalse
-  \Ginclude@xetex{#1}{epdf}%
+  \Ginclude@dvipdfmx{#1}{epdf}%
 }
 \def\Ginclude@bmp#1{%
   \let\Gin@page\@empty
-  \Ginclude@xetex{#1}{image}%
+  \let\Gin@pagebox\@empty
+  \Ginclude@dvipdfmx{#1{image}}%
 }
-\def\Ginclude@xetex#1#2{%
+\def\Ginclude@dvipdfmx#1#2{%
   \Gin@log{<#1>}%
   \bgroup
   \def\@tempa{!}%
     \special{pdf:#2\space
       \ifx\Gin@page\@empty\else page\space\Gin@page\space\fi
-      \ifx\Gin@ollx\@undefined\else
-        bbox\space\Gin@llx\space\Gin@lly\space\Gin@urx\space\Gin@ury\space
-        clip\space\ifGin@clip 1\else 0\fi\space
-      \fi
+      \ifx\Gin@pagebox\@empty\else pagebox\space\Gin@pagebox\space\fi
+      bbox\space\Gin@llx\space\Gin@lly\space\Gin@urx\space\Gin@ury\space
+      clip\space\ifGin@clip 1\else 0\fi\space
       \ifx\Gin@scalex\@tempa\else width\space\the\Gin@req@width\space\fi
       \ifx\Gin@scaley\@tempa\else height\space\the\Gin@req@height\space\fi
       (#1)\space
@@ -188,9 +181,9 @@
 % the origin accordingly if we use \Ginclude@eps for eps files created by
 % MetaPost. In TeX Live 2015, the translation of the origin was the default.
 % After TeX Live 2016, however, the translation of the origin is enabled only
-% if the --mvorigin option is given for xetex or xxetex.
+% if the --mvorigin option is given for dvipdfmx or xdvipdfmx.
 % This may be a bit inconvenient, especially in the case of XeTeX where
-% xxetex is usually called as a pipe. Therefore we introduce a new suffix
+% xdvipdfmx is usually called as a pipe. Therefore we introduce a new suffix
 % .mps(or .MPS) to support inclusion of eps files created by MetaPost without
 % the option --mvorigin.
 %
@@ -298,7 +291,7 @@
 % Support new (no)setpagesize option of graphics and color.
 % v4.11
 % Use \special{pdf:pagesize ...} instead of \special{papersize=...}
-% to support \mag (xetex only)
+% to support \mag (dvipdfmx only)
 \@ifundefined{ifGin@setpagesize}
 {\expandafter\let\csname ifGin@setpagesize\expandafter\endcsname
 \csname iftrue\endcsname}
