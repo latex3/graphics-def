@@ -88,7 +88,7 @@
   \ifeof\@inputcheck
     \immediate\openin\@inputcheck=%
       "|extractbb %
-      \ifx\Gin@page\@empty\else -p \Gin@page\fi
+      \ifx\Gin@page\@empty\else -p \Gin@page\space\fi
       -O \Gin@base\Gin@ext"%
   \fi
   \Gread@true
