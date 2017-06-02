@@ -117,7 +117,7 @@
   \Ginclude@dvipdfmx{#1}{epdf}%
 }
 \def\Ginclude@bmp#1{%
- \let\Gin@page\@empty
+  \let\Gin@page\@empty
   \Ginclude@dvipdfmx{#1{image}}%
 }
 \def\Ginclude@dvipdfmx#1#2{%

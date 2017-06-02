@@ -128,7 +128,7 @@
   \Ginclude@xetex{#1}{epdf}%
 }
 \def\Ginclude@bmp#1{%
- \let\Gin@page\@empty
+  \let\Gin@page\@empty
   \Ginclude@xetex{#1{image}}%
 }
 \def\Ginclude@xetex#1#2{%
