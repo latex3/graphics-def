@@ -165,11 +165,18 @@ E     \else
 \@ifundefined{Gin@page}
   {\let\Gin@page\@empty}
   {}
+\@ifundefined{Gin@pagebox}
+  {\def\Gin@page{cropbox}}
+  {}
 \@ifundefined{Gin@interpolate}
   {\csname newif\endcsname\ifGin@interpolate}
   {}
 \def\Gread@@pdftex#1{%
   \edef\Gin@attr@hash{%
+    \ifx\Gin@pagebox\@empty
+    \else
+      :\Gin@pagebox
+    \fi
     \ifx\Gin@page\@empty
     \else
       :P\Gin@page
@@ -183,6 +190,7 @@ E     \else
       \pdfximage
         \ifGin@interpolate attr{/Interpolate true}\fi
         \ifx\Gin@page\@empty\else page \Gin@page\fi
+        \Gin@pagebox
         {#1}%
       \setbox\@tempboxa=\hbox{\pdfrefximage\pdflastximage}%
       \def\Gin@llx{0}\let\Gin@lly\Gin@llx
@@ -198,6 +206,7 @@ E     \else
         <#1, %
         id=\the\pdflastximage, %
         \ifx\Gin@page\@empty\else page=\Gin@page , \fi
+        \ifx\Gin@pagebox\@empty\else pagebox=\Gin@pagebox , \fi
         \ifGin@interpolate interpolate=true, \fi
         \the\wd\@tempboxa\space x \the\ht\@tempboxa
         >%
@@ -210,6 +219,7 @@ E     \else
 }
 \def\Gread@png#1{%
   \let\Gin@page\@empty
+  \let\Gin@pagebox\@empty
   \Gread@pdftex{#1}%
 }
 \let\Gread@jpg\Gread@png

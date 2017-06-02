@@ -147,11 +147,18 @@
 \@ifundefined{Gin@page}
   {\let\Gin@page\@empty}
   {}
+\@ifundefined{Gin@pagebox}
+  {\def\Gin@page{cropbox}}
+  {}
 \@ifundefined{Gin@interpolate}
   {\csname newif\endcsname\ifGin@interpolate}
   {}
 \def\Gread@@pdftex#1{%
   \edef\Gin@attr@hash{%
+    \ifx\Gin@pagebox\@empty
+    \else
+      :\Gin@pagebox
+    \fi
     \ifx\Gin@page\@empty
     \else
       :P\Gin@page
@@ -165,6 +172,7 @@
       \saveimageresource
         \ifGin@interpolate attr{/Interpolate true}\fi
         \ifx\Gin@page\@empty\else page \Gin@page\fi
+        \Gin@pagebox
         {#1}%
       \setbox\@tempboxa=\hbox{\useimageresource\lastsavedimageresourceindex}%
       \def\Gin@llx{0}\let\Gin@lly\Gin@llx
@@ -180,6 +188,7 @@
         <#1, %
         id=\the\lastsavedimageresourceindex, %
         \ifx\Gin@page\@empty\else page=\Gin@page , \fi
+        \ifx\Gin@pagebox\@empty\else pagebox=\Gin@pagebox , \fi
         \ifGin@interpolate interpolate=true, \fi
         \the\wd\@tempboxa\space x \the\ht\@tempboxa
         >%

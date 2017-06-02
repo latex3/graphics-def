@@ -78,6 +78,9 @@
 \@ifundefined{Gin@page}
   {\let\Gin@page\@empty}
   {}
+\@ifundefined{Gin@pagebox}
+  {\def\Gin@page{cropbox}}
+  {}
 \@ifundefined{Gin@interpolate}
   {\csname newif\endcsname\ifGin@interpolate}
   {}
@@ -89,6 +92,7 @@
     \immediate\openin\@inputcheck=%
       "|extractbb %
       \ifx\Gin@page\@empty\else -p \Gin@page\space\fi
+      \ifx\Gin@pagebox\@empty\else -B \Gin@pagebox\space\fi
       -O \Gin@base\Gin@ext"%
   \fi
   \Gread@true
@@ -118,6 +122,7 @@
 }
 \def\Ginclude@bmp#1{%
   \let\Gin@page\@empty
+  \let\Gin@pagebox\@empty
   \Ginclude@dvipdfmx{#1{image}}%
 }
 \def\Ginclude@dvipdfmx#1#2{%
@@ -126,6 +131,7 @@
   \def\@tempa{!}%
     \special{pdf:#2\space
       \ifx\Gin@page\@empty\else page\space\Gin@page\space\fi
+      \ifx\Gin@pagebox\@empty\else pagebox\space\Gin@pagebox\space\fi
       bbox\space\Gin@llx\space\Gin@lly\space\Gin@urx\space\Gin@ury\space
       clip\space\ifGin@clip 1\else 0\fi\space
       \ifx\Gin@scalex\@tempa\else width\space\the\Gin@req@width\space\fi
