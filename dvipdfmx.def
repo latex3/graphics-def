@@ -215,7 +215,7 @@
 \ifx\kanjiskip\@undefined
 \def\Gscale@start{%
   \special{pdf:btrans}%
-  \special{x:scale \Gscale@x\space\Gscale@y}
+  \special{x:scale \Gscale@x\space\Gscale@y}%
 }
 \else
 \edef\Gscale@start{%
