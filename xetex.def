@@ -188,9 +188,9 @@
 % the origin accordingly if we use \Ginclude@eps for eps files created by
 % MetaPost. In TeX Live 2015, the translation of the origin was the default.
 % After TeX Live 2016, however, the translation of the origin is enabled only
-% if the --mvorigin option is given for xetex or xxetex.
-% This may be a bit inconvenient, especially in the case of XeTeX where
-% xxetex is usually called as a pipe. Therefore we introduce a new suffix
+% if the --mvorigin option is given for xdvipdfmx
+% This may be a bit inconvenient, especially as
+% xdvipdfmx is usually called as a pipe. Therefore we introduce a new suffix
 % .mps(or .MPS) to support inclusion of eps files created by MetaPost without
 % the option --mvorigin.
 %
@@ -240,7 +240,7 @@
 \def\Gin@PS@restored#1{\special{" #1}}
 \def\Gin@PS@literal@header#1{\AtBeginDvi{\special{! #1}}}
 \def\Gin@PS@file@header#1{\AtBeginDvi{\special{header=#1}}}
-\def\Gin@extensions{% order here is like xetex.def, except for PS
+\def\Gin@extensions{% order here is like pdftex.def, except for PS
   .pdf,.PDF,.ai,.AI,%
   .png,.PNG,.jpg,.JPG,.jpeg,.JPEG,.jp2,.JP2,.jpf,.JPF,.bmp,.BMP,%
   .ps,.PS,.eps,.EPS,.mps,.MPS,%
