@@ -113,7 +113,7 @@
   \@ifundefined{\Gin@@name\space height\Gin@attr@hash}%
     {%
       \setbox\@tempboxa=\hbox{%
-        #1"\Gin@@name"
+        #1"\Gin@@name"\space
         \ifx\Gin@page\@empty\else page \Gin@page\fi
         \ifx\Gin@pagebox\@empty\else\expandafter\Gread@@xetex@box\Gin@pagebox\fi
       }%
