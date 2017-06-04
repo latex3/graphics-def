@@ -1,5 +1,11 @@
 \documentclass{article}
 
+\ifx\pdfoutput\undefined\else
+\ifnum\pdfoutput=0
+\usepackage[dvipdfmx]{graphicx}
+\fi
+\fi
+
 \usepackage{graphicx}
 
 \begin{document}
