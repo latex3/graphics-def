@@ -20,6 +20,14 @@ Crop&
 Media&
 \sbox0{\includegraphics[pagebox=mediabox]{az2}}
 \typeout{Media: \the\wd0, \the\ht0}\usebox{0}
+\\
+Art, viewport&
+\sbox0{\includegraphics[pagebox=artbox,viewport=0 0 15 15,clip]{az2}}
+\typeout{Art, viewport: \the\wd0, \the\ht0}\usebox{0}
+\\
+media,viewport&
+\sbox0{\includegraphics[pagebox=mediabox,viewport=0 0 15 15,clip]{az2}}
+\typeout{Art, viewport: \the\wd0, \the\ht0}\usebox{0}
 \end{tabular}
 
 
