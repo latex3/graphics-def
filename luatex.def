@@ -482,7 +482,13 @@
 % MPS conversion
 \def\GPT@LoadSuppPdf{%
   \@ifundefined{convertMPtoPDF}{%
+    \edef\@tempa{%
+      \catcode`\noexpand\<\the\catcode`\<\relax
+      \catcode`\noexpand\>\the\catcode`\>\relax
+      }%
+    \@makeother\<\@makeother\<%
     \InputIfFileExists{supp-pdf.mkii}{}{}%
+    \@tempa
   }{%
     % supp-pdf is probably already loaded.
   }%
@@ -514,7 +520,7 @@
 }
 % Load package epstopdf if
 % a) LaTeX is running (plain TeX users are on their own),
-% b) and shell escape (\write18) is enabled (possibly restricted),
+% b) and shell escape is enabled (possibly restricted),
 % c) and \DoNotLoadEpstopdf either does not exist or is not \relax,
 % d) and neither pst-pdf nor pdftricks is loaded (by \begin{document}).
 % 

@@ -501,7 +501,13 @@ E     \else
 % MPS conversion
 \def\GPT@LoadSuppPdf{%
   \@ifundefined{convertMPtoPDF}{%
+    \edef\@tempa{%
+      \catcode`\noexpand\<\the\catcode`\<\relax
+      \catcode`\noexpand\>\the\catcode`\>\relax
+      }%
+    \@makeother\<\@makeother\<%
     \InputIfFileExists{supp-pdf.mkii}{}{}%
+    \@tempa
   }{%
     % supp-pdf is probably already loaded.
   }%
