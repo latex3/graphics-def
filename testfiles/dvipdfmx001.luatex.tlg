@@ -1,0 +1,158 @@
+This is a generated file for the l3build validation system.
+Don't change this file in any respect.
+File: example-image-a.pdf Graphic file (type pdf)
+<example-image-a.pdf>
+File: example-image-a.pdf Graphic file (type pdf)
+<example-image-a.pdf>
+File: az2.pdf Graphic file (type pdf)
+<az2.pdf>
+File: az2.pdf Graphic file (type pdf)
+<az2.pdf>
+Completed box being shipped out [1]
+\vbox(633.0+0.0)x407.0, direction TLT
+.\special{pdf:pagesize width 614.295pt height 794.96999pt}
+.\glue 16.0
+.\vbox(617.0+0.0)x345.0, shifted 62.0, direction TLT
+..\vbox(12.0+0.0)x345.0, glue set 12.0fil, direction TLT
+...\glue 0.0 plus 1.0fil
+...\hbox(0.0+0.0)x345.0, direction TLT
+..\glue 25.0
+..\glue(\lineskip) 0.0
+..\vbox(550.0+0.0)x345.0, glue set >20000.0fil, direction TLT
+...\write-{}
+er\ETC.}
+...\glue(\topskip) 0.0
+...\hbox(240.9+0.0)x345.0, glue set 8.8fil, direction TLT
+....\localpar
+.....\localinterlinepenalty=0
+.....\localbrokenpenalty=0
+.....\localleftbox=null
+.....\localrightbox=null
+....\hbox(0.0+0.0)x15.0, direction TLT
+....\hbox(240.9+0.0)x321.2, direction TLT
+.....\special{pdf:epdf pagebox cropbox bbox 0 0 320 240 clip 0 width 321.2pt (e
+xamp\ETC.}
+....\penalty 10000
+....\glue(\parfillskip) 0.0 plus 1.0fil
+....\glue(\rightskip) 0.0
+...\glue(\parskip) 0.0 plus 1.0
+...\glue(\lineskip) 1.0
+...\hbox(240.9+0.0)x345.0, glue set 8.8fil, direction TLT
+....\localpar
+.....\localinterlinepenalty=0
+.....\localbrokenpenalty=0
+.....\localleftbox=null
+.....\localrightbox=null
+....\hbox(0.0+0.0)x15.0, direction TLT
+....\hbox(240.9+0.0)x321.2, direction TLT
+.....\special{pdf:epdf page 1 pagebox cropbox bbox 0 0 320 240 clip 0 width 321
+.2pt\ETC.}
+....\penalty 10000
+....\glue(\parfillskip) 0.0 plus 1.0fil
+....\glue(\rightskip) 0.0
+...\glue(\parskip) 0.0 plus 1.0
+...\glue(\lineskip) 1.0
+...\hbox(50.1875+0.0)x345.0, glue set 299.88751fil, direction TLT
+....\localpar
+.....\localinterlinepenalty=0
+.....\localbrokenpenalty=0
+.....\localleftbox=null
+.....\localrightbox=null
+....\hbox(0.0+0.0)x15.0, direction TLT
+....\hbox(50.1875+0.0)x30.11249, direction TLT
+.....\special{pdf:epdf pagebox cropbox bbox 0 0 30 50 clip 0 width 30.11249pt (
+az2.\ETC.}
+....\penalty 10000
+....\glue(\parfillskip) 0.0 plus 1.0fil
+....\glue(\rightskip) 0.0
+...\glue 0.0
+...\glue 0.0 plus 0.0001fil
+..\glue(\baselineskip) 23.34
+..\hbox(6.66+0.0)x345.0, glue set 170.0fil, direction TLT
+...\glue 0.0 plus 1.0fil
+...\TU/lmr/m/n/10 1
+...\glue 0.0 plus 1.0fil
+File: clip-1-2.jpg Graphic file (type bmp)
+<clip-1-2.jpg>
+File: clip-1-2.png Graphic file (type bmp)
+<clip-1-2.png>
+File: clip-1-2.jpg Graphic file (type bmp)
+<clip-1-2.jpg>
+Completed box being shipped out [2]
+\vbox(633.0+0.0)x407.0, direction TLT
+.\glue 16.0
+.\vbox(617.0+0.0)x345.0, shifted 62.0, direction TLT
+..\vbox(12.0+0.0)x345.0, glue set 12.0fil, direction TLT
+...\glue 0.0 plus 1.0fil
+...\hbox(0.0+0.0)x345.0, direction TLT
+..\glue 25.0
+..\glue(\lineskip) 0.0
+..\vbox(550.0+0.0)x345.0, glue set 282.3551fil, direction TLT
+...\glue(\topskip) 0.0
+...\hbox(36.135+0.0)x345.0, glue set 293.86499fil, direction TLT
+....\localpar
+.....\localinterlinepenalty=0
+.....\localbrokenpenalty=0
+.....\localleftbox=null
+.....\localrightbox=null
+....\hbox(0.0+0.0)x15.0, direction TLT
+....\hbox(36.135+0.0)x36.135, direction TLT
+.....\special{pdf:epdf pagebox artbox bbox 36 36 72 72 clip 0 width 36.135pt (a
+z2.p\ETC.}
+....\penalty 10000
+....\glue(\parfillskip) 0.0 plus 1.0fil
+....\glue(\rightskip) 0.0
+...\glue(\parskip) 0.0 plus 1.0
+...\glue(\lineskip) 1.0
+...\hbox(49.99988+0.0)x345.0, glue set 280.00012fil, direction TLT
+....\localpar
+.....\localinterlinepenalty=0
+.....\localbrokenpenalty=0
+.....\localleftbox=null
+.....\localrightbox=null
+....\hbox(0.0+0.0)x15.0, direction TLT
+....\hbox(49.99988+0.0)x49.99988, direction TLT
+.....\special{pdf:image bbox 12.9514 64.757 62.76448 114.57008 clip 1 width 49.
+9998\ETC.}
+....\penalty 10000
+....\glue(\parfillskip) 0.0 plus 1.0fil
+....\glue(\rightskip) 0.0
+...\glue(\parskip) 0.0 plus 1.0
+...\glue(\lineskip) 1.0
+...\hbox(49.99988+0.0)x345.0, glue set 280.00012fil, direction TLT
+....\localpar
+.....\localinterlinepenalty=0
+.....\localbrokenpenalty=0
+.....\localleftbox=null
+.....\localrightbox=null
+....\hbox(0.0+0.0)x15.0, direction TLT
+....\hbox(49.99988+0.0)x49.99988, direction TLT
+.....\special{pdf:image bbox 12.9514 64.757 62.76448 114.57008 clip 1 width 49.
+9998\ETC.}
+....\penalty 10000
+....\glue(\parfillskip) 0.0 plus 1.0fil
+....\glue(\rightskip) 0.0
+...\glue(\parskip) 0.0 plus 1.0
+...\glue(\lineskip) 1.0
+...\hbox(128.48+0.0)x345.0, glue set 183.45251fil, direction TLT
+....\localpar
+.....\localinterlinepenalty=0
+.....\localbrokenpenalty=0
+.....\localleftbox=null
+.....\localrightbox=null
+....\hbox(0.0+0.0)x15.0, direction TLT
+....\hbox(128.48+0.0)x146.54749, direction TLT
+.....\special{pdf:image bbox 0 0 146 128 clip 0 width 146.54749pt (clip-1-2.jpg
+) <<\ETC.}
+....\penalty 10000
+....\glue(\parfillskip) 0.0 plus 1.0fil
+....\glue(\rightskip) 0.0
+...\glue 0.0 plus 1.0fil
+...\glue 0.0
+...\glue 0.0 plus 0.0001fil
+..\glue(\baselineskip) 23.34
+..\hbox(6.66+0.0)x345.0, glue set 170.0fil, direction TLT
+...\glue 0.0 plus 1.0fil
+...\TU/lmr/m/n/10 2
+...\glue 0.0 plus 1.0fil
+(.aux)

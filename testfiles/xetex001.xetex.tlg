@@ -1,0 +1,159 @@
+This is a generated file for the l3build validation system.
+Don't change this file in any respect.
+File: example-image-a.pdf Graphic file (type pdf)
+<use example-image-a.pdf>
+File: example-image-a.pdf Graphic file (type pdf)
+<use example-image-a.pdf, page 1>
+File: az2.pdf Graphic file (type pdf)
+<use az2.pdf>
+File: az2.pdf Graphic file (type pdf)
+<use az2.pdf>
+Completed box being shipped out [1]
+\vbox(633.0+0.0)x407.0
+.\special{pdf:pagesize width 614.295pt height 794.96999pt}
+.\glue 16.0
+.\vbox(617.0+0.0)x345.0, shifted 62.0
+..\vbox(12.0+0.0)x345.0, glue set 12.0fil
+...\glue 0.0 plus 1.0fil
+...\hbox(0.0+0.0)x345.0
+..\glue 25.0
+..\glue(\lineskip) 0.0
+..\vbox(550.0+0.0)x345.0, glue set >20000.0fil
+...\write-{}
+...\glue(\topskip) 0.0
+...\hbox(240.8994+0.0)x345.0, glue set 8.80078fil
+....\hbox(0.0+0.0)x15.0
+....\hbox(240.8994+0.0)x321.19922
+.....\hbox(240.9+0.0)x321.20001
+......\hbox(240.9+0.0)x321.20001
+.......\hbox(240.9+0.0)x0.0
+........\special{pdf:btrans}
+........\special{x:scale 1 1}
+........\hbox(240.9+0.0)x0.0, glue set - 321.20001fil
+.........\hbox(240.9+0.0)x321.20001
+..........\XeTeXpdffile "/usr/local/texlive/2017/texmf-dist/tex/latex/mwe/example-image-a.pdf"
+.........\glue 0.0 plus 1.0fil minus 1.0fil
+........\special{pdf:etrans}
+.......\kern 321.20001
+.......\glue 0.0 plus 1.0fil minus 1.0fil
+....\penalty 10000
+....\glue(\parfillskip) 0.0 plus 1.0fil
+....\glue(\rightskip) 0.0
+...\glue(\parskip) 0.0 plus 1.0
+...\glue(\lineskip) 1.0
+...\hbox(240.8994+0.0)x345.0, glue set 8.80078fil
+....\hbox(0.0+0.0)x15.0
+....\hbox(240.8994+0.0)x321.19922
+.....\hbox(240.9+0.0)x321.20001
+......\hbox(240.9+0.0)x321.20001
+.......\hbox(240.9+0.0)x0.0
+........\special{pdf:btrans}
+........\special{x:scale 1 1}
+........\hbox(240.9+0.0)x0.0, glue set - 321.20001fil
+.........\hbox(240.9+0.0)x321.20001
+..........\XeTeXpdffile "/usr/local/texlive/2017/texmf-dist/tex/latex/mwe/example-image-a.pdf"
+.........\glue 0.0 plus 1.0fil minus 1.0fil
+........\special{pdf:etrans}
+.......\kern 321.20001
+.......\glue 0.0 plus 1.0fil minus 1.0fil
+....\penalty 10000
+....\glue(\parfillskip) 0.0 plus 1.0fil
+....\glue(\rightskip) 0.0
+...\glue(\parskip) 0.0 plus 1.0
+...\glue(\lineskip) 1.0
+...\hbox(50.18736+0.0)x345.0, glue set 299.88759fil
+....\hbox(0.0+0.0)x15.0
+....\hbox(50.18736+0.0)x30.11241
+.....\hbox(50.1875+0.0)x30.1125
+......\hbox(50.1875+0.0)x30.1125
+.......\hbox(50.1875+0.0)x0.0
+........\special{pdf:btrans}
+........\special{x:scale 1 1}
+........\hbox(50.1875+0.0)x0.0, glue set - 30.1125fil
+.........\hbox(50.1875+0.0)x30.1125
+..........\XeTeXpdffile "./az2.pdf"
+.........\glue 0.0 plus 1.0fil minus 1.0fil
+........\special{pdf:etrans}
+.......\kern 30.1125
+.......\glue 0.0 plus 1.0fil minus 1.0fil
+....\penalty 10000
+....\glue(\parfillskip) 0.0 plus 1.0fil
+....\glue(\rightskip) 0.0
+...\glue 0.0
+...\glue 0.0 plus 0.0001fil
+..\glue(\baselineskip) 23.34
+..\hbox(6.66+0.0)x345.0, glue set 170.0fil
+...\glue 0.0 plus 1.0fil
+...\TU/lmr/m/n/10 1
+...\glue 0.0 plus 1.0fil
+File: clip-1-2.jpg Graphic file (type bmp)
+<clip-1-2.jpg>
+File: clip-1-2.png Graphic file (type bmp)
+<clip-1-2.png>
+File: clip-1-2.jpg Graphic file (type bmp)
+<clip-1-2.jpg>
+Completed box being shipped out [2]
+\vbox(633.0+0.0)x407.0
+.\glue 16.0
+.\vbox(617.0+0.0)x345.0, shifted 62.0
+..\vbox(12.0+0.0)x345.0, glue set 12.0fil
+...\glue 0.0 plus 1.0fil
+...\hbox(0.0+0.0)x345.0
+..\glue 25.0
+..\glue(\lineskip) 0.0
+..\vbox(550.0+0.0)x345.0, glue set 281.95406fil
+...\glue(\topskip) 0.0
+...\hbox(36.13489+0.0)x345.0, glue set 293.86511fil
+....\hbox(0.0+0.0)x15.0
+....\hbox(36.13489+0.0)x36.13489
+.....\hbox(36.135+0.0)x36.135
+......\hbox(36.135+0.0)x36.135
+.......\hbox(36.135+0.0)x0.0
+........\special{pdf:btrans}
+........\special{x:scale 1 1}
+........\hbox(36.135+0.0)x0.0, glue set - 36.135fil
+.........\hbox(36.135+0.0)x36.135
+..........\XeTeXpdffile "./az2.pdf"
+.........\glue 0.0 plus 1.0fil minus 1.0fil
+........\special{pdf:etrans}
+.......\kern 36.135
+.......\glue 0.0 plus 1.0fil minus 1.0fil
+....\penalty 10000
+....\glue(\parfillskip) 0.0 plus 1.0fil
+....\glue(\rightskip) 0.0
+...\glue(\parskip) 0.0 plus 1.0
+...\glue(\lineskip) 1.0
+...\hbox(49.99988+0.0)x345.0, glue set 280.00012fil
+....\hbox(0.0+0.0)x15.0
+....\hbox(49.99988+0.0)x49.99988
+.....\special{pdf:image bbox 12.9514 64.757 62.76448 114.57008 clip 1 width 49.9998\ETC.}
+....\penalty 10000
+....\glue(\parfillskip) 0.0 plus 1.0fil
+....\glue(\rightskip) 0.0
+...\glue(\parskip) 0.0 plus 1.0
+...\glue(\lineskip) 1.0
+...\hbox(49.99988+0.0)x345.0, glue set 280.00012fil
+....\hbox(0.0+0.0)x15.0
+....\hbox(49.99988+0.0)x49.99988
+.....\special{pdf:image bbox 12.9514 64.757 62.76448 114.57008 clip 1 width 49.9998\ETC.}
+....\penalty 10000
+....\glue(\parfillskip) 0.0 plus 1.0fil
+....\glue(\rightskip) 0.0
+...\glue(\parskip) 0.0 plus 1.0
+...\glue(\lineskip) 1.0
+...\hbox(128.88118+0.0)x345.0, glue set 183.65361fil
+....\hbox(0.0+0.0)x15.0
+....\hbox(128.88118+0.0)x146.34639
+.....\special{pdf:image bbox 0 0 145.79965 128.39969 clip 0 width 146.34639pt (clip\ETC.}
+....\penalty 10000
+....\glue(\parfillskip) 0.0 plus 1.0fil
+....\glue(\rightskip) 0.0
+...\glue 0.0 plus 1.0fil
+...\glue 0.0
+...\glue 0.0 plus 0.0001fil
+..\glue(\baselineskip) 23.34
+..\hbox(6.66+0.0)x345.0, glue set 170.0fil
+...\glue 0.0 plus 1.0fil
+...\TU/lmr/m/n/10 2
+...\glue 0.0 plus 1.0fil
+(.aux)

@@ -1,0 +1,12 @@
+\makeatother
+\ifdefined\pdfoutput
+  \pdfoutput=0 %
+\else
+  \ifdefined\outputmode
+    \outputmode=0 %
+  \fi
+\fi
+
+\PassOptionsToPackage{dvipdfmx}{graphics}
+
+\input{graphics001}

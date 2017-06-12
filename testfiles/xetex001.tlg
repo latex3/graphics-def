@@ -1,0 +1,309 @@
+This is a generated file for the l3build validation system.
+Don't change this file in any respect.
+! Undefined control sequence.
+<argument> ...ox \@tempboxa =\hbox {\XeTeXpdffile 
+                                                  "\Gin@@name "\space \ifx \...
+l. ...\includegraphics{example-image-a}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+File: example-image-a.pdf Graphic file (type pdf)
+<use example-image-a.pdf>
+! Undefined control sequence.
+<argument> ...vllx bp\relax \fi \fi \XeTeXpdffile 
+                                                  "\Gin@base \Gin@ext " \ifx...
+l. ...\includegraphics{example-image-a}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+! Undefined control sequence.
+<argument> ...ox \@tempboxa =\hbox {\XeTeXpdffile 
+                                                  "\Gin@@name "\space \ifx \...
+l. ......udegraphics[page = 1]{example-image-a.pdf}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+File: example-image-a.pdf Graphic file (type pdf)
+<use example-image-a.pdf, page 1>
+! Undefined control sequence.
+<argument> ...vllx bp\relax \fi \fi \XeTeXpdffile 
+                                                  "\Gin@base \Gin@ext " \ifx...
+l. ......udegraphics[page = 1]{example-image-a.pdf}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+! Undefined control sequence.
+<argument> ...ox \@tempboxa =\hbox {\XeTeXpdffile 
+                                                  "\Gin@@name "\space \ifx \...
+l. ...\includegraphics{az2}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+File: az2.pdf Graphic file (type pdf)
+<use az2.pdf>
+! Undefined control sequence.
+<argument> ...vllx bp\relax \fi \fi \XeTeXpdffile 
+                                                  "\Gin@base \Gin@ext " \ifx...
+l. ...\includegraphics{az2}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+! Undefined control sequence.
+<argument> ...ox \@tempboxa =\hbox {\XeTeXpdffile 
+                                                  "\Gin@@name "\space \ifx \...
+l. ...\includegraphics[pagebox = artbox]{az2}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+File: az2.pdf Graphic file (type pdf)
+<use az2.pdf>
+! Undefined control sequence.
+<argument> ...vllx bp\relax \fi \fi \XeTeXpdffile 
+                                                  "\Gin@base \Gin@ext " \ifx...
+l. ...\includegraphics[pagebox = artbox]{az2}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+File: clip-1-2.jpg Graphic file (type bmp)
+<clip-1-2.jpg>
+File: clip-1-2.png Graphic file (type bmp)
+<clip-1-2.png>
+! Undefined control sequence.
+<argument> ...ox \@tempboxa =\hbox {\XeTeXpicfile 
+                                                  "\Gin@@name "\space \ifx \...
+l. ......graphics[interpolate = true]{clip-1-2.jpg}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+File: clip-1-2.jpg Graphic file (type bmp)
+<clip-1-2.jpg>
+Completed box being shipped out [1]
+\vbox(633.0+0.0)x407.0
+.\special{pdf:pagesize width 614.295pt height 794.96999pt}
+.\glue 16.0
+.\vbox(617.0+0.0)x345.0, shifted 62.0
+..\vbox(12.0+0.0)x345.0, glue set 12.0fil
+...\glue 0.0 plus 1.0fil
+...\hbox(0.0+0.0)x345.0
+..\glue 25.0
+..\glue(\lineskip) 0.0
+..\vbox(550.0+0.0)x345.0, glue set 389.95859fil
+...\write-{}
+...\glue(\topskip) 3.05559
+...\hbox(6.94441+0.0)x345.0, glue set 207.47226fil
+....\hbox(0.0+0.0)x15.0
+....\hbox(6.94441+0.0)x122.52774
+.....\hbox(6.94444+1.94444)x122.52806
+......\hbox(6.94444+1.94444)x122.52806
+.......\hbox(6.94444+1.94444)x0.0
+........\special{pdf:btrans}
+........\special{x:scale 1 1}
+........\hbox(6.94444+1.94444)x0.0, glue set - 122.52806fil
+.........\hbox(6.94444+1.94444)x122.52806
+..........\OT1/cmr/m/n/10 "
+..........\OT1/cmr/m/n/10 e
+..........\OT1/cmr/m/n/10 x
+..........\OT1/cmr/m/n/10 a
+..........\OT1/cmr/m/n/10 m
+..........\OT1/cmr/m/n/10 p
+..........\OT1/cmr/m/n/10 l
+..........\OT1/cmr/m/n/10 e
+..........\OT1/cmr/m/n/10 -
+..........\OT1/cmr/m/n/10 i
+..........\OT1/cmr/m/n/10 m
+..........\OT1/cmr/m/n/10 a
+..........\OT1/cmr/m/n/10 g
+..........\OT1/cmr/m/n/10 e
+..........\OT1/cmr/m/n/10 -
+..........\OT1/cmr/m/n/10 a
+..........\OT1/cmr/m/n/10 .
+..........\OT1/cmr/m/n/10 p
+..........\kern0.27779
+..........\OT1/cmr/m/n/10 d
+..........\OT1/cmr/m/n/10 f
+..........\OT1/cmr/m/n/10 "
+..........\glue 3.33333 plus 1.66666 minus 1.11111
+..........\OT1/cmr/m/n/10 c
+..........\OT1/cmr/m/n/10 r
+..........\OT1/cmr/m/n/10 o
+..........\OT1/cmr/m/n/10 p
+.........\glue 0.0 plus 1.0fil minus 1.0fil
+........\special{pdf:etrans}
+.......\kern 122.52806
+.......\glue 0.0 plus 1.0fil minus 1.0fil
+....\penalty 10000
+....\glue(\parfillskip) 0.0 plus 1.0fil
+....\glue(\rightskip) 0.0
+...\glue(\parskip) 0.0 plus 1.0
+...\glue(\baselineskip) 5.05559
+...\hbox(6.94441+0.0)x345.0, glue set 179.13893fil
+....\hbox(0.0+0.0)x15.0
+....\hbox(6.94441+0.0)x150.86107
+.....\hbox(6.94444+1.94444)x150.86145
+......\hbox(6.94444+1.94444)x150.86145
+.......\hbox(6.94444+1.94444)x0.0
+........\special{pdf:btrans}
+........\special{x:scale 1 1}
+........\hbox(6.94444+1.94444)x0.0, glue set - 150.86145fil
+.........\hbox(6.94444+1.94444)x150.86145
+..........\OT1/cmr/m/n/10 "
+..........\OT1/cmr/m/n/10 e
+..........\OT1/cmr/m/n/10 x
+..........\OT1/cmr/m/n/10 a
+..........\OT1/cmr/m/n/10 m
+..........\OT1/cmr/m/n/10 p
+..........\OT1/cmr/m/n/10 l
+..........\OT1/cmr/m/n/10 e
+..........\OT1/cmr/m/n/10 -
+..........\OT1/cmr/m/n/10 i
+..........\OT1/cmr/m/n/10 m
+..........\OT1/cmr/m/n/10 a
+..........\OT1/cmr/m/n/10 g
+..........\OT1/cmr/m/n/10 e
+..........\OT1/cmr/m/n/10 -
+..........\OT1/cmr/m/n/10 a
+..........\OT1/cmr/m/n/10 .
+..........\OT1/cmr/m/n/10 p
+..........\kern0.27779
+..........\OT1/cmr/m/n/10 d
+..........\OT1/cmr/m/n/10 f
+..........\OT1/cmr/m/n/10 "
+..........\glue 3.33333 plus 1.66666 minus 1.11111
+..........\OT1/cmr/m/n/10 p
+..........\OT1/cmr/m/n/10 a
+..........\OT1/cmr/m/n/10 g
+..........\OT1/cmr/m/n/10 e
+..........\glue 3.33333 plus 1.66666 minus 1.11111
+..........\OT1/cmr/m/n/10 1
+..........\OT1/cmr/m/n/10 c
+..........\OT1/cmr/m/n/10 r
+..........\OT1/cmr/m/n/10 o
+..........\OT1/cmr/m/n/10 p
+.........\glue 0.0 plus 1.0fil minus 1.0fil
+........\special{pdf:etrans}
+.......\kern 150.86145
+.......\glue 0.0 plus 1.0fil minus 1.0fil
+....\penalty 10000
+....\glue(\parfillskip) 0.0 plus 1.0fil
+....\glue(\rightskip) 0.0
+...\glue(\parskip) 0.0 plus 1.0
+...\glue(\baselineskip) 5.05559
+...\hbox(6.94441+0.0)x345.0, glue set 266.08334fil
+....\hbox(0.0+0.0)x15.0
+....\hbox(6.94441+0.0)x63.91666
+.....\hbox(6.94444+1.94444)x63.91682
+......\hbox(6.94444+1.94444)x63.91682
+.......\hbox(6.94444+1.94444)x0.0
+........\special{pdf:btrans}
+........\special{x:scale 1 1}
+........\hbox(6.94444+1.94444)x0.0, glue set - 63.91682fil
+.........\hbox(6.94444+1.94444)x63.91682
+..........\OT1/cmr/m/n/10 "
+..........\OT1/cmr/m/n/10 a
+..........\OT1/cmr/m/n/10 z
+..........\OT1/cmr/m/n/10 2
+..........\OT1/cmr/m/n/10 .
+..........\OT1/cmr/m/n/10 p
+..........\kern0.27779
+..........\OT1/cmr/m/n/10 d
+..........\OT1/cmr/m/n/10 f
+..........\OT1/cmr/m/n/10 "
+..........\glue 3.33333 plus 1.66666 minus 1.11111
+..........\OT1/cmr/m/n/10 c
+..........\OT1/cmr/m/n/10 r
+..........\OT1/cmr/m/n/10 o
+..........\OT1/cmr/m/n/10 p
+.........\glue 0.0 plus 1.0fil minus 1.0fil
+........\special{pdf:etrans}
+.......\kern 63.91682
+.......\glue 0.0 plus 1.0fil minus 1.0fil
+....\penalty 10000
+....\glue(\parfillskip) 0.0 plus 1.0fil
+....\glue(\rightskip) 0.0
+...\glue(\parskip) 0.0 plus 1.0
+...\glue(\baselineskip) 5.05559
+...\hbox(6.94441+0.0)x345.0, glue set 272.19444fil
+....\hbox(0.0+0.0)x15.0
+....\hbox(6.94441+0.0)x57.80556
+.....\hbox(6.94444+1.94444)x57.80571
+......\hbox(6.94444+1.94444)x57.80571
+.......\hbox(6.94444+1.94444)x0.0
+........\special{pdf:btrans}
+........\special{x:scale 1 1}
+........\hbox(6.94444+1.94444)x0.0, glue set - 57.80571fil
+.........\hbox(6.94444+1.94444)x57.80571
+..........\OT1/cmr/m/n/10 "
+..........\OT1/cmr/m/n/10 a
+..........\OT1/cmr/m/n/10 z
+..........\OT1/cmr/m/n/10 2
+..........\OT1/cmr/m/n/10 .
+..........\OT1/cmr/m/n/10 p
+..........\kern0.27779
+..........\OT1/cmr/m/n/10 d
+..........\OT1/cmr/m/n/10 f
+..........\OT1/cmr/m/n/10 "
+..........\glue 3.33333 plus 1.66666 minus 1.11111
+..........\OT1/cmr/m/n/10 a
+..........\OT1/cmr/m/n/10 r
+..........\OT1/cmr/m/n/10 t
+.........\glue 0.0 plus 1.0fil minus 1.0fil
+........\special{pdf:etrans}
+.......\kern 57.80571
+.......\glue 0.0 plus 1.0fil minus 1.0fil
+....\penalty 10000
+....\glue(\parfillskip) 0.0 plus 1.0fil
+....\glue(\rightskip) 0.0
+...\glue(\parskip) 0.0 plus 1.0
+...\glue(\lineskip) 1.0
+...\hbox(49.99988+0.0)x345.0, glue set 280.00012fil
+....\hbox(0.0+0.0)x15.0
+....\hbox(49.99988+0.0)x49.99988
+.....\special{pdf:image bbox 12.9514 64.757 62.76448 114.57008 clip 1 width 49.9998\ETC.}
+....\penalty 10000
+....\glue(\parfillskip) 0.0 plus 1.0fil
+....\glue(\rightskip) 0.0
+...\glue(\parskip) 0.0 plus 1.0
+...\glue(\lineskip) 1.0
+...\hbox(49.99988+0.0)x345.0, glue set 280.00012fil
+....\hbox(0.0+0.0)x15.0
+....\hbox(49.99988+0.0)x49.99988
+.....\special{pdf:image bbox 12.9514 64.757 62.76448 114.57008 clip 1 width 49.9998\ETC.}
+....\penalty 10000
+....\glue(\parfillskip) 0.0 plus 1.0fil
+....\glue(\rightskip) 0.0
+...\glue(\parskip) 0.0 plus 1.0
+...\glue(\baselineskip) 5.05559
+...\hbox(6.94441+0.0)x345.0, glue set 268.05559fil
+....\hbox(0.0+0.0)x15.0
+....\hbox(6.94441+0.0)x61.94441
+.....\special{pdf:image bbox 0 0 61.713 6.91847 clip 0 width 61.94441pt (clip-1-2.j\ETC.}
+....\penalty 10000
+....\glue(\parfillskip) 0.0 plus 1.0fil
+....\glue(\rightskip) 0.0
+...\glue 0.0 plus 1.0fil
+...\glue 0.0
+...\glue 0.0 plus 0.0001fil
+..\glue(\baselineskip) 23.55556
+..\hbox(6.44444+0.0)x345.0, glue set 170.0fil
+...\glue 0.0 plus 1.0fil
+...\OT1/cmr/m/n/10 1
+...\glue 0.0 plus 1.0fil
+(.aux)

@@ -1,0 +1,226 @@
+This is a generated file for the l3build validation system.
+Don't change this file in any respect.
+<example-image-a.pdf, id=1, pagebox=cropbox, 321.2pt x 240.9pt>
+File: example-image-a.pdf Graphic file (type pdf)
+<use example-image-a.pdf>
+Package luatex.def Info: example-image-a.pdf  used on input line .... on input line ....
+Package luatex.def Info: Requested size: 321.19922pt x 240.8994pt on input line ....
+<example-image-a.pdf, id=2, page=1, pagebox=cropbox, 321.2pt x 240.9pt>
+File: example-image-a.pdf Graphic file (type pdf)
+<use example-image-a.pdf, page 1>
+Package luatex.def Info: example-image-a.pdf , page1 used on input line .... on input line ....
+Package luatex.def Info: Requested size: 321.19922pt x 240.8994pt on input line ....
+<az2.pdf, id=3, pagebox=cropbox, 30.1125pt x 50.1875pt>
+File: az2.pdf Graphic file (type pdf)
+<use az2.pdf>
+Package luatex.def Info: az2.pdf  used on input line .... on input line ....
+Package luatex.def Info: Requested size: 30.11241pt x 50.18736pt on input line ....
+<az2.pdf, id=4, pagebox=artbox, 36.135pt x 36.135pt>
+File: az2.pdf Graphic file (type pdf)
+<use az2.pdf>
+Package luatex.def Info: az2.pdf  used on input line .... on input line ....
+Package luatex.def Info: Requested size: 36.13489pt x 36.13489pt on input line ....
+Completed box being shipped out [1]
+\vbox(633.0+0.0)x407.0, direction TLT
+.\glue 16.0
+.\vbox(617.0+0.0)x345.0, shifted 62.0, direction TLT
+..\vbox(12.0+0.0)x345.0, glue set 12.0fil, direction TLT
+...\glue 0.0 plus 1.0fil
+...\hbox(0.0+0.0)x345.0, direction TLT
+..\glue 25.0
+..\glue(\lineskip) 0.0
+..\vbox(550.0+0.0)x345.0, glue set >20000.0fil, direction TLT
+...\write-{}
+...\glue(\topskip) 0.0
+...\hbox(240.8994+0.0)x345.0, glue set 8.80078fil, direction TLT
+....\localpar
+.....\localinterlinepenalty=0
+.....\localbrokenpenalty=0
+.....\localleftbox=null
+.....\localrightbox=null
+....\hbox(0.0+0.0)x15.0, direction TLT
+....\hbox(240.8994+0.0)x321.19922, direction TLT
+.....\hbox(240.9+0.0)x321.2, direction TLT
+......\hbox(240.9+0.0)x321.2, direction TLT
+.......\hbox(240.9+0.0)x0.0, direction TLT
+........\hbox(240.9+0.0)x0.0, glue set - 321.20001fil, direction TLT
+.........\hbox(240.9+0.0)x321.2, direction TLT
+..........\image(240.9+0.0)x321.2
+.........\glue 0.0 plus 1.0fil minus 1.0fil
+.......\kern 321.2
+.......\glue 0.0 plus 1.0fil minus 1.0fil
+....\penalty 10000
+....\glue(\parfillskip) 0.0 plus 1.0fil
+....\glue(\rightskip) 0.0
+...\glue(\parskip) 0.0 plus 1.0
+...\glue(\lineskip) 1.0
+...\hbox(240.8994+0.0)x345.0, glue set 8.80078fil, direction TLT
+....\localpar
+.....\localinterlinepenalty=0
+.....\localbrokenpenalty=0
+.....\localleftbox=null
+.....\localrightbox=null
+....\hbox(0.0+0.0)x15.0, direction TLT
+....\hbox(240.8994+0.0)x321.19922, direction TLT
+.....\hbox(240.9+0.0)x321.2, direction TLT
+......\hbox(240.9+0.0)x321.2, direction TLT
+.......\hbox(240.9+0.0)x0.0, direction TLT
+........\hbox(240.9+0.0)x0.0, glue set - 321.20001fil, direction TLT
+.........\hbox(240.9+0.0)x321.2, direction TLT
+..........\image(240.9+0.0)x321.2
+.........\glue 0.0 plus 1.0fil minus 1.0fil
+.......\kern 321.2
+.......\glue 0.0 plus 1.0fil minus 1.0fil
+....\penalty 10000
+....\glue(\parfillskip) 0.0 plus 1.0fil
+....\glue(\rightskip) 0.0
+...\glue(\parskip) 0.0 plus 1.0
+...\glue(\lineskip) 1.0
+...\hbox(50.18736+0.0)x345.0, glue set 299.88757fil, direction TLT
+....\localpar
+.....\localinterlinepenalty=0
+.....\localbrokenpenalty=0
+.....\localleftbox=null
+.....\localrightbox=null
+....\hbox(0.0+0.0)x15.0, direction TLT
+....\hbox(50.18736+0.0)x30.11241, direction TLT
+.....\hbox(50.1875+0.0)x30.1125, direction TLT
+......\hbox(50.1875+0.0)x30.1125, direction TLT
+.......\hbox(50.1875+0.0)x0.0, direction TLT
+........\hbox(50.1875+0.0)x0.0, glue set - 30.1125fil, direction TLT
+.........\hbox(50.1875+0.0)x30.1125, direction TLT
+..........\image(50.1875+0.0)x30.1125
+.........\glue 0.0 plus 1.0fil minus 1.0fil
+.......\kern 30.1125
+.......\glue 0.0 plus 1.0fil minus 1.0fil
+....\penalty 10000
+....\glue(\parfillskip) 0.0 plus 1.0fil
+....\glue(\rightskip) 0.0
+...\glue 0.0
+...\glue 0.0 plus 0.0001fil
+..\glue(\baselineskip) 23.34
+..\hbox(6.66+0.0)x345.0, glue set 170.0fil, direction TLT
+...\glue 0.0 plus 1.0fil
+...\TU/lmr/m/n/10 1
+...\glue 0.0 plus 1.0fil
+</usr/local/texlive/2017/texmf-dist/tex/latex/mwe/example-image-a.pdf></usr/local/texlive/2017/texmf-dist/tex/latex/mwe/example-image-a.pdf><./az2.pdf>
+File: clip-1-2.jpg Graphic file (type jpg)
+<use clip-1-2.jpg>
+Package luatex.def Info: clip-1-2.jpg  used on input line .... on input line ....
+Package luatex.def Info: Requested size: 49.99988pt x 49.99988pt on input line ....
+File: clip-1-2.png Graphic file (type png)
+<use clip-1-2.png>
+Package luatex.def Info: clip-1-2.png  used on input line .... on input line ....
+Package luatex.def Info: Requested size: 49.99988pt x 49.99988pt on input line ....
+<clip-1-2.jpg, id=29, pagebox=cropbox, interpolate=true, 146.34676pt x 128.8815pt>
+File: clip-1-2.jpg Graphic file (type jpg)
+<use clip-1-2.jpg>
+Package luatex.def Info: clip-1-2.jpg  used on input line .... on input line ....
+Package luatex.def Info: Requested size: 146.34639pt x 128.88118pt on input line ....
+Completed box being shipped out [2]
+\vbox(633.0+0.0)x407.0, direction TLT
+.\glue 16.0
+.\vbox(617.0+0.0)x345.0, shifted 62.0, direction TLT
+..\vbox(12.0+0.0)x345.0, glue set 12.0fil, direction TLT
+...\glue 0.0 plus 1.0fil
+...\hbox(0.0+0.0)x345.0, direction TLT
+..\glue 25.0
+..\glue(\lineskip) 0.0
+..\vbox(550.0+0.0)x345.0, glue set 281.95407fil, direction TLT
+...\glue(\topskip) 0.0
+...\hbox(36.13489+0.0)x345.0, glue set 293.86511fil, direction TLT
+....\localpar
+.....\localinterlinepenalty=0
+.....\localbrokenpenalty=0
+.....\localleftbox=null
+.....\localrightbox=null
+....\hbox(0.0+0.0)x15.0, direction TLT
+....\hbox(36.13489+0.0)x36.13489, direction TLT
+.....\hbox(36.135+0.0)x36.135, direction TLT
+......\hbox(36.135+0.0)x36.135, direction TLT
+.......\hbox(36.135+0.0)x0.0, direction TLT
+........\hbox(36.135+0.0)x0.0, glue set - 36.135fil, direction TLT
+.........\hbox(36.135+0.0)x36.135, direction TLT
+..........\image(36.135+0.0)x36.135
+.........\glue 0.0 plus 1.0fil minus 1.0fil
+.......\kern 36.135
+.......\glue 0.0 plus 1.0fil minus 1.0fil
+....\penalty 10000
+....\glue(\parfillskip) 0.0 plus 1.0fil
+....\glue(\rightskip) 0.0
+...\glue(\parskip) 0.0 plus 1.0
+...\glue(\lineskip) 1.0
+...\hbox(49.99988+0.0)x345.0, glue set 280.00012fil, direction TLT
+....\localpar
+.....\localinterlinepenalty=0
+.....\localbrokenpenalty=0
+.....\localleftbox=null
+.....\localrightbox=null
+....\hbox(0.0+0.0)x15.0, direction TLT
+....\hbox(49.99988+0.0)x49.99988, direction TLT
+.....\hbox(49.99988+0.0)x49.99988, direction TLT
+......\hbox(49.99988+0.0)x49.99988, direction TLT
+.......\hbox(49.99988+0.0)x0.0, direction TLT
+........\hbox(49.99988+0.0)x0.0, glue set - 49.99988fil, direction TLT
+.........\hbox(49.99988+0.0)x49.99988, direction TLT
+..........\box(49.99988+0.0)x49.99988
+.........\glue 0.0 plus 1.0fil minus 1.0fil
+.......\kern 49.99988
+.......\glue 0.0 plus 1.0fil minus 1.0fil
+....\penalty 10000
+....\glue(\parfillskip) 0.0 plus 1.0fil
+....\glue(\rightskip) 0.0
+...\glue(\parskip) 0.0 plus 1.0
+...\glue(\lineskip) 1.0
+...\hbox(49.99988+0.0)x345.0, glue set 280.00012fil, direction TLT
+....\localpar
+.....\localinterlinepenalty=0
+.....\localbrokenpenalty=0
+.....\localleftbox=null
+.....\localrightbox=null
+....\hbox(0.0+0.0)x15.0, direction TLT
+....\hbox(49.99988+0.0)x49.99988, direction TLT
+.....\hbox(49.99988+0.0)x49.99988, direction TLT
+......\hbox(49.99988+0.0)x49.99988, direction TLT
+.......\hbox(49.99988+0.0)x0.0, direction TLT
+........\hbox(49.99988+0.0)x0.0, glue set - 49.99988fil, direction TLT
+.........\hbox(49.99988+0.0)x49.99988, direction TLT
+..........\box(49.99988+0.0)x49.99988
+.........\glue 0.0 plus 1.0fil minus 1.0fil
+.......\kern 49.99988
+.......\glue 0.0 plus 1.0fil minus 1.0fil
+....\penalty 10000
+....\glue(\parfillskip) 0.0 plus 1.0fil
+....\glue(\rightskip) 0.0
+...\glue(\parskip) 0.0 plus 1.0
+...\glue(\lineskip) 1.0
+...\hbox(128.88118+0.0)x345.0, glue set 183.65361fil, direction TLT
+....\localpar
+.....\localinterlinepenalty=0
+.....\localbrokenpenalty=0
+.....\localleftbox=null
+.....\localrightbox=null
+....\hbox(0.0+0.0)x15.0, direction TLT
+....\hbox(128.88118+0.0)x146.34639, direction TLT
+.....\hbox(128.8815+0.0)x146.34676, direction TLT
+......\hbox(128.8815+0.0)x146.34676, direction TLT
+.......\hbox(128.8815+0.0)x0.0, direction TLT
+........\hbox(128.8815+0.0)x0.0, glue set - 146.34676fil, direction TLT
+.........\hbox(128.8815+0.0)x146.34676, direction TLT
+..........\image(128.8815+0.0)x146.34676
+.........\glue 0.0 plus 1.0fil minus 1.0fil
+.......\kern 146.34676
+.......\glue 0.0 plus 1.0fil minus 1.0fil
+....\penalty 10000
+....\glue(\parfillskip) 0.0 plus 1.0fil
+....\glue(\rightskip) 0.0
+...\glue 0.0 plus 1.0fil
+...\glue 0.0
+...\glue 0.0 plus 0.0001fil
+..\glue(\baselineskip) 23.34
+..\hbox(6.66+0.0)x345.0, glue set 170.0fil, direction TLT
+...\glue 0.0 plus 1.0fil
+...\TU/lmr/m/n/10 2
+...\glue 0.0 plus 1.0fil
+Completed box being shipped out
+Completed box being shipped out<./az2.pdf><./clip-1-2.jpg> (.aux)

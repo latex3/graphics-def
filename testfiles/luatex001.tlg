@@ -1,0 +1,890 @@
+This is a generated file for the l3build validation system.
+Don't change this file in any respect.
+! Undefined control sequence.
+<argument> \saveimageresource 
+                              \ifGin@interpolate attr{/Interpolate true}\fi ...
+l. ...\includegraphics{example-image-a}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+! Undefined control sequence.
+<argument> ...@tempboxa =\hbox {\useimageresource 
+                                                  \lastsavedimageresourceind...
+l. ...\includegraphics{example-image-a}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+! Undefined control sequence.
+<argument> ...source \lastsavedimageresourceindex 
+                                                  }\def \Gin@llx {0}\let \Gi...
+l. ...\includegraphics{example-image-a}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+! Undefined control sequence.
+<argument> ...@hash \endcsname {\useimageresource 
+                                                  \the \lastsavedimageresour...
+l. ...\includegraphics{example-image-a}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+! Undefined control sequence.
+<argument> ...e \the \lastsavedimageresourceindex 
+                                                  }\expandafter \xdef \csnam...
+l. ...\includegraphics{example-image-a}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+! You can't use `end-group character }' after \the.
+<argument> ... \the \lastsavedimageresourceindex }
+                                                  \expandafter \xdef \csname...
+l. ...\includegraphics{example-image-a}
+I'm forgetting what you said and using zero instead.
+! Undefined control sequence.
+<argument> ...d=\the \lastsavedimageresourceindex 
+                                                  , \ifx \Gin@page \@empty \...
+l. ...\includegraphics{example-image-a}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+! You can't use `the character ,' after \the.
+<argument> ...=\the \lastsavedimageresourceindex ,
+                                                   \ifx \Gin@page \@empty \e...
+l. ...\includegraphics{example-image-a}
+I'm forgetting what you said and using zero instead.
+! Undefined control sequence.
+<argument> \saveimageresource 
+                              \ifGin@interpolate attr{/Interpolate true}\fi ...
+l. ...\includegraphics{example-image-a}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+! Undefined control sequence.
+<argument> ...@tempboxa =\hbox {\useimageresource 
+                                                  \lastsavedimageresourceind...
+l. ...\includegraphics{example-image-a}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+! Undefined control sequence.
+<argument> ...source \lastsavedimageresourceindex 
+                                                  }\def \Gin@llx {0}\let \Gi...
+l. ...\includegraphics{example-image-a}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+! Undefined control sequence.
+<argument> ...@hash \endcsname {\useimageresource 
+                                                  \the \lastsavedimageresour...
+l. ...\includegraphics{example-image-a}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+! Undefined control sequence.
+<argument> ...e \the \lastsavedimageresourceindex 
+                                                  }\expandafter \xdef \csnam...
+l. ...\includegraphics{example-image-a}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+! You can't use `end-group character }' after \the.
+<argument> ... \the \lastsavedimageresourceindex }
+                                                  \expandafter \xdef \csname...
+l. ...\includegraphics{example-image-a}
+I'm forgetting what you said and using zero instead.
+! Undefined control sequence.
+<argument> ...d=\the \lastsavedimageresourceindex 
+                                                  , \ifx \Gin@page \@empty \...
+l. ...\includegraphics{example-image-a}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+! You can't use `the character ,' after \the.
+<argument> ...=\the \lastsavedimageresourceindex ,
+                                                   \ifx \Gin@page \@empty \e...
+l. ...\includegraphics{example-image-a}
+I'm forgetting what you said and using zero instead.
+! Argument of \@providesfile has an extra }.
+<inserted text> 
+                \par 
+l. ...\includegraphics{example-image-a}
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+Runaway argument?
+{\Gin@base \Gin@ext }
+! Paragraph ended before \@providesfile was complete.
+<to be read again> 
+                   \par 
+l. ...\includegraphics{example-image-a}
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+Runaway argument?
+{[}\def \@tempb {\@providesfile {\Gin@base \Gin@ext }[]}\ifx \@tempa \ETC.
+! Paragraph ended before \@tempa was complete.
+<to be read again> 
+                   \par 
+l. ...
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+! Undefined control sequence.
+<argument> \saveimageresource 
+                              \ifGin@interpolate attr{/Interpolate true}\fi ...
+l. ...\includegraphics
+                     [page = 1]{example-image-a.pdf}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+! Undefined control sequence.
+<argument> ...@tempboxa =\hbox {\useimageresource 
+                                                  \lastsavedimageresourceind...
+l. ...\includegraphics
+                     [page = 1]{example-image-a.pdf}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+! Undefined control sequence.
+<argument> ...source \lastsavedimageresourceindex 
+                                                  }\def \Gin@llx {0}\let \Gi...
+l. ...\includegraphics
+                     [page = 1]{example-image-a.pdf}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+! Undefined control sequence.
+<argument> ...@hash \endcsname {\useimageresource 
+                                                  \the \lastsavedimageresour...
+l. ...\includegraphics
+                     [page = 1]{example-image-a.pdf}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+! Undefined control sequence.
+<argument> ...e \the \lastsavedimageresourceindex 
+                                                  }\expandafter \xdef \csnam...
+l. ...\includegraphics
+                     [page = 1]{example-image-a.pdf}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+! You can't use `end-group character }' after \the.
+<argument> ... \the \lastsavedimageresourceindex }
+                                                  \expandafter \xdef \csname...
+l. ...\includegraphics
+                     [page = 1]{example-image-a.pdf}
+I'm forgetting what you said and using zero instead.
+! Undefined control sequence.
+<argument> ...d=\the \lastsavedimageresourceindex 
+                                                  , \ifx \Gin@page \@empty \...
+l. ...\includegraphics
+                     [page = 1]{example-image-a.pdf}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+! You can't use `the character ,' after \the.
+<argument> ...=\the \lastsavedimageresourceindex ,
+                                                   \ifx \Gin@page \@empty \e...
+l. ...\includegraphics
+                     [page = 1]{example-image-a.pdf}
+I'm forgetting what you said and using zero instead.
+! Argument of \@firstoftwo has an extra }.
+<inserted text> 
+                \par 
+l. ...\includegraphics
+                     [page = 1]{example-image-a.pdf}
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+Runaway argument?
+! Paragraph ended before \@firstoftwo was complete.
+<to be read again> 
+                   \par 
+l. ...\includegraphics
+                     [page = 1]{example-image-a.pdf}
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+Runaway argument?
+{[}\def \@tempb {\Gin@clipfalse \Gin@i }\ifx \@tempa \@tempb \def \@tempa \ETC.! Paragraph ended before \@tempa was complete.
+<to be read again> 
+                   \par 
+l. ...
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+! Undefined control sequence.
+<argument> \saveimageresource 
+                              \ifGin@interpolate attr{/Interpolate true}\fi ...
+l. ...\includegraphics
+                     {az2}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+! Undefined control sequence.
+<argument> ...@tempboxa =\hbox {\useimageresource 
+                                                  \lastsavedimageresourceind...
+l. ...\includegraphics
+                     {az2}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+! Undefined control sequence.
+<argument> ...source \lastsavedimageresourceindex 
+                                                  }\def \Gin@llx {0}\let \Gi...
+l. ...\includegraphics
+                     {az2}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+! Undefined control sequence.
+<argument> ...@hash \endcsname {\useimageresource 
+                                                  \the \lastsavedimageresour...
+l. ...\includegraphics
+                     {az2}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+! Undefined control sequence.
+<argument> ...e \the \lastsavedimageresourceindex 
+                                                  }\expandafter \xdef \csnam...
+l. ...\includegraphics
+                     {az2}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+! You can't use `end-group character }' after \the.
+<argument> ... \the \lastsavedimageresourceindex }
+                                                  \expandafter \xdef \csname...
+l. ...\includegraphics
+                     {az2}
+I'm forgetting what you said and using zero instead.
+! Undefined control sequence.
+<argument> ...d=\the \lastsavedimageresourceindex 
+                                                  , \ifx \Gin@page \@empty \...
+l. ...\includegraphics
+                     {az2}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+! You can't use `the character ,' after \the.
+<argument> ...=\the \lastsavedimageresourceindex ,
+                                                   \ifx \Gin@page \@empty \e...
+l. ...\includegraphics
+                     {az2}
+I'm forgetting what you said and using zero instead.
+! Argument of \@firstoftwo has an extra }.
+<inserted text> 
+                \par 
+l. ...\includegraphics
+                     {az2}
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+Runaway argument?
+! Paragraph ended before \@firstoftwo was complete.
+<to be read again> 
+                   \par 
+l. ...\includegraphics
+                     {az2}
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+Runaway argument?
+{[}\def \@tempb {\Gin@clipfalse \Gin@i }\ifx \@tempa \@tempb \def \@tempa \ETC.! Paragraph ended before \@tempa was complete.
+<to be read again> 
+                   \par 
+l. ...
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+! Undefined control sequence.
+<argument> \saveimageresource 
+                              \ifGin@interpolate attr{/Interpolate true}\fi ...
+l. ...\includegraphics
+                     [pagebox = artbox]{az2}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+! Undefined control sequence.
+<argument> ...@tempboxa =\hbox {\useimageresource 
+                                                  \lastsavedimageresourceind...
+l. ...\includegraphics
+                     [pagebox = artbox]{az2}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+! Undefined control sequence.
+<argument> ...source \lastsavedimageresourceindex 
+                                                  }\def \Gin@llx {0}\let \Gi...
+l. ...\includegraphics
+                     [pagebox = artbox]{az2}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+! Undefined control sequence.
+<argument> ...@hash \endcsname {\useimageresource 
+                                                  \the \lastsavedimageresour...
+l. ...\includegraphics
+                     [pagebox = artbox]{az2}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+! Undefined control sequence.
+<argument> ...e \the \lastsavedimageresourceindex 
+                                                  }\expandafter \xdef \csnam...
+l. ...\includegraphics
+                     [pagebox = artbox]{az2}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+! You can't use `end-group character }' after \the.
+<argument> ... \the \lastsavedimageresourceindex }
+                                                  \expandafter \xdef \csname...
+l. ...\includegraphics
+                     [pagebox = artbox]{az2}
+I'm forgetting what you said and using zero instead.
+! Undefined control sequence.
+<argument> ...d=\the \lastsavedimageresourceindex 
+                                                  , \ifx \Gin@page \@empty \...
+l. ...\includegraphics
+                     [pagebox = artbox]{az2}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+! You can't use `the character ,' after \the.
+<argument> ...=\the \lastsavedimageresourceindex ,
+                                                   \ifx \Gin@page \@empty \e...
+l. ...\includegraphics
+                     [pagebox = artbox]{az2}
+I'm forgetting what you said and using zero instead.
+! Argument of \@firstoftwo has an extra }.
+<inserted text> 
+                \par 
+l. ...\includegraphics
+                     [pagebox = artbox]{az2}
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+Runaway argument?
+! Paragraph ended before \@firstoftwo was complete.
+<to be read again> 
+                   \par 
+l. ...\includegraphics
+                     [pagebox = artbox]{az2}
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+Runaway argument?
+{[}\def \@tempb {\Gin@clipfalse \Gin@i }\ifx \@tempa \@tempb \def \@tempa \ETC.! Paragraph ended before \@tempa was complete.
+<to be read again> 
+                   \par 
+l. ...
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+! Undefined control sequence.
+<argument> \saveimageresource 
+                              \ifGin@interpolate attr{/Interpolate true}\fi ...
+l. ...\includegraphics
+                     [bb=13pt 65pt 63pt 115pt,clip]{clip-1-2.jpg}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+! Undefined control sequence.
+<argument> ...@tempboxa =\hbox {\useimageresource 
+                                                  \lastsavedimageresourceind...
+l. ...\includegraphics
+                     [bb=13pt 65pt 63pt 115pt,clip]{clip-1-2.jpg}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+! Undefined control sequence.
+<argument> ...source \lastsavedimageresourceindex 
+                                                  }\def \Gin@llx {0}\let \Gi...
+l. ...\includegraphics
+                     [bb=13pt 65pt 63pt 115pt,clip]{clip-1-2.jpg}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+! Undefined control sequence.
+<argument> ...@hash \endcsname {\useimageresource 
+                                                  \the \lastsavedimageresour...
+l. ...\includegraphics
+                     [bb=13pt 65pt 63pt 115pt,clip]{clip-1-2.jpg}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+! Undefined control sequence.
+<argument> ...e \the \lastsavedimageresourceindex 
+                                                  }\expandafter \xdef \csnam...
+l. ...\includegraphics
+                     [bb=13pt 65pt 63pt 115pt,clip]{clip-1-2.jpg}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+! You can't use `end-group character }' after \the.
+<argument> ... \the \lastsavedimageresourceindex }
+                                                  \expandafter \xdef \csname...
+l. ...\includegraphics
+                     [bb=13pt 65pt 63pt 115pt,clip]{clip-1-2.jpg}
+I'm forgetting what you said and using zero instead.
+! Undefined control sequence.
+<argument> ...d=\the \lastsavedimageresourceindex 
+                                                  , \ifx \Gin@page \@empty \...
+l. ...\includegraphics
+                     [bb=13pt 65pt 63pt 115pt,clip]{clip-1-2.jpg}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+! You can't use `the character ,' after \the.
+<argument> ...=\the \lastsavedimageresourceindex ,
+                                                   \ifx \Gin@page \@empty \e...
+l. ...\includegraphics
+                     [bb=13pt 65pt 63pt 115pt,clip]{clip-1-2.jpg}
+I'm forgetting what you said and using zero instead.
+! Argument of \@firstoftwo has an extra }.
+<inserted text> 
+                \par 
+l. ...\includegraphics
+                     [bb=13pt 65pt 63pt 115pt,clip]{clip-1-2.jpg}
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+Runaway argument?
+! Paragraph ended before \@firstoftwo was complete.
+<to be read again> 
+                   \par 
+l. ...\includegraphics
+                     [bb=13pt 65pt 63pt 115pt,clip]{clip-1-2.jpg}
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+Runaway argument?
+{[}\def \@tempb {\Gin@clipfalse \Gin@i }\ifx \@tempa \@tempb \def \@tempa \ETC.! Paragraph ended before \@tempa was complete.
+<to be read again> 
+                   \par 
+l. ...
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+! Undefined control sequence.
+<argument> \saveimageresource 
+                              \ifGin@interpolate attr{/Interpolate true}\fi ...
+l. ...\includegraphics
+                     [bb=13pt 65pt 63pt 115pt,clip]{clip-1-2.png}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+! Undefined control sequence.
+<argument> ...@tempboxa =\hbox {\useimageresource 
+                                                  \lastsavedimageresourceind...
+l. ...\includegraphics
+                     [bb=13pt 65pt 63pt 115pt,clip]{clip-1-2.png}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+! Undefined control sequence.
+<argument> ...source \lastsavedimageresourceindex 
+                                                  }\def \Gin@llx {0}\let \Gi...
+l. ...\includegraphics
+                     [bb=13pt 65pt 63pt 115pt,clip]{clip-1-2.png}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+! Undefined control sequence.
+<argument> ...@hash \endcsname {\useimageresource 
+                                                  \the \lastsavedimageresour...
+l. ...\includegraphics
+                     [bb=13pt 65pt 63pt 115pt,clip]{clip-1-2.png}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+! Undefined control sequence.
+<argument> ...e \the \lastsavedimageresourceindex 
+                                                  }\expandafter \xdef \csnam...
+l. ...\includegraphics
+                     [bb=13pt 65pt 63pt 115pt,clip]{clip-1-2.png}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+! You can't use `end-group character }' after \the.
+<argument> ... \the \lastsavedimageresourceindex }
+                                                  \expandafter \xdef \csname...
+l. ...\includegraphics
+                     [bb=13pt 65pt 63pt 115pt,clip]{clip-1-2.png}
+I'm forgetting what you said and using zero instead.
+! Undefined control sequence.
+<argument> ...d=\the \lastsavedimageresourceindex 
+                                                  , \ifx \Gin@page \@empty \...
+l. ...\includegraphics
+                     [bb=13pt 65pt 63pt 115pt,clip]{clip-1-2.png}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+! You can't use `the character ,' after \the.
+<argument> ...=\the \lastsavedimageresourceindex ,
+                                                   \ifx \Gin@page \@empty \e...
+l. ...\includegraphics
+                     [bb=13pt 65pt 63pt 115pt,clip]{clip-1-2.png}
+I'm forgetting what you said and using zero instead.
+! Argument of \@firstoftwo has an extra }.
+<inserted text> 
+                \par 
+l. ...\includegraphics
+                     [bb=13pt 65pt 63pt 115pt,clip]{clip-1-2.png}
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+Runaway argument?
+! Paragraph ended before \@firstoftwo was complete.
+<to be read again> 
+                   \par 
+l. ...\includegraphics
+                     [bb=13pt 65pt 63pt 115pt,clip]{clip-1-2.png}
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+Runaway argument?
+{[}\def \@tempb {\Gin@clipfalse \Gin@i }\ifx \@tempa \@tempb \def \@tempa \ETC.! Paragraph ended before \@tempa was complete.
+<to be read again> 
+                   \par 
+l. ...
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+! Undefined control sequence.
+<argument> \saveimageresource 
+                              \ifGin@interpolate attr{/Interpolate true}\fi ...
+l. ...\includegraphics
+                     [interpolate = true]{clip-1-2.jpg}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+! Undefined control sequence.
+<argument> ...@tempboxa =\hbox {\useimageresource 
+                                                  \lastsavedimageresourceind...
+l. ...\includegraphics
+                     [interpolate = true]{clip-1-2.jpg}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+! Undefined control sequence.
+<argument> ...source \lastsavedimageresourceindex 
+                                                  }\def \Gin@llx {0}\let \Gi...
+l. ...\includegraphics
+                     [interpolate = true]{clip-1-2.jpg}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+! Undefined control sequence.
+<argument> ...@hash \endcsname {\useimageresource 
+                                                  \the \lastsavedimageresour...
+l. ...\includegraphics
+                     [interpolate = true]{clip-1-2.jpg}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+! Undefined control sequence.
+<argument> ...e \the \lastsavedimageresourceindex 
+                                                  }\expandafter \xdef \csnam...
+l. ...\includegraphics
+                     [interpolate = true]{clip-1-2.jpg}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+! You can't use `end-group character }' after \the.
+<argument> ... \the \lastsavedimageresourceindex }
+                                                  \expandafter \xdef \csname...
+l. ...\includegraphics
+                     [interpolate = true]{clip-1-2.jpg}
+I'm forgetting what you said and using zero instead.
+! Undefined control sequence.
+<argument> ...d=\the \lastsavedimageresourceindex 
+                                                  , \ifx \Gin@page \@empty \...
+l. ...\includegraphics
+                     [interpolate = true]{clip-1-2.jpg}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+! You can't use `the character ,' after \the.
+<argument> ...=\the \lastsavedimageresourceindex ,
+                                                   \ifx \Gin@page \@empty \e...
+l. ...\includegraphics
+                     [interpolate = true]{clip-1-2.jpg}
+I'm forgetting what you said and using zero instead.
+! Argument of \@firstoftwo has an extra }.
+<inserted text> 
+                \par 
+l. ...\includegraphics
+                     [interpolate = true]{clip-1-2.jpg}
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+Runaway argument?
+! Paragraph ended before \@firstoftwo was complete.
+<to be read again> 
+                   \par 
+l. ...\includegraphics
+                     [interpolate = true]{clip-1-2.jpg}
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+Runaway argument?
+{[}\def \@tempb {\Gin@clipfalse \Gin@i }\ifx \@tempa \@tempb \def \@tempa \ETC.! Paragraph ended before \@tempa was complete.
+<to be read again> 
+                   \par 
+l. ...
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+! Argument of \@firstofone has an extra }.
+<inserted text> 
+                \par 
+l. ...\end{document}
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+Runaway argument?
+! Paragraph ended before \@firstofone was complete.
+<to be read again> 
+                   \par 
+l. ...\end{document}
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+! Undefined control sequence.
+<argument> \saveimageresource 
+                              \ifGin@interpolate attr{/Interpolate true}\fi ...
+l. ...\end{document}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+! Undefined control sequence.
+<argument> ...@tempboxa =\hbox {\useimageresource 
+                                                  \lastsavedimageresourceind...
+l. ...\end{document}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+! Undefined control sequence.
+<argument> ...source \lastsavedimageresourceindex 
+                                                  }\def \Gin@llx {0}\let \Gi...
+l. ...\end{document}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+! Undefined control sequence.
+<argument> ...@hash \endcsname {\useimageresource 
+                                                  \the \lastsavedimageresour...
+l. ...\end{document}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+! Undefined control sequence.
+<argument> ...e \the \lastsavedimageresourceindex 
+                                                  }\expandafter \xdef \csnam...
+l. ...\end{document}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+! You can't use `end-group character }' after \the.
+<argument> ... \the \lastsavedimageresourceindex }
+                                                  \expandafter \xdef \csname...
+l. ...\end{document}
+I'm forgetting what you said and using zero instead.
+! Undefined control sequence.
+<argument> ...d=\the \lastsavedimageresourceindex 
+                                                  , \ifx \Gin@page \@empty \...
+l. ...\end{document}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+! You can't use `the character ,' after \the.
+<argument> ...=\the \lastsavedimageresourceindex ,
+                                                   \ifx \Gin@page \@empty \e...
+l. ...\end{document}
+I'm forgetting what you said and using zero instead.
+! Undefined control sequence.
+\GenericError  ...                                
+                                                    #4  \errhelp \@err@     ...
+l. ...\end{document}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+! Undefined control sequence.
+\GenericError  ...                                
+                                                  \let \@err@               ...
+l. ...\end{document}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+! Undefined control sequence.
+\GenericError  ...                                
+                                                  \@empty \def \MessageBreak...
+l. ...\end{document}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+! Undefined control sequence.
+<argument> \saveimageresource 
+                              \ifGin@interpolate attr{/Interpolate true}\fi ...
+l. ...\end{document}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+! Undefined control sequence.
+<argument> ...@tempboxa =\hbox {\useimageresource 
+                                                  \lastsavedimageresourceind...
+l. ...\end{document}
+(That makes 100 errors; please try again.) 
+Here is how much of TeX's memory you used:
+ 1450 strings out of 492995
+ 20871 string characters out of 6132689
+ 76016 words of memory out of 5000000
+ 5020 multiletter control sequences out of 15000+600000
+ 3640 words of font info for 14 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 43i,1n,25p,296b,523s stack positions out of 5000i,500n,10000p,200000b,80000s
+!  ==> Fatal error occurred, no output PDF file produced!

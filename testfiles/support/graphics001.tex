@@ -1,0 +1,23 @@
+\documentclass{article}
+\usepackage{graphicx}
+\input{regression-test}
+\showoutput
+\begin{document}
+
+\START
+
+\includegraphics{example-image-a}
+
+\includegraphics[page = 1]{example-image-a.pdf}
+
+\includegraphics{az2}
+
+\includegraphics[pagebox = artbox]{az2}
+
+\includegraphics[bb=13pt 65pt 63pt 115pt,clip]{clip-1-2.jpg}
+
+\includegraphics[bb=13pt 65pt 63pt 115pt,clip]{clip-1-2.png}
+
+\includegraphics[interpolate = true]{clip-1-2.jpg}
+
+\end{document}
