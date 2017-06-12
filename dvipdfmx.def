@@ -79,7 +79,7 @@
   {\let\Gin@page\@empty}
   {}
 \@ifundefined{Gin@pagebox}
-  {\def\Gin@page{cropbox}}
+  {\def\Gin@pagebox{cropbox}}
   {}
 \@ifundefined{Gin@interpolate}
   {\csname newif\endcsname\ifGin@interpolate}

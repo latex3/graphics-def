@@ -18,7 +18,7 @@
 %% https://github.com/latex3/graphics-def/issues
 %%
 \ProvidesFile{luatex.def}
-  [2017/06/01 v1.0a Graphics/color driver for luatex]
+  [2017/06/12 v1.0b Graphics/color driver for luatex]
 \def\c@lor@arg#1{%
   \dimen@#1\p@
   \ifdim\dimen@<\z@\dimen@\maxdimen\fi
@@ -148,7 +148,7 @@
   {\let\Gin@page\@empty}
   {}
 \@ifundefined{Gin@pagebox}
-  {\def\Gin@page{cropbox}}
+  {\def\Gin@pagebox{cropbox}}
   {}
 \@ifundefined{Gin@interpolate}
   {\csname newif\endcsname\ifGin@interpolate}
