@@ -16,7 +16,7 @@
 %% https://github.com/latex3/graphics-def/issues
 %%
 \ProvidesFile{dvipdfmx.def}
-  [2017/06/01 v5.0a Graphics/color driver for dvipdfmx]
+  [2017/06/12 v5.0b Graphics/color driver for dvipdfmx]
 \def\c@lor@arg#1{%
   \dimen@#1\p@
   \ifdim\dimen@<\z@\dimen@\maxdimen\fi
@@ -123,7 +123,7 @@
 \def\Ginclude@bmp#1{%
   \let\Gin@page\@empty
   \let\Gin@pagebox\@empty
-  \Ginclude@dvipdfmx{#1{image}}%
+  \Ginclude@dvipdfmx{#1}{image}%
 }
 \def\Ginclude@dvipdfmx#1#2{%
   \Gin@log{<#1>}%
