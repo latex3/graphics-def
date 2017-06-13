@@ -572,7 +572,7 @@ you'd better type `E' or `X' now and fix your file.
 *** (job aborted, no legal \end found)
 Here is how much of TeX's memory you used:
  931 strings out of 493005
- 11733 string characters out of 6134596
+ 11712 string characters out of 6134596
  71890 words of memory out of 5000000
  4959 multiletter control sequences out of 15000+600000
  3648 words of font info for 15 fonts, out of 8000000 for 9000
