@@ -1,7 +1,7 @@
 LaTeX support for color and graphics
 ====================================
 
-Release 2017-06-12
+Release 2017-06-13
 
 This bundle contains the 'engine-dependent' part of support for
 color and graphics in LaTeX2e (the code here will also function
