@@ -83,6 +83,7 @@
 \def\define@color@named#1#2{%
   \expandafter\let\csname col@#1\endcsname\@nnil}
       \def\no@page@color{\special{background \string"newpath clip}}
+\def\G@pdf@ext{.pdf}
 \@ifundefined{Gin@page}
   {\let\Gin@page\@empty}
   {}
