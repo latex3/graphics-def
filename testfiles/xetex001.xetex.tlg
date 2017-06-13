@@ -31,7 +31,7 @@ Completed box being shipped out [1]
 ........\special{x:scale 1 1}
 ........\hbox(240.9+0.0)x0.0, glue set - 321.20001fil
 .........\hbox(240.9+0.0)x321.20001
-..........\XeTeXpdffile "./example-image-a.pdf"
+..........\XeTeXpdffile "/usr/local/texlive/2017/texmf-dist/tex/latex/mwe/example-image-a.pdf"
 .........\glue 0.0 plus 1.0fil minus 1.0fil
 ........\special{pdf:etrans}
 .......\kern 321.20001
@@ -51,7 +51,7 @@ Completed box being shipped out [1]
 ........\special{x:scale 1 1}
 ........\hbox(240.9+0.0)x0.0, glue set - 321.20001fil
 .........\hbox(240.9+0.0)x321.20001
-..........\XeTeXpdffile "./example-image-a.pdf"
+..........\XeTeXpdffile "/usr/local/texlive/2017/texmf-dist/tex/latex/mwe/example-image-a.pdf"
 .........\glue 0.0 plus 1.0fil minus 1.0fil
 ........\special{pdf:etrans}
 .......\kern 321.20001

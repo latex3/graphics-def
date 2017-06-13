@@ -103,7 +103,7 @@ Completed box being shipped out [1]
 ...\glue 0.0 plus 1.0fil
 ...\TU/lmr/m/n/10 1
 ...\glue 0.0 plus 1.0fil
-<./example-image-a.pdf><./example-image-a.pdf><./az2.pdf>
+</usr/local/texlive/2017/texmf-dist/tex/latex/mwe/example-image-a.pdf></usr/local/texlive/2017/texmf-dist/tex/latex/mwe/example-image-a.pdf><./az2.pdf>
 File: clip-1-2.jpg Graphic file (type jpg)
 <use clip-1-2.jpg>
 Package luatex.def Info: clip-1-2.jpg  used on input line .... on input line ....
