@@ -293,13 +293,6 @@
 \@namedef{Gin@rule@.eps.gz}#1{{eps}{.eps.xbb}{`gunzip -c #1}}
 %
 \@namedef{Gin@rule@*}#1{{eps}{\Gin@ext}{#1}}
-
-
-% v4.10
-% Support new (no)setpagesize option of graphics and color.
-% v4.11
-% Use \special{pdf:pagesize ...} instead of \special{papersize=...}
-% to support \mag (dvipdfmx only)
 \@ifundefined{ifGin@setpagesize}
 {\expandafter\let\csname ifGin@setpagesize\expandafter\endcsname
 \csname iftrue\endcsname}
