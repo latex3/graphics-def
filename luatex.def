@@ -18,7 +18,7 @@
 %% https://github.com/latex3/graphics-def/issues
 %%
 \ProvidesFile{luatex.def}
-  [2017/06/12 v1.0b Graphics/color driver for luatex]
+  [2017/06/14 v1.0c Graphics/color driver for luatex]
 \def\c@lor@arg#1{%
   \dimen@#1\p@
   \ifdim\dimen@<\z@\dimen@\maxdimen\fi
@@ -74,7 +74,7 @@
 \def\set@page@color{%
   \GPT@pagecolortrue
   \global\let\current@page@color\current@color
-  \ifundefined{GPT@outputbox}{%
+  \@ifundefined{GPT@outputbox}{%
     % \newbox is outer in plain
     \csname newbox\endcsname\GPT@outputbox
   }{}%
