@@ -17,7 +17,7 @@
 %% https://github.com/latex3/graphics-def/issues
 %%
 \ProvidesFile{dvips.def}
-  [2017/06/01 v3.1b Graphics/color driver for dvips]
+  [2017/06/14 v3.1c Graphics/color driver for dvips]
 \def\c@lor@arg#1{%
   \dimen@#1\p@
   \ifdim\dimen@<\z@\dimen@\maxdimen\fi
@@ -153,10 +153,11 @@
 \ifnum\mag=\@m
   \AtBeginDvi{%
     \begingroup
-    \ifx\stockwidth\@undefined\else
-      \paperwidth\stockwidth
-      \paperheight\stockheight
-    \fi
+      \@ifundefined{stockwidth}{}
+        {%
+          \paperwidth\stockwidth
+          \paperheight\stockheight
+        }%
     \ifdim\paperwidth>\z@
       \ifdim\paperheight>\z@
         \special{papersize=\the\paperwidth,\the\paperheight}%

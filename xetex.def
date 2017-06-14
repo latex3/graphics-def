@@ -16,7 +16,7 @@
 %% https://github.com/latex3/graphics-def/issues
 %%
 \ProvidesFile{xetex.def}
-  [2017/06/13 v5.0b Graphics/color driver for xetex]
+  [2017/06/14 v5.0c Graphics/color driver for xetex]
 \def\c@lor@arg#1{%
   \dimen@#1\p@
   \ifdim\dimen@<\z@\dimen@\maxdimen\fi
@@ -406,10 +406,11 @@
 \ifnum\mag=\@m
 \AtBeginDvi{%
 \begingroup
-\ifx\stockwidth\@undefined\else
-\paperwidth\stockwidth
-\paperheight\stockheight
-\fi
+  \@ifundefined{stockwidth}{}
+    {%
+      \paperwidth\stockwidth
+      \paperheight\stockheight
+    }%
 \ifdim\paperwidth>\z@
 \ifdim\paperheight>\z@
 \special{pdf:pagesize width \the\paperwidth\space height \the\paperheight}%
