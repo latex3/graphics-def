@@ -571,10 +571,10 @@ you'd better type `E' or `X' now and fix your file.
 <*> .lvt
 *** (job aborted, no legal \end found)
 Here is how much of TeX's memory you used:
- 931 strings out of 493005
- 11712 string characters out of 6134596
- 71890 words of memory out of 5000000
- 4959 multiletter control sequences out of 15000+600000
+ 932 strings out of 493005
+ 11783 string characters out of 6134596
+ 71893 words of memory out of 5000000
+ 4960 multiletter control sequences out of 15000+600000
  3648 words of font info for 15 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  27i,1n,21p,229b,50s stack positions out of 5000i,500n,10000p,200000b,80000s
