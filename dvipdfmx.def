@@ -16,7 +16,7 @@
 %% https://github.com/latex3/graphics-def/issues
 %%
 \ProvidesFile{dvipdfmx.def}
-  [2017/06/14 v5.0d Graphics/color driver for dvipdfmx]
+  [2017/06/14 v5.0e Graphics/color driver for dvipdfmx]
 \def\c@lor@arg#1{%
   \dimen@#1\p@
   \ifdim\dimen@<\z@\dimen@\maxdimen\fi
