@@ -404,19 +404,24 @@
 % If a package has changed \mag, assume it knows what it is doing
 % and leave page size alone
 \ifnum\mag=\@m
-\AtBeginDvi{%
-\begingroup
-  \@ifundefined{stockwidth}{}
-    {%
-      \paperwidth\stockwidth
-      \paperheight\stockheight
-    }%
-\ifdim\paperwidth>\z@
-\ifdim\paperheight>\z@
-\special{pdf:pagesize width \the\paperwidth\space height \the\paperheight}%
+\@ifundefined{stockwidth}{%
+\@ifundefined{paperwidth}{%
+}{%
+\ifdim\paperwidth>0pt\relax
+\ifdim\paperheight>0pt\relax
+\pdfpagewidth=\paperwidth
+\pdfpageheight=\paperheight
 \fi
 \fi
-\endgroup}%
+}%
+}{%
+\ifdim\stockwidth>0pt\relax
+\ifdim\stockheight>0pt\relax
+\pdfpagewidth=\stockwidth
+\pdfpageheight=\stockheight
+\fi
+\fi
+}%
 \fi
 }
 \fi
