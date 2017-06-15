@@ -18,7 +18,7 @@
 %% https://github.com/latex3/graphics-def/issues
 %%
 \ProvidesFile{pdftex.def}
-  [2017/06/14 v1.0c Graphics/color driver for pdftex]
+  [2017/06/15 v1.0d Graphics/color driver for pdftex]
 \def\c@lor@arg#1{%
   \dimen@#1\p@
   \ifdim\dimen@<\z@\dimen@\maxdimen\fi
@@ -485,7 +485,7 @@ E     \else
 \fi
 \def\Gin@extensions{%
   .pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,%
-  .PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2
+  .PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2%
 }
 \@namedef{Gin@rule@.jpg}#1{{jpg}{.jpg}{#1}}
 \@namedef{Gin@rule@.jpeg}#1{{jpg}{.jpeg}{#1}}
