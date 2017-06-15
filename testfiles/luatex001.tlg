@@ -880,10 +880,10 @@ and I'll forget about whatever was undefined.
 l. ...\end{document}
 (That makes 100 errors; please try again.) 
 Here is how much of TeX's memory you used:
- 1450 strings out of 492995
- 20913 string characters out of 6132689
+ 1449 strings out of 492995
+ 20902 string characters out of 6132689
  76016 words of memory out of 5000000
- 5020 multiletter control sequences out of 15000+600000
+ 5019 multiletter control sequences out of 15000+600000
  3640 words of font info for 14 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  43i,1n,25p,296b,523s stack positions out of 5000i,500n,10000p,200000b,80000s

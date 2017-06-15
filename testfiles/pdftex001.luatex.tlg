@@ -596,11 +596,11 @@ you'd better type `E' or `X' now and fix your file.
 <*> .lvt
 *** (job aborted, no legal \end found)
 Here is how much of LuaTeX's memory you used:
- 993 strings out of 494481
+ 992 strings out of 494481
  100000,89155 words of node,token memory allocated 592 words of node memory still in use:
    5 hlist, 1 rule, 2 local_par, 1 dir, 5 glue, 1 penalty, 27 glyph, 5 attribute, 45 glue_spec, 5 attribute_list, 1 temp, 4 if_stack, 1 write nodes
    avail lists: 2:3,3:1,4:2,5:3,8:1
- 5156 multiletter control sequences out of 65536+600000
+ 5155 multiletter control sequences out of 65536+600000
  15 fonts using 723367 bytes
  27i,1n,21p,226b,50s stack positions out of 5000i,500n,10000p,200000b,100000s
 !  ==> Fatal error occurred, no output PDF file produced!
