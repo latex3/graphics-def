@@ -16,7 +16,7 @@
 %% https://github.com/latex3/graphics-def/issues
 %%
 \ProvidesFile{xetex.def}
-  [2017/06/14 v5.0d Graphics/color driver for xetex]
+  [2017/06/16 v5.0e Graphics/color driver for xetex]
 \def\c@lor@arg#1{%
   \dimen@#1\p@
   \ifdim\dimen@<\z@\dimen@\maxdimen\fi
@@ -83,7 +83,6 @@
 \def\define@color@named#1#2{%
   \expandafter\let\csname col@#1\endcsname\@nnil}
       \def\no@page@color{\special{background \string"newpath clip}}
-\def\G@pdf@ext{.pdf}
 \@ifundefined{Gin@page}
   {\let\Gin@page\@empty}
   {}
