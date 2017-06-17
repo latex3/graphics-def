@@ -18,7 +18,7 @@
 %% https://github.com/latex3/graphics-def/issues
 %%
 \ProvidesFile{luatex.def}
-  [2017/06/14 v1.0c Graphics/color driver for luatex]
+  [2017/06/17 v1.0d Graphics/color driver for luatex]
 \def\c@lor@arg#1{%
   \dimen@#1\p@
   \ifdim\dimen@<\z@\dimen@\maxdimen\fi
@@ -72,7 +72,7 @@
 \newif\ifGPT@pagecolor
 \begingroup\expandafter\expandafter\expandafter\endgroup
 \def\set@page@color{%
-  \GPT@pagecolortrue
+  \global\GPT@pagecolortrue
   \global\let\current@page@color\current@color
   \@ifundefined{GPT@outputbox}{%
     % \newbox is outer in plain
@@ -122,7 +122,7 @@
 \def\define@color@named#1#2{%
   \expandafter\edef\csname col@#1\endcsname{#2}}
 \def\no@page@color{%
-  \GPT@pagecolorfalse
+  \global\GPT@pagecolorfalse
 }
 \def\Gread@pdftex#1{%
   \IfFileExists{#1}

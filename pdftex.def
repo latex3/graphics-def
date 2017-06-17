@@ -18,7 +18,7 @@
 %% https://github.com/latex3/graphics-def/issues
 %%
 \ProvidesFile{pdftex.def}
-  [2017/06/15 v1.0d Graphics/color driver for pdftex]
+  [2017/06/17 v1.0e Graphics/color driver for pdftex]
 \def\c@lor@arg#1{%
   \dimen@#1\p@
   \ifdim\dimen@<\z@\dimen@\maxdimen\fi
@@ -79,7 +79,7 @@
   \catcode`E=9  % ignore
 \fi
 \def\set@page@color{%
-  \GPT@pagecolortrue
+  \global\GPT@pagecolortrue
   \global\let\current@page@color\current@color
   \@ifundefined{GPT@outputbox}{%
     % \newbox is outer in plain
@@ -136,7 +136,7 @@ E     \else
 \def\define@color@named#1#2{%
   \expandafter\edef\csname col@#1\endcsname{#2}}
 \def\no@page@color{%
-  \GPT@pagecolorfalse
+  \global\GPT@pagecolorfalse
 }
 \def\Gread@pdftex#1{%
   \expandafter\ifx\expandafter\relax\pdffilesize{#1}\relax
