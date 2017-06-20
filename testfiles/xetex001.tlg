@@ -2,7 +2,7 @@ This is a generated file for the l3build validation system.
 Don't change this file in any respect.
 ! Undefined control sequence.
 <argument> ...ox \@tempboxa =\hbox {\XeTeXpdffile 
-                                                  "\Gin@@name "\space \ifx \...
+                                                  "\Gin@@name "\GPT@space \i...
 l. ...\includegraphics{example-image-a}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -22,7 +22,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <argument> ...ox \@tempboxa =\hbox {\XeTeXpdffile 
-                                                  "\Gin@@name "\space \ifx \...
+                                                  "\Gin@@name "\GPT@space \i...
 l. ......udegraphics[page = 1]{example-image-a.pdf}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -42,7 +42,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <argument> ...ox \@tempboxa =\hbox {\XeTeXpdffile 
-                                                  "\Gin@@name "\space \ifx \...
+                                                  "\Gin@@name "\GPT@space \i...
 l. ...\includegraphics{az2}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -62,7 +62,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <argument> ...ox \@tempboxa =\hbox {\XeTeXpdffile 
-                                                  "\Gin@@name "\space \ifx \...
+                                                  "\Gin@@name "\GPT@space \i...
 l. ...\includegraphics[pagebox = artbox]{az2}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -86,7 +86,7 @@ File: clip-1-2.png Graphic file (type bmp)
 <clip-1-2.png>
 ! Undefined control sequence.
 <argument> ...ox \@tempboxa =\hbox {\XeTeXpicfile 
-                                                  "\Gin@@name "\space \ifx \...
+                                                  "\Gin@@name "\GPT@space \i...
 l. ......graphics[interpolate = true]{clip-1-2.jpg}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have

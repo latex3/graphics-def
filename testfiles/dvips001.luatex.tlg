@@ -620,12 +620,12 @@ Just continue, I'll change it to 0xFFFD.
 l. ...\includegraphics[page = 1]{example-image-a.pdf}
 (That makes 100 errors; please try again.)
 Here is how much of LuaTeX's memory you used:
- 638 strings out of 494481
+ 639 strings out of 494481
  100000,89155 words of node,token memory allocated
  460 words of node memory still in use:
    5 hlist, 1 vlist, 1 rule, 2 local_par, 1 dir, 5 glue, 1 penalty, 7 attribute, 45 glue_spec, 7 attribute_list, 1 temp, 6 if_stack, 1 write, 3 special nodes
    avail lists: 2:2,4:1,5:3,8:1
- 4802 multiletter control sequences out of 65536+600000
+ 4803 multiletter control sequences out of 65536+600000
  15 fonts using 723367 bytes
  27i,1n,21p,363b,69s stack positions out of 5000i,500n,10000p,200000b,100000s
 !  ==> Fatal error occurred, bad output DVI file produced!
