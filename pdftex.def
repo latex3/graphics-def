@@ -18,7 +18,7 @@
 %% https://github.com/latex3/graphics-def/issues
 %%
 \ProvidesFile{pdftex.def}
-  [2017/06/20 v1.0f Graphics/color driver for pdftex]
+  [2017/06/24 v1.0g Graphics/color driver for pdftex]
 \def\GPT@space{ }
 \def\c@lor@arg#1{%
   \dimen@#1\p@
@@ -160,6 +160,9 @@ E     \else
     }%
 }
 \let\Gin@attr@hash\@empty
+\@ifundefined{Gin@decode}
+  {\let\Gin@decode\@empty}
+  {}
 \@ifundefined{Gin@log}
   {\let\Gin@log\wlog}
   {}
@@ -183,6 +186,9 @@ E     \else
     \else
       :P\Gin@page
     \fi
+    \ifx\Gin@decode\@empty\else
+      :D[\Gin@decode]%
+    \fi
     \ifGin@interpolate
       :I%
     \fi
@@ -190,7 +196,15 @@ E     \else
   \@ifundefined{#1 image\Gin@attr@hash}%
     {%
       \pdfximage
-        \ifGin@interpolate attr{/Interpolate true}\fi
+        \ifnum0%
+          \ifx\Gin@decode\@empty\else 1\fi
+          \ifGin@interpolate 1\fi
+          >0 %
+          attr{%
+            \ifx\Gin@decode\@empty\else/Decode[\Gin@decode]\fi
+            \ifGin@interpolate/Interpolate true\fi
+          }%
+        \fi
         \ifx\Gin@page\@empty\else page \Gin@page\fi
         \Gin@pagebox
         {#1}%
@@ -209,6 +223,7 @@ E     \else
         id=\the\pdflastximage, %
         \ifx\Gin@page\@empty\else page=\Gin@page , \fi
         \ifx\Gin@pagebox\@empty\else pagebox=\Gin@pagebox , \fi
+        \ifx\Gin@decode\@empty\else decode=[\Gin@decode], \fi
         \ifGin@interpolate interpolate=true, \fi
         \the\wd\@tempboxa\GPT@space x \the\ht\@tempboxa
         >%
@@ -227,6 +242,7 @@ E     \else
 \let\Gread@jpg\Gread@png
 \expandafter\let\csname Gread@jbig2\endcsname\Gread@png
 \def\Gread@pdf#1{%
+  \let\Gin@decode\@empty
   \Gin@interpolatefalse
   \Gread@pdftex{#1}%
 }

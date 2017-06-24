@@ -16,7 +16,7 @@
 %% https://github.com/latex3/graphics-def/issues
 %%
 \ProvidesFile{dvipdfmx.def}
-  [2017/06/20 v5.0f Graphics/color driver for dvipdfmx]
+  [2017/06/24 v5.0g Graphics/color driver for dvipdfmx]
 \def\GPT@space{ }
 \def\c@lor@arg#1{%
   \dimen@#1\p@
@@ -84,6 +84,9 @@
 \def\define@color@named#1#2{%
   \expandafter\let\csname col@#1\endcsname\@nnil}
       \def\no@page@color{\special{background \string"newpath clip}}
+\@ifundefined{Gin@decode}
+  {\let\Gin@decode\@empty}
+  {}
 \@ifundefined{Gin@page}
   {\let\Gin@page\@empty}
   {}
@@ -126,6 +129,7 @@
 }
 \let\Gread@bmp\Gread@pdf
 \def\Ginclude@pdf#1{%
+  \let\Gin@decode\@empty
   \Gin@interpolatefalse
   \Ginclude@dvipdfmx{#1}{epdf}%
 }
@@ -146,7 +150,16 @@
       \ifx\Gin@scalex\@tempa\else width\GPT@space\the\Gin@req@width\GPT@space\fi
       \ifx\Gin@scaley\@tempa\else height\GPT@space\the\Gin@req@height\GPT@space\fi
       (#1)\GPT@space
-      \ifGin@interpolate<</Interpolate\GPT@space true>>\fi}%
+      \ifnum0%
+        \ifx\Gin@decode\@empty\else 1\fi
+        \ifGin@interpolate 1\fi
+        >0 %
+        <<%
+          \ifx\Gin@decode\@empty\else /Decode[\Gin@decode]\fi
+          \ifGin@interpolate /Interpolate true\fi
+        >>%
+      \fi
+    }%
   \egroup}
 \newif\if@trim@vport
 \def\Ginclude@eps#1{%
