@@ -125,7 +125,17 @@
   \global\GPT@pagecolorfalse
 }
 \def\Gread@pdftex#1{%
-  \IfFileExists{#1}
+% Use low level test here not \IfFileExists to match \Gread@pdftex in
+% pdftex.def  and \Gread@eps test in graphics.
+% (IfFileExists might be modified by packages and
+% #1 has already been "processed" by \input@path.)
+  \openin\@inputcheck"#1" %
+  \ifeof\@inputcheck
+   \closein\@inputcheck
+   \expandafter\@secondoftwo
+  \else
+   \expandafter\@firstoftwo
+  \fi
     {\Gread@@pdftex{#1}}%
     {%
       \def\Gin@llx{0}%
