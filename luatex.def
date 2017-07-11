@@ -18,7 +18,8 @@
 %% https://github.com/latex3/graphics-def/issues
 %%
 \ProvidesFile{luatex.def}
-  [2017/06/17 v1.0d Graphics/color driver for luatex]
+  [2017/06/24 v1.0f Graphics/color driver for luatex]
+\def\GPT@space{ }
 \def\c@lor@arg#1{%
   \dimen@#1\p@
   \ifdim\dimen@<\z@\dimen@\maxdimen\fi
@@ -107,10 +108,10 @@
       \ifGPT@pagecolor
         \pdfextension literal page{%
           q % gsave
-          \current@page@color\space
+          \current@page@color\GPT@space
           n % newpath
-          0 0 \strip@pt\pagewidth\space
-          \strip@pt\pageheight\space re % rectangle
+          0 0 \strip@pt\pagewidth\GPT@space
+          \strip@pt\pageheight\GPT@space re % rectangle
           % there is no need to convert to bp
           f % fill
           Q% grestore
@@ -151,6 +152,9 @@
     }%
 }
 \let\Gin@attr@hash\@empty
+\@ifundefined{Gin@decode}
+  {\let\Gin@decode\@empty}
+  {}
 \@ifundefined{Gin@log}
   {\let\Gin@log\wlog}
   {}
@@ -173,6 +177,9 @@
     \else
       :P\Gin@page
     \fi
+    \ifx\Gin@decode\@empty\else
+      :D[\Gin@decode]%
+    \fi
     \ifGin@interpolate
       :I%
     \fi
@@ -180,7 +187,15 @@
   \@ifundefined{#1 image\Gin@attr@hash}%
     {%
       \saveimageresource
-        \ifGin@interpolate attr{/Interpolate true}\fi
+        \ifnum0%
+          \ifx\Gin@decode\@empty\else 1\fi
+          \ifGin@interpolate 1\fi
+          >0 %
+          attr{%
+            \ifx\Gin@decode\@empty\else/Decode[\Gin@decode]\fi
+            \ifGin@interpolate/Interpolate true\fi
+          }%
+        \fi
         \ifx\Gin@page\@empty\else page \Gin@page\fi
         \Gin@pagebox
         {#1}%
@@ -199,8 +214,9 @@
         id=\the\lastsavedimageresourceindex, %
         \ifx\Gin@page\@empty\else page=\Gin@page , \fi
         \ifx\Gin@pagebox\@empty\else pagebox=\Gin@pagebox , \fi
+        \ifx\Gin@decode\@empty\else decode=[\Gin@decode], \fi
         \ifGin@interpolate interpolate=true, \fi
-        \the\wd\@tempboxa\space x \the\ht\@tempboxa
+        \the\wd\@tempboxa\GPT@space x \the\ht\@tempboxa
         >%
       }%
     }{%
@@ -216,6 +232,7 @@
 \let\Gread@jpg\Gread@png
 \expandafter\let\csname Gread@jbig2\endcsname\Gread@png
 \def\Gread@pdf#1{%
+  \let\Gin@decode\@empty
   \Gin@interpolatefalse
   \Gread@pdftex{#1}%
 }
@@ -237,10 +254,10 @@
   }%
   \PackageInfo{luatex.def}{%
     #1 \ifx\Gin@page\@empty\else, page\Gin@page\fi
-    \space used\ifx\on@line\@undefined\else\on@line\fi.}%
+    \GPT@space used\ifx\on@line\@undefined\else\on@line\fi.}%
   \PackageInfo{luatex.def}{%
     Requested size: %
-    \the\Gin@req@width\space x \the\Gin@req@height
+    \the\Gin@req@width\GPT@space x \the\Gin@req@height
   }%
   \Ginclude@@pdftex{\@nameuse{#1 image\Gin@attr@hash}}%
 }
@@ -405,7 +422,7 @@
   \GPT@NormalizeNumber\Grot@sin
   \GPT@NormalizeNumber\Grot@cos
   \edef\GPT@temp{%
-    \Grot@cos\space\Grot@sin\space
+    \Grot@cos\GPT@space\Grot@sin\GPT@space
     \if-\Grot@sin
     \else
       \ifx\Grot@sin\GPT@Zero
@@ -414,7 +431,7 @@
         -\Grot@sin
       \fi
     \fi
-    \space\Grot@cos
+    \GPT@space\Grot@cos
   }%
   \ifx\GPT@temp\GPT@MatrixIdentity
     \def\Grot@end{}%
@@ -431,7 +448,7 @@
   \GPT@NormalizeNumber\Gscale@x
   \GPT@NormalizeNumber\Gscale@y
   \edef\GPT@temp{%
-    \Gscale@x\space0 0 \Gscale@y
+    \Gscale@x\GPT@space0 0 \Gscale@y
   }%
   \ifx\GPT@temp\GPT@MatrixIdentity
     \def\Gscale@end{}%
@@ -518,7 +535,7 @@
         (or `supp-pdf.tex' and/or `supp-mis.tex')
         to convert MetaPost output files to PDF.
         These files are part of ConTeXt and can also be found here:%
-        \space\space CTAN:macros/pdftex/graphics/.
+        \GPT@space\GPT@space CTAN:macros/pdftex/graphics/.
         You'll get more errors if you'll continue now.%
       }%
     }%

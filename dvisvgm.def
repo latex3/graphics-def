@@ -15,7 +15,8 @@
 %%
 %% https://github.com/latex3/graphics-def/issues
 %
-\ProvidesFile{dvisvgm.def}[2017/06/01 v1.0a dvisvgm graphics driver for latex]
+\ProvidesFile{dvisvgm.def}[2017/06/20 v1.0b dvisvgm graphics driver for latex]
+\def\GPT@space{ }
 % The following is copied from dvips.def:
 \def\c@lor@arg#1{%
   \dimen@#1\p@
@@ -91,12 +92,12 @@
     \special{dvisvgm: raw
       <g transform="translate({?x},{?y})">
         <svg overflow="\ifGin@clip hidden\else visible\fi" width="\strip@pt\Gin@req@width" height="\strip@pt\Gin@req@height"
-             viewBox="\Gin@llx\space\Gin@svg@view@base\space\Gin@svg@view@width\space\Gin@svg@view@height">
+             viewBox="\Gin@llx\GPT@space\Gin@svg@view@base\GPT@space\Gin@svg@view@width\GPT@space\Gin@svg@view@height">
           <image width="\Gin@svg@real@width@bp" height="\Gin@svg@real@height@bp" 
                  xlink:href="#1"/>
         </svg>
       </g>}%
-%    \special{dvisvgm: img \strip@pt\Gin@req@width\space \strip@pt\Gin@req@height\space #1}
+%    \special{dvisvgm: img \strip@pt\Gin@req@width\GPT@space \strip@pt\Gin@req@height\GPT@space #1}
   }%
 }
 

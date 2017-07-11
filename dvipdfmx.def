@@ -16,7 +16,8 @@
 %% https://github.com/latex3/graphics-def/issues
 %%
 \ProvidesFile{dvipdfmx.def}
-  [2017/06/14 v5.0e Graphics/color driver for dvipdfmx]
+  [2017/06/24 v5.0g Graphics/color driver for dvipdfmx]
+\def\GPT@space{ }
 \def\c@lor@arg#1{%
   \dimen@#1\p@
   \ifdim\dimen@<\z@\dimen@\maxdimen\fi
@@ -83,6 +84,9 @@
 \def\define@color@named#1#2{%
   \expandafter\let\csname col@#1\endcsname\@nnil}
       \def\no@page@color{\special{background \string"newpath clip}}
+\@ifundefined{Gin@decode}
+  {\let\Gin@decode\@empty}
+  {}
 \@ifundefined{Gin@page}
   {\let\Gin@page\@empty}
   {}
@@ -99,8 +103,8 @@
   \ifeof\@inputcheck
     \immediate\openin\@inputcheck=%
       "|extractbb %
-      \ifx\Gin@page\@empty\else -p \Gin@page\space\fi
-      \ifx\Gin@pagebox\@empty\else -B \Gin@pagebox\space\fi
+      \ifx\Gin@page\@empty\else -p \Gin@page\GPT@space\fi
+      \ifx\Gin@pagebox\@empty\else -B \Gin@pagebox\GPT@space\fi
       -O \Gin@base\Gin@ext"%
   \fi
   \Gread@true
@@ -125,6 +129,7 @@
 }
 \let\Gread@bmp\Gread@pdf
 \def\Ginclude@pdf#1{%
+  \let\Gin@decode\@empty
   \Gin@interpolatefalse
   \Ginclude@dvipdfmx{#1}{epdf}%
 }
@@ -137,15 +142,24 @@
   \Gin@log{<#1>}%
   \bgroup
   \def\@tempa{!}%
-    \special{pdf:#2\space
-      \ifx\Gin@page\@empty\else page\space\Gin@page\space\fi
-      \ifx\Gin@pagebox\@empty\else pagebox\space\Gin@pagebox\space\fi
-      bbox\space\Gin@llx\space\Gin@lly\space\Gin@urx\space\Gin@ury\space
-      clip\space\ifGin@clip 1\else 0\fi\space
-      \ifx\Gin@scalex\@tempa\else width\space\the\Gin@req@width\space\fi
-      \ifx\Gin@scaley\@tempa\else height\space\the\Gin@req@height\space\fi
-      (#1)\space
-      \ifGin@interpolate<</Interpolate\space true>>\fi}%
+    \special{pdf:#2\GPT@space
+      \ifx\Gin@page\@empty\else page\GPT@space\Gin@page\GPT@space\fi
+      \ifx\Gin@pagebox\@empty\else pagebox\GPT@space\Gin@pagebox\GPT@space\fi
+      bbox\GPT@space\Gin@llx\GPT@space\Gin@lly\GPT@space\Gin@urx\GPT@space\Gin@ury\GPT@space
+      clip\GPT@space\ifGin@clip 1\else 0\fi\GPT@space
+      \ifx\Gin@scalex\@tempa\else width\GPT@space\the\Gin@req@width\GPT@space\fi
+      \ifx\Gin@scaley\@tempa\else height\GPT@space\the\Gin@req@height\GPT@space\fi
+      (#1)\GPT@space
+      \ifnum0%
+        \ifx\Gin@decode\@empty\else 1\fi
+        \ifGin@interpolate 1\fi
+        >0 %
+        <<%
+          \ifx\Gin@decode\@empty\else /Decode[\Gin@decode]\fi
+          \ifGin@interpolate /Interpolate true\fi
+        >>%
+      \fi
+    }%
   \egroup}
 \newif\if@trim@vport
 \def\Ginclude@eps#1{%
@@ -170,15 +184,15 @@
   \divide\dimen@\dimen@ii
   \@tempdima\Gin@req@height
   \divide\@tempdima\dimen@ii
-    \special{PSfile="#1"\space
+    \special{PSfile="#1"\GPT@space
       \if@trim@vport
-      llx=\Gin@vllx\space
-      lly=\Gin@vlly\space
+      llx=\Gin@vllx\GPT@space
+      lly=\Gin@vlly\GPT@space
       \fi
-      urx=\Gin@urx\space
-      ury=\Gin@ury\space
-      \ifx\Gin@scalex\@tempa\else rwi=\number\dimen@\space\fi
-      \ifx\Gin@scaley\@tempa\else rhi=\number\@tempdima\space\fi
+      urx=\Gin@urx\GPT@space
+      ury=\Gin@ury\GPT@space
+      \ifx\Gin@scalex\@tempa\else rwi=\number\dimen@\GPT@space\fi
+      \ifx\Gin@scaley\@tempa\else rhi=\number\@tempdima\GPT@space\fi
       \ifGin@clip clip\fi}%
   \egroup}
 %
@@ -204,13 +218,13 @@
   \divide\dimen@\dimen@ii
   \@tempdima\Gin@req@height
   \divide\@tempdima\dimen@ii
-    \special{PSfile="#1"\space
-      llx=\Gin@llx\space
-      lly=\Gin@lly\space
-      urx=\Gin@urx\space
-      ury=\Gin@ury\space
-      \ifx\Gin@scalex\@tempa\else rwi=\number\dimen@\space\fi
-      \ifx\Gin@scaley\@tempa\else rhi=\number\@tempdima\space\fi
+    \special{PSfile="#1"\GPT@space
+      llx=\Gin@llx\GPT@space
+      lly=\Gin@lly\GPT@space
+      urx=\Gin@urx\GPT@space
+      ury=\Gin@ury\GPT@space
+      \ifx\Gin@scalex\@tempa\else rwi=\number\dimen@\GPT@space\fi
+      \ifx\Gin@scaley\@tempa\else rhi=\number\@tempdima\GPT@space\fi
       \ifGin@clip clip\fi}%
   \egroup}
 %
@@ -223,16 +237,16 @@
 \ifx\kanjiskip\@undefined
 \def\Gscale@start{%
   \special{pdf:btrans}%
-  \special{x:scale \Gscale@x\space\Gscale@y}%
+  \special{x:scale \Gscale@x\GPT@space\Gscale@y}%
 }
 \else
 \edef\Gscale@start{%
   \special{pdf:btrans}%
   \special{x:scale
   \expandafter\noexpand\csname iftdir\endcsname
-    \noexpand\Gscale@y\noexpand\space\noexpand\Gscale@x
+    \noexpand\Gscale@y\noexpand\GPT@space\noexpand\Gscale@x
   \expandafter\noexpand\csname else\endcsname
-    \noexpand\Gscale@x\noexpand\space\noexpand\Gscale@y
+    \noexpand\Gscale@x\noexpand\GPT@space\noexpand\Gscale@y
   \expandafter\noexpand\csname fi\endcsname}}
 \fi
 %
@@ -312,7 +326,7 @@
     }%
 \ifdim\paperwidth>\z@
 \ifdim\paperheight>\z@
-\special{pdf:pagesize width \the\paperwidth\space height \the\paperheight}%
+\special{pdf:pagesize width \the\paperwidth\GPT@space height \the\paperheight}%
 \fi
 \fi
 \endgroup}%

@@ -2,7 +2,7 @@ This is a generated file for the l3build validation system.
 Don't change this file in any respect.
 ! Undefined control sequence.
 <argument> \saveimageresource 
-                              \ifGin@interpolate attr{/Interpolate true}\fi ...
+                              \ifnum 0\ifx \Gin@decode \@empty \else 1\fi \i...
 l. ...\includegraphics{example-image-a}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -66,7 +66,7 @@ l. ...\includegraphics{example-image-a}
 I'm forgetting what you said and using zero instead.
 ! Undefined control sequence.
 <argument> \saveimageresource 
-                              \ifGin@interpolate attr{/Interpolate true}\fi ...
+                              \ifnum 0\ifx \Gin@decode \@empty \else 1\fi \i...
 l. ...\includegraphics{example-image-a}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -158,7 +158,7 @@ control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 ! Undefined control sequence.
 <argument> \saveimageresource 
-                              \ifGin@interpolate attr{/Interpolate true}\fi ...
+                              \ifnum 0\ifx \Gin@decode \@empty \else 1\fi \i...
 l. ...\includegraphics
                      [page = 1]{example-image-a.pdf}
 The control sequence at the end of the top line
@@ -258,7 +258,7 @@ control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 ! Undefined control sequence.
 <argument> \saveimageresource 
-                              \ifGin@interpolate attr{/Interpolate true}\fi ...
+                              \ifnum 0\ifx \Gin@decode \@empty \else 1\fi \i...
 l. ...\includegraphics
                      {az2}
 The control sequence at the end of the top line
@@ -358,7 +358,7 @@ control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 ! Undefined control sequence.
 <argument> \saveimageresource 
-                              \ifGin@interpolate attr{/Interpolate true}\fi ...
+                              \ifnum 0\ifx \Gin@decode \@empty \else 1\fi \i...
 l. ...\includegraphics
                      [pagebox = artbox]{az2}
 The control sequence at the end of the top line
@@ -458,7 +458,7 @@ control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 ! Undefined control sequence.
 <argument> \saveimageresource 
-                              \ifGin@interpolate attr{/Interpolate true}\fi ...
+                              \ifnum 0\ifx \Gin@decode \@empty \else 1\fi \i...
 l. ...\includegraphics
                      [bb=13pt 65pt 63pt 115pt,clip]{clip-1-2.jpg}
 The control sequence at the end of the top line
@@ -558,7 +558,7 @@ control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 ! Undefined control sequence.
 <argument> \saveimageresource 
-                              \ifGin@interpolate attr{/Interpolate true}\fi ...
+                              \ifnum 0\ifx \Gin@decode \@empty \else 1\fi \i...
 l. ...\includegraphics
                      [bb=13pt 65pt 63pt 115pt,clip]{clip-1-2.png}
 The control sequence at the end of the top line
@@ -658,7 +658,7 @@ control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 ! Undefined control sequence.
 <argument> \saveimageresource 
-                              \ifGin@interpolate attr{/Interpolate true}\fi ...
+                              \ifnum 0\ifx \Gin@decode \@empty \else 1\fi \i...
 l. ...\includegraphics
                      [interpolate = true]{clip-1-2.jpg}
 The control sequence at the end of the top line
@@ -771,10 +771,10 @@ l. ...\END
 If you really absolutely need more capacity,
 you can ask a wizard to enlarge me.
 Here is how much of TeX's memory you used:
- 1450 strings out of 493005
- 21002 string characters out of 6134596
- 83371 words of memory out of 5000000
- 5438 multiletter control sequences out of 15000+600000
+ 1441 strings out of 493005
+ 20923 string characters out of 6134596
+ 82265 words of memory out of 5000000
+ 5429 multiletter control sequences out of 15000+600000
  3648 words of font info for 15 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  5000i,1n,4996p,296b,506s stack positions out of 5000i,500n,10000p,200000b,80000s
