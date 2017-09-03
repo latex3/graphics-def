@@ -64,70 +64,26 @@ and I'll forget about whatever was undefined.
                                                    \ifx \Gin@page \@empty \e...
 l. ...\includegraphics{example-image-a}
 I'm forgetting what you said and using zero instead.
+! Illegal parameter number in definition of \example-image-a.pdf image:cropbox.<to be read again> 
+                   1
+l. ...\includegraphics{example-image-a}
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+! Illegal parameter number in definition of \example-image-a.pdf image:cropbox.<to be read again> 
+                   1
+l. ...\includegraphics{example-image-a}
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
 ! Undefined control sequence.
-<argument> \saveimageresource 
-                              \ifnum 0\ifx \Gin@decode \@empty \else 1\fi \i...
+\Gin@temp ->\@nil 
 l. ...\includegraphics{example-image-a}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
-! Undefined control sequence.
-<argument> ...@tempboxa =\hbox {\useimageresource 
-                                                  \lastsavedimageresourceind...
-l. ...\includegraphics{example-image-a}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-! Undefined control sequence.
-<argument> ...source \lastsavedimageresourceindex 
-                                                  }\def \Gin@llx {0}\let \Gi...
-l. ...\includegraphics{example-image-a}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-! Undefined control sequence.
-<argument> ...@hash \endcsname {\useimageresource 
-                                                  \the \lastsavedimageresour...
-l. ...\includegraphics{example-image-a}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-! Undefined control sequence.
-<argument> ...e \the \lastsavedimageresourceindex 
-                                                  }\expandafter \xdef \csnam...
-l. ...\includegraphics{example-image-a}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-! You can't use `end-group character }' after \the.
-<argument> ... \the \lastsavedimageresourceindex }
-                                                  \expandafter \xdef \csname...
-l. ...\includegraphics{example-image-a}
-I'm forgetting what you said and using zero instead.
-! Undefined control sequence.
-<argument> ...d=\the \lastsavedimageresourceindex 
-                                                  , \ifx \Gin@page \@empty \...
-l. ...\includegraphics{example-image-a}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-! You can't use `the character ,' after \the.
-<argument> ...=\the \lastsavedimageresourceindex ,
-                                                   \ifx \Gin@page \@empty \e...
-l. ...\includegraphics{example-image-a}
-I'm forgetting what you said and using zero instead.
 ! Argument of \@providesfile has an extra }.
 <inserted text> 
                 \par 
@@ -156,9 +112,22 @@ l. ...
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
+! Illegal parameter number in definition of \example-image-a.pdf image:cropbox.<to be read again> 
+                   1
+l. ...\includegraphics
+                     [page = 1]{example-image-a.pdf}
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+! Illegal parameter number in definition of \example-image-a.pdf image:cropbox.<to be read again> 
+                   1
+l. ...\includegraphics
+                     [page = 1]{example-image-a.pdf}
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
 ! Undefined control sequence.
-<argument> \saveimageresource 
-                              \ifnum 0\ifx \Gin@decode \@empty \else 1\fi \i...
+\Gin@temp ->\@nil 
 l. ...\includegraphics
                      [page = 1]{example-image-a.pdf}
 The control sequence at the end of the top line
@@ -166,68 +135,6 @@ of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
-! Undefined control sequence.
-<argument> ...@tempboxa =\hbox {\useimageresource 
-                                                  \lastsavedimageresourceind...
-l. ...\includegraphics
-                     [page = 1]{example-image-a.pdf}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-! Undefined control sequence.
-<argument> ...source \lastsavedimageresourceindex 
-                                                  }\def \Gin@llx {0}\let \Gi...
-l. ...\includegraphics
-                     [page = 1]{example-image-a.pdf}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-! Undefined control sequence.
-<argument> ...@hash \endcsname {\useimageresource 
-                                                  \the \lastsavedimageresour...
-l. ...\includegraphics
-                     [page = 1]{example-image-a.pdf}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-! Undefined control sequence.
-<argument> ...e \the \lastsavedimageresourceindex 
-                                                  }\expandafter \xdef \csnam...
-l. ...\includegraphics
-                     [page = 1]{example-image-a.pdf}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-! You can't use `end-group character }' after \the.
-<argument> ... \the \lastsavedimageresourceindex }
-                                                  \expandafter \xdef \csname...
-l. ...\includegraphics
-                     [page = 1]{example-image-a.pdf}
-I'm forgetting what you said and using zero instead.
-! Undefined control sequence.
-<argument> ...d=\the \lastsavedimageresourceindex 
-                                                  , \ifx \Gin@page \@empty \...
-l. ...\includegraphics
-                     [page = 1]{example-image-a.pdf}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-! You can't use `the character ,' after \the.
-<argument> ...=\the \lastsavedimageresourceindex ,
-                                                   \ifx \Gin@page \@empty \e...
-l. ...\includegraphics
-                     [page = 1]{example-image-a.pdf}
-I'm forgetting what you said and using zero instead.
 ! Argument of \@firstoftwo has an extra }.
 <inserted text> 
                 \par 
@@ -256,9 +163,22 @@ l. ...
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
+! Illegal parameter number in definition of \example-image-a.pdf image:cropbox.<to be read again> 
+                   1
+l. ...\includegraphics
+                     {az2}
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+! Illegal parameter number in definition of \example-image-a.pdf image:cropbox.<to be read again> 
+                   1
+l. ...\includegraphics
+                     {az2}
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
 ! Undefined control sequence.
-<argument> \saveimageresource 
-                              \ifnum 0\ifx \Gin@decode \@empty \else 1\fi \i...
+\Gin@temp ->\@nil 
 l. ...\includegraphics
                      {az2}
 The control sequence at the end of the top line
@@ -266,68 +186,6 @@ of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
-! Undefined control sequence.
-<argument> ...@tempboxa =\hbox {\useimageresource 
-                                                  \lastsavedimageresourceind...
-l. ...\includegraphics
-                     {az2}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-! Undefined control sequence.
-<argument> ...source \lastsavedimageresourceindex 
-                                                  }\def \Gin@llx {0}\let \Gi...
-l. ...\includegraphics
-                     {az2}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-! Undefined control sequence.
-<argument> ...@hash \endcsname {\useimageresource 
-                                                  \the \lastsavedimageresour...
-l. ...\includegraphics
-                     {az2}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-! Undefined control sequence.
-<argument> ...e \the \lastsavedimageresourceindex 
-                                                  }\expandafter \xdef \csnam...
-l. ...\includegraphics
-                     {az2}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-! You can't use `end-group character }' after \the.
-<argument> ... \the \lastsavedimageresourceindex }
-                                                  \expandafter \xdef \csname...
-l. ...\includegraphics
-                     {az2}
-I'm forgetting what you said and using zero instead.
-! Undefined control sequence.
-<argument> ...d=\the \lastsavedimageresourceindex 
-                                                  , \ifx \Gin@page \@empty \...
-l. ...\includegraphics
-                     {az2}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-! You can't use `the character ,' after \the.
-<argument> ...=\the \lastsavedimageresourceindex ,
-                                                   \ifx \Gin@page \@empty \e...
-l. ...\includegraphics
-                     {az2}
-I'm forgetting what you said and using zero instead.
 ! Argument of \@firstoftwo has an extra }.
 <inserted text> 
                 \par 
@@ -356,9 +214,22 @@ l. ...
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
+! Illegal parameter number in definition of \example-image-a.pdf image:cropbox.<to be read again> 
+                   1
+l. ...\includegraphics
+                     [pagebox = artbox]{az2}
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+! Illegal parameter number in definition of \example-image-a.pdf image:cropbox.<to be read again> 
+                   1
+l. ...\includegraphics
+                     [pagebox = artbox]{az2}
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
 ! Undefined control sequence.
-<argument> \saveimageresource 
-                              \ifnum 0\ifx \Gin@decode \@empty \else 1\fi \i...
+\Gin@temp ->\@nil 
 l. ...\includegraphics
                      [pagebox = artbox]{az2}
 The control sequence at the end of the top line
@@ -366,68 +237,6 @@ of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
-! Undefined control sequence.
-<argument> ...@tempboxa =\hbox {\useimageresource 
-                                                  \lastsavedimageresourceind...
-l. ...\includegraphics
-                     [pagebox = artbox]{az2}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-! Undefined control sequence.
-<argument> ...source \lastsavedimageresourceindex 
-                                                  }\def \Gin@llx {0}\let \Gi...
-l. ...\includegraphics
-                     [pagebox = artbox]{az2}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-! Undefined control sequence.
-<argument> ...@hash \endcsname {\useimageresource 
-                                                  \the \lastsavedimageresour...
-l. ...\includegraphics
-                     [pagebox = artbox]{az2}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-! Undefined control sequence.
-<argument> ...e \the \lastsavedimageresourceindex 
-                                                  }\expandafter \xdef \csnam...
-l. ...\includegraphics
-                     [pagebox = artbox]{az2}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-! You can't use `end-group character }' after \the.
-<argument> ... \the \lastsavedimageresourceindex }
-                                                  \expandafter \xdef \csname...
-l. ...\includegraphics
-                     [pagebox = artbox]{az2}
-I'm forgetting what you said and using zero instead.
-! Undefined control sequence.
-<argument> ...d=\the \lastsavedimageresourceindex 
-                                                  , \ifx \Gin@page \@empty \...
-l. ...\includegraphics
-                     [pagebox = artbox]{az2}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-! You can't use `the character ,' after \the.
-<argument> ...=\the \lastsavedimageresourceindex ,
-                                                   \ifx \Gin@page \@empty \e...
-l. ...\includegraphics
-                     [pagebox = artbox]{az2}
-I'm forgetting what you said and using zero instead.
 ! Argument of \@firstoftwo has an extra }.
 <inserted text> 
                 \par 
@@ -456,9 +265,22 @@ l. ...
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
+! Illegal parameter number in definition of \example-image-a.pdf image:cropbox.<to be read again> 
+                   1
+l. ...\includegraphics
+                     [bb=13pt 65pt 63pt 115pt,clip]{clip-1-2.jpg}
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+! Illegal parameter number in definition of \example-image-a.pdf image:cropbox.<to be read again> 
+                   1
+l. ...\includegraphics
+                     [bb=13pt 65pt 63pt 115pt,clip]{clip-1-2.jpg}
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
 ! Undefined control sequence.
-<argument> \saveimageresource 
-                              \ifnum 0\ifx \Gin@decode \@empty \else 1\fi \i...
+\Gin@temp ->\@nil 
 l. ...\includegraphics
                      [bb=13pt 65pt 63pt 115pt,clip]{clip-1-2.jpg}
 The control sequence at the end of the top line
@@ -466,68 +288,6 @@ of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
-! Undefined control sequence.
-<argument> ...@tempboxa =\hbox {\useimageresource 
-                                                  \lastsavedimageresourceind...
-l. ...\includegraphics
-                     [bb=13pt 65pt 63pt 115pt,clip]{clip-1-2.jpg}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-! Undefined control sequence.
-<argument> ...source \lastsavedimageresourceindex 
-                                                  }\def \Gin@llx {0}\let \Gi...
-l. ...\includegraphics
-                     [bb=13pt 65pt 63pt 115pt,clip]{clip-1-2.jpg}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-! Undefined control sequence.
-<argument> ...@hash \endcsname {\useimageresource 
-                                                  \the \lastsavedimageresour...
-l. ...\includegraphics
-                     [bb=13pt 65pt 63pt 115pt,clip]{clip-1-2.jpg}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-! Undefined control sequence.
-<argument> ...e \the \lastsavedimageresourceindex 
-                                                  }\expandafter \xdef \csnam...
-l. ...\includegraphics
-                     [bb=13pt 65pt 63pt 115pt,clip]{clip-1-2.jpg}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-! You can't use `end-group character }' after \the.
-<argument> ... \the \lastsavedimageresourceindex }
-                                                  \expandafter \xdef \csname...
-l. ...\includegraphics
-                     [bb=13pt 65pt 63pt 115pt,clip]{clip-1-2.jpg}
-I'm forgetting what you said and using zero instead.
-! Undefined control sequence.
-<argument> ...d=\the \lastsavedimageresourceindex 
-                                                  , \ifx \Gin@page \@empty \...
-l. ...\includegraphics
-                     [bb=13pt 65pt 63pt 115pt,clip]{clip-1-2.jpg}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-! You can't use `the character ,' after \the.
-<argument> ...=\the \lastsavedimageresourceindex ,
-                                                   \ifx \Gin@page \@empty \e...
-l. ...\includegraphics
-                     [bb=13pt 65pt 63pt 115pt,clip]{clip-1-2.jpg}
-I'm forgetting what you said and using zero instead.
 ! Argument of \@firstoftwo has an extra }.
 <inserted text> 
                 \par 
@@ -556,9 +316,22 @@ l. ...
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
+! Illegal parameter number in definition of \example-image-a.pdf image:cropbox.<to be read again> 
+                   1
+l. ...\includegraphics
+                     [bb=13pt 65pt 63pt 115pt,clip]{clip-1-2.png}
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+! Illegal parameter number in definition of \example-image-a.pdf image:cropbox.<to be read again> 
+                   1
+l. ...\includegraphics
+                     [bb=13pt 65pt 63pt 115pt,clip]{clip-1-2.png}
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
 ! Undefined control sequence.
-<argument> \saveimageresource 
-                              \ifnum 0\ifx \Gin@decode \@empty \else 1\fi \i...
+\Gin@temp ->\@nil 
 l. ...\includegraphics
                      [bb=13pt 65pt 63pt 115pt,clip]{clip-1-2.png}
 The control sequence at the end of the top line
@@ -566,68 +339,6 @@ of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
-! Undefined control sequence.
-<argument> ...@tempboxa =\hbox {\useimageresource 
-                                                  \lastsavedimageresourceind...
-l. ...\includegraphics
-                     [bb=13pt 65pt 63pt 115pt,clip]{clip-1-2.png}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-! Undefined control sequence.
-<argument> ...source \lastsavedimageresourceindex 
-                                                  }\def \Gin@llx {0}\let \Gi...
-l. ...\includegraphics
-                     [bb=13pt 65pt 63pt 115pt,clip]{clip-1-2.png}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-! Undefined control sequence.
-<argument> ...@hash \endcsname {\useimageresource 
-                                                  \the \lastsavedimageresour...
-l. ...\includegraphics
-                     [bb=13pt 65pt 63pt 115pt,clip]{clip-1-2.png}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-! Undefined control sequence.
-<argument> ...e \the \lastsavedimageresourceindex 
-                                                  }\expandafter \xdef \csnam...
-l. ...\includegraphics
-                     [bb=13pt 65pt 63pt 115pt,clip]{clip-1-2.png}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-! You can't use `end-group character }' after \the.
-<argument> ... \the \lastsavedimageresourceindex }
-                                                  \expandafter \xdef \csname...
-l. ...\includegraphics
-                     [bb=13pt 65pt 63pt 115pt,clip]{clip-1-2.png}
-I'm forgetting what you said and using zero instead.
-! Undefined control sequence.
-<argument> ...d=\the \lastsavedimageresourceindex 
-                                                  , \ifx \Gin@page \@empty \...
-l. ...\includegraphics
-                     [bb=13pt 65pt 63pt 115pt,clip]{clip-1-2.png}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-! You can't use `the character ,' after \the.
-<argument> ...=\the \lastsavedimageresourceindex ,
-                                                   \ifx \Gin@page \@empty \e...
-l. ...\includegraphics
-                     [bb=13pt 65pt 63pt 115pt,clip]{clip-1-2.png}
-I'm forgetting what you said and using zero instead.
 ! Argument of \@firstoftwo has an extra }.
 <inserted text> 
                 \par 
@@ -656,9 +367,22 @@ l. ...
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
+! Illegal parameter number in definition of \example-image-a.pdf image:cropbox.<to be read again> 
+                   1
+l. ...\includegraphics
+                     [interpolate = true]{clip-1-2.jpg}
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+! Illegal parameter number in definition of \example-image-a.pdf image:cropbox.<to be read again> 
+                   1
+l. ...\includegraphics
+                     [interpolate = true]{clip-1-2.jpg}
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
 ! Undefined control sequence.
-<argument> \saveimageresource 
-                              \ifnum 0\ifx \Gin@decode \@empty \else 1\fi \i...
+\Gin@temp ->\@nil 
 l. ...\includegraphics
                      [interpolate = true]{clip-1-2.jpg}
 The control sequence at the end of the top line
@@ -666,68 +390,6 @@ of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
-! Undefined control sequence.
-<argument> ...@tempboxa =\hbox {\useimageresource 
-                                                  \lastsavedimageresourceind...
-l. ...\includegraphics
-                     [interpolate = true]{clip-1-2.jpg}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-! Undefined control sequence.
-<argument> ...source \lastsavedimageresourceindex 
-                                                  }\def \Gin@llx {0}\let \Gi...
-l. ...\includegraphics
-                     [interpolate = true]{clip-1-2.jpg}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-! Undefined control sequence.
-<argument> ...@hash \endcsname {\useimageresource 
-                                                  \the \lastsavedimageresour...
-l. ...\includegraphics
-                     [interpolate = true]{clip-1-2.jpg}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-! Undefined control sequence.
-<argument> ...e \the \lastsavedimageresourceindex 
-                                                  }\expandafter \xdef \csnam...
-l. ...\includegraphics
-                     [interpolate = true]{clip-1-2.jpg}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-! You can't use `end-group character }' after \the.
-<argument> ... \the \lastsavedimageresourceindex }
-                                                  \expandafter \xdef \csname...
-l. ...\includegraphics
-                     [interpolate = true]{clip-1-2.jpg}
-I'm forgetting what you said and using zero instead.
-! Undefined control sequence.
-<argument> ...d=\the \lastsavedimageresourceindex 
-                                                  , \ifx \Gin@page \@empty \...
-l. ...\includegraphics
-                     [interpolate = true]{clip-1-2.jpg}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-! You can't use `the character ,' after \the.
-<argument> ...=\the \lastsavedimageresourceindex ,
-                                                   \ifx \Gin@page \@empty \e...
-l. ...\includegraphics
-                     [interpolate = true]{clip-1-2.jpg}
-I'm forgetting what you said and using zero instead.
 ! Argument of \@firstoftwo has an extra }.
 <inserted text> 
                 \par 
@@ -771,10 +433,10 @@ l. ...\END
 If you really absolutely need more capacity,
 you can ask a wizard to enlarge me.
 Here is how much of TeX's memory you used:
- 1441 strings out of 493005
- 20923 string characters out of 6134596
- 82265 words of memory out of 5000000
- 5429 multiletter control sequences out of 15000+600000
+ 1444 strings out of 492998
+ 20930 string characters out of 6134540
+ 82130 words of memory out of 5000000
+ 5439 multiletter control sequences out of 15000+600000
  3648 words of font info for 15 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  5000i,1n,4996p,296b,506s stack positions out of 5000i,500n,10000p,200000b,80000s

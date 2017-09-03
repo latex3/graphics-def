@@ -2,37 +2,12 @@ This is a generated file for the l3build validation system.
 Don't change this file in any respect.
 File: example-image-a.pdf Graphic file (type pdf)
 <example-image-a.pdf>
-! LaTeX Error: Cannot determine size of graphic in example-image-a.xbb (no BoundingBox).
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-l. ......udegraphics[page = 1]{example-image-a.pdf}
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
 File: example-image-a.pdf Graphic file (type pdf)
 <example-image-a.pdf>
-! LaTeX Error: Cannot determine size of graphic in az2.xbb (no BoundingBox).
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-l. ...\includegraphics{az2}
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
 File: az2.pdf Graphic file (type pdf)
 <az2.pdf>
-! LaTeX Error: Cannot determine size of graphic in az2.xbb (no BoundingBox).
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-l. ...\includegraphics[pagebox = artbox]{az2}
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
 File: az2.pdf Graphic file (type pdf)
 <az2.pdf>
-File: clip-1-2.jpg Graphic file (type bmp)
-<clip-1-2.jpg>
-File: clip-1-2.png Graphic file (type bmp)
-<clip-1-2.png>
 Completed box being shipped out [1]
 \vbox(633.0+0.0)x407.0
 .\special{pdf:pagesize width 614.295pt height 794.96999pt}
@@ -55,37 +30,19 @@ Completed box being shipped out [1]
 ....\glue(\rightskip) 0.0
 ...\glue(\parskip) 0.0 plus 1.0
 ...\glue(\lineskip) 1.0
-...\hbox(72.26999+0.0)x345.0, glue set 257.73001fil
+...\hbox(240.9+0.0)x345.0, glue set 8.8fil
 ....\hbox(0.0+0.0)x15.0
-....\hbox(72.26999+0.0)x72.26999
-.....\special{pdf:epdf page 1 pagebox cropbox bbox 0 0 72 72 clip 0 width 72.26999p\ETC.}
+....\hbox(240.9+0.0)x321.2
+.....\special{pdf:epdf page 1 pagebox cropbox bbox 0 0 320 240 clip 0 width 321.2pt\ETC.}
 ....\penalty 10000
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
 ...\glue(\parskip) 0.0 plus 1.0
 ...\glue(\lineskip) 1.0
-...\hbox(72.26999+0.0)x345.0, glue set 257.73001fil
+...\hbox(50.1875+0.0)x345.0, glue set 299.88751fil
 ....\hbox(0.0+0.0)x15.0
-....\hbox(72.26999+0.0)x72.26999
-.....\special{pdf:epdf pagebox cropbox bbox 0 0 72 72 clip 0 width 72.26999pt (az2.\ETC.}
-....\penalty 10000
-....\glue(\parfillskip) 0.0 plus 1.0fil
-....\glue(\rightskip) 0.0
-...\glue(\parskip) 0.0 plus 1.0
-...\glue(\lineskip) 1.0
-...\hbox(72.26999+0.0)x345.0, glue set 257.73001fil
-....\hbox(0.0+0.0)x15.0
-....\hbox(72.26999+0.0)x72.26999
-.....\special{pdf:epdf pagebox artbox bbox 0 0 72 72 clip 0 width 72.26999pt (az2.p\ETC.}
-....\penalty 10000
-....\glue(\parfillskip) 0.0 plus 1.0fil
-....\glue(\rightskip) 0.0
-...\glue(\parskip) 0.0 plus 1.0
-...\glue(\lineskip) 1.0
-...\hbox(49.99988+0.0)x345.0, glue set 280.00012fil
-....\hbox(0.0+0.0)x15.0
-....\hbox(49.99988+0.0)x49.99988
-.....\special{pdf:image bbox 12.9514 64.757 62.76448 114.57008 clip 1 width 49.9998\ETC.}
+....\hbox(50.1875+0.0)x30.11249
+.....\special{pdf:epdf pagebox cropbox bbox 0 0 30 50 clip 0 width 30.11249pt (az2.\ETC.}
 ....\penalty 10000
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
@@ -96,13 +53,10 @@ Completed box being shipped out [1]
 ...\glue 0.0 plus 1.0fil
 ...\TU/lmr/m/n/10 1
 ...\glue 0.0 plus 1.0fil
-! LaTeX Error: Cannot determine size of graphic in clip-1-2.xbb (no BoundingBox).
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-l. ......graphics[interpolate = true]{clip-1-2.jpg}
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+File: clip-1-2.jpg Graphic file (type bmp)
+<clip-1-2.jpg>
+File: clip-1-2.png Graphic file (type bmp)
+<clip-1-2.png>
 File: clip-1-2.jpg Graphic file (type bmp)
 <clip-1-2.jpg>
 Completed box being shipped out [2]
@@ -114,8 +68,17 @@ Completed box being shipped out [2]
 ...\hbox(0.0+0.0)x345.0
 ..\glue 25.0
 ..\glue(\lineskip) 0.0
-..\vbox(550.0+0.0)x345.0, glue set 426.68456fil
+..\vbox(550.0+0.0)x345.0, glue set 282.3551fil
 ...\glue(\topskip) 0.0
+...\hbox(36.135+0.0)x345.0, glue set 293.865fil
+....\hbox(0.0+0.0)x15.0
+....\hbox(36.135+0.0)x36.135
+.....\special{pdf:epdf pagebox artbox bbox 36 36 72 72 clip 0 width 36.135pt (az2.p\ETC.}
+....\penalty 10000
+....\glue(\parfillskip) 0.0 plus 1.0fil
+....\glue(\rightskip) 0.0
+...\glue(\parskip) 0.0 plus 1.0
+...\glue(\lineskip) 1.0
 ...\hbox(49.99988+0.0)x345.0, glue set 280.00012fil
 ....\hbox(0.0+0.0)x15.0
 ....\hbox(49.99988+0.0)x49.99988
@@ -125,10 +88,19 @@ Completed box being shipped out [2]
 ....\glue(\rightskip) 0.0
 ...\glue(\parskip) 0.0 plus 1.0
 ...\glue(\lineskip) 1.0
-...\hbox(72.26999+0.0)x345.0, glue set 257.73001fil
+...\hbox(49.99988+0.0)x345.0, glue set 280.00012fil
 ....\hbox(0.0+0.0)x15.0
-....\hbox(72.26999+0.0)x72.26999
-.....\special{pdf:image bbox 0 0 72 72 clip 0 width 72.26999pt (clip-1-2.jpg) <</In\ETC.}
+....\hbox(49.99988+0.0)x49.99988
+.....\special{pdf:image bbox 12.9514 64.757 62.76448 114.57008 clip 1 width 49.9998\ETC.}
+....\penalty 10000
+....\glue(\parfillskip) 0.0 plus 1.0fil
+....\glue(\rightskip) 0.0
+...\glue(\parskip) 0.0 plus 1.0
+...\glue(\lineskip) 1.0
+...\hbox(128.48+0.0)x345.0, glue set 183.45251fil
+....\hbox(0.0+0.0)x15.0
+....\hbox(128.48+0.0)x146.54749
+.....\special{pdf:image bbox 0 0 146 128 clip 0 width 146.54749pt (clip-1-2.jpg) <<\ETC.}
 ....\penalty 10000
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
