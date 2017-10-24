@@ -524,7 +524,12 @@ E     \else
       \catcode`\noexpand\>\the\catcode`\>\relax
       }%
     \@makeother\<\@makeother\<%
+    % supp-pdf.mkii tests against \undefined:
+    % just in case someone has defined it ...
+    \let\GPT@orig@undefined\undefined
+    \let\undefinded\@undefined
     \InputIfFileExists{supp-pdf.mkii}{}{}%
+    \let\undefined\GPT@orig@undefined
     \@tempa
   }{%
     % supp-pdf is probably already loaded.
