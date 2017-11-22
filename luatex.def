@@ -492,7 +492,7 @@
 \fi
 \def\Gin@extensions{%
   .pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,%
-  .PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2
+  .PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2%
 }
 \@namedef{Gin@rule@.jpg}#1{{jpg}{.jpg}{#1}}
 \@namedef{Gin@rule@.jpeg}#1{{jpg}{.jpeg}{#1}}
