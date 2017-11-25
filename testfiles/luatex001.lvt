@@ -1,3 +1,9 @@
+\ifdefined\saveimageresource\else
+\typeout{^^JSTART-TEST-LOG^^Jskip test^^JEND-TEST-LOG^^J}
+\expandafter
+\stop
+\fi
+
 \PassOptionsToPackage{luatex}{graphics}
 
 \input{graphics001}
