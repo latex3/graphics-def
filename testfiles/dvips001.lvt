@@ -1,7 +1,9 @@
-\ifdefined\Uchar
-\typeout{^^JSTART-TEST-LOG^^Jskip test^^JEND-TEST-LOG^^J}
-\expandafter
-\stop
+\ifdefined\pdfoutput
+  \pdfoutput=0 %
+\else
+  \ifdefined\outputmode
+    \outputmode=0 %
+  \fi
 \fi
 
 \PassOptionsToPackage{dvips}{graphics}

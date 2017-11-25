@@ -1,9 +1,3 @@
-\ifdefined\pdffilesize\else
-\typeout{^^JSTART-TEST-LOG^^Jskip test^^JEND-TEST-LOG^^J}
-\expandafter
-\stop
-\fi
-
 \PassOptionsToPackage{pdftex}{graphics}
 
 \input{graphics001}
