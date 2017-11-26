@@ -18,7 +18,7 @@
 %% https://github.com/latex3/graphics-def/issues
 %%
 \ProvidesFile{pdftex.def}
-  [2017/06/24 v1.0g Graphics/color driver for pdftex]
+  [2017/11/26 v1.0h Graphics/color driver for pdftex]
 \def\GPT@space{ }
 \def\c@lor@arg#1{%
   \dimen@#1\p@
@@ -527,7 +527,7 @@ E     \else
     % supp-pdf.mkii tests against \undefined:
     % just in case someone has defined it ...
     \let\GPT@orig@undefined\undefined
-    \let\undefinded\@undefined
+    \let\undefined\@undefined
     \InputIfFileExists{supp-pdf.mkii}{}{}%
     \let\undefined\GPT@orig@undefined
     \@tempa
