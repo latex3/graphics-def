@@ -256,10 +256,10 @@
   }%
   \PackageInfo{luatex.def}{%
     #1 \ifx\Gin@page\@empty\else, page\Gin@page\fi
-    \GPT@space used\ifx\on@line\@undefined\else\on@line\fi.}%
-  \PackageInfo{luatex.def}{%
+    \GPT@space used\on@line.\MessageBreak
     Requested size: %
     \the\Gin@req@width\GPT@space x \the\Gin@req@height
+    \ifx\documentclass\@undefined\else\expandafter\@gobble\fi
   }%
   \Ginclude@@pdftex{\@nameuse{#1 image\Gin@attr@hash}}%
 }
