@@ -173,6 +173,7 @@ E     \else
 \@ifundefined{Gin@pagebox}
   {\def\Gin@pagebox{cropbox}}
   {}
+\def\GPT@cropbox{cropbox}
 \@ifundefined{Gin@interpolate}
   {\csname newif\endcsname\ifGin@interpolate}
   {}
@@ -222,7 +223,8 @@ E     \else
         <#1, %
         id=\the\pdflastximage, %
         \ifx\Gin@page\@empty\else page=\Gin@page , \fi
-        \ifx\Gin@pagebox\@empty\else pagebox=\Gin@pagebox , \fi
+        \ifx\Gin@pagebox\@empty\else\ifx\Gin@pagebox\GPT@cropbox\else
+          pagebox=\Gin@pagebox , \fi\fi
         \ifx\Gin@decode\@empty\else decode=[\Gin@decode], \fi
         \ifGin@interpolate interpolate=true, \fi
         \the\wd\@tempboxa\GPT@space x \the\ht\@tempboxa
