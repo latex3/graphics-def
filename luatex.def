@@ -95,7 +95,7 @@
     }%
     \gdef\GPT@@shipout{%
       \ifvoid\GPT@outputbox\relax
-        \PackageInfo{pdftex.def}{Ignoring void output box}%
+        \PackageInfo{luatex.def}{Ignoring void output box}%
       \else
         \setbox\GPT@outputbox=\vbox{%
           \GPT@pageliteral
