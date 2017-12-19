@@ -18,7 +18,7 @@
 %% https://github.com/latex3/graphics-def/issues
 %%
 \ProvidesFile{pdftex.def}
-  [2017/12/07 v1.0i Graphics/color driver for pdftex]
+  [2017/12/19 v1.0j Graphics/color driver for pdftex]
 \def\GPT@space{ }
 \def\c@lor@arg#1{%
   \dimen@#1\p@
@@ -524,8 +524,9 @@ E     \else
     \edef\@tempa{%
       \catcode`\noexpand\<\the\catcode`\<\relax
       \catcode`\noexpand\>\the\catcode`\>\relax
+      \catcode`\noexpand\=\the\catcode`\=\relax
       }%
-    \@makeother\<\@makeother\<%
+    \@makeother\<\@makeother\>\@makeother\=%
     % supp-pdf.mkii tests against \undefined:
     % just in case someone has defined it ...
     \let\GPT@orig@undefined\undefined
