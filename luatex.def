@@ -126,7 +126,7 @@
   \global\GPT@pagecolorfalse
 }
 \def\KV@Gin@bbllx{%
-  \PackageError{pdftex.def}{%
+  \PackageError{luatex.def}{%
     Options `bblly', `bblly', `bburx' and `bbury'\MessageBreak
     are not supported by luatex driver:\MessageBreak
     use `viewport' instead%
@@ -137,7 +137,7 @@
 \let\KV@Gin@bbury\KV@Gin@bbllx
 \def\KV@Gin@bb{%
   \PackageInfo{luatex.def}
-    {Option `bb' equivalent to `viewport` for pdftex driver}%
+    {Option `bb' equivalent to `viewport` for luatex driver}%
   \KV@Gin@viewport
 }
 \def\Gread@pdftex#1{%
