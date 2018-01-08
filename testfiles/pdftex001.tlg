@@ -89,15 +89,19 @@ Completed box being shipped out [1]
 ...\OT1/cmr/m/n/10 1
 ...\glue 0.0 plus 1.0fil
  <../example-image-a.pdf> <../example-image-a.pdf> <./az2.pdf>
+Package pdftex.def Info: Option `bb' equivalent to `viewport' with pdftex driver on input line ....
+<clip-1-2.jpg, id=21, 146.34676pt x 128.8815pt>
 File: clip-1-2.jpg Graphic file (type jpg)
 <use clip-1-2.jpg>
 Package pdftex.def Info: clip-1-2.jpg  used on input line ....
 (pdftex.def)             Requested size: 49.99988pt x 49.99988pt.
+Package pdftex.def Info: Option `bb' equivalent to `viewport' with pdftex driver on input line ....
+<clip-1-2.png, id=23, 146.34676pt x 128.8815pt>
 File: clip-1-2.png Graphic file (type png)
 <use clip-1-2.png>
 Package pdftex.def Info: clip-1-2.png  used on input line ....
 (pdftex.def)             Requested size: 49.99988pt x 49.99988pt.
-<clip-1-2.jpg, id=23, interpolate=true, 146.34676pt x 128.8815pt>
+<clip-1-2.jpg, id=25, interpolate=true, 146.34676pt x 128.8815pt>
 File: clip-1-2.jpg Graphic file (type jpg)
 <use clip-1-2.jpg>
 Package pdftex.def Info: clip-1-2.jpg  used on input line ....
@@ -189,6 +193,13 @@ Completed box being shipped out [2]
 ...\glue 0.0 plus 1.0fil
 Completed box being shipped out
 \hbox(49.99988+0.0)x49.99988
+.\hbox(128.8815+0.0)x133.3468, shifted 64.99983
+..\glue -12.99995
+..\pdfrefximage(128.8815+0.0)x146.34676
+ <./clip-1-2.jpg>
 Completed box being shipped out
 \hbox(49.99988+0.0)x49.99988
- <./az2.pdf> <./clip-1-2.jpg>
+.\hbox(128.8815+0.0)x133.3468, shifted 64.99983
+..\glue -12.99995
+..\pdfrefximage(128.8815+0.0)x146.34676
+ <./clip-1-2.png> <./az2.pdf> <./clip-1-2.jpg>

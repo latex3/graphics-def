@@ -18,7 +18,7 @@
 %% https://github.com/latex3/graphics-def/issues
 %%
 \ProvidesFile{luatex.def}
-  [2018/01/01 v1.0k Graphics/color driver for luatex]
+  [2018/01/08 v1.0l Graphics/color driver for luatex]
 \def\GPT@space{ }
 \def\c@lor@arg#1{%
   \dimen@#1\p@
@@ -125,20 +125,22 @@
 \def\no@page@color{%
   \global\GPT@pagecolorfalse
 }
-\def\KV@Gin@bbllx{%
-  \PackageError{luatex.def}{%
-    Options `bblly', `bblly', `bburx' and `bbury'\MessageBreak
-    are not supported by luatex driver:\MessageBreak
-    use `viewport' instead%
-  }\@ehc
-}
-\let\KV@Gin@bblly\KV@Gin@bbllx
-\let\KV@Gin@bburx\KV@Gin@bbllx
-\let\KV@Gin@bbury\KV@Gin@bbllx
-\def\KV@Gin@bb{%
-  \PackageInfo{luatex.def}
-    {Option `bb' equivalent to `viewport` for luatex driver}%
-  \KV@Gin@viewport
+\AtBeginDocument{%
+  \def\KV@Gin@bbllx{%
+    \PackageError{luatex.def}{%
+      Options `bblly', `bblly', `bburx' and `bbury'\MessageBreak
+      are not supported by luatex driver:\MessageBreak
+      use `viewport' instead%
+    }\@ehc
+  }%
+  \let\KV@Gin@bblly\KV@Gin@bbllx
+  \let\KV@Gin@bburx\KV@Gin@bbllx
+  \let\KV@Gin@bbury\KV@Gin@bbllx
+  \def\KV@Gin@bb{%
+    \PackageInfo{luatex.def}%
+      {Option `bb' equivalent to `viewport' for luatex driver}%
+    \KV@Gin@viewport
+  }%
 }
 \def\Gread@pdftex#1{%
 % Use low level test here not \IfFileExists to match \Gread@pdftex in

@@ -18,7 +18,7 @@
 %% https://github.com/latex3/graphics-def/issues
 %%
 \ProvidesFile{pdftex.def}
-  [2018/01/01 v1.0k Graphics/color driver for pdftex]
+  [2018/01/08 v1.0l Graphics/color driver for pdftex]
 \def\GPT@space{ }
 \def\c@lor@arg#1{%
   \dimen@#1\p@
@@ -139,20 +139,22 @@ E     \else
 \def\no@page@color{%
   \global\GPT@pagecolorfalse
 }
-\def\KV@Gin@bbllx{%
-  \PackageError{pdftex.def}{%
-    Options `bblly', `bblly', `bburx' and `bbury'\MessageBreak
-    are not supported by pdftex driver:\MessageBreak
-    use `viewport' instead%
-  }\@ehc
-}
-\let\KV@Gin@bblly\KV@Gin@bbllx
-\let\KV@Gin@bburx\KV@Gin@bbllx
-\let\KV@Gin@bbury\KV@Gin@bbllx
-\def\KV@Gin@bb{%
-  \PackageInfo{pdftex.def}
-    {Option `bb' equivalent to `viewport` with pdftex driver}%
-  \KV@Gin@viewport
+\AtBeginDocument{%
+  \def\KV@Gin@bbllx{%
+    \PackageError{pdftex.def}{%
+      Options `bblly', `bblly', `bburx' and `bbury'\MessageBreak
+      are not supported by pdftex driver:\MessageBreak
+      use `viewport' instead%
+    }\@ehc
+  }%
+  \let\KV@Gin@bblly\KV@Gin@bbllx
+  \let\KV@Gin@bburx\KV@Gin@bbllx
+  \let\KV@Gin@bbury\KV@Gin@bbllx
+  \def\KV@Gin@bb{%
+    \PackageInfo{pdftex.def}%
+      {Option `bb' equivalent to `viewport' with pdftex driver}%
+    \KV@Gin@viewport
+  }%
 }
 \def\Gread@pdftex#1{%
   \expandafter\ifx\expandafter\relax\pdffilesize{#1}\relax

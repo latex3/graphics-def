@@ -104,15 +104,19 @@ Completed box being shipped out [1]
 ...\TU/lmr/m/n/10 1
 ...\glue 0.0 plus 1.0fil
 <../example-image-a.pdf><../example-image-a.pdf><./az2.pdf>
+Package luatex.def Info: Option `bb' equivalent to `viewport' for luatex driver on input line ....
+<clip-1-2.jpg, id=27, 146.34676pt x 128.8815pt>
 File: clip-1-2.jpg Graphic file (type jpg)
 <use clip-1-2.jpg>
 Package luatex.def Info: clip-1-2.jpg  used on input line ....
 (luatex.def)             Requested size: 49.99988pt x 49.99988pt.
+Package luatex.def Info: Option `bb' equivalent to `viewport' for luatex driver on input line ....
+<clip-1-2.png, id=29, 146.34676pt x 128.8815pt>
 File: clip-1-2.png Graphic file (type png)
 <use clip-1-2.png>
 Package luatex.def Info: clip-1-2.png  used on input line ....
 (luatex.def)             Requested size: 49.99988pt x 49.99988pt.
-<clip-1-2.jpg, id=29, interpolate=true, 146.34676pt x 128.8815pt>
+<clip-1-2.jpg, id=31, interpolate=true, 146.34676pt x 128.8815pt>
 File: clip-1-2.jpg Graphic file (type jpg)
 <use clip-1-2.jpg>
 Package luatex.def Info: clip-1-2.jpg  used on input line ....
@@ -222,5 +226,5 @@ Completed box being shipped out [2]
 ...\glue 0.0 plus 1.0fil
 ...\TU/lmr/m/n/10 2
 ...\glue 0.0 plus 1.0fil
-Completed box being shipped out
-Completed box being shipped out<./az2.pdf><./clip-1-2.jpg>
+Completed box being shipped out<./clip-1-2.jpg>
+Completed box being shipped out<./clip-1-2.png><./az2.pdf><./clip-1-2.jpg>
