@@ -128,14 +128,17 @@
 \AtBeginDocument{%
   \def\KV@Gin@bbllx{%
     \PackageError{luatex.def}{%
-      Options `bblly', `bblly', `bburx' and `bbury'\MessageBreak
-      are not supported by luatex driver:\MessageBreak
+      Options `bblly', `bblly', `bburx', `bbury',\MessageBreak
+      `natheight' and `natwidth' are not\MessageBreak
+      supported by luatex driver:\MessageBreak
       use `viewport' instead%
     }\@ehc
   }%
   \let\KV@Gin@bblly\KV@Gin@bbllx
   \let\KV@Gin@bburx\KV@Gin@bbllx
   \let\KV@Gin@bbury\KV@Gin@bbllx
+  \let\KV@Gin@natwidth\KV@Gin@bbllx
+  \let\KV@Gin@natheight\KV@Gin@bbllx
   \def\KV@Gin@bb{%
     \PackageInfo{luatex.def}%
       {Option `bb' equivalent to `viewport' for luatex driver}%
@@ -575,18 +578,18 @@
 % b) and shell escape is enabled (possibly restricted),
 % c) and \DoNotLoadEpstopdf either does not exist or is not \relax,
 % d) and neither pst-pdf nor pdftricks is loaded (by \begin{document}).
-% 
+%
 % In other words, by default .eps files will be automatically
 % converted to .pdf files when outputting pdf.  This can be wrong!
 % If the .pdf is the source, rather than the .eps, you should put
 %  \newcommand{\DoNotLoadEpstopdf}{}
 % before even the \documentclass line of your document.
-% 
+%
 % More information about the epstopdf run will be in the .log file;
 % see http://ctan.org/pkg/epstopdf-pkg for more info about the
 % epstopdf package itself.  In turn, it calls the epstopdf script
 % (http://ctan.org/pkg/epstopdf).
-% 
+%
 % For the first discussion and background on this, see the thread on latex-l:
 % http://thread.gmane.org/gmane.comp.tex.latex.latex3/1465
 %
