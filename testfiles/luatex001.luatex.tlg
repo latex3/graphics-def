@@ -47,7 +47,7 @@ Completed box being shipped out [1]
 .........\hbox(240.9+0.0)x321.2, direction TLT
 ..........\image(240.9+0.0)x321.2
 .........\glue 0.0 plus 1.0fil minus 1.0fil
-.......\kern 321.2
+.......\kern321.2
 .......\glue 0.0 plus 1.0fil minus 1.0fil
 ....\penalty 10000
 ....\glue(\parfillskip) 0.0 plus 1.0fil
@@ -69,7 +69,7 @@ Completed box being shipped out [1]
 .........\hbox(240.9+0.0)x321.2, direction TLT
 ..........\image(240.9+0.0)x321.2
 .........\glue 0.0 plus 1.0fil minus 1.0fil
-.......\kern 321.2
+.......\kern321.2
 .......\glue 0.0 plus 1.0fil minus 1.0fil
 ....\penalty 10000
 ....\glue(\parfillskip) 0.0 plus 1.0fil
@@ -91,7 +91,7 @@ Completed box being shipped out [1]
 .........\hbox(50.1875+0.0)x30.1125, direction TLT
 ..........\image(50.1875+0.0)x30.1125
 .........\glue 0.0 plus 1.0fil minus 1.0fil
-.......\kern 30.1125
+.......\kern30.1125
 .......\glue 0.0 plus 1.0fil minus 1.0fil
 ....\penalty 10000
 ....\glue(\parfillskip) 0.0 plus 1.0fil
@@ -105,18 +105,18 @@ Completed box being shipped out [1]
 ...\glue 0.0 plus 1.0fil
 <../example-image-a.pdf><../example-image-a.pdf><./az2.pdf>
 Package luatex.def Info: Option `bb' equivalent to `viewport' for luatex driver on input line ....
-<clip-1-2.jpg, id=27, 146.34676pt x 128.8815pt>
+<clip-1-2.jpg, id=26, 146.34676pt x 128.8815pt>
 File: clip-1-2.jpg Graphic file (type jpg)
 <use clip-1-2.jpg>
 Package luatex.def Info: clip-1-2.jpg  used on input line ....
 (luatex.def)             Requested size: 49.99988pt x 49.99988pt.
 Package luatex.def Info: Option `bb' equivalent to `viewport' for luatex driver on input line ....
-<clip-1-2.png, id=29, 146.34676pt x 128.8815pt>
+<clip-1-2.png, id=28, 146.34676pt x 128.8815pt>
 File: clip-1-2.png Graphic file (type png)
 <use clip-1-2.png>
 Package luatex.def Info: clip-1-2.png  used on input line ....
 (luatex.def)             Requested size: 49.99988pt x 49.99988pt.
-<clip-1-2.jpg, id=31, interpolate=true, 146.34676pt x 128.8815pt>
+<clip-1-2.jpg, id=30, interpolate=true, 146.34676pt x 128.8815pt>
 File: clip-1-2.jpg Graphic file (type jpg)
 <use clip-1-2.jpg>
 Package luatex.def Info: clip-1-2.jpg  used on input line ....
@@ -147,7 +147,7 @@ Completed box being shipped out [2]
 .........\hbox(36.135+0.0)x36.135, direction TLT
 ..........\image(36.135+0.0)x36.135
 .........\glue 0.0 plus 1.0fil minus 1.0fil
-.......\kern 36.135
+.......\kern36.135
 .......\glue 0.0 plus 1.0fil minus 1.0fil
 ....\penalty 10000
 ....\glue(\parfillskip) 0.0 plus 1.0fil
@@ -169,7 +169,7 @@ Completed box being shipped out [2]
 .........\hbox(49.99988+0.0)x49.99988, direction TLT
 ..........\box(49.99988+0.0)x49.99988
 .........\glue 0.0 plus 1.0fil minus 1.0fil
-.......\kern 49.99988
+.......\kern49.99988
 .......\glue 0.0 plus 1.0fil minus 1.0fil
 ....\penalty 10000
 ....\glue(\parfillskip) 0.0 plus 1.0fil
@@ -191,7 +191,7 @@ Completed box being shipped out [2]
 .........\hbox(49.99988+0.0)x49.99988, direction TLT
 ..........\box(49.99988+0.0)x49.99988
 .........\glue 0.0 plus 1.0fil minus 1.0fil
-.......\kern 49.99988
+.......\kern49.99988
 .......\glue 0.0 plus 1.0fil minus 1.0fil
 ....\penalty 10000
 ....\glue(\parfillskip) 0.0 plus 1.0fil
@@ -213,7 +213,7 @@ Completed box being shipped out [2]
 .........\hbox(128.8815+0.0)x146.34676, direction TLT
 ..........\image(128.8815+0.0)x146.34676
 .........\glue 0.0 plus 1.0fil minus 1.0fil
-.......\kern 146.34676
+.......\kern146.34676
 .......\glue 0.0 plus 1.0fil minus 1.0fil
 ....\penalty 10000
 ....\glue(\parfillskip) 0.0 plus 1.0fil

@@ -144,22 +144,24 @@ er\ETC.}
 ..........\TU/lmr/m/n/10 p
 ..........\TU/lmr/m/n/10 l
 ..........\TU/lmr/m/n/10 e
-..........\TU/lmr/m/n/10 -
 ..........\discretionary (penalty 50)
+...........< \TU/lmr/m/n/10 -
+...........= \TU/lmr/m/n/10 -
 ..........\TU/lmr/m/n/10 i
 ..........\TU/lmr/m/n/10 m
 ..........\TU/lmr/m/n/10 a
 ..........\TU/lmr/m/n/10 g
 ..........\TU/lmr/m/n/10 e
-..........\TU/lmr/m/n/10 -
 ..........\discretionary (penalty 50)
+...........< \TU/lmr/m/n/10 -
+...........= \TU/lmr/m/n/10 -
 ..........\TU/lmr/m/n/10 a
 ..........\TU/lmr/m/n/10 .
 ..........\TU/lmr/m/n/10 p
-..........\kern 0.28
+..........\kern0.28 (font)
 ..........\TU/lmr/m/n/10 d
 ..........\TU/lmr/m/n/10 f
-..........\kern 0.28
+..........\kern0.28 (font)
 ..........\TU/lmr/m/n/10 ”
 ..........\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
 ..........\TU/lmr/m/n/10 c
@@ -168,7 +170,7 @@ er\ETC.}
 ..........\TU/lmr/m/n/10 p
 .........\glue 0.0 plus 1.0fil minus 1.0fil
 ........\special{pdf:etrans}
-.......\kern 122.25
+.......\kern122.25
 .......\glue 0.0 plus 1.0fil minus 1.0fil
 ....\penalty 10000
 ....\glue(\parfillskip) 0.0 plus 1.0fil
@@ -198,22 +200,24 @@ er\ETC.}
 ..........\TU/lmr/m/n/10 p
 ..........\TU/lmr/m/n/10 l
 ..........\TU/lmr/m/n/10 e
-..........\TU/lmr/m/n/10 -
 ..........\discretionary (penalty 50)
+...........< \TU/lmr/m/n/10 -
+...........= \TU/lmr/m/n/10 -
 ..........\TU/lmr/m/n/10 i
 ..........\TU/lmr/m/n/10 m
 ..........\TU/lmr/m/n/10 a
 ..........\TU/lmr/m/n/10 g
 ..........\TU/lmr/m/n/10 e
-..........\TU/lmr/m/n/10 -
 ..........\discretionary (penalty 50)
+...........< \TU/lmr/m/n/10 -
+...........= \TU/lmr/m/n/10 -
 ..........\TU/lmr/m/n/10 a
 ..........\TU/lmr/m/n/10 .
 ..........\TU/lmr/m/n/10 p
-..........\kern 0.28
+..........\kern0.28 (font)
 ..........\TU/lmr/m/n/10 d
 ..........\TU/lmr/m/n/10 f
-..........\kern 0.28
+..........\kern0.28 (font)
 ..........\TU/lmr/m/n/10 ”
 ..........\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
 ..........\TU/lmr/m/n/10 p
@@ -228,7 +232,7 @@ er\ETC.}
 ..........\TU/lmr/m/n/10 p
 .........\glue 0.0 plus 1.0fil minus 1.0fil
 ........\special{pdf:etrans}
-.......\kern 150.58
+.......\kern150.58
 .......\glue 0.0 plus 1.0fil minus 1.0fil
 ....\penalty 10000
 ....\glue(\parfillskip) 0.0 plus 1.0fil
@@ -256,10 +260,10 @@ er\ETC.}
 ..........\TU/lmr/m/n/10 2
 ..........\TU/lmr/m/n/10 .
 ..........\TU/lmr/m/n/10 p
-..........\kern 0.28
+..........\kern0.28 (font)
 ..........\TU/lmr/m/n/10 d
 ..........\TU/lmr/m/n/10 f
-..........\kern 0.28
+..........\kern0.28 (font)
 ..........\TU/lmr/m/n/10 ”
 ..........\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
 ..........\TU/lmr/m/n/10 c
@@ -268,7 +272,7 @@ er\ETC.}
 ..........\TU/lmr/m/n/10 p
 .........\glue 0.0 plus 1.0fil minus 1.0fil
 ........\special{pdf:etrans}
-.......\kern 63.65
+.......\kern63.65
 .......\glue 0.0 plus 1.0fil minus 1.0fil
 ....\penalty 10000
 ....\glue(\parfillskip) 0.0 plus 1.0fil
@@ -296,10 +300,10 @@ er\ETC.}
 ..........\TU/lmr/m/n/10 2
 ..........\TU/lmr/m/n/10 .
 ..........\TU/lmr/m/n/10 p
-..........\kern 0.28
+..........\kern0.28 (font)
 ..........\TU/lmr/m/n/10 d
 ..........\TU/lmr/m/n/10 f
-..........\kern 0.28
+..........\kern0.28 (font)
 ..........\TU/lmr/m/n/10 ”
 ..........\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
 ..........\TU/lmr/m/n/10 a
@@ -307,7 +311,7 @@ er\ETC.}
 ..........\TU/lmr/m/n/10 t
 .........\glue 0.0 plus 1.0fil minus 1.0fil
 ........\special{pdf:etrans}
-.......\kern 57.54
+.......\kern57.54
 .......\glue 0.0 plus 1.0fil minus 1.0fil
 ....\penalty 10000
 ....\glue(\parfillskip) 0.0 plus 1.0fil
