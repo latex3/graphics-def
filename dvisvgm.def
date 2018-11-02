@@ -1,5 +1,5 @@
 % Copyright 2015 by Till Tantau
-% Copyright 2016 by Till Tantau and LaTeX3 Project
+% Copyright 2016 2018 by Till Tantau and LaTeX3 Project
 %
 %% This work may be distributed and/or modified under the
 %% conditions of the LaTeX Project Public License, either version 1.3c
@@ -15,9 +15,9 @@
 %%
 %% https://github.com/latex3/graphics-def/issues
 %
-\ProvidesFile{dvisvgm.def}[2017/06/20 v1.0b dvisvgm graphics driver for latex]
-\def\GPT@space{ }
+\ProvidesFile{dvisvgm.def}[2018//11/02 v1.1a dvisvgm graphics driver for latex]
 % The following is copied from dvips.def:
+\def\GPT@space{ }
 \def\c@lor@arg#1{%
   \dimen@#1\p@
   \ifdim\dimen@<\z@\dimen@\maxdimen\fi
@@ -76,7 +76,28 @@
 \def\Grot@end{\special{dvisvgm:raw </g>}}
 \def\Gscale@start{\special{dvisvgm:raw <g transform="translate({?x},{?y})scale(\Gscale@x,\Gscale@y)scale(-1)translate({?x},{?y})scale(-1)">}}
 \def\Gscale@end{\special{dvisvgm:raw </g>}}
-\def\Gin@extensions{.png,.jpg,.jpeg,.svg}
+\def\Gin@extensions{.svg,.eps,.png,.jpg,.jpeg}
+\def\Ginclude@eps#1{%
+ \message{<#1>}%
+  \bgroup
+  \def\@tempa{!}%
+  \dimen@\Gin@req@width
+  \dimen@ii.1bp%
+  \divide\dimen@\dimen@ii
+  \@tempdima\Gin@req@height
+  \divide\@tempdima\dimen@ii
+    \special{PSfile="#1"\GPT@space
+      llx=\Gin@llx\GPT@space
+      lly=\Gin@lly\GPT@space
+      urx=\Gin@urx\GPT@space
+      ury=\Gin@ury\GPT@space
+      \ifx\Gin@scalex\@tempa\else rwi=\number\dimen@\GPT@space\fi
+      \ifx\Gin@scaley\@tempa\else rhi=\number\@tempdima\GPT@space\fi
+      \ifGin@clip clip\fi}%
+  \egroup}
+\@namedef{Gin@rule@.ps}#1{{eps}{.ps}{#1}}
+\@namedef{Gin@rule@.eps}#1{{eps}{.eps}{#1}}
+\@namedef{Gin@rule@.mps}#1{{eps}{.mps}{#1}}
 \def\Ginclude@bitmap#1{%
   \dimen@\Gin@urx pt%
   \advance\dimen@ by-\Gin@llx pt%
