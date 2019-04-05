@@ -77,7 +77,9 @@
 \def\Gscale@start{\special{dvisvgm:raw <g transform="translate({?x},{?y})scale(\Gscale@x,\Gscale@y)scale(-1)translate({?x},{?y})scale(-1)">}}
 \def\Gscale@end{\special{dvisvgm:raw </g>}}
 \def\Gin@extensions{.svg,.eps,.png,.jpg,.jpeg}
-\def\Ginclude@eps#1{%
+\def\Ginclude@pdf#1{\Ginclude@psorpdf{#1}{pdffile}}
+\def\Ginclude@eps#1{\let\Gin@page\@empty\Ginclude@psorpdf{#1}{PSfile}}
+\def\Ginclude@psorpdf#1#2{%
  \message{<#1>}%
   \bgroup
   \def\@tempa{!}%
@@ -86,7 +88,8 @@
   \divide\dimen@\dimen@ii
   \@tempdima\Gin@req@height
   \divide\@tempdima\dimen@ii
-    \special{PSfile="#1"\GPT@space
+    \special{#2="#1"\GPT@space
+      \ifx\Gin@page\@empty\else page=\Gin@page\GPT@space\fi
       llx=\Gin@llx\GPT@space
       lly=\Gin@lly\GPT@space
       urx=\Gin@urx\GPT@space
@@ -98,6 +101,43 @@
 \@namedef{Gin@rule@.ps}#1{{eps}{.ps}{#1}}
 \@namedef{Gin@rule@.eps}#1{{eps}{.eps}{#1}}
 \@namedef{Gin@rule@.mps}#1{{eps}{.mps}{#1}}
+\@namedef{Gin@rule@.pdf}#1{{pdf}{.xbb}{#1}}
+% BoundingBox determination (from dvipdfmx.def)
+\def\Gread@pdf#1{%
+  \Gread@generic{#1}\Gread@extractbb@aux%
+}%
+\def\Gread@extractbb@aux#1{%
+  \ifeof\@inputcheck%
+    \immediate\openin\@inputcheck=%
+      "|extractbb %
+      \ifx\Gin@page\@empty\else -p \Gin@page\GPT@space\fi
+      \ifx\Gin@pagebox\@empty\else -B \Gin@pagebox\GPT@space\fi
+      -O \Gin@base\Gin@ext"%
+  \fi%
+  \Gread@true%
+  \let\@tempb\Gread@false%
+  \ifeof\@inputcheck%
+    \@latex@error%
+      {Cannot run pipe command. Try --shell-escape^^J%
+       (--enable-pipes in MikTeX) option}%
+      {Alternatively, execute\MessageBreak\space\space
+         extractbb
+         \ifx\Gin@page\@empty\else -p \Gin@page\GPT@space\fi
+         \ifx\Gin@pagebox\@empty\else -B \Gin@pagebox\GPT@space\fi
+         \Gin@base\Gin@ext\MessageBreak in a terminal.}%
+  \else%
+    \loop%
+      \read\@inputcheck to\@tempa%
+      \ifeof\@inputcheck%
+        \Gread@false%
+      \else%
+        \expandafter\Gread@find@bb\@tempa:.\\%
+      \fi%
+      \ifGread@%
+      \repeat%
+    \immediate\closein\@inputcheck%
+  \fi%
+}
 \def\Ginclude@bitmap#1{%
   \dimen@\Gin@urx pt%
   \advance\dimen@ by-\Gin@llx pt%
@@ -109,6 +149,7 @@
   \advance\dimen@ by-\Gin@ury pt%
   \edef\Gin@svg@view@base{\strip@pt\dimen@}%
 %  \kern-\Gin@llx bp%
+  \special{dvisvgm:bbox \strip@pt\Gin@req@width\GPT@space\strip@pt\Gin@req@height}%
   \raise\Gin@req@height\hbox{%
     \special{dvisvgm: raw
       <g transform="translate({?x},{?y})">
@@ -180,7 +221,7 @@
 
 % Replace 
 \def\Gread@bitmap#1{%
-  \Gread@eps{#1}%
+  \Gread@generic{#1}\Gread@extractbb@aux%
   \dimen@\Gin@urx bp%
   \advance\dimen@ by-\Gin@llx bp%
   \edef\Gin@svg@real@width@bp{\strip@pt\dimen@}%
