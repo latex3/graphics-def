@@ -1,2 +1,7 @@
 build/
 *.zip
+# swap files
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+# backups
+*~
