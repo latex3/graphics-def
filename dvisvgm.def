@@ -150,9 +150,8 @@
   \edef\Gin@svg@view@base{\strip@pt\dimen@}%
   \Gin@req@width0.99626\Gin@req@width%
   \Gin@req@height0.99626\Gin@req@height%
-%  \kern-\Gin@llx bp%
-  \special{dvisvgm:bbox \strip@pt\Gin@req@width\GPT@space\strip@pt\Gin@req@height}%
-  \raise\Gin@req@height\hbox{%
+  \special{dvisvgm:bbox \strip@pt\Gin@req@width bp\GPT@space\strip@pt\Gin@req@height bp}%
+  \raise\strip@pt\Gin@req@height bp\hbox{%
     \special{dvisvgm: raw
       <g transform="translate({?x},{?y})">
         <svg overflow="\ifGin@clip hidden\else visible\fi" width="\strip@pt\Gin@req@width" height="\strip@pt\Gin@req@height"
@@ -161,7 +160,6 @@
                  xlink:href="#1"/>
         </svg>
       </g>}%
-%    \special{dvisvgm: img \strip@pt\Gin@req@width\GPT@space \strip@pt\Gin@req@height\GPT@space #1}
   }%
 }
 
