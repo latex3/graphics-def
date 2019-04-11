@@ -91,7 +91,7 @@
   \ifGin@clip%
     \Gin@req@width0.99626\Gin@req@width%
     \Gin@req@height0.99626\Gin@req@height%
-	\special{dvisvgm:raw
+    \special{dvisvgm:raw
       <g><clipPath id="GinClip\Gin@clip@id">%
         <path d="M{?x},{?y}l\strip@pt\Gin@req@width,0l0,-\strip@pt\Gin@req@height
           l-\strip@pt\Gin@req@width,0Z"/>%
