@@ -166,7 +166,6 @@
   \edef\Gin@svg@view@base{\strip@pt\dimen@}%
   \Gin@req@width0.99626\Gin@req@width%
   \Gin@req@height0.99626\Gin@req@height%
-  \special{dvisvgm:bbox \strip@pt\Gin@req@width bp\GPT@space\strip@pt\Gin@req@height bp}%
   \raise\strip@pt\Gin@req@height bp\hbox{%
     \special{dvisvgm: raw
       <g transform="translate({?x},{?y})">
@@ -247,6 +246,14 @@
   \advance\dimen@ by-\Gin@lly pt%
   \edef\Gin@svg@real@height@bp{\strip@pt\dimen@}%
 }
+
+% user macro for adjusting bbox of SVG output
+% example usage: \addtobbox{\includegraphics[angle=30]{example-image.png}}
+\def\addtobbox#1{\bgroup\hbox{%
+  \setbox\z@\hbox{#1}%
+  \special{dvisvgm:bbox \the\wd\z@\GPT@space\the\ht\z@\GPT@space\the\dp\z@}%
+  \box\z@%
+}\egroup}
 
 \endinput
 %%
