@@ -15,7 +15,7 @@
 %%
 %% https://github.com/latex3/graphics-def/issues
 %
-\ProvidesFile{dvisvgm.def}[2018//11/02 v1.1a dvisvgm graphics driver for latex]
+\ProvidesFile{dvisvgm.def}[2020/03/22 v1.2 dvisvgm graphics driver for latex]
 % The following is copied from dvips.def:
 \def\GPT@space{ }
 \def\c@lor@arg#1{%
@@ -72,15 +72,27 @@
 \def\reset@color{\special{color pop}}
 \def\set@page@color{\special{bgcolor \current@color}}
 \def\define@color@named#1#2{\expandafter\let\csname col@#1\endcsname\@nnil}
-\def\Grot@start{\special{dvisvgm:raw <g transform="translate({?x},{?y})scale(1,-1)rotate(\Grot@angle)scale(-1,1)translate({?x},{?y})scale(-1)">}}
-\def\Grot@end{\special{dvisvgm:raw </g>}}
-\def\Gscale@start{\special{dvisvgm:raw <g transform="translate({?x},{?y})scale(\Gscale@x,\Gscale@y)scale(-1)translate({?x},{?y})scale(-1)">}}
-\def\Gscale@end{\special{dvisvgm:raw </g>}}
+\def\Grot@start{%
+  \special{ps: gsave currentpoint currentpoint translate \Grot@angle\GPT@space neg rotate neg exch neg exch translate}%
+  \special{dvisvgm:bbox \strip@pt\wd\z@ pt \strip@pt\ht\z@ pt \strip@pt\dp\z@ pt transform}%
+  \special{ps: grestore}%
+  \special{dvisvgm:raw <g transform="translate({?x},{?y})scale(1,-1)rotate(\Grot@angle)scale(-1,1)translate({?x},{?y})scale(-1)">}%
+  \special{dvisvgm:bbox lock}%
+}
+\def\Grot@end{\special{dvisvgm:bbox unlock}\special{dvisvgm:raw </g>}}
+\def\Gscale@start{%
+  \special{ps: gsave currentpoint currentpoint translate \Gscale@x\GPT@space \Gscale@y\GPT@space scale neg exch neg exch translate}%
+  \special{dvisvgm:bbox \strip@pt\wd\z@ pt \strip@pt\ht\z@ pt \strip@pt\dp\z@ pt transform}%
+  \special{ps: grestore}%
+  \special{dvisvgm:raw <g transform="translate({?x},{?y})scale(\Gscale@x,\Gscale@y)scale(-1)translate({?x},{?y})scale(-1)">}%
+  \special{dvisvgm:bbox lock}%
+}
+\let\Gscale@end\Grot@end
 \def\Gin@extensions{.svg,.eps,.png,.jpg,.jpeg}
 \def\Ginclude@pdf#1{\Ginclude@psorpdf{#1}{pdffile}}
 \def\Ginclude@eps#1{\let\Gin@page\@empty\Ginclude@psorpdf{#1}{PSfile}}
 \def\Ginclude@psorpdf#1#2{%
- \message{<#1>}%
+  \message{<#1>}%
   \bgroup
   \def\@tempa{!}%
   \dimen@\Gin@req@width
@@ -88,16 +100,6 @@
   \divide\dimen@\dimen@ii
   \@tempdima\Gin@req@height
   \divide\@tempdima\dimen@ii
-  \ifGin@clip%
-    \Gin@req@width0.99626\Gin@req@width%
-    \Gin@req@height0.99626\Gin@req@height%
-    \special{dvisvgm:raw
-      <g><clipPath id="GinClip\Gin@clip@id">%
-        <path d="M{?x},{?y}l\strip@pt\Gin@req@width,0l0,-\strip@pt\Gin@req@height
-          l-\strip@pt\Gin@req@width,0Z"/>%
-      </clipPath>%
-      <g clip-path="url(\Gin@hash@tag GinClip\Gin@clip@id)">}%
-  \fi%
     \special{#2="#1"\GPT@space
       \ifx\Gin@page\@empty\else page=\Gin@page\GPT@space\fi
       llx=\Gin@llx\GPT@space
@@ -106,14 +108,8 @@
       ury=\Gin@ury\GPT@space
       \ifx\Gin@scalex\@tempa\else rwi=\number\dimen@\GPT@space\fi
       \ifx\Gin@scaley\@tempa\else rhi=\number\@tempdima\GPT@space\fi
-%      \ifGin@clip clip\fi % to be implemented in dvisvgm-2.7.x
+      \ifGin@clip clip\fi
     }%
-  \ifGin@clip%
-    \special{dvisvgm:raw </g></g>}%
-    \begingroup%
-      \count@\Gin@clip@id\advance\count@ by\@ne\xdef\Gin@clip@id{\the\count@}%
-    \endgroup%
-  \fi%
   \egroup}
 \@namedef{Gin@rule@.ps}#1{{eps}{.ps}{#1}}
 \@namedef{Gin@rule@.eps}#1{{eps}{.eps}{#1}}
@@ -172,7 +168,7 @@
       <g transform="translate({?x},{?y})">
         <svg overflow="\ifGin@clip hidden\else visible\fi" width="\strip@pt\Gin@req@width" height="\strip@pt\Gin@req@height"
              viewBox="\Gin@llx\GPT@space\Gin@svg@view@base\GPT@space\Gin@svg@view@width\GPT@space\Gin@svg@view@height">
-          <image width="\Gin@svg@real@width@bp" height="\Gin@svg@real@height@bp" 
+          <image width="\Gin@svg@real@width@bp" height="\Gin@svg@real@height@bp"
                  xlink:href="#1"/>
         </svg>
       </g>}%
@@ -217,10 +213,10 @@
   \fi
   \edef\Gin@setter{\def\noexpand\Gin@urx{\Gin@urx}\def\noexpand\Gin@ury{\Gin@ury}}%
   \expandafter\endgroup\Gin@setter%
-  \def\Gin@llx{0}% 
+  \def\Gin@llx{0}%
   \def\Gin@lly{0}%
   \edef\Gin@svg@real@width@bp{\Gin@urx}%
-  \edef\Gin@svg@real@height@bp{\Gin@ury}%  
+  \edef\Gin@svg@real@height@bp{\Gin@ury}%
 }
 \def\Gin@partext{\par}
 \def\Gread@svg@height#1height={\@ifnextchar\relax{}{\@ifnextchar'\Gread@svg@height@apo\Gread@svg@height@double}}
@@ -231,13 +227,12 @@
 \def\Gread@svg@width@double"#1"#2\relax{\afterassignment\Gin@gobble@till@relax\dimen@#1pt\relax\edef\Gin@urx{\strip@pt\dimen@}}
 \def\Gin@gobble@till@relax#1\relax{}
 \edef\Gin@hash@tag{\string#}
-\def\Gin@clip@id{0}
 
 \@namedef{Gin@rule@.jpg}#1{{bitmap}{.xbb}{#1}}
 \@namedef{Gin@rule@.jpeg}#1{{bitmap}{.xbb}{#1}}
 \@namedef{Gin@rule@.png}#1{{bitmap}{.xbb}{#1}}
 
-% Replace 
+% Replace
 \def\Gread@bitmap#1{%
   \Gread@generic{#1}\Gread@extractbb@aux%
   \dimen@\Gin@urx pt%
