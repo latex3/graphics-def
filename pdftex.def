@@ -2,6 +2,7 @@
 %%                                    Hans Hagen, Heiko Oberdiek and
 %%                                    Martin Schr\"oder
 %%            Copyright (C) 2016-2018 LaTeX3 project and Heiko Oberdiek
+%%            Copyright (C) 2018-2020 LaTeX3 project
 %%
 %% This work may be distributed and/or modified under the
 %% conditions of the LaTeX Project Public License, either version 1.3c
@@ -18,7 +19,7 @@
 %% https://github.com/latex3/graphics-def/issues
 %%
 \ProvidesFile{pdftex.def}
-  [2018/01/08 v1.0l Graphics/color driver for pdftex]
+  [2020/08/09 v1.1a Graphics/color driver for pdftex]
 \def\GPT@space{ }
 \def\c@lor@arg#1{%
   \dimen@#1\p@
@@ -155,10 +156,41 @@ E     \else
   \let\KV@Gin@natheight\KV@Gin@bbllx
   \def\KV@Gin@bb{%
     \PackageInfo{pdftex.def}%
-      {Option `bb' equivalent to `viewport' with pdftex driver}%
+      {Option `bb' equivalent to `viewport' with the pdftex driver}%
     \KV@Gin@viewport
   }%
+  \let\Gin@iii\Gin@iii@vp
 }
+
+%%% this definition will be added to graphics.sty
+\def\Gin@iii@vp[#1,#2][#3,#4]#5{%
+  \begingroup
+  \let\Gin@viewport@code\Gin@viewport
+  \Gin@defaultbp\Gin@vllx{#1}%
+  \Gin@defaultbp\Gin@vlly{#2}%
+  \Gin@defaultbp\Gin@vurx{#3}%
+  \Gin@defaultbp\Gin@vury{#4}%
+  \Ginclude@graphics{#5}%
+  \endgroup}
+
+
+%%% this definition needs moving from graphicx.sty to graphics.sty
+\def\Gin@viewport{%
+  \let\Gin@ollx\Gin@llx
+  \let\Gin@olly\Gin@lly
+  \let\Gin@ourx\Gin@urx
+  \let\Gin@oury\Gin@ury
+  \dimen@\Gin@llx\p@\advance\dimen@ \Gin@vurx\p@
+                      \edef\Gin@urx{\strip@pt\dimen@}%
+  \dimen@\Gin@lly\p@\advance\dimen@ \Gin@vury\p@
+                      \edef\Gin@ury{\strip@pt\dimen@}%
+  \dimen@\Gin@llx\p@\advance\dimen@ \Gin@vllx\p@
+                      \edef\Gin@llx{\strip@pt\dimen@}%
+  \dimen@\Gin@lly\p@\advance\dimen@ \Gin@vlly\p@
+                      \edef\Gin@lly{\strip@pt\dimen@}}
+%%% end of temp addition
+
+
 \def\Gread@pdftex#1{%
   \expandafter\ifx\expandafter\relax\pdffilesize{#1}\relax
     \expandafter\@secondoftwo
