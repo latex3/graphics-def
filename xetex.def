@@ -83,7 +83,7 @@
         background \current@color}}
 \def\define@color@named#1#2{%
   \expandafter\let\csname col@#1\endcsname\@nnil}
-      \def\no@page@color{\special{background \string"newpath clip}}
+\def\no@page@color{\special{background gray 1}}
 \@ifundefined{Gin@decode}
   {\let\Gin@decode\@empty}
   {}
