@@ -19,7 +19,7 @@
 %% https://github.com/latex3/graphics-def/issues
 %%
 \ProvidesFile{pdftex.def}
-  [2020/08/09 v1.1a Graphics/color driver for pdftex]
+  [2020/08/26 v1.2 Graphics/color driver for pdftex]
 \def\GPT@space{ }
 \def\c@lor@arg#1{%
   \dimen@#1\p@
