@@ -72,7 +72,7 @@
   \aftergroup\reset@color}
 \def\reset@color{\pdfextension colorstack\@pdfcolorstack pop\relax}
 \newif\ifGPT@pagecolor
-\begingroup\expandafter\expandafter\expandafter\endgroup
+
 \def\set@page@color{%
   \global\GPT@pagecolortrue
   \global\let\current@page@color\current@color
