@@ -126,6 +126,32 @@
 \def\no@page@color{%
   \global\GPT@pagecolorfalse
 }
+\def\@tempa{LaTeX2e}%
+\ifx\fmtname\@tempa
+  \expandafter\@firstofone
+\else
+  \expandafter\@gobble
+\fi
+ {%
+ \@ifl@t@r\fmtversion{2020/10/01}
+  {%
+    \def\set@page@color{%
+     \global\GPT@pagecolortrue
+     \global\let\current@page@color\current@color
+    }%
+    \g@addto@macro\@kernel@before@shipout@background
+     {%
+      \ifGPT@pagecolor
+        \put(-\hoffset,-\pageheight+\voffset)%
+          {%
+            \pdfextension colorstack\@pdfcolorstack push{\current@page@color}%
+            \aftergroup\reset@color
+            \rule{\pagewidth}{\pageheight}%
+          }%
+      \fi
+     }%
+  }%
+ }
 \AtBeginDocument{%
   \def\KV@Gin@bbllx{%
     \PackageError{luatex.def}{%
