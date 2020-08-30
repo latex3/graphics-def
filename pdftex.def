@@ -19,7 +19,7 @@
 %% https://github.com/latex3/graphics-def/issues
 %%
 \ProvidesFile{pdftex.def}
-  [2020/08/09 v1.1a Graphics/color driver for pdftex]
+  [2020/08/26 v1.2 Graphics/color driver for pdftex]
 \def\GPT@space{ }
 \def\c@lor@arg#1{%
   \dimen@#1\p@
@@ -140,6 +140,33 @@ E     \else
 \def\no@page@color{%
   \global\GPT@pagecolorfalse
 }
+
+\def\@tempa{LaTeX2e}%
+\ifx\fmtname\@tempa
+  \expandafter\@firstofone
+\else
+  \expandafter\@gobble
+\fi
+ {%
+ \@ifl@t@r\fmtversion{2020/10/01}
+  {%
+    \def\set@page@color{%
+     \global\GPT@pagecolortrue
+     \global\let\current@page@color\current@color
+    }%
+    \g@addto@macro\@kernel@before@shipout@background
+     {%
+      \ifGPT@pagecolor
+        \put(-\hoffset,-\pdfpageheight+\voffset)%
+          {%
+           \pdfcolorstack\@pdfcolorstack push{\current@page@color}%
+            \aftergroup\reset@color
+            \rule{\pdfpagewidth}{\pdfpageheight}%
+          }%
+      \fi
+     }%
+  }%
+ }
 \AtBeginDocument{%
   \def\KV@Gin@bbllx{%
     \PackageError{pdftex.def}{%

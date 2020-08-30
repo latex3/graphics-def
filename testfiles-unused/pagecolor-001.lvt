@@ -1,0 +1,28 @@
+\input{regression-test}
+\documentclass{article}
+\usepackage
+  %[dvipdfmx]
+  {color}
+\usepackage{iftex}
+\AddToHook{shipout/background}{\put(1in,-3in){\Huge BACKGROUND TEXT}}
+\begin{document}
+\START
+\showoutput
+normal page\newpage
+\pagecolor{red}
+red page
+\newpage
+\nopagecolor
+no page color
+\newpage
+\pagecolor{green}
+new color
+\newpage
+larger mediabox
+%only pdflatex, lualatex, xelatex
+\ifluatex
+\pagewidth=2\pagewidth
+\else
+\pdfpagewidth=2\pdfpagewidth
+\fi
+\end{document}
