@@ -10,6 +10,7 @@ module = "graphics-def"
 installfiles = {"*.def"}
 sourcefiles  = {"*.def"}
 typesetfiles = {}
+textfiles= {"README.md"}
 
 if string.find(status.banner,"2019") then
   print("TL2019")
