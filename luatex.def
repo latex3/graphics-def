@@ -139,6 +139,7 @@
     \def\set@page@color{%
      \global\GPT@pagecolortrue
      \global\let\current@page@color\current@color
+     \IfHookEmptyTF{shipout/background}{\AddToHook{shipout/background}{\relax}}{}%
     }%
     \g@addto@macro\@kernel@before@shipout@background
      {%
@@ -151,7 +152,7 @@
           }%
       \fi
      }%
-  }%
+  }{}%
  }
 \AtBeginDocument{%
   \def\KV@Gin@bbllx{%
