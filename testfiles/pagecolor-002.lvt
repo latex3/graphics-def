@@ -1,0 +1,13 @@
+\input{regression-test}
+\documentclass{article}
+\usepackage
+  %[dvipdfmx]
+  {color}
+\usepackage{iftex}
+\begin{document}
+\START
+\showoutput
+normal page\newpage
+\pagecolor{red}
+red page
+\end{document} 
