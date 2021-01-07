@@ -12,24 +12,15 @@ sourcefiles  = {"*.def"}
 typesetfiles = {}
 textfiles= {"README.md"}
 
-if string.find(status.banner,"2019") then
-  print("TL2019")
-  TL2019bool=true
-else
-  -- tl2020
-  print("TL2020 or later")
-
- specialformats={}
-  specialformats["latex"] = specialformats["latex"] or
-   {
-    luatex     = {binary="luahbtex",format = "lualatex"},
-   }
-  specialformats["latex-dev"] = specialformats["latex-dev"] or
-   {
-    luatex = {binary="luahbtex",format = "lualatex-dev"}
-   }
-end
-
+specialformats = {}
+specialformats["latex"] = specialformats["latex"] or
+  {
+    luatex = {binary="luahbtex",format = "lualatex"},
+  }
+specialformats["latex-dev"] = specialformats["latex-dev"] or
+  {
+     luatex = {binary="luahbtex",format = "lualatex-dev"}
+  }
 
 -- Find and run the build system
 kpse.set_program_name ("kpsewhich")
