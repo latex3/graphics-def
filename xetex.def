@@ -435,3 +435,63 @@
 }
 \fi
 \fi
+% Updates for newer dvipdfmx versions
+% Loaded last as we can then bail-out if not required
+\begingroup
+  \immediate\openin 0 = |"extractbb --version"
+  \ifeof0 %
+    \def\extractbbversion{0}%
+  \else
+    \read0 to \extractbbversion % \par
+    \ifeof0 %
+      \def\extractbbversion{0}%
+    \else
+      \read0 to \extractbbversion
+        \long\def\getextractbbversion#1Version #2 #3\stop{%
+          \def\extractbbversion{#2}}%
+        \expandafter\getextractbbversion\extractbbversion Version 0 \stop
+    \fi
+  \fi
+\ifnum\extractbbversion<20201111 %
+  \endgroup
+  \expandafter\endinput
+\else
+  \endgroup
+\fi
+% Conversion functions so the internal representation stays unchanged
+\let\init@current@color\current@color
+\def\convert@color#1{%
+  \ifx#1\init@current@color
+    \expandafter\convert@color@init
+  \else
+    \expandafter\convert@@color
+  \fi
+    #1%
+}
+\def\convert@color@init#1{0 g 0 G}
+\def\convert@@color#1{%
+  \expandafter\convert@@@color#1\stop
+}
+\def\convert@@@color#1 #2\stop{%
+  \csname convert@color@#1\endcsname{#2}%
+}
+\def\convert@color@cmyk#1{#1 k #1 K}
+\def\convert@color@gray#1{#1 g #1 G}
+\def\convert@color@rgb#1{#1 rg #1 RG}
+% Change the specials to use the stack
+\chardef\main@pdfcolorstack=1 %
+\ifx\AtBeginDvi\undefined
+  \long\def\@firstofone#1{#1}%
+  \expandafter\@firstofone
+\else
+  \expandafter\AtBeginDvi
+\fi
+  {\special{pdfcolorstackinit \the\main@pdfcolorstack\space page direct (0 g 0 G)}}
+\def\@pdfcolorstack{\the\main@pdfcolorstack\space}
+\def\set@color{%
+  \special{pdfcolorstack \@pdfcolorstack push (\convert@color\current@color)}%
+  \aftergroup \reset@color
+}
+\def\reset@color{%
+  \special{pdfcolorstack \@pdfcolorstack pop}%
+}
