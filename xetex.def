@@ -475,7 +475,7 @@
 }
 \def\convert@color@init#1{0 g 0 G}
 \def\convert@@color#1{%
-  \expandafter\convert@@@color#1\stop
+  \expandafter\expandafter\expandafter\convert@@@color#1\stop
 }
 \def\convert@@@color#1 #2\stop{%
   \csname convert@color@#1\endcsname{#2}%
