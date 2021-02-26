@@ -29,7 +29,7 @@ specialformats["latex-dev"] = specialformats["latex-dev"] or
 do
   local tag = os.getenv'TRAVIS_TAG'
   if tag and tag ~= "" then
-    master_branch = not string.match(tag, '^dev-')
+    main_branch = not string.match(tag, '^dev-')
   else
     local branch = os.getenv'TRAVIS_BRANCH'
     if not branch then
@@ -37,9 +37,9 @@ do
       branch = f:read'*a':sub(1,-2)
       assert(f:close())
     end
-    master_branch = string.match(branch, '^master')
+    main_branch = string.match(branch, '^main')
   end
-  if not master_branch then
+  if not main_branch then
     tdsroot = "latex-dev"
     print("Creating/installing dev-version in " .. tdsroot)
     ctanpkg = "graphics-def-dev"
