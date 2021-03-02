@@ -1,5 +1,5 @@
 %% dvipdfmx.def
-%% Copyright (C) 2005-2020 LaTeX3 Project, Jin-Hwan Cho, Shunsaku Hirata
+%% Copyright (C) 2005-2021 LaTeX3 Project, Jin-Hwan Cho, Shunsaku Hirata
 %%                         (with contributions from many others)
 %%
 %% This work may be distributed and/or modified under the
@@ -17,7 +17,7 @@
 %% https://github.com/latex3/graphics-def/issues
 %%
 \ProvidesFile{dvipdfmx.def}
-  [2020/08/26 v5.0h Graphics/color driver for dvipdfmx]
+  [2021/03/02 v5.0i Graphics/color driver for dvipdfmx]
 \def\GPT@space{ }
 \def\c@lor@arg#1{%
   \dimen@#1\p@
@@ -387,7 +387,9 @@
 % Deal with named colors
 \def\define@color@named#1#2{\expandafter\edef\csname col@#1\endcsname{#2}}
 % Change the specials to use the stack
-\chardef\main@pdfcolorstack=1 %
+\ifdefined\main@pdfcolorstack\else
+  \chardef\main@pdfcolorstack=1 %
+\fi
 \ifx\AtBeginDvi\undefined
   \long\def\@firstofone#1{#1}%
   \expandafter\@firstofone

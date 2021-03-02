@@ -486,7 +486,9 @@
 % Deal with named colors
 \def\define@color@named#1#2{\expandafter\edef\csname col@#1\endcsname{#2}}
 % Change the specials to use the stack
-\chardef\main@pdfcolorstack=1 %
+\ifdefined\main@pdfcolorstack\else
+  \chardef\main@pdfcolorstack=1 %
+\fi
 \ifx\AtBeginDvi\undefined
   \long\def\@firstofone#1{#1}%
   \expandafter\@firstofone
