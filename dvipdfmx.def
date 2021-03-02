@@ -384,6 +384,8 @@
 \def\convert@color@cmyk#1{#1 k #1 K}
 \def\convert@color@gray#1{#1 g #1 G}
 \def\convert@color@rgb#1{#1 rg #1 RG}
+% Deal with named colors
+\def\define@color@named#1#2{\expandafter\edef\csname col@#1\endcsname{#2}}
 % Change the specials to use the stack
 \chardef\main@pdfcolorstack=1 %
 \ifx\AtBeginDvi\undefined
