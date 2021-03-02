@@ -389,14 +389,14 @@
 % Change the specials to use the stack
 \ifdefined\main@pdfcolorstack\else
   \chardef\main@pdfcolorstack=1 %
+  \ifx\AtBeginDvi\undefined
+    \long\def\@firstofone#1{#1}%
+    \expandafter\@firstofone
+  \else
+    \expandafter\AtBeginDvi
+  \fi
+    {\special{pdfcolorstackinit \the\main@pdfcolorstack\space page direct (0 g 0 G)}}
 \fi
-\ifx\AtBeginDvi\undefined
-  \long\def\@firstofone#1{#1}%
-  \expandafter\@firstofone
-\else
-  \expandafter\AtBeginDvi
-\fi
-  {\special{pdfcolorstackinit \the\main@pdfcolorstack\space page direct (0 g 0 G)}}
 \def\@pdfcolorstack{\the\main@pdfcolorstack\space}
 \def\set@color{%
   \special{pdfcolorstack \@pdfcolorstack push (\convert@color\current@color)}%
