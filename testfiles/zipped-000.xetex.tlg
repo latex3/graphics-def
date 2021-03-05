@@ -1,0 +1,15 @@
+This is a generated file for the l3build validation system.
+Don't change this file in any respect.
+File: foob^^e1.eps.gz Graphic file (type zipped)
+! Package graphics Error: Unsupported graphics extension .eps.gz with XeTeX.
+See the graphics package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+l. ...\sbox0{\includegraphics{foob^^e1.eps.gz}}
+The backend driver for XeTeX does not support compressed graphics.
+Uncompress `foob^^e1.eps.gz' and use the uncompressed file.
+> \box...=
+\hbox(0.0+0.0)x0.0
+.\hbox(0.0+0.0)x0.0
+! OK.
+l. ...\showbox0

@@ -1,0 +1,14 @@
+This is a generated file for the l3build validation system.
+Don't change this file in any respect.
+LaTeX Warning: File `foob^^e1.eps.gz' not found on input line ....
+! LaTeX Error: Unknown graphics extension: .eps.gz.
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+l. ...\sbox0{\includegraphics{foob^^e1.eps.gz}}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+> \box...=
+\hbox(0.0+0.0)x0.0, direction TLT
+! OK.
+l. ...\showbox0
