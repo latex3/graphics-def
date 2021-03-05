@@ -84,7 +84,7 @@
         background \current@color}}
 \def\define@color@named#1#2{%
   \expandafter\let\csname col@#1\endcsname\@nnil}
-% white is special cased as "no bacground color" by dvipdfmx
+% white is special cased as "no background color" by dvipdfmx
 \def\no@page@color{\special{background gray 1}}
 \@ifundefined{Gin@decode}
   {\let\Gin@decode\@empty}
@@ -354,8 +354,7 @@
 \def\Gin@extensions{% order here is like pdftex.def, except for PS
   .pdf,.PDF,.ai,.AI,%
   .png,.PNG,.jpg,.JPG,.jpeg,.JPEG,.jp2,.JP2,.jpf,.JPF,.bmp,.BMP,%
-  .ps,.PS,.eps,.EPS,.mps,.MPS,%
-  .pz,.eps.Z,.ps.Z,.ps.gz,.eps.gz}
+  .ps,.PS,.eps,.EPS,.mps,.MPS}
 %
 \@namedef{Gin@rule@.pdf}#1{{pdf}{.xbb}{#1}}
 \@namedef{Gin@rule@.PDF}#1{{pdf}{.xbb}{#1}}
@@ -395,12 +394,6 @@
 %
 \@namedef{Gin@rule@.mps}#1{{mps}{.mps}{#1}}
 \@namedef{Gin@rule@.MPS}#1{{mps}{.mps}{#1}}
-% (don't bother with uppercase versions for these Unixish extensions)
-\@namedef{Gin@rule@.pz}#1{{eps}{.xbb}{`gunzip -c #1}}
-\@namedef{Gin@rule@.eps.Z}#1{{eps}{.eps.xbb}{`gunzip -c #1}}
-\@namedef{Gin@rule@.ps.Z}#1{{eps}{.ps.xbb}{`gunzip -c #1}}
-\@namedef{Gin@rule@.ps.gz}#1{{eps}{.ps.xbb}{`gunzip -c #1}}
-\@namedef{Gin@rule@.eps.gz}#1{{eps}{.eps.xbb}{`gunzip -c #1}}
 %
 \@namedef{Gin@rule@*}#1{{eps}{\Gin@ext}{#1}}
 \@ifundefined{ifGin@setpagesize}
