@@ -130,6 +130,13 @@
   \fi
 }
 \let\Gread@bmp\Gread@pdf
+\def\Gread@zipped#1{\Gread@false}
+\def\Ginclude@zipped#1{%
+  \PackageError{graphics}
+    {Unsupported graphics extension \Gin@ext\space with dvipdfmx}
+    {dvipdfmx does not support compressed graphics.\MessageBreak
+     Uncompress `#1' and use the uncompressed file.}%
+}
 \def\Ginclude@pdf#1{%
   \let\Gin@decode\@empty
   \Gin@interpolatefalse
@@ -302,11 +309,11 @@
 \@namedef{Gin@rule@.mps}#1{{mps}{.mps}{#1}}
 \@namedef{Gin@rule@.MPS}#1{{mps}{.mps}{#1}}
 % (don't bother with uppercase versions for these Unixish extensions)
-\@namedef{Gin@rule@.pz}#1{{eps}{.xbb}{`gunzip -c #1}}
-\@namedef{Gin@rule@.eps.Z}#1{{eps}{.eps.xbb}{`gunzip -c #1}}
-\@namedef{Gin@rule@.ps.Z}#1{{eps}{.ps.xbb}{`gunzip -c #1}}
-\@namedef{Gin@rule@.ps.gz}#1{{eps}{.ps.xbb}{`gunzip -c #1}}
-\@namedef{Gin@rule@.eps.gz}#1{{eps}{.eps.xbb}{`gunzip -c #1}}
+\@namedef{Gin@rule@.pz}#1{{zipped}{.xbb}{#1}}
+\@namedef{Gin@rule@.eps.Z}#1{{zipped}{.eps.xbb}{#1}}
+\@namedef{Gin@rule@.ps.Z}#1{{zipped}{.ps.xbb}{#1}}
+\@namedef{Gin@rule@.ps.gz}#1{{zipped}{.ps.xbb}{#1}}
+\@namedef{Gin@rule@.eps.gz}#1{{zipped}{.eps.xbb}{#1}}
 %
 \@namedef{Gin@rule@*}#1{{eps}{\Gin@ext}{#1}}
 \@ifundefined{ifGin@setpagesize}
