@@ -84,7 +84,7 @@
         background \current@color}}
 \def\define@color@named#1#2{%
   \expandafter\let\csname col@#1\endcsname\@nnil}
-% white is special cased as "no bacground color" by dvipdfmx
+% white is special cased as "no background color" by dvipdfmx
 \def\no@page@color{\special{background gray 1}}
 \@ifundefined{Gin@decode}
   {\let\Gin@decode\@empty}
@@ -148,6 +148,13 @@
     }%
 }
 \def\Gread@@xetex@box#1box{#1}
+\def\Gread@zipped#1{\Gread@false}
+\def\Ginclude@zipped#1{%
+  \PackageError{graphics}
+    {Unsupported graphics extension \Gin@ext\space with XeTeX}
+    {The backend driver for XeTeX does not support compressed graphics.\MessageBreak
+     Uncompress `#1' and use the uncompressed file.}%
+}
 \def\GPT@setup@scale{%
   \def\@tempa{!}%
   \ifx\Gin@scaley\@tempa
@@ -396,11 +403,11 @@
 \@namedef{Gin@rule@.mps}#1{{mps}{.mps}{#1}}
 \@namedef{Gin@rule@.MPS}#1{{mps}{.mps}{#1}}
 % (don't bother with uppercase versions for these Unixish extensions)
-\@namedef{Gin@rule@.pz}#1{{eps}{.xbb}{`gunzip -c #1}}
-\@namedef{Gin@rule@.eps.Z}#1{{eps}{.eps.xbb}{`gunzip -c #1}}
-\@namedef{Gin@rule@.ps.Z}#1{{eps}{.ps.xbb}{`gunzip -c #1}}
-\@namedef{Gin@rule@.ps.gz}#1{{eps}{.ps.xbb}{`gunzip -c #1}}
-\@namedef{Gin@rule@.eps.gz}#1{{eps}{.eps.xbb}{`gunzip -c #1}}
+\@namedef{Gin@rule@.pz}#1{{zipped}{.xbb}{#1}}
+\@namedef{Gin@rule@.eps.Z}#1{{zipped}{.eps.xbb}{#1}}
+\@namedef{Gin@rule@.ps.Z}#1{{zipped}{.ps.xbb}{#1}}
+\@namedef{Gin@rule@.ps.gz}#1{{zipped}{.ps.xbb}{#1}}
+\@namedef{Gin@rule@.eps.gz}#1{{zipped}{.eps.xbb}{#1}}
 %
 \@namedef{Gin@rule@*}#1{{eps}{\Gin@ext}{#1}}
 \@ifundefined{ifGin@setpagesize}
