@@ -403,5 +403,5 @@
   \special{pdfcolorstack \@pdfcolorstack pop}%
 }
 % Reinsert stack color to over-ride built-in reinsertion of pdf:bc color
-\def\Grot@end{\special{pdf:etrans}\special{pdfcolorstck \@pdfcolorstack current}}
+\def\Grot@end{\special{pdf:etrans}\special{pdfcolorstack \@pdfcolorstack current}}
 \let\Gscale@end\Grot@end
