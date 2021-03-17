@@ -17,7 +17,7 @@
 %% https://github.com/latex3/graphics-def/issues
 %%
 \ProvidesFile{xetex.def}
-  [2021/03/02 v5.0j Graphics/color driver for xetex]
+  [2021/03/17 v5.0k Graphics/color driver for xetex]
 \def\GPT@space{ }
 \def\c@lor@arg#1{%
   \dimen@#1\p@
@@ -501,3 +501,6 @@
 \def\reset@color{%
   \special{pdfcolorstack \@pdfcolorstack pop}%
 }
+% Reinsert stack color to over-ride built-in reinsertion of pdf:bc color
+\def\Grot@end{\special{pdf:etrans}\special{pdfcolorstck \@pdfcolorstack current}}
+\let\Gscale@end\Grot@end
