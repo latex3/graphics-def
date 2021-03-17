@@ -504,3 +504,21 @@
 % Reinsert stack color to over-ride built-in reinsertion of pdf:bc color
 \def\Grot@end{\special{pdf:etrans}\special{pdfcolorstack \@pdfcolorstack current}}
 \let\Gscale@end\Grot@end
+\def\GPT@clipbox#1{%
+  \setbox#1=\hbox{%
+    \Gin@defaultbp\WIDTH{\wd#1}%
+    \Gin@defaultbp\DEPTH{\dp#1}%
+    \@tempdima\ht#1%
+    \advance\@tempdima\dp#1%
+    \Gin@defaultbp\TOTALHEIGHT{\@tempdima}%
+    \special{x:gsave}%
+    \special{%
+      pdf:literal
+      0 -\DEPTH\GPT@space \WIDTH\GPT@space \TOTALHEIGHT\GPT@space re  W n
+    }%
+    \rlap{\box#1}%
+    \special{x:grestore}%
+    \special{pdfcolorstack \@pdfcolorstack current}%
+    \hskip\wd#1%
+  }%
+}
