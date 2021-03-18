@@ -329,6 +329,8 @@
 }
 \fi
 \fi
+% Disable use of new multiple stacks pending further testing
+\endinput
 % Updates for newer dvipdfmx versions
 % Loaded last as we can then bail-out if not required
 \begingroup
