@@ -21,7 +21,6 @@ Completed box being shipped out [1]
 ..\glue(\lineskip) 0.0
 ..\vbox(550.0+0.0)x345.0, glue set >20000.0fil, direction TLT
 ...\write-{}
-sS\ETC.}
 ...\glue(\topskip) 0.0
 ...\hbox(240.9+0.0)x345.0, glue set 8.8fil, direction TLT
 ....\localpar
@@ -31,8 +30,7 @@ sS\ETC.}
 .....\localrightbox=null
 ....\hbox(0.0+0.0)x15.0, direction TLT
 ....\hbox(240.9+0.0)x321.2, direction TLT
-.....\special{pdf:epdf pagebox cropbox bbox 0 0 320 240 clip 0 width 321.2pt (e
-xamp\ETC.}
+.....\special{pdf:epdf pagebox cropbox bbox 0 0 320 240 clip 0 width 321.2pt (examp\ETC.}
 ....\penalty 10000
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
@@ -46,8 +44,7 @@ xamp\ETC.}
 .....\localrightbox=null
 ....\hbox(0.0+0.0)x15.0, direction TLT
 ....\hbox(240.9+0.0)x321.2, direction TLT
-.....\special{pdf:epdf page 1 pagebox cropbox bbox 0 0 320 240 clip 0 width 321
-.2pt\ETC.}
+.....\special{pdf:epdf page 1 pagebox cropbox bbox 0 0 320 240 clip 0 width 321.2pt\ETC.}
 ....\penalty 10000
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
@@ -61,8 +58,7 @@ xamp\ETC.}
 .....\localrightbox=null
 ....\hbox(0.0+0.0)x15.0, direction TLT
 ....\hbox(50.1875+0.0)x30.11249, direction TLT
-.....\special{pdf:epdf pagebox cropbox bbox 0 0 30 50 clip 0 width 30.11249pt (
-az2.\ETC.}
+.....\special{pdf:epdf pagebox cropbox bbox 0 0 30 50 clip 0 width 30.11249pt (az2.\ETC.}
 ....\penalty 10000
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
@@ -99,8 +95,7 @@ Completed box being shipped out [2]
 .....\localrightbox=null
 ....\hbox(0.0+0.0)x15.0, direction TLT
 ....\hbox(36.135+0.0)x36.135, direction TLT
-.....\special{pdf:epdf pagebox artbox bbox 36 36 72 72 clip 0 width 36.135pt (a
-z2.p\ETC.}
+.....\special{pdf:epdf pagebox artbox bbox 36 36 72 72 clip 0 width 36.135pt (az2.p\ETC.}
 ....\penalty 10000
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
@@ -114,8 +109,7 @@ z2.p\ETC.}
 .....\localrightbox=null
 ....\hbox(0.0+0.0)x15.0, direction TLT
 ....\hbox(49.99988+0.0)x49.99988, direction TLT
-.....\special{pdf:image bbox 12.9514 64.757 62.76448 114.57008 clip 1 width 49.
-9998\ETC.}
+.....\special{pdf:image bbox 12.9514 64.757 62.76448 114.57008 clip 1 width 49.9998\ETC.}
 ....\penalty 10000
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
@@ -129,8 +123,7 @@ z2.p\ETC.}
 .....\localrightbox=null
 ....\hbox(0.0+0.0)x15.0, direction TLT
 ....\hbox(49.99988+0.0)x49.99988, direction TLT
-.....\special{pdf:image bbox 12.9514 64.757 62.76448 114.57008 clip 1 width 49.
-9998\ETC.}
+.....\special{pdf:image bbox 12.9514 64.757 62.76448 114.57008 clip 1 width 49.9998\ETC.}
 ....\penalty 10000
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
@@ -144,8 +137,7 @@ z2.p\ETC.}
 .....\localrightbox=null
 ....\hbox(0.0+0.0)x15.0, direction TLT
 ....\hbox(128.48+0.0)x146.54749, direction TLT
-.....\special{pdf:image bbox 0 0 146 128 clip 0 width 146.54749pt (clip-1-2.jpg
-) <<\ETC.}
+.....\special{pdf:image bbox 0 0 146 128 clip 0 width 146.54749pt (clip-1-2.jpg) <<\ETC.}
 ....\penalty 10000
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0

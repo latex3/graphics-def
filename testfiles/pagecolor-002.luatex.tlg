@@ -57,12 +57,14 @@ Completed box being shipped out [2]
 ..\vbox(0.0+0.0)x0.0, glue set 72.26999fil, direction TLT
 ...\kern-72.26999
 ...\hbox(0.0+0.0)x0.0, direction TLT
-....\hbox(794.96999+0.0)x0.0, glue set - 614.29498fil, shifted 794.96999, direction TLT
+....\hbox(794.96999+0.0)x0.0, glue set - 614.29498fil, shifted 794.96999, direct
+ion TLT
 .....\kern0.0
 .....\pdfcolorstack 0 push {1 0 0 rg 1 0 0 RG}
 .....\hbox(794.96999+0.0)x614.295, direction TLT
 ......\rule(794.96999+0.0)x614.295
 .....\glue 0.0 plus 1.0fil minus 1.0fil
+....\pdfcolorstack 0 pop
 ....\pdfcolorstack 0 pop
 ....\glue 0.0 plus 1.0fil minus 1.0fil
 ...\glue 0.0 plus 1.0fil minus 1.0fil
@@ -109,4 +111,5 @@ Completed box being shipped out [2]
 ....\glue 0.0 plus 1.0fil
 ...\pdfcolorstack 0 pop
 .\kern0.0
+warning  (pdf backend): pop empty color page stack 0
 (pagecolor-002.aux)

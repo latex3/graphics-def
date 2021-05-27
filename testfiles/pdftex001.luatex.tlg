@@ -11,8 +11,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <argument> \pdfximage 
-           \ifnum 0\ifx \Gin@decode \@empty \else 1\fi \ifGin@interpolate 1\fi 
-l. ...\includegraphics{example-image-a}
+           \ifnum 0\ifx \Gin@decode \@empty \else 1\fi \ifGin@interpolate 1\fi l. ...\includegraphics{example-image-a}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -73,15 +72,13 @@ and I'll forget about whatever was undefined.
                                                    \ifx \Gin@page \@empty \e...
 l. ...\includegraphics{example-image-a}
 I'm forgetting what you said and using zero instead.
-! Illegal parameter number in definition of \example-image-a.pdf image:cropbox.
-<to be read again> 
+! Illegal parameter number in definition of \example-image-a.pdf image:cropbox.<to be read again> 
 1
 l. ...\includegraphics{example-image-a}
 You meant to type ## instead of #, right?
 Or maybe a } was forgotten somewhere earlier, and things
 are all screwed up? I'm going to assume that you meant ##.
-! Illegal parameter number in definition of \example-image-a.pdf image:cropbox.
-<to be read again> 
+! Illegal parameter number in definition of \example-image-a.pdf image:cropbox.<to be read again> 
 1
 l. ...\includegraphics{example-image-a}
 You meant to type ## instead of #, right?

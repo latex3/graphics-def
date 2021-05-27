@@ -7,7 +7,8 @@ Completed box being shipped out [1]
 ..\vbox(0.0+0.0)x0.0, glue set 72.26999fil, direction TLT
 ...\kern-72.26999
 ...\hbox(0.0+0.0)x0.0, direction TLT
-....\hbox(17.59016+0.39809)x0.0, glue set - 316.93994fil, shifted 216.81, direction TLT
+....\hbox(17.59016+0.39809)x0.0, glue set - 316.93994fil, shifted 216.81, direct
+ion TLT
 .....\kern72.26999
 .....\TU/lmr/m/n/24.88 B
 .....\TU/lmr/m/n/24.88 A
@@ -88,14 +89,17 @@ Completed box being shipped out [2]
 ..\vbox(0.0+0.0)x0.0, glue set 72.26999fil, direction TLT
 ...\kern-72.26999
 ...\hbox(0.0+0.0)x0.0, direction TLT
-....\hbox(794.96999+0.0)x0.0, glue set - 614.29498fil, shifted 794.96999, direction TLT
+....\hbox(794.96999+0.0)x0.0, glue set - 614.29498fil, shifted 794.96999, direct
+ion TLT
 .....\kern0.0
 .....\pdfcolorstack 0 push {1 0 0 rg 1 0 0 RG}
 .....\hbox(794.96999+0.0)x614.295, direction TLT
 ......\rule(794.96999+0.0)x614.295
 .....\glue 0.0 plus 1.0fil minus 1.0fil
 ....\pdfcolorstack 0 pop
-....\hbox(17.59016+0.39809)x0.0, glue set - 316.93994fil, shifted 216.81, direction TLT
+....\pdfcolorstack 0 pop
+....\hbox(17.59016+0.39809)x0.0, glue set - 316.93994fil, shifted 216.81, direct
+ion TLT
 .....\kern72.26999
 .....\TU/lmr/m/n/24.88 B
 .....\TU/lmr/m/n/24.88 A
@@ -163,6 +167,7 @@ Completed box being shipped out [2]
 ....\glue 0.0 plus 1.0fil
 ...\pdfcolorstack 0 pop
 .\kern0.0
+warning  (pdf backend): pop empty color page stack 0
 Completed box being shipped out [3]
 \vbox(633.0+0.22)x407.0, direction TLT
 .\hbox(0.0+0.0)x0.0, direction TLT
@@ -170,7 +175,8 @@ Completed box being shipped out [3]
 ..\vbox(0.0+0.0)x0.0, glue set 72.26999fil, direction TLT
 ...\kern-72.26999
 ...\hbox(0.0+0.0)x0.0, direction TLT
-....\hbox(17.59016+0.39809)x0.0, glue set - 316.93994fil, shifted 216.81, direction TLT
+....\hbox(17.59016+0.39809)x0.0, glue set - 316.93994fil, shifted 216.81, direct
+ion TLT
 .....\kern72.26999
 .....\TU/lmr/m/n/24.88 B
 .....\TU/lmr/m/n/24.88 A
@@ -250,14 +256,17 @@ Completed box being shipped out [4]
 ..\vbox(0.0+0.0)x0.0, glue set 72.26999fil, direction TLT
 ...\kern-72.26999
 ...\hbox(0.0+0.0)x0.0, direction TLT
-....\hbox(794.96999+0.0)x0.0, glue set - 614.29498fil, shifted 794.96999, direction TLT
+....\hbox(794.96999+0.0)x0.0, glue set - 614.29498fil, shifted 794.96999, direct
+ion TLT
 .....\kern0.0
 .....\pdfcolorstack 0 push {0 1 0 rg 0 1 0 RG}
 .....\hbox(794.96999+0.0)x614.295, direction TLT
 ......\rule(794.96999+0.0)x614.295
 .....\glue 0.0 plus 1.0fil minus 1.0fil
 ....\pdfcolorstack 0 pop
-....\hbox(17.59016+0.39809)x0.0, glue set - 316.93994fil, shifted 216.81, direction TLT
+....\pdfcolorstack 0 pop
+....\hbox(17.59016+0.39809)x0.0, glue set - 316.93994fil, shifted 216.81, direct
+ion TLT
 .....\kern72.26999
 .....\TU/lmr/m/n/24.88 B
 .....\TU/lmr/m/n/24.88 A
@@ -326,6 +335,7 @@ Completed box being shipped out [4]
 ....\glue 0.0 plus 1.0fil
 ...\pdfcolorstack 0 pop
 .\kern0.0
+warning  (pdf backend): pop empty color page stack 0
 Completed box being shipped out [5]
 \vbox(633.0+0.22)x407.0, direction TLT
 .\hbox(0.0+0.0)x0.0, direction TLT
@@ -333,14 +343,17 @@ Completed box being shipped out [5]
 ..\vbox(0.0+0.0)x0.0, glue set 72.26999fil, direction TLT
 ...\kern-72.26999
 ...\hbox(0.0+0.0)x0.0, direction TLT
-....\hbox(794.96999+0.0)x0.0, glue set - 1228.58997fil, shifted 794.96999, direction TLT
+....\hbox(794.96999+0.0)x0.0, glue set - 1228.58997fil, shifted 794.96999, direc
+tion TLT
 .....\kern0.0
 .....\pdfcolorstack 0 push {0 1 0 rg 0 1 0 RG}
 .....\hbox(794.96999+0.0)x1228.59, direction TLT
 ......\rule(794.96999+0.0)x1228.59
 .....\glue 0.0 plus 1.0fil minus 1.0fil
 ....\pdfcolorstack 0 pop
-....\hbox(17.59016+0.39809)x0.0, glue set - 316.93994fil, shifted 216.81, direction TLT
+....\pdfcolorstack 0 pop
+....\hbox(17.59016+0.39809)x0.0, glue set - 316.93994fil, shifted 216.81, direct
+ion TLT
 .....\kern72.26999
 .....\TU/lmr/m/n/24.88 B
 .....\TU/lmr/m/n/24.88 A
@@ -423,4 +436,5 @@ Completed box being shipped out [5]
 ....\glue 0.0 plus 1.0fil
 ...\pdfcolorstack 0 pop
 .\kern0.0
+warning  (pdf backend): pop empty color page stack 0
 (pagecolor-001.aux)

@@ -2,8 +2,7 @@ This is a generated file for the l3build validation system.
 Don't change this file in any respect.
 ! Undefined control sequence.
 <argument> \setbox \@tempboxa =\hbox {\XeTeXpdffile 
-                                         "\Gin@@name "\GPT@space \ifx \Gin@page
-l. ...\includegraphics{example-image-a}
+                                         "\Gin@@name "\GPT@space \ifx \Gin@pagel. ...\includegraphics{example-image-a}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -22,8 +21,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <argument> \setbox \@tempboxa =\hbox {\XeTeXpdffile 
-                                         "\Gin@@name "\GPT@space \ifx \Gin@page
-l. ...\includegraphics[page = 1]{example-image-a.pdf}
+                                         "\Gin@@name "\GPT@space \ifx \Gin@pagel. ...\includegraphics[page = 1]{example-image-a.pdf}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -42,8 +40,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <argument> \setbox \@tempboxa =\hbox {\XeTeXpdffile 
-                                         "\Gin@@name "\GPT@space \ifx \Gin@page
-l. ...\includegraphics{az2}
+                                         "\Gin@@name "\GPT@space \ifx \Gin@pagel. ...\includegraphics{az2}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -62,8 +59,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <argument> \setbox \@tempboxa =\hbox {\XeTeXpdffile 
-                                         "\Gin@@name "\GPT@space \ifx \Gin@page
-l. ...\includegraphics[pagebox = artbox]{az2}
+                                         "\Gin@@name "\GPT@space \ifx \Gin@pagel. ...\includegraphics[pagebox = artbox]{az2}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -86,8 +82,7 @@ File: clip-1-2.png Graphic file (type bmp)
 <clip-1-2.png>
 ! Undefined control sequence.
 <argument> \setbox \@tempboxa =\hbox {\XeTeXpicfile 
-                                         "\Gin@@name "\GPT@space \ifx \Gin@page
-l. ......degraphics[interpolate = true]{clip-1-2.jpg}
+                                         "\Gin@@name "\GPT@space \ifx \Gin@pagel. ......degraphics[interpolate = true]{clip-1-2.jpg}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -107,7 +102,6 @@ Completed box being shipped out [1]
 ..\glue(\lineskip) 0.0
 ..\vbox(550.0+0.0)x345.0, glue set 377.95987fil, direction TLT
 ...\write-{}
-sS\ETC.}
 ...\glue(\topskip) 6.33
 ...\hbox(3.67+0.0)x345.0, glue set 322.22fil, direction TLT
 ....\localpar
@@ -327,8 +321,7 @@ sS\ETC.}
 .....\localrightbox=null
 ....\hbox(0.0+0.0)x15.0, direction TLT
 ....\hbox(49.99988+0.0)x49.99988, direction TLT
-.....\special{pdf:image bbox 12.9514 64.757 62.76448 114.57008 clip 1 width 49.
-9998\ETC.}
+.....\special{pdf:image bbox 12.9514 64.757 62.76448 114.57008 clip 1 width 49.9998\ETC.}
 ....\penalty 10000
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
@@ -342,8 +335,7 @@ sS\ETC.}
 .....\localrightbox=null
 ....\hbox(0.0+0.0)x15.0, direction TLT
 ....\hbox(49.99988+0.0)x49.99988, direction TLT
-.....\special{pdf:image bbox 12.9514 64.757 62.76448 114.57008 clip 1 width 49.
-9998\ETC.}
+.....\special{pdf:image bbox 12.9514 64.757 62.76448 114.57008 clip 1 width 49.9998\ETC.}
 ....\penalty 10000
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
@@ -357,8 +349,7 @@ sS\ETC.}
 .....\localrightbox=null
 ....\hbox(0.0+0.0)x15.0, direction TLT
 ....\hbox(6.93997+0.0)x61.38983, direction TLT
-.....\special{pdf:image bbox 0 0 61.16049 6.91405 clip 0 width 61.38983pt (clip
--1-2\ETC.}
+.....\special{pdf:image bbox 0 0 61.16049 6.91405 clip 0 width 61.38983pt (clip-1-2\ETC.}
 ....\penalty 10000
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
