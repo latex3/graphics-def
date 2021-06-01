@@ -20,7 +20,7 @@
 %% https://github.com/latex3/graphics-def/issues
 %%
 \ProvidesFile{luatex.def}
-  [2021/05/26 v1.2b Graphics/color driver for luatex]
+  [2021/06/01 v1.2c Graphics/color driver for luatex]
 \def\GPT@space{ }
 \def\c@lor@arg#1{%
   \dimen@#1\p@
@@ -148,7 +148,6 @@
           {%
             \let\current@color\current@page@color
             \set@color
-            \aftergroup\reset@color
             \rule{\pagewidth}{\pageheight}%
           }%
       \fi
