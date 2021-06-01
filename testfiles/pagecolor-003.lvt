@@ -1,0 +1,15 @@
+\input{regression-test}
+\documentclass{article}
+\usepackage
+  %[dvipdfmx]
+  {color}
+\usepackage{}
+\pagecolor{red}
+\begin{document}
+\START
+\showoutput
+\color{yellow}
+normal page\newpage
+
+red page
+\end{document} 
