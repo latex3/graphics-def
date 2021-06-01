@@ -65,7 +65,6 @@ ion TLT
 ......\rule(794.96999+0.0)x614.295
 .....\glue 0.0 plus 1.0fil minus 1.0fil
 ....\pdfcolorstack 0 pop
-....\pdfcolorstack 0 pop
 ....\glue 0.0 plus 1.0fil minus 1.0fil
 ...\glue 0.0 plus 1.0fil minus 1.0fil
 .\glue 16.0
@@ -111,5 +110,4 @@ ion TLT
 ....\glue 0.0 plus 1.0fil
 ...\pdfcolorstack 0 pop
 .\kern0.0
-warning  (pdf backend): pop empty color page stack 0
 (pagecolor-002.aux)

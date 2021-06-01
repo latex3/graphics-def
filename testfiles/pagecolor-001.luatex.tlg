@@ -97,7 +97,6 @@ ion TLT
 ......\rule(794.96999+0.0)x614.295
 .....\glue 0.0 plus 1.0fil minus 1.0fil
 ....\pdfcolorstack 0 pop
-....\pdfcolorstack 0 pop
 ....\hbox(17.59016+0.39809)x0.0, glue set - 316.93994fil, shifted 216.81, direct
 ion TLT
 .....\kern72.26999
@@ -167,7 +166,6 @@ ion TLT
 ....\glue 0.0 plus 1.0fil
 ...\pdfcolorstack 0 pop
 .\kern0.0
-warning  (pdf backend): pop empty color page stack 0
 Completed box being shipped out [3]
 \vbox(633.0+0.22)x407.0, direction TLT
 .\hbox(0.0+0.0)x0.0, direction TLT
@@ -264,7 +262,6 @@ ion TLT
 ......\rule(794.96999+0.0)x614.295
 .....\glue 0.0 plus 1.0fil minus 1.0fil
 ....\pdfcolorstack 0 pop
-....\pdfcolorstack 0 pop
 ....\hbox(17.59016+0.39809)x0.0, glue set - 316.93994fil, shifted 216.81, direct
 ion TLT
 .....\kern72.26999
@@ -335,7 +332,6 @@ ion TLT
 ....\glue 0.0 plus 1.0fil
 ...\pdfcolorstack 0 pop
 .\kern0.0
-warning  (pdf backend): pop empty color page stack 0
 Completed box being shipped out [5]
 \vbox(633.0+0.22)x407.0, direction TLT
 .\hbox(0.0+0.0)x0.0, direction TLT
@@ -350,7 +346,6 @@ tion TLT
 .....\hbox(794.96999+0.0)x1228.59, direction TLT
 ......\rule(794.96999+0.0)x1228.59
 .....\glue 0.0 plus 1.0fil minus 1.0fil
-....\pdfcolorstack 0 pop
 ....\pdfcolorstack 0 pop
 ....\hbox(17.59016+0.39809)x0.0, glue set - 316.93994fil, shifted 216.81, direct
 ion TLT
@@ -436,5 +431,4 @@ ion TLT
 ....\glue 0.0 plus 1.0fil
 ...\pdfcolorstack 0 pop
 .\kern0.0
-warning  (pdf backend): pop empty color page stack 0
 (pagecolor-001.aux)
