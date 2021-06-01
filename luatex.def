@@ -148,7 +148,6 @@
           {%
             \let\current@color\current@page@color
             \set@color
-            \aftergroup\reset@color
             \rule{\pagewidth}{\pageheight}%
           }%
       \fi
