@@ -2,7 +2,6 @@ This is a generated file for the l3build validation system.
 Don't change this file in any respect.
 File: example-image-a.eps Graphic file (type eps)
 <example-image-a.eps>
-LaTeX Warning: File `example-image-a.pdf' not found on input line ....
 Invalid UTF-8 byte or sequence at line 11 replaced by U+FFFD.
 Invalid UTF-8 byte or sequence at line 11 replaced by U+FFFD.
 Invalid UTF-8 byte or sequence at line 11 replaced by U+FFFD.
@@ -2484,13 +2483,10 @@ I could not locate the file with any of these extensions:
 .eps,.ps,.eps.gz,.ps.gz,.eps.Z,.mps
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
-LaTeX Warning: File `clip-1-2.jpg' not found on input line ....
 File: clip-1-2.jpg Graphic file (type eps)
 <clip-1-2.jpg>
-LaTeX Warning: File `clip-1-2.png' not found on input line ....
 File: clip-1-2.png Graphic file (type eps)
-<clip-1-2.png>
-LaTeX Warning: File `clip-1-2.jpg' not found on input line ....
+ <clip-1-2.png>
 Invalid UTF-8 byte or sequence at line 21 replaced by U+FFFD.
 Invalid UTF-8 byte or sequence at line 21 replaced by U+FFFD.
 Invalid UTF-8 byte or sequence at line 21 replaced by U+FFFD.
@@ -5945,6 +5941,7 @@ Completed box being shipped out [1]
 ..\vbox(12.0+0.0)x345.0, glue set 12.0fil
 ...\glue 0.0 plus 1.0fil
 ...\hbox(0.0+0.0)x345.0
+....\hbox(0.0+0.0)x345.0
 ..\glue 25.0
 ..\glue(\lineskip) 0.0
 ..\vbox(550.0+0.0)x345.0, glue set 36.55637fil
@@ -5958,6 +5955,7 @@ Completed box being shipped out [1]
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
 ...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
 ...\glue(\lineskip) 1.0
 ...\hbox(72.26999+0.0)x345.0, glue set 257.73001fil
 ....\hbox(0.0+0.0)x15.0
@@ -5967,6 +5965,7 @@ Completed box being shipped out [1]
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
 ...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
 ...\glue(\baselineskip) 12.0
 ...\hbox(0.0+0.0)x345.0, glue set 330.0fil
 ....\hbox(0.0+0.0)x15.0
@@ -5974,6 +5973,7 @@ Completed box being shipped out [1]
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
 ...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
 ...\glue(\baselineskip) 12.0
 ...\hbox(0.0+0.0)x345.0, glue set 330.0fil
 ....\hbox(0.0+0.0)x15.0
@@ -5981,6 +5981,7 @@ Completed box being shipped out [1]
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
 ...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
 ...\glue(\lineskip) 1.0
 ...\hbox(49.99988+0.0)x345.0, glue set 280.00012fil
 ....\hbox(0.0+0.0)x15.0
@@ -5990,6 +5991,7 @@ Completed box being shipped out [1]
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
 ...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
 ...\glue(\lineskip) 1.0
 ...\hbox(49.99988+0.0)x345.0, glue set 280.00012fil
 ....\hbox(0.0+0.0)x15.0
@@ -5999,6 +6001,7 @@ Completed box being shipped out [1]
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
 ...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
 ...\glue(\lineskip) 1.0
 ...\hbox(72.26999+0.0)x345.0, glue set 257.73001fil
 ....\hbox(0.0+0.0)x15.0
@@ -6011,8 +6014,9 @@ Completed box being shipped out [1]
 ...\glue 0.0
 ...\glue 0.0 plus 0.0001fil
 ..\glue(\baselineskip) 23.34
-..\hbox(6.66+0.0)x345.0, glue set 170.0fil
-...\glue 0.0 plus 1.0fil
-...\TU/lmr/m/n/10 1
-...\glue 0.0 plus 1.0fil
+..\hbox(6.66+0.0)x345.0
+...\hbox(6.66+0.0)x345.0, glue set 170.0fil
+....\glue 0.0 plus 1.0fil
+....\TU/lmr/m/n/10 1
+....\glue 0.0 plus 1.0fil
 .\kern 0.0

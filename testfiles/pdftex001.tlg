@@ -22,11 +22,19 @@ Package pdftex.def Info: az2.pdf  used on input line ....
 (pdftex.def)             Requested size: 36.13489pt x 36.13489pt.
 Completed box being shipped out [1]
 \vbox(633.0+0.0)x407.0
+.\hbox(0.0+0.0)x0.0
+..\kern -72.26999
+..\vbox(0.0+0.0)x0.0, glue set 72.26999fil
+...\kern -72.26999
+...\hbox(0.0+0.0)x0.0
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fil minus 1.0fil
 .\glue 16.0
 .\vbox(617.0+0.0)x345.0, shifted 62.0
 ..\vbox(12.0+0.0)x345.0, glue set 12.0fil
 ...\glue 0.0 plus 1.0fil
 ...\hbox(0.0+0.0)x345.0
+....\hbox(0.0+0.0)x345.0
 ..\glue 25.0
 ..\glue(\lineskip) 0.0
 ..\vbox(550.0+0.0)x345.0, glue set >20000.0fil
@@ -48,6 +56,7 @@ Completed box being shipped out [1]
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
 ...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
 ...\glue(\lineskip) 1.0
 ...\hbox(240.8994+0.0)x345.0, glue set 8.80078fil
 ....\hbox(0.0+0.0)x15.0
@@ -65,6 +74,7 @@ Completed box being shipped out [1]
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
 ...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
 ...\glue(\lineskip) 1.0
 ...\hbox(50.18736+0.0)x345.0, glue set 299.88759fil
 ....\hbox(0.0+0.0)x15.0
@@ -84,10 +94,12 @@ Completed box being shipped out [1]
 ...\glue 0.0
 ...\glue 0.0 plus 0.0001fil
 ..\glue(\baselineskip) 23.55556
-..\hbox(6.44444+0.0)x345.0, glue set 170.0fil
-...\glue 0.0 plus 1.0fil
-...\OT1/cmr/m/n/10 1
-...\glue 0.0 plus 1.0fil
+..\hbox(6.44444+0.0)x345.0
+...\hbox(6.44444+0.0)x345.0, glue set 170.0fil
+....\glue 0.0 plus 1.0fil
+....\OT1/cmr/m/n/10 1
+....\glue 0.0 plus 1.0fil
+.\kern 0.0
  <../example-image-a.pdf> <../example-image-a.pdf> <./az2.pdf>
 Package pdftex.def Info: Option `bb' equivalent to `viewport' with the pdftex driver on input line ....
 <clip-1-2.jpg, id=20, 146.34676pt x 128.8815pt>
@@ -108,11 +120,19 @@ Package pdftex.def Info: clip-1-2.jpg  used on input line ....
 (pdftex.def)             Requested size: 146.34639pt x 128.88118pt.
 Completed box being shipped out [2]
 \vbox(633.0+0.0)x407.0
+.\hbox(0.0+0.0)x0.0
+..\kern -72.26999
+..\vbox(0.0+0.0)x0.0, glue set 72.26999fil
+...\kern -72.26999
+...\hbox(0.0+0.0)x0.0
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fil minus 1.0fil
 .\glue 16.0
 .\vbox(617.0+0.0)x345.0, shifted 62.0
 ..\vbox(12.0+0.0)x345.0, glue set 12.0fil
 ...\glue 0.0 plus 1.0fil
 ...\hbox(0.0+0.0)x345.0
+....\hbox(0.0+0.0)x345.0
 ..\glue 25.0
 ..\glue(\lineskip) 0.0
 ..\vbox(550.0+0.0)x345.0, glue set 281.95406fil
@@ -133,6 +153,7 @@ Completed box being shipped out [2]
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
 ...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
 ...\glue(\lineskip) 1.0
 ...\hbox(49.99988+0.0)x345.0, glue set 280.00012fil
 ....\hbox(0.0+0.0)x15.0
@@ -150,6 +171,7 @@ Completed box being shipped out [2]
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
 ...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
 ...\glue(\lineskip) 1.0
 ...\hbox(49.99988+0.0)x345.0, glue set 280.00012fil
 ....\hbox(0.0+0.0)x15.0
@@ -167,6 +189,7 @@ Completed box being shipped out [2]
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
 ...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
 ...\glue(\lineskip) 1.0
 ...\hbox(128.88118+0.0)x345.0, glue set 183.65361fil
 ....\hbox(0.0+0.0)x15.0
@@ -187,10 +210,12 @@ Completed box being shipped out [2]
 ...\glue 0.0
 ...\glue 0.0 plus 0.0001fil
 ..\glue(\baselineskip) 23.55556
-..\hbox(6.44444+0.0)x345.0, glue set 170.0fil
-...\glue 0.0 plus 1.0fil
-...\OT1/cmr/m/n/10 2
-...\glue 0.0 plus 1.0fil
+..\hbox(6.44444+0.0)x345.0
+...\hbox(6.44444+0.0)x345.0, glue set 170.0fil
+....\glue 0.0 plus 1.0fil
+....\OT1/cmr/m/n/10 2
+....\glue 0.0 plus 1.0fil
+.\kern 0.0
 Completed box being shipped out
 \hbox(49.99988+0.0)x49.99988
 .\hbox(128.8815+0.0)x133.3468, shifted 64.99983

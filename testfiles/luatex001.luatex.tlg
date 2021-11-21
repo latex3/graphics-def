@@ -22,11 +22,19 @@ Package luatex.def Info: az2.pdf  used on input line ....
 (luatex.def)             Requested size: 36.13489pt x 36.13489pt.
 Completed box being shipped out [1]
 \vbox(633.0+0.0)x407.0, direction TLT
+.\hbox(0.0+0.0)x0.0, direction TLT
+..\kern-72.26999
+..\vbox(0.0+0.0)x0.0, glue set 72.26999fil, direction TLT
+...\kern-72.26999
+...\hbox(0.0+0.0)x0.0, direction TLT
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fil minus 1.0fil
 .\glue 16.0
 .\vbox(617.0+0.0)x345.0, shifted 62.0, direction TLT
 ..\vbox(12.0+0.0)x345.0, glue set 12.0fil, direction TLT
 ...\glue 0.0 plus 1.0fil
 ...\hbox(0.0+0.0)x345.0, direction TLT
+....\hbox(0.0+0.0)x345.0, direction TLT
 ..\glue 25.0
 ..\glue(\lineskip) 0.0
 ..\vbox(550.0+0.0)x345.0, glue set >20000.0fil, direction TLT
@@ -53,6 +61,7 @@ Completed box being shipped out [1]
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
 ...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
 ...\glue(\lineskip) 1.0
 ...\hbox(240.8994+0.0)x345.0, glue set 8.80078fil, direction TLT
 ....\localpar
@@ -75,6 +84,7 @@ Completed box being shipped out [1]
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
 ...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
 ...\glue(\lineskip) 1.0
 ...\hbox(50.18736+0.0)x345.0, glue set 299.88757fil, direction TLT
 ....\localpar
@@ -99,10 +109,12 @@ Completed box being shipped out [1]
 ...\glue 0.0
 ...\glue 0.0 plus 0.0001fil
 ..\glue(\baselineskip) 23.34
-..\hbox(6.66+0.0)x345.0, glue set 170.0fil, direction TLT
-...\glue 0.0 plus 1.0fil
-...\TU/lmr/m/n/10 1
-...\glue 0.0 plus 1.0fil
+..\hbox(6.66+0.0)x345.0, direction TLT
+...\hbox(6.66+0.0)x345.0, glue set 170.0fil, direction TLT
+....\glue 0.0 plus 1.0fil
+....\TU/lmr/m/n/10 1
+....\glue 0.0 plus 1.0fil
+.\kern0.0
 <../example-image-a.pdf></usr/loca
 l/texlive/2021/texmf-dist/tex/latex/mwe/example-image-a.pdf><./az2.pdf>
 Package luatex.def Info: Option `bb' equivalent to `viewport' with the luatex driver on input line ....
@@ -124,11 +136,19 @@ Package luatex.def Info: clip-1-2.jpg  used on input line ....
 (luatex.def)             Requested size: 146.34639pt x 128.88118pt.
 Completed box being shipped out [2]
 \vbox(633.0+0.0)x407.0, direction TLT
+.\hbox(0.0+0.0)x0.0, direction TLT
+..\kern-72.26999
+..\vbox(0.0+0.0)x0.0, glue set 72.26999fil, direction TLT
+...\kern-72.26999
+...\hbox(0.0+0.0)x0.0, direction TLT
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fil minus 1.0fil
 .\glue 16.0
 .\vbox(617.0+0.0)x345.0, shifted 62.0, direction TLT
 ..\vbox(12.0+0.0)x345.0, glue set 12.0fil, direction TLT
 ...\glue 0.0 plus 1.0fil
 ...\hbox(0.0+0.0)x345.0, direction TLT
+....\hbox(0.0+0.0)x345.0, direction TLT
 ..\glue 25.0
 ..\glue(\lineskip) 0.0
 ..\vbox(550.0+0.0)x345.0, glue set 281.95407fil, direction TLT
@@ -154,6 +174,7 @@ Completed box being shipped out [2]
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
 ...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
 ...\glue(\lineskip) 1.0
 ...\hbox(49.99988+0.0)x345.0, glue set 280.00012fil, direction TLT
 ....\localpar
@@ -176,6 +197,7 @@ Completed box being shipped out [2]
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
 ...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
 ...\glue(\lineskip) 1.0
 ...\hbox(49.99988+0.0)x345.0, glue set 280.00012fil, direction TLT
 ....\localpar
@@ -198,6 +220,7 @@ Completed box being shipped out [2]
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
 ...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
 ...\glue(\lineskip) 1.0
 ...\hbox(128.88118+0.0)x345.0, glue set 183.65361fil, direction TLT
 ....\localpar
@@ -223,9 +246,11 @@ Completed box being shipped out [2]
 ...\glue 0.0
 ...\glue 0.0 plus 0.0001fil
 ..\glue(\baselineskip) 23.34
-..\hbox(6.66+0.0)x345.0, glue set 170.0fil, direction TLT
-...\glue 0.0 plus 1.0fil
-...\TU/lmr/m/n/10 2
-...\glue 0.0 plus 1.0fil
+..\hbox(6.66+0.0)x345.0, direction TLT
+...\hbox(6.66+0.0)x345.0, glue set 170.0fil, direction TLT
+....\glue 0.0 plus 1.0fil
+....\TU/lmr/m/n/10 2
+....\glue 0.0 plus 1.0fil
+.\kern0.0
 Completed box being shipped out<./clip-1-2.jpg>
 Completed box being shipped out<./clip-1-2.png><./az2.pdf><./clip-1-2.jpg>
