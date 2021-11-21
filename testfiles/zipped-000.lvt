@@ -6,6 +6,8 @@
 
 \START
 
+% currently this generates a lot of warnings about invalid UTF8
+% in backends that default to eps reading for bounding box.
 \sbox0{\includegraphics{foobá.eps.gz}}
 
 \tracingonline=1
