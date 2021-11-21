@@ -18,6 +18,7 @@ Completed box being shipped out [1]
 ..\vbox(12.0+0.0)x345.0, glue set 12.0fil
 ...\glue 0.0 plus 1.0fil
 ...\hbox(0.0+0.0)x345.0
+....\hbox(0.0+0.0)x345.0
 ..\glue 25.0
 ..\glue(\lineskip) 0.0
 ..\vbox(550.0+0.0)x345.0, glue set >20000.0fil
@@ -31,6 +32,7 @@ Completed box being shipped out [1]
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
 ...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
 ...\glue(\lineskip) 1.0
 ...\hbox(240.9+0.0)x345.0, glue set 8.8fil
 ....\hbox(0.0+0.0)x15.0
@@ -40,6 +42,7 @@ Completed box being shipped out [1]
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
 ...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
 ...\glue(\lineskip) 1.0
 ...\hbox(50.1875+0.0)x345.0, glue set 299.88751fil
 ....\hbox(0.0+0.0)x15.0
@@ -51,10 +54,11 @@ Completed box being shipped out [1]
 ...\glue 0.0
 ...\glue 0.0 plus 0.0001fil
 ..\glue(\baselineskip) 23.34
-..\hbox(6.66+0.0)x345.0, glue set 170.0fil
-...\glue 0.0 plus 1.0fil
-...\TU/lmr/m/n/10 1
-...\glue 0.0 plus 1.0fil
+..\hbox(6.66+0.0)x345.0
+...\hbox(6.66+0.0)x345.0, glue set 170.0fil
+....\glue 0.0 plus 1.0fil
+....\TU/lmr/m/n/10 1
+....\glue 0.0 plus 1.0fil
 .\kern 0.0
 File: clip-1-2.jpg Graphic file (type bmp)
 <clip-1-2.jpg>
@@ -69,6 +73,7 @@ Completed box being shipped out [2]
 ..\vbox(12.0+0.0)x345.0, glue set 12.0fil
 ...\glue 0.0 plus 1.0fil
 ...\hbox(0.0+0.0)x345.0
+....\hbox(0.0+0.0)x345.0
 ..\glue 25.0
 ..\glue(\lineskip) 0.0
 ..\vbox(550.0+0.0)x345.0, glue set 282.3551fil
@@ -81,6 +86,7 @@ Completed box being shipped out [2]
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
 ...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
 ...\glue(\lineskip) 1.0
 ...\hbox(49.99988+0.0)x345.0, glue set 280.00012fil
 ....\hbox(0.0+0.0)x15.0
@@ -90,6 +96,7 @@ Completed box being shipped out [2]
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
 ...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
 ...\glue(\lineskip) 1.0
 ...\hbox(49.99988+0.0)x345.0, glue set 280.00012fil
 ....\hbox(0.0+0.0)x15.0
@@ -99,6 +106,7 @@ Completed box being shipped out [2]
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
 ...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
 ...\glue(\lineskip) 1.0
 ...\hbox(128.48+0.0)x345.0, glue set 183.45251fil
 ....\hbox(0.0+0.0)x15.0
@@ -111,7 +119,8 @@ Completed box being shipped out [2]
 ...\glue 0.0
 ...\glue 0.0 plus 0.0001fil
 ..\glue(\baselineskip) 23.34
-..\hbox(6.66+0.0)x345.0, glue set 170.0fil
-...\glue 0.0 plus 1.0fil
-...\TU/lmr/m/n/10 2
-...\glue 0.0 plus 1.0fil
+..\hbox(6.66+0.0)x345.0
+...\hbox(6.66+0.0)x345.0, glue set 170.0fil
+....\glue 0.0 plus 1.0fil
+....\TU/lmr/m/n/10 2
+....\glue 0.0 plus 1.0fil
