@@ -1,6 +1,6 @@
 %% dvisvgm.def
 %% Copyright 2015 by Till Tantau
-%% Copyright 2016-2021 by Till Tantau and LaTeX3 Project
+%% Copyright 2016-2022 by Till Tantau and LaTeX3 Project
 %
 %% This work may be distributed and/or modified under the
 %% conditions of the LaTeX Project Public License, either version 1.3c
@@ -16,7 +16,7 @@
 %%
 %% https://github.com/latex3/graphics-def/issues
 %
-\ProvidesFile{dvisvgm.def}[2021/11/21 v1.3 dvisvgm graphics driver for latex]
+\ProvidesFile{dvisvgm.def}[2022/02/05 v1.4 dvisvgm graphics driver for latex]
 % The following is copied from dvips.def:
 \def\GPT@space{ }
 \def\c@lor@arg#1{%
@@ -68,6 +68,13 @@
     {\PackageError{color}{Undefined color `#1'}\@ehd}%
   {\edef#4{ #1}}%
   }
+% Mapping to literal Postscript, matching dvips.def, used by PSTricks
+\def\c@lor@to@ps#1 #2\@@{\csname c@lor@ps@#1\endcsname#2 \@@}
+\def\c@lor@ps@#1 #2\@@{TeXDict begin #1 end}
+\def\c@lor@ps@rgb#1\@@{#1 setrgbcolor}
+\def\c@lor@ps@hsb#1\@@{#1 sethsbcolor}
+\def\c@lor@ps@cmyk#1\@@{#1 setcmykcolor}
+\def\c@lor@ps@gray#1\@@{#1 setgray}
 \def\current@color{ Black}
 \def\set@color{\special{color push  \current@color}\aftergroup\reset@color}
 \def\reset@color{\special{color pop}}
