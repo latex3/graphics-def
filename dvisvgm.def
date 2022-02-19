@@ -16,7 +16,7 @@
 %%
 %% https://github.com/latex3/graphics-def/issues
 %
-\ProvidesFile{dvisvgm.def}[2022/02/05 v1.4 dvisvgm graphics driver for latex]
+\ProvidesFile{dvisvgm.def}[2022/02/19 v1.5 dvisvgm graphics driver for latex]
 % The following is copied from dvips.def:
 \def\GPT@space{ }
 \def\c@lor@arg#1{%
@@ -169,16 +169,16 @@
   \dimen@\Gin@svg@real@height@bp pt%
   \advance\dimen@ by-\Gin@ury pt%
   \edef\Gin@svg@view@base{\strip@pt\dimen@}%
+  \special{dvisvgm:bbox \strip@pt\Gin@req@width pt \strip@pt\Gin@req@height pt transform}%
   \Gin@req@width0.99626\Gin@req@width%
   \Gin@req@height0.99626\Gin@req@height%
   \raise\strip@pt\Gin@req@height bp\hbox{%
     \special{dvisvgm: raw
-      <g transform="translate({?x},{?y})">
+      <g transform="translate({?x},{?y})">%
         <svg overflow="\ifGin@clip hidden\else visible\fi" width="\strip@pt\Gin@req@width" height="\strip@pt\Gin@req@height"
-             viewBox="\Gin@llx\GPT@space\Gin@svg@view@base\GPT@space\Gin@svg@view@width\GPT@space\Gin@svg@view@height">
-          <image width="\Gin@svg@real@width@bp" height="\Gin@svg@real@height@bp"
-                 xlink:href="#1"/>
-        </svg>
+             viewBox="\Gin@llx\GPT@space\Gin@svg@view@base\GPT@space\Gin@svg@view@width\GPT@space\Gin@svg@view@height">%
+          <image width="\Gin@svg@real@width@bp" height="\Gin@svg@real@height@bp" xlink:href="#1"/>%
+        </svg>%
       </g>}%
   }%
 }
