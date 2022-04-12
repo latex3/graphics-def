@@ -128,7 +128,7 @@ You can refer to \spacefactor only in horizontal mode;
 you can refer to \prevdepth only in vertical mode; and
 neither of these is meaningful inside \write. So
 I'm forgetting what you said and using zero instead.
-! TeX capacity exceeded, sorry [input stack size=5000].
+! TeX capacity exceeded, sorry [input stack size=10000].
 \TYPE #1->\begingroup \long \def \TYPE ##
                                          1{##1}\immediate \write 128{#1}\end...
 l. ...\END

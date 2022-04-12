@@ -36,6 +36,7 @@ Completed box being shipped out [1]
 ..........\XeTeXpdffile "../example-image-a.pdf"
 .........\glue 0.0 plus 1.0fil minus 1.0fil
 ........\special{pdf:etrans}
+........\special{pdfcolorstack 1 current}
 .......\kern 321.20001
 .......\glue 0.0 plus 1.0fil minus 1.0fil
 ....\penalty 10000
@@ -57,6 +58,7 @@ Completed box being shipped out [1]
 ..........\XeTeXpdffile "../example-image-a.pdf"
 .........\glue 0.0 plus 1.0fil minus 1.0fil
 ........\special{pdf:etrans}
+........\special{pdfcolorstack 1 current}
 .......\kern 321.20001
 .......\glue 0.0 plus 1.0fil minus 1.0fil
 ....\penalty 10000
@@ -78,6 +80,7 @@ Completed box being shipped out [1]
 ..........\XeTeXpdffile "./az2.pdf"
 .........\glue 0.0 plus 1.0fil minus 1.0fil
 ........\special{pdf:etrans}
+........\special{pdfcolorstack 1 current}
 .......\kern 30.1125
 .......\glue 0.0 plus 1.0fil minus 1.0fil
 ....\penalty 10000
@@ -123,6 +126,7 @@ Completed box being shipped out [2]
 ..........\XeTeXpdffile "./az2.pdf"
 .........\glue 0.0 plus 1.0fil minus 1.0fil
 ........\special{pdf:etrans}
+........\special{pdfcolorstack 1 current}
 .......\kern 36.135
 .......\glue 0.0 plus 1.0fil minus 1.0fil
 ....\penalty 10000

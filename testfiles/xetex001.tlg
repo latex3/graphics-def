@@ -98,6 +98,7 @@ File: clip-1-2.jpg Graphic file (type bmp)
 Completed box being shipped out [1]
 \vbox(633.0+0.0)x407.0
 .\hbox(0.0+0.0)x0.0
+..\special{pdfcolorstackinit 1 page direct (0 g 0 G)}
 .\glue 16.0
 .\vbox(617.0+0.0)x345.0, shifted 62.0
 ..\vbox(12.0+0.0)x345.0, glue set 12.0fil
@@ -148,6 +149,7 @@ Completed box being shipped out [1]
 ..........\OT1/cmr/m/n/10 p
 .........\glue 0.0 plus 1.0fil minus 1.0fil
 ........\special{pdf:etrans}
+........\special{pdfcolorstack 1 current}
 .......\kern 122.52806
 .......\glue 0.0 plus 1.0fil minus 1.0fil
 ....\penalty 10000
@@ -201,6 +203,7 @@ Completed box being shipped out [1]
 ..........\OT1/cmr/m/n/10 p
 .........\glue 0.0 plus 1.0fil minus 1.0fil
 ........\special{pdf:etrans}
+........\special{pdfcolorstack 1 current}
 .......\kern 150.86145
 .......\glue 0.0 plus 1.0fil minus 1.0fil
 ....\penalty 10000
@@ -236,6 +239,7 @@ Completed box being shipped out [1]
 ..........\OT1/cmr/m/n/10 p
 .........\glue 0.0 plus 1.0fil minus 1.0fil
 ........\special{pdf:etrans}
+........\special{pdfcolorstack 1 current}
 .......\kern 63.91682
 .......\glue 0.0 plus 1.0fil minus 1.0fil
 ....\penalty 10000
@@ -270,6 +274,7 @@ Completed box being shipped out [1]
 ..........\OT1/cmr/m/n/10 t
 .........\glue 0.0 plus 1.0fil minus 1.0fil
 ........\special{pdf:etrans}
+........\special{pdfcolorstack 1 current}
 .......\kern 57.80571
 .......\glue 0.0 plus 1.0fil minus 1.0fil
 ....\penalty 10000
