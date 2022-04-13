@@ -10,7 +10,7 @@ epstopdf-pkg
 graphics
 grfext
 iftex
-infwrerr
+infwarerr
 kvdefinekeys
 kvoptions
 kvsetkeys
