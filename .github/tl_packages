@@ -8,5 +8,12 @@ xetex
 # Dependencies
 epstopdf-pkg
 graphics
+grfext
 iftex
+infwrerr
+kvdefinekeys
+kvoptions
+kvsetkeys
+ltxcmds
+pdftexcmds
 mwe
