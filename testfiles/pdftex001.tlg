@@ -100,7 +100,7 @@ Completed box being shipped out [1]
 ....\OT1/cmr/m/n/10 1
 ....\glue 0.0 plus 1.0fil
 .\kern 0.0
- <../example-image-a.pdf> <../example-image-a.pdf> <./az2.pdf>
+ <./example-image-a.pdf> <./example-image-a.pdf> <./az2.pdf>
 Package pdftex.def Info: Option `bb' equivalent to `viewport' with the pdftex driver on input line ....
 <clip-1-2.jpg, id=20, 146.34676pt x 128.8815pt>
 File: clip-1-2.jpg Graphic file (type jpg)

@@ -115,8 +115,7 @@ Completed box being shipped out [1]
 ....\TU/lmr/m/n/10 1
 ....\glue 0.0 plus 1.0fil
 .\kern0.0
-<../example-image-a.pdf></usr/loca
-l/texlive/2022/texmf-dist/tex/latex/mwe/example-image-a.pdf><./az2.pdf>
+<./example-image-a.pdf><./example-image-a.pdf><./az2.pdf>
 Package luatex.def Info: Option `bb' equivalent to `viewport' with the luatex driver on input line ....
 <clip-1-2.jpg, id=23, 146.34676pt x 128.8815pt>
 File: clip-1-2.jpg Graphic file (type jpg)
