@@ -1,0 +1,10 @@
+# The test framework itself
+l3build
+#
+# Required to build formats
+latex-bin
+tex
+xetex
+# Dependencies
+graphics
+iftex
