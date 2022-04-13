@@ -6,6 +6,7 @@ latex-bin
 tex
 xetex
 # Dependencies
+epstopdf-pkg
 graphics
 iftex
 mwe
