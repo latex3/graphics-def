@@ -22,9 +22,9 @@ Completed box being shipped out [1]
 ..\vbox(12.0+0.0)x345.0, glue set 12.0fil
 ...\glue 0.0 plus 1.0fil
 ...\hbox(0.0+0.0)x345.0
-....\special{pdfcolorstack 1 push (0 g 0 G)}
+....\special{color push  Black}
 ....\hbox(0.0+0.0)x345.0
-....\special{pdfcolorstack 1 pop}
+....\special{color pop}
 ..\glue 25.0
 ..\glue(\lineskip) 0.0
 ..\vbox(550.0+0.0)x345.0, glue set 539.94232fil
@@ -44,12 +44,12 @@ Completed box being shipped out [1]
 ...\glue 0.0 plus 0.0001fil
 ..\glue(\baselineskip) 23.34
 ..\hbox(6.66+0.0)x345.0
-...\special{pdfcolorstack 1 push (0 g 0 G)}
+...\special{color push  Black}
 ...\hbox(6.66+0.0)x345.0, glue set 170.0fil
 ....\glue 0.0 plus 1.0fil
 ....\TU/lmr/m/n/10 1
 ....\glue 0.0 plus 1.0fil
-...\special{pdfcolorstack 1 pop}
+...\special{color pop}
 .\kern 0.0
 .\kern 0.0
 Completed box being shipped out [2]
@@ -72,9 +72,9 @@ Completed box being shipped out [2]
 ..\vbox(12.0+0.0)x345.0, glue set 12.0fil
 ...\glue 0.0 plus 1.0fil
 ...\hbox(0.0+0.0)x345.0
-....\special{pdfcolorstack 1 push (0 g 0 G)}
+....\special{color push  Black}
 ....\hbox(0.0+0.0)x345.0
-....\special{pdfcolorstack 1 pop}
+....\special{color pop}
 ..\glue 25.0
 ..\glue(\lineskip) 0.0
 ..\vbox(550.0+0.0)x345.0, glue set 539.94232fil
@@ -94,12 +94,12 @@ Completed box being shipped out [2]
 ...\glue 0.0 plus 0.0001fil
 ..\glue(\baselineskip) 23.34
 ..\hbox(6.66+0.0)x345.0
-...\special{pdfcolorstack 1 push (0 g 0 G)}
+...\special{color push  Black}
 ...\hbox(6.66+0.0)x345.0, glue set 170.0fil
 ....\glue 0.0 plus 1.0fil
 ....\TU/lmr/m/n/10 2
 ....\glue 0.0 plus 1.0fil
-...\special{pdfcolorstack 1 pop}
+...\special{color pop}
 .\kern 0.0
 Completed box being shipped out [3]
 \vbox(633.0+0.21999)x407.0
@@ -121,9 +121,9 @@ Completed box being shipped out [3]
 ..\vbox(12.0+0.0)x345.0, glue set 12.0fil
 ...\glue 0.0 plus 1.0fil
 ...\hbox(0.0+0.0)x345.0
-....\special{pdfcolorstack 1 push (0 g 0 G)}
+....\special{color push  Black}
 ....\hbox(0.0+0.0)x345.0
-....\special{pdfcolorstack 1 pop}
+....\special{color pop}
 ..\glue 25.0
 ..\glue(\lineskip) 0.0
 ..\vbox(550.0+0.0)x345.0, glue set 539.94232fil
@@ -145,12 +145,12 @@ Completed box being shipped out [3]
 ...\glue 0.0 plus 0.0001fil
 ..\glue(\baselineskip) 23.34
 ..\hbox(6.66+0.21999)x345.0
-...\special{pdfcolorstack 1 push (0 g 0 G)}
+...\special{color push  Black}
 ...\hbox(6.66+0.21999)x345.0, glue set 170.0fil
 ....\glue 0.0 plus 1.0fil
 ....\TU/lmr/m/n/10 3
 ....\glue 0.0 plus 1.0fil
-...\special{pdfcolorstack 1 pop}
+...\special{color pop}
 .\kern 0.0
 Completed box being shipped out [4]
 \vbox(633.0+0.0)x407.0
@@ -172,9 +172,9 @@ Completed box being shipped out [4]
 ..\vbox(12.0+0.0)x345.0, glue set 12.0fil
 ...\glue 0.0 plus 1.0fil
 ...\hbox(0.0+0.0)x345.0
-....\special{pdfcolorstack 1 push (0 g 0 G)}
+....\special{color push  Black}
 ....\hbox(0.0+0.0)x345.0
-....\special{pdfcolorstack 1 pop}
+....\special{color pop}
 ..\glue 25.0
 ..\glue(\lineskip) 0.0
 ..\vbox(550.0+0.0)x345.0, glue set 539.94232fil
@@ -194,12 +194,12 @@ Completed box being shipped out [4]
 ...\glue 0.0 plus 0.0001fil
 ..\glue(\baselineskip) 23.23
 ..\hbox(6.77+0.0)x345.0
-...\special{pdfcolorstack 1 push (0 g 0 G)}
+...\special{color push  Black}
 ...\hbox(6.77+0.0)x345.0, glue set 170.0fil
 ....\glue 0.0 plus 1.0fil
 ....\TU/lmr/m/n/10 4
 ....\glue 0.0 plus 1.0fil
-...\special{pdfcolorstack 1 pop}
+...\special{color pop}
 .\kern 0.0
 Completed box being shipped out [5]
 \vbox(633.0+0.21999)x407.0
@@ -221,9 +221,9 @@ Completed box being shipped out [5]
 ..\vbox(12.0+0.0)x345.0, glue set 12.0fil
 ...\glue 0.0 plus 1.0fil
 ...\hbox(0.0+0.0)x345.0
-....\special{pdfcolorstack 1 push (0 g 0 G)}
+....\special{color push  Black}
 ....\hbox(0.0+0.0)x345.0
-....\special{pdfcolorstack 1 pop}
+....\special{color pop}
 ..\glue 25.0
 ..\glue(\lineskip) 0.0
 ..\vbox(550.0+0.0)x345.0, glue set 539.94232fil
@@ -242,11 +242,11 @@ Completed box being shipped out [5]
 ...\glue 0.0 plus 0.0001fil
 ..\glue(\baselineskip) 23.34
 ..\hbox(6.66+0.21999)x345.0
-...\special{pdfcolorstack 1 push (0 g 0 G)}
+...\special{color push  Black}
 ...\hbox(6.66+0.21999)x345.0, glue set 170.0fil
 ....\glue 0.0 plus 1.0fil
 ....\TU/lmr/m/n/10 5
 ....\glue 0.0 plus 1.0fil
-...\special{pdfcolorstack 1 pop}
+...\special{color pop}
 .\kern 0.0
 (pagecolor-001.aux)
