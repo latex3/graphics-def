@@ -1,5 +1,3 @@
-#!/usr/bin/env texlua
-
 -- Build script for "graphics-def" files
 
 -- Identify the bundle and module
