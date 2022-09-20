@@ -563,10 +563,26 @@
 }{%
   \ifdim\stockwidth>0pt\relax
     \ifdim\stockheight>0pt\relax
-      \pagewidth=\stockwidth
-      \pageheight=\stockheight
+       \setlength{\pagewidth}{\stockwidth}%
+       \setlength{\pageheight}{\stockheight}%
+    \else
+      \ifdim\paperwidth>0pt\relax
+        \ifdim\paperheight>0pt\relax
+          \setlength{\pagewidth}{\paperwidth}%
+          \setlength{\pageheight}{\paperheight}%
+        \fi
+      \fi
     \fi
-  \fi
+   \else
+    \ifdim\stockwidth=0pt\relax
+      \ifdim\paperwidth>0pt\relax
+        \ifdim\paperheight>0pt\relax
+          \setlength{\pagewidth}{\paperwidth}%
+          \setlength{\pageheight}{\paperheight}%
+        \fi
+      \fi
+    \fi
+   \fi
 }%
 \fi
 }

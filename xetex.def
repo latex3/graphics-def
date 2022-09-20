@@ -417,12 +417,28 @@
 \fi
 }%
 }{%
-\ifdim\stockwidth>0pt\relax
-\ifdim\stockheight>0pt\relax
-\pdfpagewidth=\stockwidth
-\pdfpageheight=\stockheight
-\fi
-\fi
+   \ifdim\stockwidth>0pt\relax
+     \ifdim\stockheight>0pt\relax
+       \setlength{\pdfpagewidth}{\stockwidth}%
+       \setlength{\pdfpageheight}{\stockheight}%
+     \else
+       \ifdim\paperwidth>0pt\relax
+         \ifdim\paperheight>0pt\relax
+            \setlength{\pdfpagewidth}{\paperwidth}%
+            \setlength{\pdfpageheight}{\paperheight}%
+         \fi
+       \fi
+     \fi
+   \else
+     \ifdim\stockwidth=0pt\relax
+       \ifdim\paperwidth>0pt\relax
+         \ifdim\paperheight>0pt\relax
+           \setlength{\pdfpagewidth}{\paperwidth}%
+           \setlength{\pdfpageheight}{\paperheight}%
+         \fi
+       \fi
+     \fi
+   \fi
 }%
 \fi
 }

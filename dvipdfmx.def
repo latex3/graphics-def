@@ -314,16 +314,33 @@
 \ifnum\mag=\@m
 \AtBeginDvi{%
 \begingroup
-  \@ifundefined{stockwidth}{}
-    {%
-      \paperwidth\stockwidth
-      \paperheight\stockheight
-    }%
-\ifdim\paperwidth>\z@
-\ifdim\paperheight>\z@
-\special{pdf:pagesize width \the\paperwidth\GPT@space height \the\paperheight}%
-\fi
-\fi
+  \@ifundefined{stockwidth}{%
+    \ifdim\paperwidth>\z@
+      \ifdim\paperheight>\z@
+        \special{papersize=\the\paperwidth,\the\paperheight}%
+      \fi
+    \fi
+  }{%
+    \ifdim\stockwidth>\z@
+      \ifdim\stockheight>\z@
+        \special{papersize=\the\stockwidth,\the\stockheight}%
+      \else
+        \ifdim\paperwidth>\z@
+          \ifdim\paperheight>\z@
+            \special{papersize=\the\paperwidth,\the\paperheight}%
+          \fi
+        \fi
+      \fi
+    \else
+      \ifdim\stockwidth=\z@
+        \ifdim\paperwidth>\z@
+          \ifdim\paperheight>\z@
+            \special{papersize=\the\paperwidth,\the\paperheight}%
+          \fi
+        \fi
+      \fi
+    \fi
+      }%
 \endgroup}%
 \fi
 }
