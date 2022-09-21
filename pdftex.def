@@ -555,46 +555,36 @@ E     \else
   {\expandafter\let\csname ifGin@setpagesize\expandafter\endcsname
                     \csname iftrue\endcsname}
   {}
+\@ifundefined{stockwidth}{\newdimen\stockwidth}{}
+\@ifundefined{stockheight}{\newdimen\stockheight}{}
 \ifGin@setpagesize
 \ifx\paperwidth\@undefined\else
   \AtBeginDocument{%
 % If a package has changed \mag, assume it knows what it is doing
 % and leave page size alone
 \ifnum\mag=\@m
-  \@ifundefined{stockwidth}{%
-  \@ifundefined{paperwidth}{%
-  }{%
-    \ifdim\paperwidth>0pt\relax
-      \ifdim\paperheight>0pt\relax
-        \pdfpagewidth=\paperwidth
-        \pdfpageheight=\paperheight
+  \ifdim\stockwidth>0pt\relax
+    \ifdim\stockheight>0pt\relax
+      \setlength{\pdfpagewidth}{\stockwidth}%
+      \setlength{\pdfpageheight}{\stockheight}%
+    \else
+      \ifdim\paperwidth>0pt\relax
+        \ifdim\paperheight>0pt\relax
+          \setlength{\pdfpagewidth}{\paperwidth}%
+          \setlength{\pdfpageheight}{\paperheight}%
+        \fi
       \fi
     \fi
-  }%
-}{%
-   \ifdim\stockwidth>0pt\relax
-     \ifdim\stockheight>0pt\relax
-       \setlength{\pdfpagewidth}{\stockwidth}%
-       \setlength{\pdfpageheight}{\stockheight}%
-     \else
-       \ifdim\paperwidth>0pt\relax
-         \ifdim\paperheight>0pt\relax
-            \setlength{\pdfpagewidth}{\paperwidth}%
-            \setlength{\pdfpageheight}{\paperheight}%
-         \fi
-       \fi
-     \fi
-   \else
-     \ifdim\stockwidth=0pt\relax
-       \ifdim\paperwidth>0pt\relax
-         \ifdim\paperheight>0pt\relax
-           \setlength{\pdfpagewidth}{\paperwidth}%
-           \setlength{\pdfpageheight}{\paperheight}%
-         \fi
-       \fi
-     \fi
-   \fi
-}%
+  \else
+    \ifdim\stockwidth=0pt\relax
+      \ifdim\paperwidth>0pt\relax
+        \ifdim\paperheight>0pt\relax
+          \setlength{\pdfpagewidth}{\paperwidth}%
+          \setlength{\pdfpageheight}{\paperheight}%
+        \fi
+      \fi
+    \fi
+  \fi
 \fi
 }
 \fi

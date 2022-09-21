@@ -146,6 +146,8 @@
   {\expandafter\let\csname ifGin@setpagesize\expandafter\endcsname
                     \csname iftrue\endcsname}
   {}
+\@ifundefined{stockwidth}{\newdimen\stockwidth}{}
+\@ifundefined{stockheight}{\newdimen\stockheight}{}
 \ifGin@setpagesize
 \ifx\paperwidth\@undefined\else
   \AtBeginDocument{%
@@ -154,33 +156,25 @@
  \ifnum\mag=\@m
   \AtBeginDvi{%
     \begingroup
-      \@ifundefined{stockwidth}{%
-        \ifdim\paperwidth>\z@
-          \ifdim\paperheight>\z@
-            \special{papersize=\the\paperwidth,\the\paperheight}%
-          \fi
-        \fi
-      }{%
-        \ifdim\stockwidth>\z@
-          \ifdim\stockheight>\z@
-           \special{papersize=\the\stockwidth,\the\stockheight}%
-          \else
-            \ifdim\paperwidth>\z@
-              \ifdim\paperheight>\z@
-                \special{papersize=\the\paperwidth,\the\paperheight}%
-              \fi
-            \fi
-          \fi
+      \ifdim\stockwidth>\z@
+        \ifdim\stockheight>\z@
+          \special{papersize=\the\stockwidth,\the\stockheight}%
         \else
-          \ifdim\stockwidth=\z@
-            \ifdim\paperwidth>\z@
-              \ifdim\paperheight>\z@
-                \special{papersize=\the\paperwidth,\the\paperheight}%
-              \fi
+          \ifdim\paperwidth>\z@
+            \ifdim\paperheight>\z@
+              \special{papersize=\the\paperwidth,\the\paperheight}%
             \fi
           \fi
         \fi
-      }%
+      \else
+        \ifdim\stockwidth=\z@
+          \ifdim\paperwidth>\z@
+            \ifdim\paperheight>\z@
+              \special{papersize=\the\paperwidth,\the\paperheight}%
+            \fi
+          \fi
+        \fi
+      \fi
     \endgroup}%
     \fi
     }
