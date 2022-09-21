@@ -3,8 +3,6 @@ Don't change this file in any respect.
 Completed box being shipped out [1]
 \vbox(633.0+0.0)x407.0
 .\hbox(0.0+0.0)x0.0
-..\special{pdfcolorstackinit 1 page direct (0 g 0 G)}
-.\hbox(0.0+0.0)x0.0
 ..\kern -72.26999
 ..\vbox(0.0+0.0)x0.0, glue set 72.26999fil
 ...\kern -72.26999
@@ -50,7 +48,6 @@ Completed box being shipped out [1]
 ....\TU/lmr/m/n/10 1
 ....\glue 0.0 plus 1.0fil
 ...\special{color pop}
-.\kern 0.0
 .\kern 0.0
 Completed box being shipped out [2]
 \vbox(633.0+0.0)x407.0
