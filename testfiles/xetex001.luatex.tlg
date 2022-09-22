@@ -101,23 +101,9 @@ Completed box being shipped out [1]
 ....\hbox(0.0+0.0)x345.0, direction TLT
 ..\glue 25.0
 ..\glue(\lineskip) 0.0
-..\vbox(550.0+0.0)x345.0, glue set 377.95987fil, direction TLT
+..\vbox(550.0+0.0)x345.0, glue set 389.95859fil, direction TLT
 ...\write-{}
-...\glue(\topskip) 6.33
-...\hbox(3.67+0.0)x345.0, glue set 322.22fil, direction TLT
-....\localpar
-.....\localinterlinepenalty=0
-.....\localbrokenpenalty=0
-.....\localleftbox=null
-.....\localrightbox=null
-....\hbox(0.0+0.0)x15.0, direction TLT
-....\TU/lmr/m/n/10 =
-....\penalty 10000
-....\glue(\parfillskip) 0.0 plus 1.0fil
-....\glue(\rightskip) 0.0
-...\glue(\parskip) 0.0 plus 1.0
-...\glue(\parskip) 0.0
-...\glue(\baselineskip) 4.95003
+...\glue(\topskip) 2.95003
 ...\hbox(7.04997+0.0)x345.0, glue set 207.75032fil, direction TLT
 ....\localpar
 .....\localinterlinepenalty=0
