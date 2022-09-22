@@ -78,7 +78,7 @@
 \def\current@color{ Black}
 \def\set@color{\special{color push  \current@color}\aftergroup\reset@color}
 \def\reset@color{\special{color pop}}
-\def\set@page@color{\special{bgcolor \current@color}}
+\def\set@page@color{\special{background  \current@color}}
 \def\define@color@named#1#2{\expandafter\let\csname col@#1\endcsname\@nnil}
 \def\Grot@start{%
   \special{ps: gsave currentpoint currentpoint translate \Grot@angle\GPT@space neg rotate neg exch neg exch translate}%
@@ -254,4 +254,3 @@
 \endinput
 %%
 %% End of file `dvisvgm.def'.
-
