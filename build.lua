@@ -19,3 +19,6 @@ specialformats["latex-dev"] = specialformats["latex-dev"] or
   {
      luatex = {binary="luahbtex",format = "lualatex-dev"}
   }
+
+
+checkconfigs = {"build","config-plain","config-xetex"}

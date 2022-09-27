@@ -1,0 +1,11 @@
+\input regression-test
+
+\input eplain
+
+\START
+% should not error
+\input graphicx
+test
+
+\includegraphics{example-image}
+\end
