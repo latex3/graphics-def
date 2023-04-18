@@ -38,16 +38,17 @@
 
 
 \def\Gread@png#1{%
-\setbox\@tempboxa\hbox{\HINTimage #1\relax}%
+\setbox\@tempboxa\hbox{\HINTimage=#1\relax}%
       \def\Gin@llx{0}\let\Gin@lly\Gin@llx
       \Gin@defaultbp\Gin@urx{\wd\@tempboxa}% = 0...
       \Gin@defaultbp\Gin@ury{\ht\@tempboxa}% = 0...
-      \Gin@nat@height\Gin@ury
-      \Gin@nat@width\Gin@urx
+      \def\Gin@urx{72}\let\Gin@ury\Gin@urx
+      \Gin@nat@height\Gin@ury bp
+      \Gin@nat@width\Gin@urx bp
       }
 
 \def\Ginclude@png#1{%
-   \mbox{\HINTimage #1\relax}%
+   \mbox{\HINTimage=#1 width \Gin@req@width height\Gin@req@height\relax}%
 }
 
 \let\Gread@jpg\Gread@png
