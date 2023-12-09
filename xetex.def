@@ -1,5 +1,5 @@
 %% xetex.def
-%% Copyright (C) 2005-2022 LaTeX3 Project, Jin-Hwan Cho, Shunsaku Hirata
+%% Copyright (C) 2005-2023 LaTeX3 Project, Jin-Hwan Cho, Shunsaku Hirata
 %%                         (with contributions from many others)
 %%
 %% This work may be distributed and/or modified under the
@@ -17,8 +17,11 @@
 %% https://github.com/latex3/graphics-def/issues
 %%
 \ProvidesFile{xetex.def}
-  [2022/09/22 v5.0n Graphics/color driver for xetex]
+  [2023/12/09 v5.1a Graphics/color driver for xetex]
 \def\GPT@space{ }
+\ifx\xcolor@\@undefined
+  \protected\def\xcolor@#1#2#3#4{#2}
+\fi
 \def\c@lor@arg#1{%
   \dimen@#1\p@
   \ifdim\dimen@<\z@\dimen@\maxdimen\fi
@@ -27,7 +30,7 @@
   \fi}
 \def\color@gray#1#2{%
   \c@lor@arg{#2}%
-  \edef#1{gray #2}%
+  \edef#1{\xcolor@{}{gray #2}{\detokenize{gray}}{#2}}%
   }
 \def\color@cmyk#1#2{\c@lor@@cmyk#2\@@#1}
 \def\c@lor@@cmyk#1,#2,#3,#4\@@#5{%
@@ -35,14 +38,14 @@
   \c@lor@arg{#1}%
   \c@lor@arg{#2}%
   \c@lor@arg{#3}%
-  \edef#5{cmyk #1 #2 #3 #4}%
+  \edef#5{\xcolor@{}{cmyk #1 #2 #3 #4}{\detokenize{cmyk}}{#1,#2,#3,#4}}%
   }
 \def\color@rgb#1#2{\c@lor@@rgb#2\@@#1}
 \def\c@lor@@rgb#1,#2,#3\@@#4{%
   \c@lor@arg{#1}%
   \c@lor@arg{#2}%
   \c@lor@arg{#3}%
-  \edef#4{rgb #1 #2 #3}%
+  \edef#4{\xcolor@{}{rgb #1 #2 #3}{\detokenize{rgb}}{#1,#2,#3}}%
   }
 \def\color@RGB#1#2{\c@lor@@RGB#2\@@#1}
 \def\c@lor@@RGB#1,#2,#3\@@#4{%
@@ -60,7 +63,7 @@
   \c@lor@arg{#1}%
   \c@lor@arg{#2}%
   \c@lor@arg{#3}%
-  \edef#4{hsb #1 #2 #3}%
+  \edef#4{\xcolor@{}{hsb #1 #2 #3}{\detokenize{hsb}}{#1,#2,#3}}%
   }
 \def\color@named#1#2{\c@lor@@named#2,,\@@#1}
 \def\c@lor@@named#1,#2,#3\@@#4{%
