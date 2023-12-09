@@ -1,4 +1,4 @@
-%% pdftex.def
+
 %% Copyright (C) 2000-2015 David Carlisle, Sebastian Rahtz,
 %%                         Hans Hagen, Heiko Oberdiek and
 %%                         Martin Schr\"oder
@@ -25,7 +25,6 @@
 \ifx\xcolor@\@undefined
 \protected\def\xcolor@#1#2#3#4{#2}
 \fi
-\def\GPT@xcolor@{\xcolor@}
 
 \def\c@lor@arg#1{%
   \dimen@#1\p@
@@ -35,7 +34,7 @@
   \fi}
 \def\color@gray#1#2{%
   \c@lor@arg{#2}%
-  \edef#1{\GPT@xcolor@{}{#2 g #2 G}{\detokenize{gray}}{#2}}%
+  \edef#1{\xcolor@{}{#2 g #2 G}{\detokenize{gray}}{#2}}%
   }
 \def\color@cmyk#1#2{\c@lor@@cmyk#2\@@#1}
 \def\c@lor@@cmyk#1,#2,#3,#4\@@#5{%
@@ -43,14 +42,14 @@
   \c@lor@arg{#1}%
   \c@lor@arg{#2}%
   \c@lor@arg{#3}%
-  \edef#5{\GPT@xcolor@{}{#1 #2 #3 #4 k #1 #2 #3 #4 K}{\detokenize{cmyk}}{#1,#2,#3,#4}}%
+  \edef#5{\xcolor@{}{#1 #2 #3 #4 k #1 #2 #3 #4 K}{\detokenize{cmyk}}{#1,#2,#3,#4}}%
   }
 \def\color@rgb#1#2{\c@lor@@rgb#2\@@#1}
 \def\c@lor@@rgb#1,#2,#3\@@#4{%
   \c@lor@arg{#1}%
   \c@lor@arg{#2}%
   \c@lor@arg{#3}%
-  \edef#4{\GPT@xcolor@{}{#1 #2 #3 rg #1 #2 #3 RG}{\detokenize{rgb}}{#1,#2,#3}}%
+  \edef#4{\xcolor@{}{#1 #2 #3 rg #1 #2 #3 RG}{\detokenize{rgb}}{#1,#2,#3}}%
   }
 \def\color@RGB#1#2{\c@lor@@RGB#2\@@#1}
 \def\c@lor@@RGB#1,#2,#3\@@#4{%
@@ -67,7 +66,7 @@
 \def\c@lor@@named#1,#2,#3\@@#4{%
   \@ifundefined{col@#1}%
     {\PackageError{color}{Undefined color `#1'}\@ehd}%
-  {%\expandafter\show\csname col@#1\endcsname
+  {%
   \edef#4{\csname col@#1\endcsname}}%
   }
 \chardef\main@pdfcolorstack=0 %
