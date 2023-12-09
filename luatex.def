@@ -3,7 +3,7 @@
 %%                         Hans Hagen, Heiko Oberdiek and
 %%                         Martin Schr\"oder
 %% Copyright (C) 2016-2018 LaTeX3 project and Heiko Oberdiek
-%% Copyright (C) 2018-2022 LaTeX3 project
+%% Copyright (C) 2018-2023 LaTeX3 project
 %%
 %% This work may be distributed and/or modified under the
 %% conditions of the LaTeX Project Public License, either version 1.3c
@@ -20,8 +20,11 @@
 %% https://github.com/latex3/graphics-def/issues
 %%
 \ProvidesFile{luatex.def}
-  [2022/09/22 v1.2d Graphics/color driver for luatex]
+  [2023/12/09 v1.3a Graphics/color driver for luatex]
 \def\GPT@space{ }
+\ifx\xcolor@\@undefined
+  \protected\def\xcolor@#1#2#3#4{#2}
+\fi
 \def\c@lor@arg#1{%
   \dimen@#1\p@
   \ifdim\dimen@<\z@\dimen@\maxdimen\fi
@@ -30,7 +33,7 @@
   \fi}
 \def\color@gray#1#2{%
   \c@lor@arg{#2}%
-  \edef#1{#2 g #2 G}%
+  \edef#1{\xcolor@{}{#2 g #2 G}{\detokenize{gray}}{#2}}%
   }
 \def\color@cmyk#1#2{\c@lor@@cmyk#2\@@#1}
 \def\c@lor@@cmyk#1,#2,#3,#4\@@#5{%
@@ -38,14 +41,14 @@
   \c@lor@arg{#1}%
   \c@lor@arg{#2}%
   \c@lor@arg{#3}%
-  \edef#5{#1 #2 #3 #4 k #1 #2 #3 #4 K}%
+  \edef#5{\xcolor@{}{#1 #2 #3 #4 k #1 #2 #3 #4 K}{\detokenize{cmyk}}{#1,#2,#3,#4}}%
   }
 \def\color@rgb#1#2{\c@lor@@rgb#2\@@#1}
 \def\c@lor@@rgb#1,#2,#3\@@#4{%
   \c@lor@arg{#1}%
   \c@lor@arg{#2}%
   \c@lor@arg{#3}%
-  \edef#4{#1 #2 #3 rg #1 #2 #3 RG}%
+  \edef#4{\xcolor@{}{#1 #2 #3 rg #1 #2 #3 RG}{\detokenize{rgb}}{#1,#2,#3}}%
   }
 \def\color@RGB#1#2{\c@lor@@RGB#2\@@#1}
 \def\c@lor@@RGB#1,#2,#3\@@#4{%

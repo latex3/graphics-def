@@ -23,9 +23,8 @@
   [2023/12/09 v1.3a Graphics/color driver for pdftex]
 \def\GPT@space{ }
 \ifx\xcolor@\@undefined
-\protected\def\xcolor@#1#2#3#4{#2}
+  \protected\def\xcolor@#1#2#3#4{#2}
 \fi
-
 \def\c@lor@arg#1{%
   \dimen@#1\p@
   \ifdim\dimen@<\z@\dimen@\maxdimen\fi
