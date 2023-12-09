@@ -9,7 +9,7 @@
 \definecolor{cRGB}{RGB}{0,128,0}
 \definecolor{ccmyk}{cmyk}{0,0.5,0.7,0.1}
 \definecolor{cgray}{gray}{0.8}
-\definecolor{cnamed}{named}{Peach}
+\definecolor{cnamed}{named}{Blue}
 
 \usepackage[dvipsnames]{xcolor}
 
@@ -18,7 +18,7 @@
 \definecolor{xcRGB}{RGB}{0,128,0}
 \definecolor{xccmyk}{cmyk}{0,0.5,0.7,0.1}
 \definecolor{xcgray}{gray}{0.8}
-\definecolor{xcnamed}{named}{Peach}
+\definecolor{xcnamed}{named}{Blue}
 
 \START
 \ExplSyntaxOn

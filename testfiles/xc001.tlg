@@ -4,3 +4,4 @@ PASS: rgb
 PASS: RGB
 PASS: cmyk
 PASS: gray
+PASS: named
