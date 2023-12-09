@@ -1,0 +1,48 @@
+\documentclass{article}
+\input{regression-test}
+
+\usepackage[dvipsnames]{color}
+
+
+
+\definecolor{crgb}{rgb}{0,0.5,0}
+\definecolor{cRGB}{RGB}{0,128,0}
+\definecolor{ccmyk}{cmyk}{0,0.5,0.7,0.1}
+\definecolor{cgray}{gray}{0.8}
+\definecolor{cnamed}{named}{Peach}
+
+\usepackage[dvipsnames]{xcolor}
+
+
+\definecolor{xcrgb}{rgb}{0,0.5,0}
+\definecolor{xcRGB}{RGB}{0,128,0}
+\definecolor{xccmyk}{cmyk}{0,0.5,0.7,0.1}
+\definecolor{xcgray}{gray}{0.8}
+\definecolor{xcnamed}{named}{Peach}
+
+\START
+\ExplSyntaxOn
+\cs_generate_variant:Nn \tl_analysis_show:N {c}
+
+\def\test#1{%
+\expandafter\ifx
+\csname\string\color @c#1\expandafter\endcsname
+\csname\string\color @xc#1\endcsname
+\typeout{^^JPASS:~ #1}
+\else
+\typeout{^^JFAIL:~ #1}
+\typeout{~c:~ \expandafter\meaning\csname\string\color @c#1\endcsname}
+\typeout{xc:~ \expandafter\meaning\csname\string\color @xc#1\endcsname}
+\tl_analysis_show:c{\string\color @c#1}
+\tl_analysis_show:c{\string\color @xc#1}
+\fi
+}
+\ExplSyntaxOff
+
+\test{rgb}
+\test{RGB}
+\test{cmyk}
+\test{gray}
+%\test{named}
+
+\END
