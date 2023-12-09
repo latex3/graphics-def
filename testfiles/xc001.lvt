@@ -43,6 +43,6 @@
 \test{RGB}
 \test{cmyk}
 \test{gray}
-%\test{named}
+\test{named}
 
 \END
