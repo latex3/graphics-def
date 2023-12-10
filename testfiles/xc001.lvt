@@ -15,6 +15,7 @@
 
 % color def
 \immediate\write500{ color: \csname\string\color @ccmyk\endcsname}
+\expandafter\show\csname col@Blue\endcsname
 
 \OMIT
 \usepackage[dvipsnames]{xcolor}
@@ -23,6 +24,8 @@
 % color def after xcolor
 \immediate\write500{.color: \csname\string\color @ccmyk\endcsname}
 
+\expandafter\show\csname\string\color @ccmyk\endcsname
+\expandafter\show\csname col@Blue\endcsname
 
 \definecolor{xcrgb}{rgb}{0,0.5,0}
 \definecolor{xcRGB}{RGB}{0,128,0}
