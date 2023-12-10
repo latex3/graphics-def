@@ -23,7 +23,7 @@
   [2023/12/09 v1.3a Graphics/color driver for pdftex]
 \def\GPT@space{ }
 \ifx\xcolor@\@undefined
-  \protected\def\xcolor@#1#2#3#4{#2}
+  \def\xcolor@#1#2#3#4{#2}
 \fi
 \def\c@lor@arg#1{%
   \dimen@#1\p@
@@ -33,7 +33,7 @@
   \fi}
 \def\color@gray#1#2{%
   \c@lor@arg{#2}%
-  \edef#1{\xcolor@{}{#2 g #2 G}{\detokenize{gray}}{#2}}%
+  \edef#1{\noexpand\xcolor@{}{#2 g #2 G}{\detokenize{gray}}{#2}}%
   }
 \def\color@cmyk#1#2{\c@lor@@cmyk#2\@@#1}
 \def\c@lor@@cmyk#1,#2,#3,#4\@@#5{%
@@ -41,14 +41,14 @@
   \c@lor@arg{#1}%
   \c@lor@arg{#2}%
   \c@lor@arg{#3}%
-  \edef#5{\xcolor@{}{#1 #2 #3 #4 k #1 #2 #3 #4 K}{\detokenize{cmyk}}{#1,#2,#3,#4}}%
+  \edef#5{\noexpand\xcolor@{}{#1 #2 #3 #4 k #1 #2 #3 #4 K}{\detokenize{cmyk}}{#1,#2,#3,#4}}%
   }
 \def\color@rgb#1#2{\c@lor@@rgb#2\@@#1}
 \def\c@lor@@rgb#1,#2,#3\@@#4{%
   \c@lor@arg{#1}%
   \c@lor@arg{#2}%
   \c@lor@arg{#3}%
-  \edef#4{\xcolor@{}{#1 #2 #3 rg #1 #2 #3 RG}{\detokenize{rgb}}{#1,#2,#3}}%
+  \edef#4{\noexpand\xcolor@{}{#1 #2 #3 rg #1 #2 #3 RG}{\detokenize{rgb}}{#1,#2,#3}}%
   }
 \def\color@RGB#1#2{\c@lor@@RGB#2\@@#1}
 \def\c@lor@@RGB#1,#2,#3\@@#4{%
