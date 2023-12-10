@@ -11,7 +11,17 @@
 \definecolor{cgray}{gray}{0.8}
 \definecolor{cnamed}{named}{Blue}
 
+\START
+
+% color def
+\immediate\write500{ color: \csname\string\color @ccmyk\endcsname}
+
+\OMIT
 \usepackage[dvipsnames]{xcolor}
+\TIMO
+
+% color def after xcolor
+\immediate\write500{.color: \csname\string\color @ccmyk\endcsname}
 
 
 \definecolor{xcrgb}{rgb}{0,0.5,0}
@@ -20,7 +30,10 @@
 \definecolor{xcgray}{gray}{0.8}
 \definecolor{xcnamed}{named}{Blue}
 
-\START
+% xcolor def
+\immediate\write500{xcolor: \csname\string\color @xccmyk\expandafter\endcsname}
+
+
 \ExplSyntaxOn
 \cs_generate_variant:Nn \tl_analysis_show:N {c}
 
