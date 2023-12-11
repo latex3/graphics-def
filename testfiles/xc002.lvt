@@ -1,0 +1,35 @@
+% testing loading just color
+\documentclass{article}
+\input{regression-test}
+
+\usepackage[dvipsnames]{color}
+
+
+
+\definecolor{crgb}{rgb}{0,0.5,0}
+\definecolor{cRGB}{RGB}{0,128,0}
+\definecolor{ccmyk}{cmyk}{0,0.5,0.7,0.1}
+\definecolor{cgray}{gray}{0.8}
+\definecolor{cnamed}{named}{Blue}
+
+\START
+
+% color def
+\immediate\write500{ color: \csname\string\color @ccmyk\endcsname}
+\expandafter\show\csname col@Blue\endcsname
+
+\ExplSyntaxOn
+\cs_generate_variant:Nn \tl_analysis_show:N {c}
+
+\def\test#1{%
+\typeout{#1:~ \expandafter\meaning\csname\string\color @c#1\endcsname}
+}
+\ExplSyntaxOff
+
+\test{rgb}
+\test{RGB}
+\test{cmyk}
+\test{gray}
+\test{named}
+
+\END
