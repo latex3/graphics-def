@@ -1164,8 +1164,7 @@ Invalid UTF-8 byte or sequence at line 11 replaced by U+FFFD.
 Invalid UTF-8 byte or sequence at line 11 replaced by U+FFFD.
 Invalid UTF-8 byte or sequence at line 11 replaced by U+FFFD.
 Invalid UTF-8 byte or sequence at line 11 replaced by U+FFFD.
-! LaTeX Error: Cannot determine size of graphic in foob^^e1.eps.gz (no BoundingBox
-).
+! LaTeX Error: Cannot determine size of graphic in foob^^e1.eps.gz (no BoundingBox).
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              

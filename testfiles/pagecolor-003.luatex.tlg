@@ -7,8 +7,7 @@ Completed box being shipped out [1]
 ..\vbox(0.0+0.0)x0.0, glue set 72.26999fil, direction TLT
 ...\kern-72.26999
 ...\hbox(0.0+0.0)x0.0, direction TLT
-....\hbox(794.96999+0.0)x0.0, glue set - 614.29498fil, shifted 794.96999, direct
-ion TLT
+....\hbox(794.96999+0.0)x0.0, glue set - 614.29498fil, shifted 794.96999, direction TLT
 .....\kern0.0
 .....\pdfcolorstack 0 push {1 0 0 rg 1 0 0 RG}
 .....\hbox(794.96999+0.0)x614.295, direction TLT
@@ -74,8 +73,7 @@ Completed box being shipped out [2]
 ..\vbox(0.0+0.0)x0.0, glue set 72.26999fil, direction TLT
 ...\kern-72.26999
 ...\hbox(0.0+0.0)x0.0, direction TLT
-....\hbox(794.96999+0.0)x0.0, glue set - 614.29498fil, shifted 794.96999, direct
-ion TLT
+....\hbox(794.96999+0.0)x0.0, glue set - 614.29498fil, shifted 794.96999, direction TLT
 .....\kern0.0
 .....\pdfcolorstack 0 push {1 0 0 rg 1 0 0 RG}
 .....\hbox(794.96999+0.0)x614.295, direction TLT
