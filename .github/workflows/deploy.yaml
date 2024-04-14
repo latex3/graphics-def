@@ -14,7 +14,7 @@ jobs:
     steps:
       # Boilerplate
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
       # GitHub Actions don't regenerate the test if the key doesn't change, so
       # we integrate a random UUID into the key to keep them different.
       # DO NOT CHANGE THIS
@@ -36,7 +36,8 @@ jobs:
           key: texlive-v0-${{ steps.get-id.outputs.id }}
           restore-keys: texlive-v0-
       - name: Install TeX Live
-        uses: zauguin/install-texlive@v1
+        id: texlive
+        uses: zauguin/install-texlive@v3
         with:
           # List the required TeX Live packages in a separate file to allow reuse in
           # different workflows.
