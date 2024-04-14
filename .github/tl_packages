@@ -21,4 +21,6 @@ mwe
 # for tests with plain tex
 graphics-pln
 eplain
+mptopdf
+amsfonts
 
