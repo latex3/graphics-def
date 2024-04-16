@@ -651,15 +651,18 @@
 }
 % Load package epstopdf if
 % a) LaTeX is running (plain TeX users are on their own),
-% XXXb) and shell escape is enabled (possibly restricted),
-% c) and \DoNotLoadEpstopdf either does not exist or is not \relax,
-% d) and neither pst-pdf nor pdftricks is loaded (by \begin{document}).
+% b) and \DoNotLoadEpstopdf either does not exist or is not \relax,
+% c) and neither pst-pdf nor pdftricks is loaded (by \begin{document}).
 %
 % In other words, by default .eps files will be automatically
 % converted to .pdf files when outputting pdf.  This can be wrong!
 % If the .pdf is the source, rather than the .eps, you should put
 %  \newcommand{\DoNotLoadEpstopdf}{}
 % before even the \documentclass line of your document.
+%
+% Earlier versions did not load epstopdf if shell escape was disabled.
+% Now load, for better error reporting and to allow inclusion of pre-esisting
+% converted files: see gh/38
 %
 % More information about the epstopdf run will be in the .log file;
 % see http://ctan.org/pkg/epstopdf-pkg for more info about the
@@ -680,11 +683,8 @@
         \@ifpackageloaded{pst-pdf}{}{%
           \@ifpackageloaded{pdftricks}{}{%
             \@ifpackageloaded{graphics}{%
-%              \ifnum\directlua{tex.sprint(status.shell_escape)}>0 %
-          % only add .eps to file extension list if epstopdf is loaded
                 \edef\Gin@extensions{\Gin@extensions,.eps}%
                 \RequirePackage{epstopdf-base}[2009/07/12]%
-%              \fi
 	     }{}
           }% pdftricks not loaded
         }% pst-pdf not loaded
