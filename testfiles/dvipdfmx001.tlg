@@ -25,7 +25,7 @@ Completed box being shipped out [1]
 ...\hbox(240.9+0.0)x345.0, glue set 8.8fil
 ....\hbox(0.0+0.0)x15.0
 ....\hbox(240.9+0.0)x321.2
-.....\special{pdf:epdf pagebox cropbox bbox 0 0 320 240 clip 0 width 321.2pt (examp\ETC.}
+.....\special{pdf:epdf pagebox cropbox bbox 0 0 320 240 clip 0 width 321.2pt (example-image-a.pdf) }
 ....\penalty 10000
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
@@ -35,7 +35,7 @@ Completed box being shipped out [1]
 ...\hbox(240.9+0.0)x345.0, glue set 8.8fil
 ....\hbox(0.0+0.0)x15.0
 ....\hbox(240.9+0.0)x321.2
-.....\special{pdf:epdf page 1 pagebox cropbox bbox 0 0 320 240 clip 0 width 321.2pt\ETC.}
+.....\special{pdf:epdf page 1 pagebox cropbox bbox 0 0 320 240 clip 0 width 321.2pt (example-image-a.pdf) }
 ....\penalty 10000
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
@@ -45,7 +45,7 @@ Completed box being shipped out [1]
 ...\hbox(50.1875+0.0)x345.0, glue set 299.88751fil
 ....\hbox(0.0+0.0)x15.0
 ....\hbox(50.1875+0.0)x30.11249
-.....\special{pdf:epdf pagebox cropbox bbox 0 0 30 50 clip 0 width 30.11249pt (az2.\ETC.}
+.....\special{pdf:epdf pagebox cropbox bbox 0 0 30 50 clip 0 width 30.11249pt (az2.pdf) }
 ....\penalty 10000
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
@@ -79,7 +79,7 @@ Completed box being shipped out [2]
 ...\hbox(36.135+0.0)x345.0, glue set 293.865fil
 ....\hbox(0.0+0.0)x15.0
 ....\hbox(36.135+0.0)x36.135
-.....\special{pdf:epdf pagebox artbox bbox 36 36 72 72 clip 0 width 36.135pt (az2.p\ETC.}
+.....\special{pdf:epdf pagebox artbox bbox 36 36 72 72 clip 0 width 36.135pt (az2.pdf) }
 ....\penalty 10000
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
@@ -89,7 +89,7 @@ Completed box being shipped out [2]
 ...\hbox(49.99988+0.0)x345.0, glue set 280.00012fil
 ....\hbox(0.0+0.0)x15.0
 ....\hbox(49.99988+0.0)x49.99988
-.....\special{pdf:image bbox 12.9514 64.757 62.76448 114.57008 clip 1 width 49.9998\ETC.}
+.....\special{pdf:image bbox 12.9514 64.757 62.76448 114.57008 clip 1 width 49.99988pt (clip-1-2.jpg) }
 ....\penalty 10000
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
@@ -99,7 +99,7 @@ Completed box being shipped out [2]
 ...\hbox(49.99988+0.0)x345.0, glue set 280.00012fil
 ....\hbox(0.0+0.0)x15.0
 ....\hbox(49.99988+0.0)x49.99988
-.....\special{pdf:image bbox 12.9514 64.757 62.76448 114.57008 clip 1 width 49.9998\ETC.}
+.....\special{pdf:image bbox 12.9514 64.757 62.76448 114.57008 clip 1 width 49.99988pt (clip-1-2.png) }
 ....\penalty 10000
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
@@ -109,7 +109,7 @@ Completed box being shipped out [2]
 ...\hbox(128.48+0.0)x345.0, glue set 183.45251fil
 ....\hbox(0.0+0.0)x15.0
 ....\hbox(128.48+0.0)x146.54749
-.....\special{pdf:image bbox 0 0 146 128 clip 0 width 146.54749pt (clip-1-2.jpg) <<\ETC.}
+.....\special{pdf:image bbox 0 0 146 128 clip 0 width 146.54749pt (clip-1-2.jpg) <</Interpolate true>>}
 ....\penalty 10000
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0

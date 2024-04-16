@@ -216,6 +216,7 @@ Completed box being shipped out [2]
 ....\OT1/cmr/m/n/10 2
 ....\glue 0.0 plus 1.0fil
 .\kern 0.0
+ <./az2.pdf> <./clip-1-2.jpg>
 Completed box being shipped out
 \hbox(49.99988+0.0)x49.99988
 .\hbox(128.8815+0.0)x133.3468, shifted 64.99983
@@ -227,4 +228,4 @@ Completed box being shipped out
 .\hbox(128.8815+0.0)x133.3468, shifted 64.99983
 ..\glue -12.99995
 ..\pdfrefximage(128.8815+0.0)x146.34676
- <./clip-1-2.png> <./az2.pdf> <./clip-1-2.jpg>
+ <./clip-1-2.png>

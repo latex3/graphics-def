@@ -1,7 +1,6 @@
 This is a generated file for the l3build validation system.
 Don't change this file in any respect.
-(graphicx.tex
-(../miniltx.tex
+(../graphicx.tex (../miniltx.tex
 \@tempcnta=\count...
 \@tempcntb=\count...
 \@tempdima=\dimen...
@@ -26,19 +25,16 @@ Defining generic filename parser.
 \@dashdim=\dimen...
 \fboxsep=\dimen...
 \fboxrule=\dimen...
-)
-(../graphicx.sty
+) (../graphicx.sty
 graphicx: ....-..-.. v... Enhanced LaTeX Graphics (DPC,SPQR)
 (../keyval.sty
 keyval: ....-..-.. v... key=value parser (DPC)
 \KV@toks@=\toks...
-)
-(../graphics.sty
+) (../graphics.sty
 graphics: ....-..-.. v... Standard LaTeX Graphics (DPC,SPQR)
 (../trig.sty
 trig: ....-..-.. v... sin cos tan (DPC)
-)
-(../graphics.cfg
+) (../graphics.cfg
 graphics.cfg: ....-..-.. v... sample graphics configuration
 )
 graphics: Driver file: xetex.def

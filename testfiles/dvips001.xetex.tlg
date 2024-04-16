@@ -5985,7 +5985,7 @@ Completed box being shipped out [1]
 ...\hbox(49.99988+0.0)x345.0, glue set 280.00012fil
 ....\hbox(0.0+0.0)x15.0
 ....\hbox(49.99988+0.0)x49.99988
-.....\special{PSfile="clip-1-2.jpg" llx=12.9514 lly=64.757 urx=62.76448 ury=114.570\ETC.}
+.....\special{PSfile="clip-1-2.jpg" llx=12.9514 lly=64.757 urx=62.76448 ury=114.57008 rwi=498 clip}
 ....\penalty 10000
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
@@ -5995,7 +5995,7 @@ Completed box being shipped out [1]
 ...\hbox(49.99988+0.0)x345.0, glue set 280.00012fil
 ....\hbox(0.0+0.0)x15.0
 ....\hbox(49.99988+0.0)x49.99988
-.....\special{PSfile="clip-1-2.png" llx=12.9514 lly=64.757 urx=62.76448 ury=114.570\ETC.}
+.....\special{PSfile="clip-1-2.png" llx=12.9514 lly=64.757 urx=62.76448 ury=114.57008 rwi=498 clip}
 ....\penalty 10000
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
