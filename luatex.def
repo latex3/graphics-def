@@ -661,7 +661,7 @@
 % before even the \documentclass line of your document.
 %
 % Earlier versions did not load epstopdf if shell escape was disabled.
-% Now load, for better error reporting and to allow inclusion of pre-esisting
+% Now load, for better error reporting and to allow inclusion of pre-existing
 % converted files: see gh/38
 %
 % More information about the epstopdf run will be in the .log file;
