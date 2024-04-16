@@ -20,7 +20,7 @@
 %% https://github.com/latex3/graphics-def/issues
 %%
 \ProvidesFile{luatex.def}
-  [2022/09/22 v1.2d Graphics/color driver for luatex]
+  [2024/04/13 v1.2e Graphics/color driver for luatex]
 \def\GPT@space{ }
 \def\c@lor@arg#1{%
   \dimen@#1\p@
