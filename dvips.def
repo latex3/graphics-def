@@ -1,6 +1,6 @@
 %% dvips.def Copyright (C) 1994      David Carlisle Sebastian Rahtz
 %%           Copyright (C) 1995-1999 David Carlisle
-%%           Copyright (C) 2000-2022 David Carlisle, LaTeX3 Project
+%%           Copyright (C) 2000-2025 David Carlisle, LaTeX3 Project
 %%
 %% This work may be distributed and/or modified under the
 %% conditions of the LaTeX Project Public License, either version 1.3c
@@ -17,7 +17,7 @@
 %% https://github.com/latex3/graphics-def/issues
 %%
 \ProvidesFile{dvips.def}
-  [2022/09/22 v3.1e Graphics/color driver for dvips]
+  [2025/01/21 v3.2a Graphics/color driver for dvips]
 \def\GPT@space{ }
 \def\c@lor@arg#1{%
   \dimen@#1\p@
@@ -103,6 +103,25 @@
       \ifx\Gin@scaley\@tempa\else rhi=\number\@tempdima\GPT@space\fi
       \ifGin@clip clip\fi}%
   \egroup}
+
+
+\ifx\directlua\@undefined\else
+\directlua{
+function convert_line_bytes (line)
+  return string.gsub(line, ".",
+                     function (char) return unicode.utf8.char(string.byte(char)) end)
+end
+}
+\AtBeginDocument{%Tiff Previews are not UTF-8
+\def\Gread@eps#1{%
+    \directlua{luatexbase.add_to_callback("process_input_buffer", convert_line_bytes, "8 bit input")}%
+    \Gread@generic{#1}\Gread@eps@aux
+    \directlua{luatexbase.remove_from_callback("process_input_buffer","8 bit input")}%
+}%
+}
+\fi
+
+
 \def\Ginclude@bmp#1{%
   \message{<#1>}%
   \dimen@\Gin@req@height
