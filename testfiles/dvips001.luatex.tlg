@@ -1,602 +1,172 @@
 This is a generated file for the l3build validation system.
 Don't change this file in any respect.
+Inserting `8 bit input' in `process_input_buffer'.
+Removing  `8 bit input' from `process_input_buffer'.
 File: example-image-a.eps Graphic file (type eps)
 <example-image-a.eps>
-! String contains an invalid utf-8 sequence.
-<read 0> %
-    ĞÔÔÅÅØØ^^@
-l. ...\includegraphics[page = 1]{example-image-a.pdf}
-A funny symbol that I can't read has just been (re)read.
-Just continue, I'll change it to 0xFFFD.
-! String contains an invalid utf-8 sequence.
-<read 0> %ĞÔÔÅÅØ
-       Øu
-l. ...\includegraphics[page = 1]{example-image-a.pdf}
-A funny symbol that I can't read has just been (re)read.
-Just continue, I'll change it to 0xFFFD.
-! String contains an invalid utf-8 sequence.
-<read 0> xÚ½S=o
-         0^^Pİı+Ş˜^^N8ç/^^H/^^Hc"Hİ^^P^^P:TR%^^]JL=^^[\ IC'$8îçç÷^^OC8P^^IyiX^^KÜ88\^^PÛ’...
-l. ...\includegraphics[page = 1]{example-image-a.pdf}
-A funny symbol that I can't read has just been (re)read.
-Just continue, I'll change it to 0xFFFD.
-! String contains an invalid utf-8 sequence.
-<read 0> xÚ½S=o0^^P
-            İı+Ş˜^^N8ç/^^H/^^Hc"Hİ^^P^^P:TR%^^]JL=^^[\ IC'$8îçç÷^^OC8P^^IyiX^^KÜ88\^^PÛ’...
-l. ...\includegraphics[page = 1]{example-image-a.pdf}
-A funny symbol that I can't read has just been (re)read.
-Just continue, I'll change it to 0xFFFD.
-! String contains an invalid utf-8 sequence.
-<read 0> 
-   âÔ+Ô++^^Vò^^A¢N^^ANÊeeA*ìœdd^^^F^^f1^^ZKìKKBI1*)gCq
-l. ...\includegraphics[page = 1]{example-image-a.pdf}
-A funny symbol that I can't read has just been (re)read.
-Just continue, I'll change it to 0xFFFD.
-! String contains an invalid utf-8 sequence.
-<read 0> ~
-    ]ç]I]IWZ^^F×¤^^E}ÂÖÖ¡^^T^^CFnd
-l. ...\includegraphics[page = 1]{example-image-a.pdf}
-A funny symbol that I can't read has just been (re)read.
-Just continue, I'll change it to 0xFFFD.
-! String contains an invalid utf-8 sequence.
-<read 0> ~]ç]I]IWZ
-           ^^F×¤^^E}ÂÖÖ¡^^T^^CFnd
-l. ...\includegraphics[page = 1]{example-image-a.pdf}
-A funny symbol that I can't read has just been (re)read.
-Just continue, I'll change it to 0xFFFD.
-! String contains an invalid utf-8 sequence.
-<read 0> ~]ç]I]IWZ
-              ^^F×¤^^E}ÂÖÖ¡^^T^^CFnd
-l. ...\includegraphics[page = 1]{example-image-a.pdf}
-A funny symbol that I can't read has just been (re)read.
-Just continue, I'll change it to 0xFFFD.
-! String contains an invalid utf-8 sequence.
-<read 0> ~]ç]I]IWZ^^F×¤
-                 ^^E}ÂÖÖ¡^^T^^CFnd
-l. ...\includegraphics[page = 1]{example-image-a.pdf}
-A funny symbol that I can't read has just been (re)read.
-Just continue, I'll change it to 0xFFFD.
-! String contains an invalid utf-8 sequence.
-<read 0> ~]ç]I]IWZ^^F×¤^^E}
-                     ÂÖÖ¡^^T^^CFnd
-l. ...\includegraphics[page = 1]{example-image-a.pdf}
-A funny symbol that I can't read has just been (re)read.
-Just continue, I'll change it to 0xFFFD.
-! String contains an invalid utf-8 sequence.
-<read 0> ~]ç]I]IWZ^^F×¤^^E}ÂÖÖ¡
-                        ^^T^^CFnd
-l. ...\includegraphics[page = 1]{example-image-a.pdf}
-A funny symbol that I can't read has just been (re)read.
-Just continue, I'll change it to 0xFFFD.
-! String contains an invalid utf-8 sequence.
-<read 0> ~]ç]I]IWZ^^F×¤^^E}ÂÖÖ¡^^T^^C
-                           Fnd
-l. ...\includegraphics[page = 1]{example-image-a.pdf}
-A funny symbol that I can't read has just been (re)read.
-Just continue, I'll change it to 0xFFFD.
-! String contains an invalid utf-8 sequence.
-<read 0> ~]ç]I]IWZ^^F×¤^^E}ÂÖÖ¡^^T^^CFnd
-l. ...\includegraphics[page = 1]{example-image-a.pdf}
-A funny symbol that I can't read has just been (re)read.
-Just continue, I'll change it to 0xFFFD.
-! String contains an invalid utf-8 sequence.
-<read 0> 
-   -;ë<Ä<Ä­ò}‹é}é¹KK^^TYâÈ^^FÈ^^F^^F^^Wë^^Wµ^^W^^A
-l. ...\includegraphics[page = 1]{example-image-a.pdf}
-A funny symbol that I can't read has just been (re)read.
-Just continue, I'll change it to 0xFFFD.
-! String contains an invalid utf-8 sequence.
-<read 0> -;
-      ë<Ä<Ä­ò}‹é}é¹KK^^TYâÈ^^FÈ^^F^^F^^Wë^^Wµ^^W^^A
-l. ...\includegraphics[page = 1]{example-image-a.pdf}
-A funny symbol that I can't read has just been (re)read.
-Just continue, I'll change it to 0xFFFD.
-! String contains an invalid utf-8 sequence.
-<read 0> -;ë<Ä<Ä­
-         ò}‹é}é¹KK^^TYâÈ^^FÈ^^F^^F^^Wë^^Wµ^^W^^A
-l. ...\includegraphics[page = 1]{example-image-a.pdf}
-A funny symbol that I can't read has just been (re)read.
-Just continue, I'll change it to 0xFFFD.
-! String contains an invalid utf-8 sequence.
-<read 0> -;ë<Ä<Ä­ò}‹é}
-             é¹KK^^TYâÈ^^FÈ^^F^^F^^Wë^^Wµ^^W^^A
-l. ...\includegraphics[page = 1]{example-image-a.pdf}
-A funny symbol that I can't read has just been (re)read.
-Just continue, I'll change it to 0xFFFD.
-! String contains an invalid utf-8 sequence.
-<read 0> 
-   pâ?ñ?ñ¾Ú>Ú>>}Wñì^^_Xì^^_X^^_X^^_Ôèè¯SSs?Í^^O^^OJ^^G
-l. ...\includegraphics[page = 1]{example-image-a.pdf}
-A funny symbol that I can't read has just been (re)read.
-Just continue, I'll change it to 0xFFFD.
-! String contains an invalid utf-8 sequence.
-<read 0> p
-      â?ñ?ñ¾Ú>Ú>>}Wñì^^_Xì^^_X^^_X^^_Ôèè¯SSs?Í^^O^^OJ^^G
-l. ...\includegraphics[page = 1]{example-image-a.pdf}
-A funny symbol that I can't read has just been (re)read.
-Just continue, I'll change it to 0xFFFD.
-! String contains an invalid utf-8 sequence.
-<read 0> pâ?ñ?ñ¾Ú>
-         Ú>>}Wñì^^_Xì^^_X^^_X^^_Ôèè¯SSs?Í^^O^^OJ^^G
-l. ...\includegraphics[page = 1]{example-image-a.pdf}
-A funny symbol that I can't read has just been (re)read.
-Just continue, I'll change it to 0xFFFD.
-! String contains an invalid utf-8 sequence.
-<read 0> pâ?ñ?ñ¾Ú>Ú>>}
-             Wñì^^_Xì^^_X^^_X^^_Ôèè¯SSs?Í^^O^^OJ^^G
-l. ...\includegraphics[page = 1]{example-image-a.pdf}
-A funny symbol that I can't read has just been (re)read.
-Just continue, I'll change it to 0xFFFD.
-! String contains an invalid utf-8 sequence.
-<read 0> pâ?ñ?ñ¾Ú>Ú>>}Wñì^^_X
-                ì^^_X^^_X^^_Ôèè¯SSs?Í^^O^^OJ^^G
-l. ...\includegraphics[page = 1]{example-image-a.pdf}
-A funny symbol that I can't read has just been (re)read.
-Just continue, I'll change it to 0xFFFD.
-! String contains an invalid utf-8 sequence.
-<read 0> pâ?ñ?ñ¾Ú>Ú>>}Wñì^^_Xì^^_X^^_X
-                   ^^_Ôèè¯SSs?Í^^O^^OJ^^G
-l. ...\includegraphics[page = 1]{example-image-a.pdf}
-A funny symbol that I can't read has just been (re)read.
-Just continue, I'll change it to 0xFFFD.
-! String contains an invalid utf-8 sequence.
-<read 0> pâ?ñ?ñ¾Ú>Ú>>}Wñì^^_Xì^^_X^^_X^^_
-                      Ôèè¯SSs?Í^^O^^OJ^^G
-l. ...\includegraphics[page = 1]{example-image-a.pdf}
-A funny symbol that I can't read has just been (re)read.
-Just continue, I'll change it to 0xFFFD.
-! String contains an invalid utf-8 sequence.
-<read 0> pâ?ñ?ñ¾Ú>Ú>>}Wñì^^_Xì^^_X^^_X^^_Ôèè¯SS
-                          s?Í^^O^^OJ^^G
-l. ...\includegraphics[page = 1]{example-image-a.pdf}
-A funny symbol that I can't read has just been (re)read.
-Just continue, I'll change it to 0xFFFD.
-! String contains an invalid utf-8 sequence.
-<read 0> pâ?ñ?ñ¾Ú>Ú>>}Wñì^^_Xì^^_X^^_X^^_Ôèè¯SSs?
-                             Í^^O^^OJ^^G
-l. ...\includegraphics[page = 1]{example-image-a.pdf}
-A funny symbol that I can't read has just been (re)read.
-Just continue, I'll change it to 0xFFFD.
-! String contains an invalid utf-8 sequence.
-<read 0> pâ?ñ?ñ¾Ú>Ú>>}Wñì^^_Xì^^_X^^_X^^_Ôèè¯SSs?Í^^O^^OJ
-                                ^^G
-l. ...\includegraphics[page = 1]{example-image-a.pdf}
-A funny symbol that I can't read has just been (re)read.
-Just continue, I'll change it to 0xFFFD.
-! String contains an invalid utf-8 sequence.
-<read 0> xÚµxeT
-         Ûº5î…ââZ^^HZ^^HîîîîîîîînînEnE^^B^^D
-l. ...\includegraphics[page = 1]{example-image-a.pdf}
-A funny symbol that I can't read has just been (re)read.
-Just continue, I'll change it to 0xFFFD.
-! String contains an invalid utf-8 sequence.
-<read 0> xÚµxeTÛº5
-             î…ââZ^^HZ^^HîîîîîîîînînEnE^^B^^D
-l. ...\includegraphics[page = 1]{example-image-a.pdf}
-A funny symbol that I can't read has just been (re)read.
-Just continue, I'll change it to 0xFFFD.
-! String contains an invalid utf-8 sequence.
-<read 0> 
-   BâÅ¡Å¡HqbÅ"Åİİ¡x^^T/nÅåå£İİççÜsÜssï72727ëÑ¹Ñ¹æšÏÏ^^Z^^Z^^YÔĞĞffr^^@É99Al^^\B^^@^^UUm ÄU...
-l. ...\includegraphics[page = 1]{example-image-a.pdf}
-A funny symbol that I can't read has just been (re)read.
-Just continue, I'll change it to 0xFFFD.
-! String contains an invalid utf-8 sequence.
-<read 0> B
-      âÅ¡Å¡HqbÅ"Åİİ¡x^^T/nÅåå£İİççÜsÜssï72727ëÑ¹Ñ¹æšÏÏ^^Z^^Z^^YÔĞĞffr^^@É99Al^^\B^^@^^UUm ÄU...
-l. ...\includegraphics[page = 1]{example-image-a.pdf}
-A funny symbol that I can't read has just been (re)read.
-Just continue, I'll change it to 0xFFFD.
-! String contains an invalid utf-8 sequence.
-<read 0> BâÅ¡Å¡Hq
-           bÅ"Åİİ¡x^^T/nÅåå£İİççÜsÜssï72727ëÑ¹Ñ¹æšÏÏ^^Z^^Z^^YÔĞĞffr^^@É99Al^^\B^^@^^UUm ÄU...
-l. ...\includegraphics[page = 1]{example-image-a.pdf}
-A funny symbol that I can't read has just been (re)read.
-Just continue, I'll change it to 0xFFFD.
-! String contains an invalid utf-8 sequence.
-<read 0> BâÅ¡Å¡HqbÅ
-              "Åİİ¡x^^T/nÅåå£İİççÜsÜssï72727ëÑ¹Ñ¹æšÏÏ^^Z^^Z^^YÔĞĞffr^^@É99Al^^\B^^@^^UUm ÄU...
-l. ...\includegraphics[page = 1]{example-image-a.pdf}
-A funny symbol that I can't read has just been (re)read.
-Just continue, I'll change it to 0xFFFD.
-! String contains an invalid utf-8 sequence.
-<read 0> BâÅ¡Å¡HqbÅ"Åİİ¡x
-                    ^^T/nÅåå£İİççÜsÜssï72727ëÑ¹Ñ¹æšÏÏ^^Z^^Z^^YÔĞĞffr^^@É99Al^^\B^^@^^UUm ÄU...
-l. ...\includegraphics[page = 1]{example-image-a.pdf}
-A funny symbol that I can't read has just been (re)read.
-Just continue, I'll change it to 0xFFFD.
-! String contains an invalid utf-8 sequence.
-<read 0> BâÅ¡Å¡HqbÅ"Åİİ¡x^^T/n
-                        Ååå£İİççÜsÜssï72727ëÑ¹Ñ¹æšÏÏ^^Z^^Z^^YÔĞĞffr^^@É99Al^^\B^^@^^UUm ÄU...
-l. ...\includegraphics[page = 1]{example-image-a.pdf}
-A funny symbol that I can't read has just been (re)read.
-Just continue, I'll change it to 0xFFFD.
-! String contains an invalid utf-8 sequence.
-<read 0> BâÅ¡Å¡HqbÅ"Åİİ¡x^^T/nÅåå£İ
-                           İççÜsÜssï72727ëÑ¹Ñ¹æšÏÏ^^Z^^Z^^YÔĞĞffr^^@É99Al^^\B^^@^^UUm ÄU...
-l. ...\includegraphics[page = 1]{example-image-a.pdf}
-A funny symbol that I can't read has just been (re)read.
-Just continue, I'll change it to 0xFFFD.
-! String contains an invalid utf-8 sequence.
-<read 0> BâÅ¡Å¡HqbÅ"Åİİ¡x^^T/nÅåå£İİççÜsÜss
-                               ï72727ëÑ¹Ñ¹æšÏÏ^^Z^^Z^^YÔĞĞffr^^@É99Al^^\B^^@^^UUm ÄU...
-l. ...\includegraphics[page = 1]{example-image-a.pdf}
-A funny symbol that I can't read has just been (re)read.
-Just continue, I'll change it to 0xFFFD.
-! String contains an invalid utf-8 sequence.
-<read 0> BâÅ¡Å¡HqbÅ"Åİİ¡x^^T/nÅåå£İİççÜsÜss
-                                  ï72727ëÑ¹Ñ¹æšÏÏ^^Z^^Z^^YÔĞĞffr^^@É99Al^^\B^^@^^UUm ÄU...
-l. ...\includegraphics[page = 1]{example-image-a.pdf}
-A funny symbol that I can't read has just been (re)read.
-Just continue, I'll change it to 0xFFFD.
-! String contains an invalid utf-8 sequence.
-<read 0> BâÅ¡Å¡HqbÅ"Åİİ¡x^^T/nÅåå£İİççÜsÜssï7272
-                                     7ëÑ¹Ñ¹æšÏÏ^^Z^^Z^^YÔĞĞffr^^@É99Al^^\B^^@^^UUm ÄU...
-l. ...\includegraphics[page = 1]{example-image-a.pdf}
-A funny symbol that I can't read has just been (re)read.
-Just continue, I'll change it to 0xFFFD.
-! String contains an invalid utf-8 sequence.
-<read 0> BâÅ¡Å¡HqbÅ"Åİİ¡x^^T/nÅåå£İİççÜsÜssï72727ëÑ¹Ñ¹
-                                          æšÏÏ^^Z^^Z^^YÔĞĞffr^^@É99Al^^\B^^@^^UUm ÄU...
-l. ...\includegraphics[page = 1]{example-image-a.pdf}
-A funny symbol that I can't read has just been (re)read.
-Just continue, I'll change it to 0xFFFD.
-! String contains an invalid utf-8 sequence.
-<read 0> 
-   ×RR×ÕÕĞĞffd{.íîìîììììäìäúäú//,ÒÚÚ::ò,^^@^^Y,^^@^^YI5^^]Y^^@H^^E óûS^^GS^^G^^DyÆooÃ^^B^^BPÓyyîó^^\ó^^\ø;^^\;]UVGRÇPPC^^^^^@...
-l. ...\includegraphics[page = 1]{example-image-a.pdf}
-A funny symbol that I can't read has just been (re)read.
-Just continue, I'll change it to 0xFFFD.
-! String contains an invalid utf-8 sequence.
-<read 0> ×RR
-      ×ÕÕĞĞffd{.íîìîììììäìäúäú//,ÒÚÚ::ò,^^@^^Y,^^@^^YI5^^]Y^^@H^^E óûS^^GS^^G^^DyÆooÃ^^B^^BPÓyyîó^^\ó^^\ø;^^\;]UVGRÇPPC^^^^^@...
-l. ...\includegraphics[page = 1]{example-image-a.pdf}
-A funny symbol that I can't read has just been (re)read.
-Just continue, I'll change it to 0xFFFD.
-! String contains an invalid utf-8 sequence.
-<read 0> ×RR×ÕÕĞĞffd{.
-             íîìîììììäìäúäú//,ÒÚÚ::ò,^^@^^Y,^^@^^YI5^^]Y^^@H^^E óûS^^GS^^G^^DyÆooÃ^^B^^BPÓyyîó^^\ó^^\ø;^^\;]UVGRÇPPC^^^^^@...
-l. ...\includegraphics[page = 1]{example-image-a.pdf}
-A funny symbol that I can't read has just been (re)read.
-Just continue, I'll change it to 0xFFFD.
-! String contains an invalid utf-8 sequence.
-<read 0> ×RR×ÕÕĞĞffd{.íîìîìì
-                ììäìäúäú//,ÒÚÚ::ò,^^@^^Y,^^@^^YI5^^]Y^^@H^^E óûS^^GS^^G^^DyÆooÃ^^B^^BPÓyyîó^^\ó^^\ø;^^\;]UVGRÇPPC^^^^^@...
-l. ...\includegraphics[page = 1]{example-image-a.pdf}
-A funny symbol that I can't read has just been (re)read.
-Just continue, I'll change it to 0xFFFD.
-! String contains an invalid utf-8 sequence.
-<read 0> ×RR×ÕÕĞĞffd{.íîìîììììäìäúäú/
-                   /,ÒÚÚ::ò,^^@^^Y,^^@^^YI5^^]Y^^@H^^E óûS^^GS^^G^^DyÆooÃ^^B^^BPÓyyîó^^\ó^^\ø;^^\;]UVGRÇPPC^^^^^@...
-l. ...\includegraphics[page = 1]{example-image-a.pdf}
-A funny symbol that I can't read has just been (re)read.
-Just continue, I'll change it to 0xFFFD.
-! String contains an invalid utf-8 sequence.
-<read 0> ×RR×ÕÕĞĞffd{.íîìîììììäìäúäú//,
-                      ÒÚÚ::ò,^^@^^Y,^^@^^YI5^^]Y^^@H^^E óûS^^GS^^G^^DyÆooÃ^^B^^BPÓyyîó^^\ó^^\ø;^^\;]UVGRÇPPC^^^^^@...
-l. ...\includegraphics[page = 1]{example-image-a.pdf}
-A funny symbol that I can't read has just been (re)read.
-Just continue, I'll change it to 0xFFFD.
-! String contains an invalid utf-8 sequence.
-<read 0> ×RR×ÕÕĞĞffd{.íîìîììììäìäúäú//,ÒÚÚ::
-                         ò,^^@^^Y,^^@^^YI5^^]Y^^@H^^E óûS^^GS^^G^^DyÆooÃ^^B^^BPÓyyîó^^\ó^^\ø;^^\;]UVGRÇPPC^^^^^@...
-l. ...\includegraphics[page = 1]{example-image-a.pdf}
-A funny symbol that I can't read has just been (re)read.
-Just continue, I'll change it to 0xFFFD.
-! String contains an invalid utf-8 sequence.
-<read 0> 
-   ^^_`eg^^I}^^Vó° ı^^Hv^^B^^He~Fòo×¿o×¿$ğgP^^YgP^^YÔÊÊ^^I^^I^^B^^BXÑØØÕÕœÏ‚`3gè%ç%ç^^N^^F^^N^^F^^A^^]A^^LôŸq@...
-l. ...\includegraphics[page = 1]{example-image-a.pdf}
-A funny symbol that I can't read has just been (re)read.
-Just continue, I'll change it to 0xFFFD.
-! String contains an invalid utf-8 sequence.
-<read 0> 
-   Úyy^^Zs<óÙşüÙş75+[JÊÉÉÓÓ›yX^^?Ï^^W^^Wó.89.89y^^E}k×`
-l. ...\includegraphics[page = 1]{example-image-a.pdf}
-A funny symbol that I can't read has just been (re)read.
-Just continue, I'll change it to 0xFFFD.
-! String contains an invalid utf-8 sequence.
-<read 0> 
-   ñG‘ÏGÏ¼{{<^^A 'È^^R^^RmqÎÉÉRR8Ø>>1ô“ŸììÇÉÇÉÉRRDZAr^^B1^^C^^O^^Hé“mmD2ëT T ñ‚ÀÏÏ^^A^^A^^Yt^^EN*
-l. ...\includegraphics[page = 1]{example-image-a.pdf}
-A funny symbol that I can't read has just been (re)read.
-Just continue, I'll change it to 0xFFFD.
-! String contains an invalid utf-8 sequence.
-<read 0> ñG‘ÏGÏ¼
-        {{<^^A 'È^^R^^RmqÎÉÉRR8Ø>>1ô“ŸììÇÉÇÉÉRRDZAr^^B1^^C^^O^^Hé“mmD2ëT T ñ‚ÀÏÏ^^A^^A^^Yt^^EN*
-l. ...\includegraphics[page = 1]{example-image-a.pdf}
-A funny symbol that I can't read has just been (re)read.
-Just continue, I'll change it to 0xFFFD.
-! String contains an invalid utf-8 sequence.
-<read 0> B&~I
-       "^^CÚ``|ğãJsãJsJsbÅÄÄ…Ä^^F^^FĞOOÕ^^TSVr$GM]êB@B@i;^^UãO¥O|ÃbbéŒ–^^O-ä^^@İ^^@İ‘=ihñ'ì³'ì³d...
-l. ...\includegraphics[page = 1]{example-image-a.pdf}
-A funny symbol that I can't read has just been (re)read.
-Just continue, I'll change it to 0xFFFD.
-! String contains an invalid utf-8 sequence.
-<read 0> g8
-     ğ\Á8\8^^K/I.L~>İààÅ¾Å¾^^GvK.2}5Ï^^O^^O%^^XQBrîêxêxixi[:N7.)v?"4êC’C] Vvf^^S^^R"Bc...
-l. ...\includegraphics[page = 1]{example-image-a.pdf}
-A funny symbol that I can't read has just been (re)read.
-Just continue, I'll change it to 0xFFFD.
-! String contains an invalid utf-8 sequence.
-<read 0> g8ğ\Á8\
-        8^^K/I.L~>İààÅ¾Å¾^^GvK.2}5Ï^^O^^O%^^XQBrîêxêxixi[:N7.)v?"4êC’C] Vvf^^S^^R"Bc...
-l. ...\includegraphics[page = 1]{example-image-a.pdf}
-A funny symbol that I can't read has just been (re)read.
-Just continue, I'll change it to 0xFFFD.
-! String contains an invalid utf-8 sequence.
-<read 0> %{
-     åÂËÂËËÀ$UlÙ""dQê+—+Òïï<½<İŞŞcc^^LK5v^^Q#^^Uk^^_Ğ»Ëİİ^^Q^^QP^^Xã/¹/ÜŒíÎŒÎŒ^^E^^N^^RSØàà^^R"
-l. ...\includegraphics[page = 1]{example-image-a.pdf}
-A funny symbol that I can't read has just been (re)read.
-Just continue, I'll change it to 0xFFFD.
-! String contains an invalid utf-8 sequence.
-<read 0> %{åÂËÂËËÀ
-        $UlÙ""dQê+—+Òïï<½<İŞŞcc^^LK5v^^Q#^^Uk^^_Ğ»Ëİİ^^Q^^QP^^Xã/¹/ÜŒíÎŒÎŒ^^E^^N^^RSØàà^^R"
-l. ...\includegraphics[page = 1]{example-image-a.pdf}
-A funny symbol that I can't read has just been (re)read.
-Just continue, I'll change it to 0xFFFD.
-! String contains an invalid utf-8 sequence.
-<read 0> %{åÂËÂËËÀ$Ul
-            Ù""dQê+—+Òïï<½<İŞŞcc^^LK5v^^Q#^^Uk^^_Ğ»Ëİİ^^Q^^QP^^Xã/¹/ÜŒíÎŒÎŒ^^E^^N^^RSØàà^^R"
-l. ...\includegraphics[page = 1]{example-image-a.pdf}
-A funny symbol that I can't read has just been (re)read.
-Just continue, I'll change it to 0xFFFD.
-! String contains an invalid utf-8 sequence.
-<read 0> %{åÂËÂËËÀ$UlÙ""dQ
-                  ê+—+Òïï<½<İŞŞcc^^LK5v^^Q#^^Uk^^_Ğ»Ëİİ^^Q^^QP^^Xã/¹/ÜŒíÎŒÎŒ^^E^^N^^RSØàà^^R"
-l. ...\includegraphics[page = 1]{example-image-a.pdf}
-A funny symbol that I can't read has just been (re)read.
-Just continue, I'll change it to 0xFFFD.
-! String contains an invalid utf-8 sequence.
-<read 0> %{åÂËÂËËÀ$UlÙ""dQê+—+
-                     Òïï<½<İŞŞcc^^LK5v^^Q#^^Uk^^_Ğ»Ëİİ^^Q^^QP^^Xã/¹/ÜŒíÎŒÎŒ^^E^^N^^RSØàà^^R"
-l. ...\includegraphics[page = 1]{example-image-a.pdf}
-A funny symbol that I can't read has just been (re)read.
-Just continue, I'll change it to 0xFFFD.
-! String contains an invalid utf-8 sequence.
-<read 0> %{åÂËÂËËÀ$UlÙ""dQê+—+Òïï<½<
-                         İŞŞcc^^LK5v^^Q#^^Uk^^_Ğ»Ëİİ^^Q^^QP^^Xã/¹/ÜŒíÎŒÎŒ^^E^^N^^RSØàà^^R"
-l. ...\includegraphics[page = 1]{example-image-a.pdf}
-A funny symbol that I can't read has just been (re)read.
-Just continue, I'll change it to 0xFFFD.
-! String contains an invalid utf-8 sequence.
-<read 0> y
-    ^^K^^I^^K}py$^^L@^^Cd7záŒ³é^^T«^^T^^Q**cÒZZcoÄ´On^^^Ô11-hJ-
-l. ...\includegraphics[page = 1]{example-image-a.pdf}
-A funny symbol that I can't read has just been (re)read.
-Just continue, I'll change it to 0xFFFD.
-! String contains an invalid utf-8 sequence.
-<read 0> 
-   æ°^^]^^]-Ï112Ù­^ğ¦^^C.^^C.(ñ^ñ¿^ñ¿Î~Î~~t[_ ÒààvÕvÕ99á˜ooË^^L^^L@,Â[[+eßÆÆ$$Ä%%ì ; ;îªÌÌ^^_^^_á˜œ<1^^d3ÅÖÖ’...
-l. ...\includegraphics[page = 1]{example-image-a.pdf}
-A funny symbol that I can't read has just been (re)read.
-Just continue, I'll change it to 0xFFFD.
-! String contains an invalid utf-8 sequence.
-<read 0> æ°^^]^^]
-      -Ï112Ù­^ğ¦^^C.^^C.(ñ^ñ¿^ñ¿Î~Î~~t[_ ÒààvÕvÕ99á˜ooË^^L^^L@,Â[[+eßÆÆ$$Ä%%ì ; ;îªÌÌ^^_^^_á˜œ<1^^d3ÅÖÖ’...
-l. ...\includegraphics[page = 1]{example-image-a.pdf}
-A funny symbol that I can't read has just been (re)read.
-Just continue, I'll change it to 0xFFFD.
-! String contains an invalid utf-8 sequence.
-<read 0> æ°^^]^^]-
-         Ï112Ù­^ğ¦^^C.^^C.(ñ^ñ¿^ñ¿Î~Î~~t[_ ÒààvÕvÕ99á˜ooË^^L^^L@,Â[[+eßÆÆ$$Ä%%ì ; ;îªÌÌ^^_^^_á˜œ<1^^d3ÅÖÖ’...
-l. ...\includegraphics[page = 1]{example-image-a.pdf}
-A funny symbol that I can't read has just been (re)read.
-Just continue, I'll change it to 0xFFFD.
-! String contains an invalid utf-8 sequence.
-<read 0> æ°^^]^^]-Ï112Ù­^
-               ğ¦^^C.^^C.(ñ^ñ¿^ñ¿Î~Î~~t[_ ÒààvÕvÕ99á˜ooË^^L^^L@,Â[[+eßÆÆ$$Ä%%ì ; ;îªÌÌ^^_^^_á˜œ<1^^d3ÅÖÖ’...
-l. ...\includegraphics[page = 1]{example-image-a.pdf}
-A funny symbol that I can't read has just been (re)read.
-Just continue, I'll change it to 0xFFFD.
-! String contains an invalid utf-8 sequence.
-<read 0> æ°^^]^^]-Ï112Ù­^ğ¦^^C.^^C.(
-                    ñ^ñ¿^ñ¿Î~Î~~t[_ ÒààvÕvÕ99á˜ooË^^L^^L@,Â[[+eßÆÆ$$Ä%%ì ; ;îªÌÌ^^_^^_á˜œ<1^^d3ÅÖÖ’...
-l. ...\includegraphics[page = 1]{example-image-a.pdf}
-A funny symbol that I can't read has just been (re)read.
-Just continue, I'll change it to 0xFFFD.
-! String contains an invalid utf-8 sequence.
-<read 0> æ°^^]^^]-Ï112Ù­^ğ¦^^C.^^C.(ñ^ñ¿^ñ¿Î~
-                       Î~~t[_ ÒààvÕvÕ99á˜ooË^^L^^L@,Â[[+eßÆÆ$$Ä%%ì ; ;îªÌÌ^^_^^_á˜œ<1^^d3ÅÖÖ’...
-l. ...\includegraphics[page = 1]{example-image-a.pdf}
-A funny symbol that I can't read has just been (re)read.
-Just continue, I'll change it to 0xFFFD.
-! String contains an invalid utf-8 sequence.
-<read 0> æ°^^]^^]-Ï112Ù­^ğ¦^^C.^^C.(ñ^ñ¿^ñ¿Î~Î~~t[_ 
-                              ÒààvÕvÕ99á˜ooË^^L^^L@,Â[[+eßÆÆ$$Ä%%ì ; ;îªÌÌ^^_^^_á˜œ<1^^d3ÅÖÖ’...
-l. ...\includegraphics[page = 1]{example-image-a.pdf}
-A funny symbol that I can't read has just been (re)read.
-Just continue, I'll change it to 0xFFFD.
-! String contains an invalid utf-8 sequence.
-<read 0> æ°^^]^^]-Ï112Ù­^ğ¦^^C.^^C.(ñ^ñ¿^ñ¿Î~Î~~t[_ ÒààvÕv
-                                  Õ99á˜ooË^^L^^L@,Â[[+eßÆÆ$$Ä%%ì ; ;îªÌÌ^^_^^_á˜œ<1^^d3ÅÖÖ’...
-l. ...\includegraphics[page = 1]{example-image-a.pdf}
-A funny symbol that I can't read has just been (re)read.
-Just continue, I'll change it to 0xFFFD.
-! String contains an invalid utf-8 sequence.
-<read 0> æ°^^]^^]-Ï112Ù­^ğ¦^^C.^^C.(ñ^ñ¿^ñ¿Î~Î~~t[_ ÒààvÕvÕ99á˜o
-                                     oË^^L^^L@,Â[[+eßÆÆ$$Ä%%ì ; ;îªÌÌ^^_^^_á˜œ<1^^d3ÅÖÖ’...
-l. ...\includegraphics[page = 1]{example-image-a.pdf}
-A funny symbol that I can't read has just been (re)read.
-Just continue, I'll change it to 0xFFFD.
-! String contains an invalid utf-8 sequence.
-<read 0> 
-   Û""C^^A&Ê[[ê4C4CO/:Ò^^Z^^ZÜ^^K^^K?:BÌ}}XÉ^^X^^Xo=l3ÌmmÆUUİrj^^IÙSSÒææ§xxGè^^UÌ^^UÌ‘~xE^^K/CS<...
-l. ...\includegraphics[page = 1]{example-image-a.pdf}
-A funny symbol that I can't read has just been (re)read.
-Just continue, I'll change it to 0xFFFD.
-! String contains an invalid utf-8 sequence.
-<read 0> ^^9c
-     Æëë^^_±^^_^^IÇ¼u8.jtÒ‚^^Cïå^å^^^_^^^_^Dz~ó*a©*a]ÇÊÊVVcá;p;p0^^?"Ù^^R^^RsLPò³¶ĞĞääLÀL5^^T[^^W^9-N^^Ií^^[\^^[\...
-l. ...\includegraphics[page = 1]{example-image-a.pdf}
-A funny symbol that I can't read has just been (re)read.
-Just continue, I'll change it to 0xFFFD.
-! String contains an invalid utf-8 sequence.
-<read 0> ^^9cÆëë^^_±^^_
-        ^^IÇ¼u8.jtÒ‚^^Cïå^å^^^_^^^_^Dz~ó*a©*a]ÇÊÊVVcá;p;p0^^?"Ù^^R^^RsLPò³¶ĞĞääLÀL5^^T[^^W^9-N^^Ií^^[\^^[\...
-l. ...\includegraphics[page = 1]{example-image-a.pdf}
-A funny symbol that I can't read has just been (re)read.
-Just continue, I'll change it to 0xFFFD.
-! String contains an invalid utf-8 sequence.
-<read 0> ^^9cÆëë^^_±^^_^^IÇ¼
-           u8.jtÒ‚^^Cïå^å^^^_^^^_^Dz~ó*a©*a]ÇÊÊVVcá;p;p0^^?"Ù^^R^^RsLPò³¶ĞĞääLÀL5^^T[^^W^9-N^^Ií^^[\^^[\...
-l. ...\includegraphics[page = 1]{example-image-a.pdf}
-A funny symbol that I can't read has just been (re)read.
-Just continue, I'll change it to 0xFFFD.
-! String contains an invalid utf-8 sequence.
-<read 0> ^^9cÆëë^^_±^^_^^IÇ¼u8
-               .jtÒ‚^^Cïå^å^^^_^^^_^Dz~ó*a©*a]ÇÊÊVVcá;p;p0^^?"Ù^^R^^RsLPò³¶ĞĞääLÀL5^^T[^^W^9-N^^Ií^^[\^^[\...
-l. ...\includegraphics[page = 1]{example-image-a.pdf}
-A funny symbol that I can't read has just been (re)read.
-Just continue, I'll change it to 0xFFFD.
-! String contains an invalid utf-8 sequence.
-<read 0> Î©G
-      ÕÙÙ²S*|M^^_ghÑ•WÑîjØjØ§^^Vg4j^#ĞıÚÓÓ^^Q^^QKÒhh!qÅĞ
-l. ...\includegraphics[page = 1]{example-image-a.pdf}
-A funny symbol that I can't read has just been (re)read.
-Just continue, I'll change it to 0xFFFD.
-! String contains an invalid utf-8 sequence.
-<read 0> Î©GÕÙÙ²S*
-           |M^^_ghÑ•WÑîjØjØ§^^Vg4j^#ĞıÚÓÓ^^Q^^QKÒhh!qÅĞ
-l. ...\includegraphics[page = 1]{example-image-a.pdf}
-A funny symbol that I can't read has just been (re)read.
-Just continue, I'll change it to 0xFFFD.
-! String contains an invalid utf-8 sequence.
-<read 0> Î©GÕÙÙ²S*|M
-              ^^_ghÑ•WÑîjØjØ§^^Vg4j^#ĞıÚÓÓ^^Q^^QKÒhh!qÅĞ
-l. ...\includegraphics[page = 1]{example-image-a.pdf}
-A funny symbol that I can't read has just been (re)read.
-Just continue, I'll change it to 0xFFFD.
-! String contains an invalid utf-8 sequence.
-<read 0> Î©GÕÙÙ²S*|M^^_gh
-                  Ñ•WÑîjØjØ§^^Vg4j^#ĞıÚÓÓ^^Q^^QKÒhh!qÅĞ
-l. ...\includegraphics[page = 1]{example-image-a.pdf}
-A funny symbol that I can't read has just been (re)read.
-Just continue, I'll change it to 0xFFFD.
-! String contains an invalid utf-8 sequence.
-<read 0> Î©GÕÙÙ²S*|M^^_ghÑ•WÑ
-                          îjØjØ§^^Vg4j^#ĞıÚÓÓ^^Q^^QKÒhh!qÅĞ
-l. ...\includegraphics[page = 1]{example-image-a.pdf}
-A funny symbol that I can't read has just been (re)read.
-Just continue, I'll change it to 0xFFFD.
-! String contains an invalid utf-8 sequence.
-<read 0> Î©GÕÙÙ²S*|M^^_ghÑ•WÑîjØjØ§
-                               ^^Vg4j^#ĞıÚÓÓ^^Q^^QKÒhh!qÅĞ
-l. ...\includegraphics[page = 1]{example-image-a.pdf}
-A funny symbol that I can't read has just been (re)read.
-Just continue, I'll change it to 0xFFFD.
-! String contains an invalid utf-8 sequence.
-<read 0> Î©GÕÙÙ²S*|M^^_ghÑ•WÑîjØjØ§^^V
-                                  g4j^#ĞıÚÓÓ^^Q^^QKÒhh!qÅĞ
-l. ...\includegraphics[page = 1]{example-image-a.pdf}
-A funny symbol that I can't read has just been (re)read.
-Just continue, I'll change it to 0xFFFD.
-! String contains an invalid utf-8 sequence.
-<read 0> Î©GÕÙÙ²S*|M^^_ghÑ•WÑîjØjØ§^^Vg4j^#
-                                        ĞıÚÓÓ^^Q^^QKÒhh!qÅĞ
-l. ...\includegraphics[page = 1]{example-image-a.pdf}
-A funny symbol that I can't read has just been (re)read.
-Just continue, I'll change it to 0xFFFD.
-! String contains an invalid utf-8 sequence.
-<read 0> Î©GÕÙÙ²S*|M^^_ghÑ•WÑîjØjØ§^^Vg4j^#Ğı
-                                           ÚÓÓ^^Q^^QKÒhh!qÅĞ
-l. ...\includegraphics[page = 1]{example-image-a.pdf}
-A funny symbol that I can't read has just been (re)read.
-Just continue, I'll change it to 0xFFFD.
-! String contains an invalid utf-8 sequence.
-<read 0> 7
-    äZZ^^Ucé•Š!E^^D-ô^^Ppô^^Ppôí+eí+e+egR>k
-l. ...\includegraphics[page = 1]{example-image-a.pdf}
-A funny symbol that I can't read has just been (re)read.
-Just continue, I'll change it to 0xFFFD.
-! String contains an invalid utf-8 sequence.
-<read 0> 
-   ëÊOÊOOÓ``aàéƒéƒssàµÄÄ11^^NâIaIaôT®øTx^^X×Š^^Niä}Ø}ØÂÁ^^DVÜ^^L^^LXÚ^^Z(Édd^^Vi]:ØJJKn)1É^^D^^D...
-l. ...\includegraphics[page = 1]{example-image-a.pdf}
-A funny symbol that I can't read has just been (re)read.
-Just continue, I'll change it to 0xFFFD.
-! String contains an invalid utf-8 sequence.
-<read 0> ëÊOÊOO
-      Ó``aàéƒéƒssàµÄÄ11^^NâIaIaôT®øTx^^X×Š^^Niä}Ø}ØÂÁ^^DVÜ^^L^^LXÚ^^Z(Édd^^Vi]:ØJJKn)1É^^D^^D...
-l. ...\includegraphics[page = 1]{example-image-a.pdf}
-A funny symbol that I can't read has just been (re)read.
-Just continue, I'll change it to 0xFFFD.
-! String contains an invalid utf-8 sequence.
-<read 0> ëÊOÊOOÓ``
-         aàéƒéƒssàµÄÄ11^^NâIaIaôT®øTx^^X×Š^^Niä}Ø}ØÂÁ^^DVÜ^^L^^LXÚ^^Z(Édd^^Vi]:ØJJKn)1É^^D^^D...
-l. ...\includegraphics[page = 1]{example-image-a.pdf}
-A funny symbol that I can't read has just been (re)read.
-Just continue, I'll change it to 0xFFFD.
-! String contains an invalid utf-8 sequence.
-<read 0> ëÊOÊOOÓ``aàéƒ
-            éƒssàµÄÄ11^^NâIaIaôT®øTx^^X×Š^^Niä}Ø}ØÂÁ^^DVÜ^^L^^LXÚ^^Z(Édd^^Vi]:ØJJKn)1É^^D^^D...
-l. ...\includegraphics[page = 1]{example-image-a.pdf}
-A funny symbol that I can't read has just been (re)read.
-Just continue, I'll change it to 0xFFFD.
-! String contains an invalid utf-8 sequence.
-<read 0> ëÊOÊOOÓ``aàéƒéƒss
-               àµÄÄ11^^NâIaIaôT®øTx^^X×Š^^Niä}Ø}ØÂÁ^^DVÜ^^L^^LXÚ^^Z(Édd^^Vi]:ØJJKn)1É^^D^^D...
-l. ...\includegraphics[page = 1]{example-image-a.pdf}
-A funny symbol that I can't read has just been (re)read.
-Just continue, I'll change it to 0xFFFD.
-! String contains an invalid utf-8 sequence.
-<read 0> ëÊOÊOOÓ``aàéƒéƒssàµÄÄ11
-                   ^^NâIaIaôT®øTx^^X×Š^^Niä}Ø}ØÂÁ^^DVÜ^^L^^LXÚ^^Z(Édd^^Vi]:ØJJKn)1É^^D^^D...
-l. ...\includegraphics[page = 1]{example-image-a.pdf}
-A funny symbol that I can't read has just been (re)read.
-Just continue, I'll change it to 0xFFFD.
-! String contains an invalid utf-8 sequence.
-<read 0> ëÊOÊOOÓ``aàéƒéƒssàµÄÄ11^^N
-                      âIaIaôT®øTx^^X×Š^^Niä}Ø}ØÂÁ^^DVÜ^^L^^LXÚ^^Z(Édd^^Vi]:ØJJKn)1É^^D^^D...
-l. ...\includegraphics[page = 1]{example-image-a.pdf}
-A funny symbol that I can't read has just been (re)read.
-Just continue, I'll change it to 0xFFFD.
-! String contains an invalid utf-8 sequence.
-<read 0> ëÊOÊOOÓ``aàéƒéƒssàµÄÄ11^^NâIaIa
-                         ôT®øTx^^X×Š^^Niä}Ø}ØÂÁ^^DVÜ^^L^^LXÚ^^Z(Édd^^Vi]:ØJJKn)1É^^D^^D...
-l. ...\includegraphics[page = 1]{example-image-a.pdf}
-A funny symbol that I can't read has just been (re)read.
-Just continue, I'll change it to 0xFFFD.
-! String contains an invalid utf-8 sequence.
-<read 0> ëÊOÊOOÓ``aàéƒéƒssàµÄÄ11^^NâIaIaôT®øT
-                            x^^X×Š^^Niä}Ø}ØÂÁ^^DVÜ^^L^^LXÚ^^Z(Édd^^Vi]:ØJJKn)1É^^D^^D...
-l. ...\includegraphics[page = 1]{example-image-a.pdf}
-A funny symbol that I can't read has just been (re)read.
-Just continue, I'll change it to 0xFFFD.
-! String contains an invalid utf-8 sequence.
-<read 0> 
-   ÂooØ..;r}[_)ÃRR3;ãõ^^^^^^;^^_Ù^^I^^Il^^bcbPwÙ›Üllè¹ÆÆãã7^^Z7^^Z<1
-l. ...\includegraphics[page = 1]{example-image-a.pdf}
-A funny symbol that I can't read has just been (re)read.
-Just continue, I'll change it to 0xFFFD.
-! String contains an invalid utf-8 sequence.
-<read 0> ÂooØ..
-       ;r}[_)ÃRR3;ãõ^^^^^^;^^_Ù^^I^^Il^^bcbPwÙ›Üllè¹ÆÆãã7^^Z7^^Z<1
-l. ...\includegraphics[page = 1]{example-image-a.pdf}
-A funny symbol that I can't read has just been (re)read.
-Just continue, I'll change it to 0xFFFD.
-! String contains an invalid utf-8 sequence.
-<read 0> ÂooØ..;r}[_)
-              ÃRR3;ãõ^^^^^^;^^_Ù^^I^^Il^^bcbPwÙ›Üllè¹ÆÆãã7^^Z7^^Z<1
-l. ...\includegraphics[page = 1]{example-image-a.pdf}
-A funny symbol that I can't read has just been (re)read.
-Just continue, I'll change it to 0xFFFD.
-! String contains an invalid utf-8 sequence.
-<read 0> ÂooØ..;r}[_)ÃRR3;
-                   ãõ^^^^^^;^^_Ù^^I^^Il^^bcbPwÙ›Üllè¹ÆÆãã7^^Z7^^Z<1
-l. ...\includegraphics[page = 1]{example-image-a.pdf}
-A funny symbol that I can't read has just been (re)read.
-Just continue, I'll change it to 0xFFFD.
-! String contains an invalid utf-8 sequence.
-<read 0> 
-   o×°^^_^^C$:×PP^4;æ·^^D^^D.Äµi56-ñß¤kß¤k]L5]dÑ·k:ä¸¿}I67ÊCCkË^^L^^LsßğğârĞârĞrĞmm...
-l. ...\includegraphics[page = 1]{example-image-a.pdf}
-A funny symbol that I can't read has just been (re)read.
-Just continue, I'll change it to 0xFFFD.
-! String contains an invalid utf-8 sequence.
-<read 0> o×°
-      ^^_^^C$:×PP^4;æ·^^D^^D.Äµi56-ñß¤kß¤k]L5]dÑ·k:ä¸¿}I67ÊCCkË^^L^^LsßğğârĞârĞrĞmm...
-l. ...\includegraphics[page = 1]{example-image-a.pdf}
-(That makes 100 errors; please try again.)
+Inserting `8 bit input' in `process_input_buffer'.
+! LaTeX Error: Cannot determine size of graphic in example-image-a.pdf (no BoundingBox).
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+l. ...\includegraphics[page = 1]{example-image-a.pdf}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+Removing  `8 bit input' from `process_input_buffer'.
+File: example-image-a.pdf Graphic file (type eps)
+<example-image-a.pdf>
+! LaTeX Error: File `az2' not found.
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+l. ...\includegraphics{az2}
+I could not locate the file with any of these extensions:
+.eps,.ps,.eps.gz,.ps.gz,.eps.Z,.mps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+! LaTeX Error: File `az2' not found.
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+l. ...\includegraphics[pagebox = artbox]{az2}
+I could not locate the file with any of these extensions:
+.eps,.ps,.eps.gz,.ps.gz,.eps.Z,.mps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+File: clip-1-2.jpg Graphic file (type eps)
+<clip-1-2.jpg>
+File: clip-1-2.png Graphic file (type eps)
+ <clip-1-2.png>
+Inserting `8 bit input' in `process_input_buffer'.
+! LaTeX Error: Cannot determine size of graphic in clip-1-2.jpg (no BoundingBox).
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+l. ......degraphics[interpolate = true]{clip-1-2.jpg}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+Removing  `8 bit input' from `process_input_buffer'.
+File: clip-1-2.jpg Graphic file (type eps)
+<clip-1-2.jpg>
+Completed box being shipped out [1]
+\vbox(633.0+0.0)x407.0, direction TLT
+.\hbox(0.0+0.0)x0.0, direction TLT
+.\glue 16.0
+.\vbox(617.0+0.0)x345.0, shifted 62.0, direction TLT
+..\vbox(12.0+0.0)x345.0, glue set 12.0fil, direction TLT
+...\glue 0.0 plus 1.0fil
+...\hbox(0.0+0.0)x345.0, direction TLT
+....\hbox(0.0+0.0)x345.0, direction TLT
+..\glue 25.0
+..\glue(\lineskip) 0.0
+..\vbox(550.0+0.0)x345.0, glue set 36.55637fil, direction TLT
+...\write-{}
+...\glue(\topskip) 0.0
+...\hbox(240.9+0.0)x345.0, glue set 8.8fil, direction TLT
+....\localpar
+.....\localinterlinepenalty=0
+.....\localbrokenpenalty=0
+.....\localleftbox=null
+.....\localrightbox=null
+....\hbox(0.0+0.0)x15.0, direction TLT
+....\hbox(240.9+0.0)x321.2, direction TLT
+.....\special{PSfile="example-image-a.eps" llx=0 lly=0 urx=320 ury=240 rwi=3200 }
+....\penalty 10000
+....\glue(\parfillskip) 0.0 plus 1.0fil
+....\glue(\rightskip) 0.0
+...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
+...\glue(\lineskip) 1.0
+...\hbox(72.26999+0.0)x345.0, glue set 257.73001fil, direction TLT
+....\localpar
+.....\localinterlinepenalty=0
+.....\localbrokenpenalty=0
+.....\localleftbox=null
+.....\localrightbox=null
+....\hbox(0.0+0.0)x15.0, direction TLT
+....\hbox(72.26999+0.0)x72.26999, direction TLT
+.....\special{PSfile="example-image-a.pdf" llx=0 lly=0 urx=72 ury=72 rwi=720 }
+....\penalty 10000
+....\glue(\parfillskip) 0.0 plus 1.0fil
+....\glue(\rightskip) 0.0
+...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
+...\glue(\baselineskip) 12.0
+...\hbox(0.0+0.0)x345.0, glue set 330.0fil, direction TLT
+....\localpar
+.....\localinterlinepenalty=0
+.....\localbrokenpenalty=0
+.....\localleftbox=null
+.....\localrightbox=null
+....\hbox(0.0+0.0)x15.0, direction TLT
+....\penalty 10000
+....\glue(\parfillskip) 0.0 plus 1.0fil
+....\glue(\rightskip) 0.0
+...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
+...\glue(\baselineskip) 12.0
+...\hbox(0.0+0.0)x345.0, glue set 330.0fil, direction TLT
+....\localpar
+.....\localinterlinepenalty=0
+.....\localbrokenpenalty=0
+.....\localleftbox=null
+.....\localrightbox=null
+....\hbox(0.0+0.0)x15.0, direction TLT
+....\penalty 10000
+....\glue(\parfillskip) 0.0 plus 1.0fil
+....\glue(\rightskip) 0.0
+...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
+...\glue(\lineskip) 1.0
+...\hbox(49.99988+0.0)x345.0, glue set 280.00012fil, direction TLT
+....\localpar
+.....\localinterlinepenalty=0
+.....\localbrokenpenalty=0
+.....\localleftbox=null
+.....\localrightbox=null
+....\hbox(0.0+0.0)x15.0, direction TLT
+....\hbox(49.99988+0.0)x49.99988, direction TLT
+.....\special{PSfile="clip-1-2.jpg" llx=12.9514 lly=64.757 urx=62.76448 ury=114.57008 rwi=498 clip}
+....\penalty 10000
+....\glue(\parfillskip) 0.0 plus 1.0fil
+....\glue(\rightskip) 0.0
+...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
+...\glue(\lineskip) 1.0
+...\hbox(49.99988+0.0)x345.0, glue set 280.00012fil, direction TLT
+....\localpar
+.....\localinterlinepenalty=0
+.....\localbrokenpenalty=0
+.....\localleftbox=null
+.....\localrightbox=null
+....\hbox(0.0+0.0)x15.0, direction TLT
+....\hbox(49.99988+0.0)x49.99988, direction TLT
+.....\special{PSfile="clip-1-2.png" llx=12.9514 lly=64.757 urx=62.76448 ury=114.57008 rwi=498 clip}
+....\penalty 10000
+....\glue(\parfillskip) 0.0 plus 1.0fil
+....\glue(\rightskip) 0.0
+...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
+...\glue(\lineskip) 1.0
+...\hbox(72.26999+0.0)x345.0, glue set 257.73001fil, direction TLT
+....\localpar
+.....\localinterlinepenalty=0
+.....\localbrokenpenalty=0
+.....\localleftbox=null
+.....\localrightbox=null
+....\hbox(0.0+0.0)x15.0, direction TLT
+....\hbox(72.26999+0.0)x72.26999, direction TLT
+.....\special{PSfile="clip-1-2.jpg" llx=0 lly=0 urx=72 ury=72 rwi=720 }
+....\penalty 10000
+....\glue(\parfillskip) 0.0 plus 1.0fil
+....\glue(\rightskip) 0.0
+...\glue 0.0 plus 1.0fil
+...\glue 0.0
+...\glue 0.0 plus 0.0001fil
+..\glue(\baselineskip) 23.34
+..\hbox(6.66+0.0)x345.0, direction TLT
+...\hbox(6.66+0.0)x345.0, glue set 170.0fil, direction TLT
+....\glue 0.0 plus 1.0fil
+....\TU/lmr/m/n/10 1
+....\glue 0.0 plus 1.0fil
+.\kern0.0
