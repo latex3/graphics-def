@@ -1,0 +1,13 @@
+\documentclass{article}
+\usepackage{graphicx}
+\input{regression-test}
+
+\begin{document}
+
+\START
+
+% should be no error
+% /usr/local/texlive/2024/texmf-dist/doc/latex/amscls-doc/rgb-cmyk.eps
+\fbox{\includegraphics{rgb-cmyk.eps}}
+
+\end{document}

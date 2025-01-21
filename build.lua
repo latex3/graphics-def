@@ -21,4 +21,4 @@ specialformats["latex-dev"] = specialformats["latex-dev"] or
   }
 
 
-checkconfigs = {"build","config-plain","config-xetex"}
+checkconfigs = {"build","config-plain","config-xetex","config-dviluatex"}
