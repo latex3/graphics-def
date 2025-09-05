@@ -11,7 +11,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <argument> \pdfximage 
-           \ifnum 0\ifx \Gin@decode \@empty \else 1\fi \ifGin@interpolate 1\fi 
+                      \ifnum 0\ifx \Gin@decode \@empty \else 1\fi \ifGin@int...
 l. ...\includegraphics{example-image-a}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -19,7 +19,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 ! Undefined control sequence.
-<argument> ... .pdf}\setbox \@tempboxa =\hbox {\pdfrefximage 
+<argument> ...ox \@tempboxa =\hbox {\pdfrefximage 
                                                   \pdflastximage }\def \Gin@...
 l. ...\includegraphics{example-image-a}
 The control sequence at the end of the top line
@@ -28,7 +28,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 ! Undefined control sequence.
-<argument> ...@tempboxa =\hbox {\pdfrefximage \pdflastximage 
+<argument> ...\hbox {\pdfrefximage \pdflastximage 
                                                   }\def \Gin@llx {0}\let \Gi...
 l. ...\includegraphics{example-image-a}
 The control sequence at the end of the top line
@@ -37,7 +37,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 ! Undefined control sequence.
-<argument> ... image\Gin@attr@hash \endcsname {\pdfrefximage 
+<argument> ...attr@hash \endcsname {\pdfrefximage 
                                                   \the \pdflastximage }\expa...
 l. ...\includegraphics{example-image-a}
 The control sequence at the end of the top line
@@ -46,7 +46,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 ! Undefined control sequence.
-<argument> ... \endcsname {\pdfrefximage \the \pdflastximage 
+<argument> ... {\pdfrefximage \the \pdflastximage 
                                                   }\expandafter \xdef \csnam...
 l. ...\includegraphics{example-image-a}
 The control sequence at the end of the top line
@@ -55,12 +55,12 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 ! You can't use `end-group character }' after \the.
-<argument> ...\endcsname {\pdfrefximage \the \pdflastximage }
+<argument> ...{\pdfrefximage \the \pdflastximage }
                                                   \expandafter \xdef \csname...
 l. ...\includegraphics{example-image-a}
 I'm forgetting what you said and using zero instead.
 ! Undefined control sequence.
-<argument> ...n@log {<\Gin@base .pdf, id=\the \pdflastximage 
+<argument> ...n@base .pdf, id=\the \pdflastximage 
                                                   , \ifx \Gin@page \@empty \...
 l. ...\includegraphics{example-image-a}
 The control sequence at the end of the top line
@@ -69,20 +69,20 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 ! You can't use `the character ,' after \the.
-<argument> ...@log {<\Gin@base .pdf, id=\the \pdflastximage ,
+<argument> ...@base .pdf, id=\the \pdflastximage ,
                                                    \ifx \Gin@page \@empty \e...
 l. ...\includegraphics{example-image-a}
 I'm forgetting what you said and using zero instead.
 ! Illegal parameter number in definition of \example-image-a.pdf image:cropbox.
 <to be read again> 
-1
+                   1
 l. ...\includegraphics{example-image-a}
 You meant to type ## instead of #, right?
 Or maybe a } was forgotten somewhere earlier, and things
 are all screwed up? I'm going to assume that you meant ##.
 ! Illegal parameter number in definition of \example-image-a.pdf image:cropbox.
 <to be read again> 
-1
+                   1
 l. ...\includegraphics{example-image-a}
 You meant to type ## instead of #, right?
 Or maybe a } was forgotten somewhere earlier, and things
@@ -97,7 +97,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 ! Argument of \@providesfile has an extra }.
 <inserted text> 
-\par 
+                \par 
 l. ...\includegraphics{example-image-a}
 I've run across a `}' that doesn't seem to match anything.
 For example, `\def\a#1{...}' and `\a}' would produce
@@ -109,7 +109,7 @@ Runaway argument?
 {\Gin@base \Gin@ext }
 ! Paragraph ended before \@providesfile was complete.
 <to be read again> 
-\par 
+                   \par 
 l. ...\includegraphics{example-image-a}
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
@@ -118,19 +118,11 @@ Runaway argument?
 {[}\def \@tempb {\@providesfile {\Gin@base \Gin@ext }[]}\ifx \@tempa \ETC.
 ! Paragraph ended before \@tempa was complete.
 <to be read again> 
-\par 
+                   \par 
 l. ...
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
-! Improper \prevdepth.
-\newpage ...everypar {}\fi \par \ifdim \prevdepth 
-                                                  >\z@ \vskip -\ifdim \prevd...
-l. ...\clearpage
-You can refer to \spacefactor only in horizontal mode;
-you can refer to \prevdepth only in vertical mode; and
-neither of these is meaningful inside \write. So
-I'm forgetting what you said and using zero instead.
 ! TeX capacity exceeded, sorry [input stack size=10000].
 \TYPE #1->\begingroup \long \def \TYPE ##
                                          1{##1}\immediate \write 128{#1}\end...
