@@ -258,6 +258,7 @@ E     \else
 \@ifundefined{Gin@interpolate}
   {\csname newif\endcsname\ifGin@interpolate}
   {}
+\newif\ifGread@transgroup
 \def\Gread@@pdftex#1{%
   \edef\Gin@attr@hash{%
     \ifx\Gin@pagebox\@empty
@@ -281,9 +282,11 @@ E     \else
         \ifnum0%
           \ifx\Gin@decode\@empty\else 1\fi
           \ifGin@interpolate 1\fi
+          \ifGread@transgroup 1\fi
           >0 %
           attr{%
             \ifx\Gin@decode\@empty\else/Decode[\Gin@decode]\fi
+            \ifGread@transgroup/Group<</S/Transparency/K false/I false>>\fi
             \ifGin@interpolate/Interpolate true\fi
           }%
         \fi
@@ -320,6 +323,7 @@ E     \else
 \def\Gread@png#1{%
   \let\Gin@page\@empty
   \let\Gin@pagebox\@empty
+  \Gread@transgroupfalse
   \Gread@pdftex{#1}%
 }
 \let\Gread@jpg\Gread@png
@@ -327,6 +331,7 @@ E     \else
 \def\Gread@pdf#1{%
   \let\Gin@decode\@empty
   \Gin@interpolatefalse
+  \Gread@transgrouptrue
   \Gread@pdftex{#1}%
 }
 \let\Gread@mps\Gread@eps
