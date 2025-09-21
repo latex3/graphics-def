@@ -1,13 +1,13 @@
 This is a generated file for the l3build validation system.
 Don't change this file in any respect.
 File: example-image-a.pdf Graphic file (type pdf)
-<use example-image-a.pdf>
+<example-image-a.pdf>
 File: example-image-a.pdf Graphic file (type pdf)
-<use example-image-a.pdf, page 1>
+<example-image-a.pdf>
 File: az2.pdf Graphic file (type pdf)
-<use az2.pdf>
+<az2.pdf>
 File: az2.pdf Graphic file (type pdf)
-<use az2.pdf>
+<az2.pdf>
 Completed box being shipped out [1]
 \vbox(633.0+0.0)x407.0
 .\glue 16.0
@@ -24,18 +24,7 @@ Completed box being shipped out [1]
 ...\hbox(240.8994+0.0)x345.0, glue set 8.80078fil
 ....\hbox(0.0+0.0)x15.0
 ....\hbox(240.8994+0.0)x321.19922
-.....\hbox(240.9+0.0)x321.20001
-......\hbox(240.9+0.0)x321.20001
-.......\hbox(240.9+0.0)x0.0
-........\special{pdf:btrans}
-........\special{x:scale 1 1}
-........\hbox(240.9+0.0)x0.0, glue set - 321.20001fil
-.........\hbox(240.9+0.0)x321.20001
-..........\XeTeXpdffile "./example-image-a.pdf"
-.........\glue 0.0 plus 1.0fil minus 1.0fil
-........\special{pdf:etrans}
-.......\kern 321.20001
-.......\glue 0.0 plus 1.0fil minus 1.0fil
+.....\special{pdf:image pagebox cropbox bbox 0 0 319.99922 239.9994 clip 0 width 321.19922pt (example-image-a.pdf) <</Group<</S/Transparency/K false/I false>>>>}
 ....\penalty 10000
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
@@ -45,18 +34,7 @@ Completed box being shipped out [1]
 ...\hbox(240.8994+0.0)x345.0, glue set 8.80078fil
 ....\hbox(0.0+0.0)x15.0
 ....\hbox(240.8994+0.0)x321.19922
-.....\hbox(240.9+0.0)x321.20001
-......\hbox(240.9+0.0)x321.20001
-.......\hbox(240.9+0.0)x0.0
-........\special{pdf:btrans}
-........\special{x:scale 1 1}
-........\hbox(240.9+0.0)x0.0, glue set - 321.20001fil
-.........\hbox(240.9+0.0)x321.20001
-..........\XeTeXpdffile "./example-image-a.pdf"
-.........\glue 0.0 plus 1.0fil minus 1.0fil
-........\special{pdf:etrans}
-.......\kern 321.20001
-.......\glue 0.0 plus 1.0fil minus 1.0fil
+.....\special{pdf:image page 1 pagebox cropbox bbox 0 0 319.99922 239.9994 clip 0 width 321.19922pt (example-image-a.pdf) <</Group<</S/Transparency/K false/I false>>>>}
 ....\penalty 10000
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
@@ -66,18 +44,7 @@ Completed box being shipped out [1]
 ...\hbox(50.18736+0.0)x345.0, glue set 299.88759fil
 ....\hbox(0.0+0.0)x15.0
 ....\hbox(50.18736+0.0)x30.11241
-.....\hbox(50.1875+0.0)x30.1125
-......\hbox(50.1875+0.0)x30.1125
-.......\hbox(50.1875+0.0)x0.0
-........\special{pdf:btrans}
-........\special{x:scale 1 1}
-........\hbox(50.1875+0.0)x0.0, glue set - 30.1125fil
-.........\hbox(50.1875+0.0)x30.1125
-..........\XeTeXpdffile "./az2.pdf"
-.........\glue 0.0 plus 1.0fil minus 1.0fil
-........\special{pdf:etrans}
-.......\kern 30.1125
-.......\glue 0.0 plus 1.0fil minus 1.0fil
+.....\special{pdf:image pagebox cropbox bbox 0 0 29.99992 49.99988 clip 0 width 30.11241pt (az2.pdf) <</Group<</S/Transparency/K false/I false>>>>}
 ....\penalty 10000
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
@@ -110,18 +77,7 @@ Completed box being shipped out [2]
 ...\hbox(36.13489+0.0)x345.0, glue set 293.86511fil
 ....\hbox(0.0+0.0)x15.0
 ....\hbox(36.13489+0.0)x36.13489
-.....\hbox(36.135+0.0)x36.135
-......\hbox(36.135+0.0)x36.135
-.......\hbox(36.135+0.0)x0.0
-........\special{pdf:btrans}
-........\special{x:scale 1 1}
-........\hbox(36.135+0.0)x0.0, glue set - 36.135fil
-.........\hbox(36.135+0.0)x36.135
-..........\XeTeXpdffile "./az2.pdf"
-.........\glue 0.0 plus 1.0fil minus 1.0fil
-........\special{pdf:etrans}
-.......\kern 36.135
-.......\glue 0.0 plus 1.0fil minus 1.0fil
+.....\special{pdf:image pagebox artbox bbox 0 0 35.9999 35.9999 clip 0 width 36.13489pt (az2.pdf) <</Group<</S/Transparency/K false/I false>>>>}
 ....\penalty 10000
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
