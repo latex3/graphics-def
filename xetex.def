@@ -148,98 +148,26 @@
     }%
 }
 \def\Gread@@xetex@box#1box{#1}
-\def\GPT@setup@scale{%
-  \def\@tempa{!}%
-  \ifx\Gin@scaley\@tempa
-    \let\Gin@scaley\Gin@scalex
-  \else
-    \ifx\Gin@scalex\@tempa\let\Gin@scalex\Gin@scaley\fi
-  \fi
-}
+\newif\ifGread@transgroup
 \def\Ginclude@pdf#1{%
-  \GPT@setup@scale
-  \Gin@log{%
-    <use #1%
-    \ifx\Gin@page\@empty\else, page \Gin@page\fi
-    >%
-  }%
-  \hbox{%
-    \Gscale@box{\Gin@scalex}[\Gin@scaley]{%
-      \@ifundefined{Gin@vllx}{%
-        \GPT@viewportfalse
-        % without viewport/trim clipping does not make sense
-        % for pdfTeX
-        \Gin@clipfalse
-      }{}%
-      \ifGin@clip
-        \if!\Gin@vllx\Gin@vlly\Gin@vurx\Gin@vury!%
-        \else
-          \let\GPT@clipend\GPT@DoClipEnd
-          \setbox\@tempboxa\hbox\bgroup
-        \fi
-      \fi
-      \ifGPT@viewport
-        \ifdim\Gin@vlly\p@=\z@
-        \else
-          \lower\Gin@vlly bp\hbox\bgroup
-        \fi
-        \ifdim\Gin@vllx\p@=\z@
-        \else
-          \hskip-\Gin@vllx bp\relax
-        \fi
-      \fi
-      \XeTeXpdffile"#1" %
-        \ifx\Gin@page\@empty\else page \Gin@page\fi
-        \ifx\Gin@pagebox\@empty\else\expandafter\Gread@@xetex@box\Gin@pagebox\fi
-      \ifGPT@viewport
-        \ifdim\Gin@vlly\p@=\z@
-        \else
-          \egroup
-        \fi
-        \GPT@clipend
-      \fi
-    }%
-  }%
-}
-\newif\ifGPT@viewport
-\GPT@viewporttrue
-\let\GPT@clipend\relax
-\def\GPT@DoClipEnd{%
-  \egroup
-  \dp\@tempboxa\z@
-  % \Gin@urx and \Gin@ury already contain the correct values,
-  % so both cases viewport and trim can be handled together:
-  \dimen@\Gin@urx\p@
-  \advance\dimen@ -\Gin@llx\p@
-  \wd\@tempboxa\strip@pt\dimen@ bp\relax
-  \dimen@\Gin@ury\p@
-  \advance\dimen@ -\Gin@lly\p@
-  \ht\@tempboxa\strip@pt\dimen@ bp\relax
-  \GPT@clipbox\@tempboxa
-  \box\@tempboxa
-}
-\def\GPT@clipbox#1{%
-  \setbox#1=\hbox{%
-    \Gin@defaultbp\WIDTH{\wd#1}%
-    \Gin@defaultbp\DEPTH{\dp#1}%
-    \@tempdima\ht#1%
-    \advance\@tempdima\dp#1%
-    \Gin@defaultbp\TOTALHEIGHT{\@tempdima}%
-    \special{x:gsave}%
-    \special{%
-      pdf:literal
-      0 -\DEPTH\GPT@space \WIDTH\GPT@space \TOTALHEIGHT\GPT@space re  W n
-    }%
-    \rlap{\box#1}%
-    \special{x:grestore}%
-    \hskip\wd#1%
-  }%
+  \let\Gin@decode\@empty
+  \Gin@interpolatefalse
+  \Gread@transgrouptrue
+  \Ginclude@dvipdfmx{#1}%
 }
 \def\Ginclude@bmp#1{%
+  \let\Gin@page\@empty
+  \let\Gin@pagebox\@empty
+  \Gread@transgroupfalse
+  \Ginclude@dvipdfmx{#1}%
+}
+\def\Ginclude@dvipdfmx#1{%
   \Gin@log{<#1>}%
   \bgroup
   \def\@tempa{!}%
     \special{pdf:image\GPT@space
+      \ifx\Gin@page\@empty\else page\GPT@space\Gin@page\GPT@space\fi
+      \ifx\Gin@pagebox\@empty\else pagebox\GPT@space\Gin@pagebox\GPT@space\fi
       bbox\GPT@space\Gin@llx\GPT@space\Gin@lly\GPT@space\Gin@urx\GPT@space\Gin@ury\GPT@space
       clip\GPT@space\ifGin@clip 1\else 0\fi\GPT@space
       \ifx\Gin@scalex\@tempa\else width\GPT@space\the\Gin@req@width\GPT@space\fi
@@ -248,15 +176,16 @@
       \ifnum0%
         \ifx\Gin@decode\@empty\else 1\fi
         \ifGin@interpolate 1\fi
+        \ifGread@transgroup 1\fi
         >0 %
         <<%
           \ifx\Gin@decode\@empty\else /Decode[\Gin@decode]\fi
+          \ifGread@transgroup/Group<</S/Transparency/K false/I false>>\fi
           \ifGin@interpolate /Interpolate true\fi
         >>%
       \fi
     }%
-  \egroup
-}
+  \egroup}
 \newif\if@trim@vport
 \def\Ginclude@eps#1{%
   \Gin@log{<#1>}%
