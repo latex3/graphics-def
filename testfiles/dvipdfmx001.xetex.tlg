@@ -25,7 +25,7 @@ Completed box being shipped out [1]
 ...\hbox(240.9+0.0)x345.0, glue set 8.8fil
 ....\hbox(0.0+0.0)x15.0
 ....\hbox(240.9+0.0)x321.2
-.....\special{pdf:epdf pagebox cropbox bbox 0 0 320 240 clip 0 width 321.2pt (example-image-a.pdf) }
+.....\special{pdf:image pagebox cropbox bbox 0 0 320 240 clip 0 width 321.2pt (example-image-a.pdf) <</Group<</S/Transparency/K false/I false>>>>}
 ....\penalty 10000
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
@@ -35,7 +35,7 @@ Completed box being shipped out [1]
 ...\hbox(240.9+0.0)x345.0, glue set 8.8fil
 ....\hbox(0.0+0.0)x15.0
 ....\hbox(240.9+0.0)x321.2
-.....\special{pdf:epdf page 1 pagebox cropbox bbox 0 0 320 240 clip 0 width 321.2pt (example-image-a.pdf) }
+.....\special{pdf:image page 1 pagebox cropbox bbox 0 0 320 240 clip 0 width 321.2pt (example-image-a.pdf) <</Group<</S/Transparency/K false/I false>>>>}
 ....\penalty 10000
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
@@ -45,7 +45,7 @@ Completed box being shipped out [1]
 ...\hbox(50.1875+0.0)x345.0, glue set 299.88751fil
 ....\hbox(0.0+0.0)x15.0
 ....\hbox(50.1875+0.0)x30.11249
-.....\special{pdf:epdf pagebox cropbox bbox 0 0 30 50 clip 0 width 30.11249pt (az2.pdf) }
+.....\special{pdf:image pagebox cropbox bbox 0 0 30 50 clip 0 width 30.11249pt (az2.pdf) <</Group<</S/Transparency/K false/I false>>>>}
 ....\penalty 10000
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
@@ -79,7 +79,7 @@ Completed box being shipped out [2]
 ...\hbox(36.135+0.0)x345.0, glue set 293.865fil
 ....\hbox(0.0+0.0)x15.0
 ....\hbox(36.135+0.0)x36.135
-.....\special{pdf:epdf pagebox artbox bbox 36 36 72 72 clip 0 width 36.135pt (az2.pdf) }
+.....\special{pdf:image pagebox artbox bbox 36 36 72 72 clip 0 width 36.135pt (az2.pdf) <</Group<</S/Transparency/K false/I false>>>>}
 ....\penalty 10000
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0

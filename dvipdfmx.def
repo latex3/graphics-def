@@ -130,21 +130,24 @@
   \fi
 }
 \let\Gread@bmp\Gread@pdf
+\newif\ifGread@transgroup
 \def\Ginclude@pdf#1{%
   \let\Gin@decode\@empty
   \Gin@interpolatefalse
-  \Ginclude@dvipdfmx{#1}{epdf}%
+  \Gread@transgrouptrue
+  \Ginclude@dvipdfmx{#1}%
 }
 \def\Ginclude@bmp#1{%
   \let\Gin@page\@empty
   \let\Gin@pagebox\@empty
-  \Ginclude@dvipdfmx{#1}{image}%
+  \Gread@transgroupfalse
+  \Ginclude@dvipdfmx{#1}%
 }
-\def\Ginclude@dvipdfmx#1#2{%
+\def\Ginclude@dvipdfmx#1{%
   \Gin@log{<#1>}%
   \bgroup
   \def\@tempa{!}%
-    \special{pdf:#2\GPT@space
+    \special{pdf:image\GPT@space
       \ifx\Gin@page\@empty\else page\GPT@space\Gin@page\GPT@space\fi
       \ifx\Gin@pagebox\@empty\else pagebox\GPT@space\Gin@pagebox\GPT@space\fi
       bbox\GPT@space\Gin@llx\GPT@space\Gin@lly\GPT@space\Gin@urx\GPT@space\Gin@ury\GPT@space
@@ -155,9 +158,11 @@
       \ifnum0%
         \ifx\Gin@decode\@empty\else 1\fi
         \ifGin@interpolate 1\fi
+        \ifGread@transgroup 1\fi
         >0 %
         <<%
           \ifx\Gin@decode\@empty\else /Decode[\Gin@decode]\fi
+          \ifGread@transgroup/Group<</S/Transparency/K false/I false>>\fi
           \ifGin@interpolate /Interpolate true\fi
         >>%
       \fi
