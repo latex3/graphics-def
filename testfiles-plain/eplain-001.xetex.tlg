@@ -47,4 +47,4 @@ xetex.def: ....-..-.. v... Graphics/color driver for xetex
 \Gin@req@width=\dimen...
 ))
 example-image.pdf: Graphic file (type pdf)
-<example-image.pdf>
+<use example-image.pdf>
