@@ -20,7 +20,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <argument> ...ox \@tempboxa =\hbox {\pdfrefximage 
-                                                  \pdflastximage }\def \Gin@...
+                                                  \pdflastximage }\ifGread@t...
 l. ...\includegraphics{example-image-a}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -29,7 +29,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <argument> ...\hbox {\pdfrefximage \pdflastximage 
-                                                  }\def \Gin@llx {0}\let \Gi...
+                                                  }\ifGread@transgroup \pdfx...
 l. ...\includegraphics{example-image-a}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -37,8 +37,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 ! Undefined control sequence.
-<argument> ...attr@hash \endcsname {\pdfrefximage 
-                                                  \the \pdflastximage }\expa...
+<argument> ...mage }\ifGread@transgroup \pdfxform 
+                                                  attr{/Group<</S/Transparen...
 l. ...\includegraphics{example-image-a}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -46,8 +46,35 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 ! Undefined control sequence.
-<argument> ... {\pdfrefximage \the \pdflastximage 
-                                                  }\expandafter \xdef \csnam...
+<argument> ...box \@tempboxa =\hbox {\pdfrefxform 
+                                                  \pdflastxform }\fi \def \G...
+l. ...\includegraphics{example-image-a}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+! Undefined control sequence.
+<argument> ... =\hbox {\pdfrefxform \pdflastxform 
+                                                  }\fi \def \Gin@llx {0}\let...
+l. ...\includegraphics{example-image-a}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+! Undefined control sequence.
+<argument> ...e {\ifGread@transgroup \pdfrefxform 
+                                                  \the \pdflastxform \else \...
+l. ...\includegraphics{example-image-a}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+! Undefined control sequence.
+<argument> ...oup \pdfrefxform \the \pdflastxform 
+                                                  \else \pdfrefximage \the \...
 l. ...\includegraphics{example-image-a}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -55,13 +82,13 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 ! You can't use `end-group character }' after \the.
-<argument> ...{\pdfrefximage \the \pdflastximage }
+<argument> ...frefximage \the \pdflastximage \fi }
                                                   \expandafter \xdef \csname...
 l. ...\includegraphics{example-image-a}
 I'm forgetting what you said and using zero instead.
 ! Undefined control sequence.
-<argument> ...n@base .pdf, id=\the \pdflastximage 
-                                                  , \ifx \Gin@page \@empty \...
+<argument> ...Gread@transgroup \the \pdflastxform 
+                                                  \else \the \pdflastximage ...
 l. ...\includegraphics{example-image-a}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -69,7 +96,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 ! You can't use `the character ,' after \the.
-<argument> ...@base .pdf, id=\the \pdflastximage ,
+<argument> ...form \else \the \pdflastximage \fi ,
                                                    \ifx \Gin@page \@empty \e...
 l. ...\includegraphics{example-image-a}
 I'm forgetting what you said and using zero instead.

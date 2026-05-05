@@ -5,17 +5,17 @@ File: example-image-a.pdf Graphic file (type pdf)
 <use example-image-a.pdf>
 Package luatex.def Info: example-image-a.pdf  used on input line ....
 (luatex.def)             Requested size: 321.19922pt x 240.8994pt.
-<example-image-a.pdf, id=2, page=1, 321.2pt x 240.9pt>
+<example-image-a.pdf, id=3, page=1, 321.2pt x 240.9pt>
 File: example-image-a.pdf Graphic file (type pdf)
 <use example-image-a.pdf, page 1>
 Package luatex.def Info: example-image-a.pdf , page1 used on input line ....
 (luatex.def)             Requested size: 321.19922pt x 240.8994pt.
-<az2.pdf, id=3, 30.1125pt x 50.1875pt>
+<az2.pdf, id=5, 30.1125pt x 50.1875pt>
 File: az2.pdf Graphic file (type pdf)
 <use az2.pdf>
 Package luatex.def Info: az2.pdf  used on input line ....
 (luatex.def)             Requested size: 30.11241pt x 50.18736pt.
-<az2.pdf, id=4, pagebox=artbox, 36.135pt x 36.135pt>
+<az2.pdf, id=7, pagebox=artbox, 36.135pt x 36.135pt>
 File: az2.pdf Graphic file (type pdf)
 <use az2.pdf>
 Package luatex.def Info: az2.pdf  used on input line ....
@@ -53,7 +53,7 @@ Completed box being shipped out [1]
 .......\hbox(240.9+0.0)x0.0, direction TLT
 ........\hbox(240.9+0.0)x0.0, glue set - 321.20001fil, direction TLT
 .........\hbox(240.9+0.0)x321.2, direction TLT
-..........\image(240.9+0.0)x321.2
+..........\box(240.9+0.0)x321.2
 .........\glue 0.0 plus 1.0fil minus 1.0fil
 .......\kern321.2
 .......\glue 0.0 plus 1.0fil minus 1.0fil
@@ -76,7 +76,7 @@ Completed box being shipped out [1]
 .......\hbox(240.9+0.0)x0.0, direction TLT
 ........\hbox(240.9+0.0)x0.0, glue set - 321.20001fil, direction TLT
 .........\hbox(240.9+0.0)x321.2, direction TLT
-..........\image(240.9+0.0)x321.2
+..........\box(240.9+0.0)x321.2
 .........\glue 0.0 plus 1.0fil minus 1.0fil
 .......\kern321.2
 .......\glue 0.0 plus 1.0fil minus 1.0fil
@@ -99,7 +99,7 @@ Completed box being shipped out [1]
 .......\hbox(50.1875+0.0)x0.0, direction TLT
 ........\hbox(50.1875+0.0)x0.0, glue set - 30.1125fil, direction TLT
 .........\hbox(50.1875+0.0)x30.1125, direction TLT
-..........\image(50.1875+0.0)x30.1125
+..........\box(50.1875+0.0)x30.1125
 .........\glue 0.0 plus 1.0fil minus 1.0fil
 .......\kern30.1125
 .......\glue 0.0 plus 1.0fil minus 1.0fil
@@ -115,20 +115,22 @@ Completed box being shipped out [1]
 ....\TU/lmr/m/n/10 1
 ....\glue 0.0 plus 1.0fil
 .\kern0.0
-<./example-image-a.pdf><./example-image-a.pdf><./az2.pdf>
+Completed box being shipped out<./example-image-a.pdf>
+Completed box being shipped out<./example-image-a.pdf>
+Completed box being shipped out<./az2.pdf>
 Package luatex.def Info: Option `bb' equivalent to `viewport' with the luatex driver on input line ....
-<clip-1-2.jpg, id=23, 146.34676pt x 128.8815pt>
+<clip-1-2.jpg, id=30, 146.34676pt x 128.8815pt>
 File: clip-1-2.jpg Graphic file (type jpg)
 <use clip-1-2.jpg>
 Package luatex.def Info: clip-1-2.jpg  used on input line ....
 (luatex.def)             Requested size: 49.99988pt x 49.99988pt.
 Package luatex.def Info: Option `bb' equivalent to `viewport' with the luatex driver on input line ....
-<clip-1-2.png, id=25, 146.34676pt x 128.8815pt>
+<clip-1-2.png, id=32, 146.34676pt x 128.8815pt>
 File: clip-1-2.png Graphic file (type png)
 <use clip-1-2.png>
 Package luatex.def Info: clip-1-2.png  used on input line ....
 (luatex.def)             Requested size: 49.99988pt x 49.99988pt.
-<clip-1-2.jpg, id=27, interpolate=true, 146.34676pt x 128.8815pt>
+<clip-1-2.jpg, id=34, interpolate=true, 146.34676pt x 128.8815pt>
 File: clip-1-2.jpg Graphic file (type jpg)
 <use clip-1-2.jpg>
 Package luatex.def Info: clip-1-2.jpg  used on input line ....
@@ -165,7 +167,7 @@ Completed box being shipped out [2]
 .......\hbox(36.135+0.0)x0.0, direction TLT
 ........\hbox(36.135+0.0)x0.0, glue set - 36.135fil, direction TLT
 .........\hbox(36.135+0.0)x36.135, direction TLT
-..........\image(36.135+0.0)x36.135
+..........\box(36.135+0.0)x36.135
 .........\glue 0.0 plus 1.0fil minus 1.0fil
 .......\kern36.135
 .......\glue 0.0 plus 1.0fil minus 1.0fil
@@ -251,5 +253,6 @@ Completed box being shipped out [2]
 ....\TU/lmr/m/n/10 2
 ....\glue 0.0 plus 1.0fil
 .\kern0.0
+Completed box being shipped out<./az2.pdf>
 Completed box being shipped out<./clip-1-2.jpg>
-Completed box being shipped out<./clip-1-2.png><./az2.pdf><./clip-1-2.jpg>
+Completed box being shipped out<./clip-1-2.png><./clip-1-2.jpg>

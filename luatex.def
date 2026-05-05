@@ -272,11 +272,9 @@
         \ifnum0%
           \ifx\Gin@decode\@empty\else 1\fi
           \ifGin@interpolate 1\fi
-          \ifGread@transgroup 1\fi
           >0 %
           attr{%
             \ifx\Gin@decode\@empty\else/Decode[\Gin@decode]\fi
-            \ifGread@transgroup/Group<</S/Transparency/K false/I false>>\fi
             \ifGin@interpolate/Interpolate true\fi
           }%
         \fi
@@ -284,11 +282,21 @@
         \Gin@pagebox
         {#1}%
       \setbox\@tempboxa=\hbox{\useimageresource\lastsavedimageresourceindex}%
+      \ifGread@transgroup
+        \saveboxresource attr{/Group<</S/Transparency/K false/I false>>}\@tempboxa
+        \setbox\@tempboxa=\hbox{\useboxresource\lastsavedboxresourceindex}%
+      \fi
       \def\Gin@llx{0}\let\Gin@lly\Gin@llx
       \Gin@defaultbp\Gin@urx{\wd\@tempboxa}%
       \Gin@defaultbp\Gin@ury{\ht\@tempboxa}%
       \expandafter\xdef\csname #1 image\Gin@attr@hash\endcsname
-        {\useimageresource\the\lastsavedimageresourceindex}%
+        {%
+          \ifGread@transgroup
+            \useboxresource\the\lastsavedboxresourceindex
+          \else
+            \useimageresource\the\lastsavedimageresourceindex
+          \fi
+        }%
       \expandafter\xdef\csname #1 height\Gin@attr@hash\endcsname
         {\the\ht\@tempboxa}%
       \expandafter\xdef\csname #1 width\Gin@attr@hash\endcsname
