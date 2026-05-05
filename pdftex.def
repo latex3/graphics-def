@@ -282,11 +282,9 @@ E     \else
         \ifnum0%
           \ifx\Gin@decode\@empty\else 1\fi
           \ifGin@interpolate 1\fi
-          \ifGread@transgroup 1\fi
           >0 %
           attr{%
             \ifx\Gin@decode\@empty\else/Decode[\Gin@decode]\fi
-            \ifGread@transgroup/Group<</S/Transparency/K false/I false>>\fi
             \ifGin@interpolate/Interpolate true\fi
           }%
         \fi
@@ -294,18 +292,28 @@ E     \else
         \Gin@pagebox
         {#1}%
       \setbox\@tempboxa=\hbox{\pdfrefximage\pdflastximage}%
+      \ifGread@transgroup
+        \pdfxform attr{/Group<</S/Transparency/K false/I false>>}\@tempboxa
+        \setbox\@tempboxa=\hbox{\pdfrefxform\pdflastxform}%
+      \fi
       \def\Gin@llx{0}\let\Gin@lly\Gin@llx
       \Gin@defaultbp\Gin@urx{\wd\@tempboxa}%
       \Gin@defaultbp\Gin@ury{\ht\@tempboxa}%
       \expandafter\xdef\csname #1 image\Gin@attr@hash\endcsname
-        {\pdfrefximage\the\pdflastximage}%
+        {%
+          \ifGread@transgroup
+            \pdfrefxform\the\pdflastxform
+          \else
+            \pdfrefximage\the\pdflastximage
+          \fi
+        }%
       \expandafter\xdef\csname #1 height\Gin@attr@hash\endcsname
         {\the\ht\@tempboxa}%
       \expandafter\xdef\csname #1 width\Gin@attr@hash\endcsname
         {\the\wd\@tempboxa}%
       \Gin@log{%
         <#1, %
-        id=\the\pdflastximage, %
+        id=\ifGread@transgroup\the\pdflastxform\else\the\pdflastximage\fi, %
         \ifx\Gin@page\@empty\else page=\Gin@page , \fi
         \ifx\Gin@pagebox\@empty\else\ifx\Gin@pagebox\GPT@cropbox\else
           pagebox=\Gin@pagebox , \fi\fi

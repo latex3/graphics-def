@@ -20,7 +20,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <argument> ...source \lastsavedimageresourceindex 
-                                                  }\def \Gin@llx {0}\let \Gi...
+                                                  }\ifGread@transgroup \save...
 l. ...\includegraphics{example-image-a}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -28,8 +28,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 ! Undefined control sequence.
-<argument> ...@hash \endcsname {\useimageresource 
-                                                  \the \lastsavedimageresour...
+<argument> ...ifGread@transgroup \saveboxresource 
+                                                  attr{/Group<</S/Transparen...
 l. ...\includegraphics{example-image-a}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -37,8 +37,35 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 ! Undefined control sequence.
-<argument> ...e \the \lastsavedimageresourceindex 
-                                                  }\expandafter \xdef \csnam...
+<argument> ... \@tempboxa =\hbox {\useboxresource 
+                                                  \lastsavedboxresourceindex...
+l. ...\includegraphics{example-image-a}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+! Undefined control sequence.
+<argument> ...resource \lastsavedboxresourceindex 
+                                                  }\fi \def \Gin@llx {0}\let...
+l. ...\includegraphics{example-image-a}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+! Undefined control sequence.
+<argument> ...\ifGread@transgroup \useboxresource 
+                                                  \the \lastsavedboxresource...
+l. ...\includegraphics{example-image-a}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+! Undefined control sequence.
+<argument> ...rce \the \lastsavedboxresourceindex 
+                                                  \else \useimageresource \t...
 l. ...\includegraphics{example-image-a}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -46,7 +73,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 ! You can't use `end-group character }' after \the.
-<argument> ... \the \lastsavedimageresourceindex }
+<argument> ...e \lastsavedimageresourceindex \fi }
                                                   \expandafter \xdef \csname...
 l. ...\includegraphics{example-image-a}
 I'm forgetting what you said and using zero instead.
